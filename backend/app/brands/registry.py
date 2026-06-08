@@ -57,10 +57,11 @@ DOMAIN_CRAWLER_MAP = {
 
 
 def load_brands_config() -> list[dict]:
+if not BRANDS_CONFIG.exists():
+        return []
     with BRANDS_CONFIG.open(encoding="utf-8") as f:
         data = json.load(f)
     return data.get("brands", [])
-
 
 def save_brands_config(brands: list[dict]) -> None:
     CONFIG_DIR.mkdir(parents=True, exist_ok=True)
