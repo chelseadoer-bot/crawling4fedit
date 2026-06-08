@@ -1,13 +1,8 @@
 {
-  "experimentalServices": {
-    "web": {
-      "entrypoint": "frontend",
-      "routePrefix": "/"
-    },
-    "api": {
-      "entrypoint": "backend/app/main.py",
-      "framework": "fastapi",
-      "routePrefix": "/api"
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://crawling4fedit-production.up.railway.app/:path*"
     }
-  }
+  ]
 }
