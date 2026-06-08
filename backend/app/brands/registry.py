@@ -55,18 +55,12 @@ DOMAIN_CRAWLER_MAP = {
     "www.the-barnnet.com": "barnet",
 }
 
-
 def load_brands_config() -> list[dict]:
-if not BRANDS_CONFIG.exists():
+    if not BRANDS_CONFIG.exists():
         return []
     with BRANDS_CONFIG.open(encoding="utf-8") as f:
         data = json.load(f)
     return data.get("brands", [])
-
-def save_brands_config(brands: list[dict]) -> None:
-    CONFIG_DIR.mkdir(parents=True, exist_ok=True)
-    with BRANDS_CONFIG.open("w", encoding="utf-8") as f:
-        json.dump({"brands": brands}, f, ensure_ascii=False, indent=2)
 
 
 GROUP_DISPLAY_NAMES = {
