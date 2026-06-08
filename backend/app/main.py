@@ -69,11 +69,11 @@ def root():
     return {
         "service": "Fashion Crawling Service",
         "docs": "/docs",
-        "brands": "/api/brands",
+        "brands": "/brands",
     }
 
 
-@app.get("/api/stats")
+@app.get("/stats")
 def get_stats():
     brands = load_brands_config()
     total_products = 0
@@ -116,7 +116,7 @@ class BrandUpdateRequest(BaseModel):
     group: str | None = None
 
 
-@app.post("/api/brands")
+@app.post("/brands")
 def create_brand(body: BrandCreateRequest):
     try:
         brand = add_brand(body.name, body.url, group=body.group)
@@ -137,7 +137,7 @@ def create_brand(body: BrandCreateRequest):
     }
 
 
-@app.patch("/api/brands/{brand_id}")
+@app.patch("/brands/{brand_id}")
 def patch_brand(brand_id: str, body: BrandUpdateRequest):
     try:
         brand = update_brand(brand_id, name=body.name, url=body.url, group=body.group)
@@ -155,7 +155,7 @@ def patch_brand(brand_id: str, body: BrandUpdateRequest):
     }
 
 
-@app.delete("/api/brands/{brand_id}")
+@app.delete("/brands/{brand_id}")
 def remove_brand(brand_id: str):
     try:
         delete_brand(brand_id)
@@ -164,7 +164,7 @@ def remove_brand(brand_id: str):
     return {"ok": True}
 
 
-@app.get("/api/brands")
+@app.get("/brands")
 def list_brands():
     brands = load_brands_config()
     enriched = []
@@ -184,7 +184,7 @@ def list_brands():
     return {"brands": enriched}
 
 
-@app.get("/api/groups/{group_slug}/preview")
+@app.get("/groups/{group_slug}/preview")
 def preview_group_csv(group_slug: str, limit: int = 50):
     brands = load_brands_config()
     matched = [
@@ -223,7 +223,7 @@ def preview_group_csv(group_slug: str, limit: int = 50):
     }
 
 
-@app.get("/api/brands/{brand_id}")
+@app.get("/brands/{brand_id}")
 def get_brand(brand_id: str):
     brand = get_brand_meta(brand_id)
     if not brand:
@@ -238,7 +238,7 @@ def get_brand(brand_id: str):
     }
 
 
-@app.get("/api/brands/{brand_id}/preview")
+@app.get("/brands/{brand_id}/preview")
 def preview_brand_csv(brand_id: str, limit: int = 50):
     brand = get_brand_meta(brand_id)
     if not brand:
@@ -267,7 +267,7 @@ def preview_brand_csv(brand_id: str, limit: int = 50):
     }
 
 
-@app.get("/api/brands/{brand_id}/crawl/status")
+@app.get("/brands/{brand_id}/crawl/status")
 def crawl_brand_status(brand_id: str):
     brand = get_brand_meta(brand_id)
     if not brand:
@@ -275,7 +275,7 @@ def crawl_brand_status(brand_id: str):
     return job_to_dict(get_job(brand_id))
 
 
-@app.post("/api/brands/{brand_id}/crawl")
+@app.post("/brands/{brand_id}/crawl")
 def crawl_brand(brand_id: str, url: str | None = None, headless: bool = False):
     brand = get_brand_meta(brand_id)
     if not brand:
@@ -294,7 +294,7 @@ def crawl_brand(brand_id: str, url: str | None = None, headless: bool = False):
         raise HTTPException(status_code=500, detail=str(exc)) from exc
 
 
-@app.get("/api/brands/{brand_id}/download")
+@app.get("/brands/{brand_id}/download")
 def download_csv(brand_id: str):
     brand = get_brand_meta(brand_id)
     if not brand:
