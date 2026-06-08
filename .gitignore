@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Crawl session / cookies
+data/hm_storage_state.json
+data/*_storage_state.json
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# Build output (keep CSV samples optional - uncomment to ignore all crawl data)
+# data/output/

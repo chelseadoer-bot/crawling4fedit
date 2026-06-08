@@ -1,0 +1,11 @@
+{
+  "id": "zara",
+  "name": "ZARA",
+  "enabled": true,
+  "source_site": "zara.com",
+  "crawl_type": "dynamic",
+  "description": "ZARA 한국 베스트셀러 카테고리",
+  "default_url": "https://www.zara.com/kr/ko/woman-best-sellers-l5912.html?v1=2491343",
+  "default_category_id": "2491343",
+  "notes": "Playwright 필수. headless 모드는 Akamai 차단 가능."
+}

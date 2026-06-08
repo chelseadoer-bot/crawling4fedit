@@ -1,0 +1,121 @@
+{
+  "brands": [
+    {
+      "id": "uniqlo",
+      "group": "UNIQLO",
+      "name": "여성 전체",
+      "enabled": true,
+      "source_site": "uniqlo.com",
+      "crawl_type": "dynamic",
+      "crawler_id": "uniqlo",
+      "default_url": "https://www.uniqlo.com/kr/ko/",
+      "output_dir": "data/output/uniqlo",
+      "last_crawled_at": "2026-06-04 16:44:22",
+      "last_status": "success"
+    },
+    {
+      "id": "cos",
+      "group": "COS",
+      "name": "여성 전체",
+      "enabled": true,
+      "source_site": "cos.com",
+      "crawl_type": "dynamic",
+      "crawler_id": "cos",
+      "default_url": "https://www.cos.com/ko-kr/women/view-all.html",
+      "output_dir": "data/output/cos",
+      "last_crawled_at": "2026-06-04 16:44:22",
+      "last_status": "success"
+    },
+    {
+      "id": "hm",
+      "group": "H&M",
+      "name": "여성 전체",
+      "enabled": true,
+      "source_site": "hm.com",
+      "crawl_type": "dynamic",
+      "crawler_id": "hm",
+      "default_url": "https://www2.hm.com/ko_kr/ladies/shop-by-product/view-all.html",
+      "output_dir": "data/output/hm",
+      "last_crawled_at": "2026-06-04 16:44:22",
+      "last_status": "success"
+    },
+    {
+      "id": "zara",
+      "group": "ZARA",
+      "name": "베스트셀러",
+      "enabled": true,
+      "source_site": "zara.com",
+      "crawl_type": "dynamic",
+      "crawler_id": "zara",
+      "default_url": "https://www.zara.com/kr/",
+      "output_dir": "data/output/zara",
+      "last_crawled_at": "2026-06-04 16:44:22",
+      "last_status": "success"
+    },
+    {
+      "id": "balenciaga",
+      "group": "BALENCIAGA",
+      "name": "여성 레디투웨어",
+      "enabled": true,
+      "source_site": "balenciaga.com",
+      "crawl_type": "dynamic",
+      "crawler_id": "balenciaga",
+      "default_url": "https://www.balenciaga.com/ko-kr/%EC%97%AC%EC%84%B1/%EC%97%AC%EC%84%B1-%EB%A0%88%EB%94%94-%ED%88%AC-%EC%9B%A8%EC%96%B4",
+      "output_dir": "data/output/balenciaga",
+      "last_crawled_at": "2026-06-04 16:44:22",
+      "last_status": "success"
+    },
+    {
+      "id": "dior",
+      "group": "DIOR",
+      "name": "여성 RTW",
+      "enabled": true,
+      "source_site": "dior.com",
+      "crawl_type": "dynamic",
+      "crawler_id": "dior",
+      "default_url": "https://www.dior.com/ko_kr/fashion/womens-fashion/ready-to-wear/all-ready-to-wear",
+      "output_dir": "data/output/dior",
+      "last_crawled_at": null,
+      "last_status": "failed"
+    },
+    {
+      "id": "chanel",
+      "group": "CHANEL",
+      "name": "패션",
+      "enabled": true,
+      "source_site": "chanel.com",
+      "crawl_type": "dynamic",
+      "crawler_id": "chanel",
+      "default_url": "https://www.chanel.com/kr/fashion/pret-a-porter/",
+      "output_dir": "data/output/chanel",
+      "last_crawled_at": null,
+      "last_status": "failed"
+    },
+    {
+      "id": "moncler",
+      "group": "MONCLER",
+      "name": "여성",
+      "enabled": true,
+      "source_site": "moncler.com",
+      "crawl_type": "dynamic",
+      "crawler_id": "moncler",
+      "default_url": "https://www.moncler.com/ko-kr/women/ready-to-wear",
+      "output_dir": "data/output/moncler",
+      "last_crawled_at": "2026-06-04 16:44:22",
+      "last_status": "success"
+    },
+    {
+      "id": "barnet",
+      "group": "THE BARNNET",
+      "name": "전체",
+      "enabled": true,
+      "source_site": "the-barnnet.com",
+      "crawl_type": "dynamic",
+      "crawler_id": "barnet",
+      "default_url": "https://the-barnnet.com/product/list_all.html?cate_no=299",
+      "output_dir": "data/output/barnet",
+      "last_crawled_at": "2026-06-04 16:44:22",
+      "last_status": "success"
+    }
+  ]
+}
