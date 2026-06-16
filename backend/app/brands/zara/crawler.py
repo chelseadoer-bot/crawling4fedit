@@ -317,9 +317,10 @@ def component_to_spec_row(component: dict, config: dict, crawled_at: str) -> dic
 
     gender_hint = config.get("gender", "women")
     url_lower = config.get("default_url", "").lower()
-    if "man" in url_lower or "hombre" in url_lower:
+    # "woman"에 "man"이 포함되므로 /man/ 또는 /men/ 패턴으로 체크
+    if re.search(r"[/-](man|men|hombre)[/-]", url_lower):
         gender_hint = "men"
-    elif "kid" in url_lower or "bebe" in url_lower:
+    elif re.search(r"[/-](kid|kids|bebe|nino)[/-]", url_lower):
         gender_hint = "kids"
 
     sub_category = (
