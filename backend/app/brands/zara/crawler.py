@@ -498,7 +498,7 @@ class ZaraCrawler(BaseBrandCrawler):
     def crawl(
         self,
         url: str | None = None,
-        headless: bool = False,
+        headless: bool = True,
         on_progress: Callable[[int, int], None] | None = None,
     ) -> list[dict]:
         config = load_config()

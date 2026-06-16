@@ -307,7 +307,7 @@ def crawl_brand_status(brand_id: str):
 
 
 @app.post("/api/brands/{brand_id}/crawl")
-def crawl_brand(brand_id: str, url: str | None = None, headless: bool = False):
+def crawl_brand(brand_id: str, url: str | None = None, headless: bool = True):
     brand = get_brand_meta(brand_id)
     if not brand:
         raise HTTPException(status_code=404, detail="브랜드를 찾을 수 없습니다.")

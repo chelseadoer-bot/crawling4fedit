@@ -165,7 +165,7 @@ class UniqloCrawler(BaseBrandCrawler):
     brand_name = "UNIQLO"
     source_site = "uniqlo.com"
 
-    def crawl(self, url: str | None = None, headless: bool = False) -> list[dict]:
+    def crawl(self, url: str | None = None, headless: bool = True) -> list[dict]:
         target_url = url or "https://www.uniqlo.com/kr/ko/women/tops"
         base_params = parse_uniqlo_params(target_url)
         crawled_at = now_timestamp()

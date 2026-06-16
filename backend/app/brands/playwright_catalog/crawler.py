@@ -274,7 +274,7 @@ class PlaywrightSiteCrawler(BaseBrandCrawler):
     def crawl(
         self,
         url: str | None = None,
-        headless: bool = False,
+        headless: bool = True,
         on_progress=None,
     ) -> list[dict]:
         target_url = url or self.profile.default_url
@@ -366,7 +366,7 @@ class HmCrawler(BaseBrandCrawler):
     brand_name = "H&M"
     source_site = "hm.com"
 
-    def crawl(self, url: str | None = None, headless: bool = False, on_progress=None) -> list[dict]:
+    def crawl(self, url: str | None = None, headless: bool = True, on_progress=None) -> list[dict]:
         return make_crawler("hm").crawl(url=url, headless=headless, on_progress=on_progress)
 
 
@@ -375,7 +375,7 @@ class CosCrawler(BaseBrandCrawler):
     brand_name = "COS"
     source_site = "cos.com"
 
-    def crawl(self, url: str | None = None, headless: bool = False, on_progress=None) -> list[dict]:
+    def crawl(self, url: str | None = None, headless: bool = True, on_progress=None) -> list[dict]:
         return make_crawler("cos").crawl(url=url, headless=headless, on_progress=on_progress)
 
 
@@ -384,7 +384,7 @@ class ChanelCrawler(BaseBrandCrawler):
     brand_name = "CHANEL"
     source_site = "chanel.com"
 
-    def crawl(self, url: str | None = None, headless: bool = False, on_progress=None) -> list[dict]:
+    def crawl(self, url: str | None = None, headless: bool = True, on_progress=None) -> list[dict]:
         return make_crawler("chanel").crawl(url=url, headless=headless, on_progress=on_progress)
 
 
@@ -393,5 +393,5 @@ class MonclerCrawler(BaseBrandCrawler):
     brand_name = "MONCLER"
     source_site = "moncler.com"
 
-    def crawl(self, url: str | None = None, headless: bool = False, on_progress=None) -> list[dict]:
+    def crawl(self, url: str | None = None, headless: bool = True, on_progress=None) -> list[dict]:
         return make_crawler("moncler").crawl(url=url, headless=headless, on_progress=on_progress)

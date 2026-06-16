@@ -8,7 +8,7 @@ class BaseBrandCrawler(ABC):
     source_site: str
 
     @abstractmethod
-    def crawl(self, url: str | None = None, headless: bool = False) -> list[dict]:
+    def crawl(self, url: str | None = None, headless: bool = True) -> list[dict]:
         """표준 CSV 컬럼 형식의 상품 목록 반환"""
 
     def output_dir(self, project_root: Path) -> Path:

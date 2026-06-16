@@ -139,7 +139,7 @@ class BalenciagaCrawler(BaseBrandCrawler):
     def crawl(
         self,
         url: str | None = None,
-        headless: bool = False,
+        headless: bool = True,
         on_progress=None,
     ) -> list[dict]:
         target_url = url or (

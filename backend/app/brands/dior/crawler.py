@@ -170,7 +170,7 @@ class DiorCrawler(BaseBrandCrawler):
     brand_name = "DIOR"
     source_site = "dior.com"
 
-    def crawl(self, url: str | None = None, headless: bool = False) -> list[dict]:
+    def crawl(self, url: str | None = None, headless: bool = True) -> list[dict]:
         target_url = url or (
             "https://www.dior.com/ko_kr/fashion/womens-fashion/ready-to-wear/all-ready-to-wear"
         )

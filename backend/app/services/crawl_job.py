@@ -101,7 +101,7 @@ def _run_crawl(brand_id: str, url: str | None, headless: bool) -> None:
 
 
 def start_crawl_job(
-    brand_id: str, url: str | None = None, headless: bool = False
+    brand_id: str, url: str | None = None, headless: bool = True
 ) -> dict:
     with _lock:
         state = get_job(brand_id)

@@ -11,7 +11,7 @@ STEALTH_INIT_SCRIPT = (
 )
 
 
-def launch_browser(playwright, headless: bool = False):
+def launch_browser(playwright, headless: bool = True):
     return playwright.chromium.launch(
         headless=headless,
         args=["--disable-blink-features=AutomationControlled"],

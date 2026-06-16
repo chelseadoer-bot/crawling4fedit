@@ -15,7 +15,7 @@ def brand_output_path(brand_id: str) -> Path:
 def run_brand_crawl(
     brand_id: str,
     url: str | None = None,
-    headless: bool = False,
+    headless: bool = True,
     on_progress: ProgressCallback | None = None,
 ) -> dict:
     brand = get_brand_meta(brand_id)
