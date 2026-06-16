@@ -104,7 +104,9 @@ def start_crawl_job(
     brand_id: str, url: str | None = None, headless: bool = True
 ) -> dict:
     with _lock:
-        state = get_job(brand_id)
+        if brand_id not in _jobs:
+            _jobs[brand_id] = CrawlJobState(brand_id=brand_id)
+        state = _jobs[brand_id]
         if state.status == "running":
             return {**job_to_dict(state), "already_running": True}
 
