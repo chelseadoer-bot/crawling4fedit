@@ -7,5 +7,16 @@
   "description": "ZARA 한국 베스트셀러 카테고리",
   "default_url": "https://www.zara.com/kr/ko/woman-best-sellers-l5912.html?v1=2491343",
   "default_category_id": "2491343",
+  "gender": "women",
+  "main_category": "SPA해외",
+  "extra_urls": [
+    "https://www.zara.com/kr/ko/woman-new-in-l1180.html?v1=2220659",
+    "https://www.zara.com/kr/ko/woman-dresses-l1066.html?v1=2227397",
+    "https://www.zara.com/kr/ko/woman-jackets-l1095.html?v1=2227399",
+    "https://www.zara.com/kr/ko/woman-blazers-l1290.html?v1=2227396",
+    "https://www.zara.com/kr/ko/woman-trousers-l1119.html?v1=2227401",
+    "https://www.zara.com/kr/ko/woman-tops-l1246.html?v1=2238501",
+    "https://www.zara.com/kr/ko/woman-knitwear-l1099.html?v1=2227400"
+  ],
   "notes": "Playwright 필수. headless 모드는 Akamai 차단 가능."
 }
