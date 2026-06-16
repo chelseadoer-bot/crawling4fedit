@@ -19,7 +19,7 @@ from app.brands.registry import (
     save_brands_config,
     update_brand,
 )
-from app.core.csv_schema import SIMPLE_COLUMNS
+from app.core.csv_schema import SIMPLE_COLUMNS, SIMPLE_COLUMN_LABELS, normalize_column_name
 from app.core.csv_writer import standard_to_simple
 from app.services.crawl_job import get_job, job_to_dict, start_crawl_job
 
@@ -48,9 +48,39 @@ def csv_path_for(brand_id: str) -> Path:
 def normalize_rows(rows: list[dict]) -> list[dict]:
     if not rows:
         return []
-    if "이미지" in rows[0]:
-        return rows
+    first = rows[0]
+    # 이미 SIMPLE_COLUMNS(표준 영문 키) 형식이면 그대로
+    if "front_images_url" in first or "product_name" in first:
+        # 한글 레이블로 변환해서 프론트에 전달
+        return [_to_display(r) for r in rows]
+    # 구 한글 키 파일 (이미지, 상품명, …)
+    if "이미지" in first:
+        return [_legacy_to_display(r) for r in rows]
+    # STANDARD_COLUMNS 형식
     return [standard_to_simple(row) for row in rows]
+
+
+def _to_display(row: dict) -> dict:
+    """SIMPLE_COLUMNS(영문) → 프론트가 쓰는 한글 레이블 dict"""
+    result = {}
+    for col in SIMPLE_COLUMNS:
+        label = SIMPLE_COLUMN_LABELS.get(col, col)
+        result[label] = row.get(col, "")
+    return result
+
+
+def _legacy_to_display(row: dict) -> dict:
+    """구 한글 키 CSV → 프론트 레이블 dict (역방향 호환)"""
+    legacy_map = {
+        "이미지": "이미지",
+        "상품명": "상품명",
+        "가격": "판매가",
+        "컬러": "컬러",
+    }
+    result = {label: "" for label in SIMPLE_COLUMN_LABELS.values()}
+    for old_key, new_label in legacy_map.items():
+        result[new_label] = row.get(old_key, "")
+    return result
 
 
 def read_csv_rows(path: Path, limit: int | None = None) -> list[dict]:

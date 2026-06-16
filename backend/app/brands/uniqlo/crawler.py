@@ -90,25 +90,69 @@ def get_colors(item: dict) -> str:
     return ", ".join(c.get("name", "") for c in item.get("colors", []) if c.get("name"))
 
 
+def get_sizes(item: dict) -> str:
+    sizes = []
+    for s in item.get("sizes", []):
+        label = s.get("name") or s.get("displayCode") or s.get("code") or ""
+        if label and label not in sizes:
+            sizes.append(str(label))
+    if not sizes:
+        for s in item.get("stocks", []):
+            label = s.get("size") or s.get("sizeName") or ""
+            if label and label not in sizes:
+                sizes.append(str(label))
+    return ", ".join(sizes)
+
+
+def get_material(item: dict) -> str:
+    mat = item.get("materialComposition") or item.get("material") or ""
+    if mat:
+        return str(mat).strip()
+    descriptions = item.get("shortDescription") or item.get("description") or ""
+    if isinstance(descriptions, list):
+        descriptions = " / ".join(str(d) for d in descriptions)
+    return str(descriptions).strip() if descriptions else ""
+
+
+def get_fit(item: dict) -> str:
+    return item.get("fit") or item.get("silhouette") or ""
+
+
+def get_length(item: dict) -> str:
+    return item.get("length") or item.get("clothesLength") or ""
+
+
 def item_to_row(item: dict, crawled_at: str) -> dict:
     product_id = item.get("productId") or ""
     name = item.get("name") or ""
     row = empty_row()
+    img = get_image(item)
+    if img and not img.startswith("http"):
+        img = "https:" + img if img.startswith("//") else ""
+    price = get_price(item)
     row.update(
         {
             "brand": "UNIQLO",
-            "product_id": product_id,
             "product_name": name,
-            "category_large": item.get("genderName") or "",
-            "category_small": "",
-            "price_original": get_price(item),
-            "price_sale": "",
+            "category": item.get("subCategoryName") or item.get("categoryName") or item.get("genderName") or "",
+            "gender": item.get("genderName") or "",
+            "regular_price": price,
+            "current_price": price,
             "discount_rate": "",
-            "color": get_colors(item),
-            "sizes_available": "",
-            "stock_status": "unknown",
-            "product_url": f"https://www.uniqlo.com/kr/ko/products/{product_id}/00" if product_id else "",
-            "image_url": get_image(item),
+            "color_text": get_colors(item),
+            "color_chip": "",
+            "color_classification_url": "",
+            "front_images_url": img,
+            "material": get_material(item),
+            "details": "",
+            "rating": str(item.get("rating") or ""),
+            "reviews": str(item.get("reviewCount") or item.get("numReviews") or ""),
+            "product_detail_url": f"https://www.uniqlo.com/kr/ko/products/{product_id}/00" if product_id else "",
+            "sizes_available": get_sizes(item),
+            "fit": get_fit(item),
+            "length": get_length(item),
+            "sleeve_length": "",
+            "style": "",
             "crawled_at": crawled_at,
             "source_site": "uniqlo.com",
         }

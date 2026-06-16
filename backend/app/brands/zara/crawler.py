@@ -97,6 +97,27 @@ def get_colors(component: dict) -> str:
     return ", ".join(colors)
 
 
+def get_sizes(component: dict) -> str:
+    sizes = []
+    for color in component.get("detail", {}).get("colors", []):
+        for size in color.get("sizes", []):
+            label = size.get("name") or size.get("value") or ""
+            if label and label not in sizes:
+                sizes.append(label)
+    return ", ".join(sizes)
+
+
+def get_material(component: dict) -> str:
+    desc = component.get("description") or ""
+    if isinstance(desc, list):
+        desc = " ".join(str(d) for d in desc)
+    detail = component.get("detail", {})
+    comp_text = detail.get("composition") or detail.get("material") or ""
+    if isinstance(comp_text, list):
+        comp_text = " / ".join(str(c) for c in comp_text)
+    return (str(comp_text) or str(desc)).strip()
+
+
 def get_stock_status(component: dict) -> str:
     statuses = []
     for color in component.get("detail", {}).get("colors", []):
@@ -123,21 +144,37 @@ def component_to_row(component: dict, config: dict) -> dict:
     crawled_at = now_timestamp()
     product_id = component.get("reference") or f"ZR-{component.get('id', '')}"
 
+    ref = component.get("reference") or product_id
+    product_url = f"https://www.zara.com/kr/ko/-p{ref}.html" if ref else ""
+    img = get_image_url(component)
+    if img and not img.startswith("http"):
+        img = "https:" + img if img.startswith("//") else ""
+
+    price = str(component.get("price") or "")
+    old_price = str(component.get("oldPrice") or "")
     row.update(
         {
-            "brand": config["name"],
-            "product_id": product_id,
+            "brand": "ZARA",
             "product_name": (component.get("name") or "").strip(),
-            "category_large": component.get("sectionName") or component.get("familyName") or "",
-            "category_small": component.get("subfamilyName") or component.get("familyName") or "",
-            "price_original": component.get("price") or "",
-            "price_sale": "",
+            "category": component.get("sectionName") or component.get("familyName") or "",
+            "gender": "women",
+            "regular_price": old_price or price,
+            "current_price": price,
             "discount_rate": "",
-            "color": get_colors(component),
-            "sizes_available": "",
-            "stock_status": get_stock_status(component),
-            "product_url": "",
-            "image_url": get_image_url(component),
+            "color_text": get_colors(component),
+            "color_chip": "",
+            "color_classification_url": "",
+            "front_images_url": img,
+            "material": get_material(component),
+            "details": "",
+            "rating": "",
+            "reviews": "",
+            "product_detail_url": product_url,
+            "sizes_available": get_sizes(component),
+            "fit": "",
+            "length": "",
+            "sleeve_length": "",
+            "style": "",
             "crawled_at": crawled_at,
             "source_site": config["source_site"],
         }
@@ -194,22 +231,22 @@ def extract_products_from_dom(page, config: dict) -> list[dict]:
             continue
         seen.add(key)
 
+        img = item.get("img", "")
+        if img and not img.startswith("http"):
+            img = "https:" + img if img.startswith("//") else ""
         row = empty_row()
         row.update(
             {
-                "brand": config["name"],
-                "product_id": f"ZR-DOM-{hash(key) & 0xFFFFFF:06X}",
+                "brand": "ZARA",
                 "product_name": item.get("name", ""),
-                "category_large": "",
-                "category_small": "",
-                "price_original": item.get("price", ""),
-                "price_sale": "",
+                "category": "",
+                "gender": "women",
+                "regular_price": item.get("price", ""),
+                "current_price": item.get("price", ""),
                 "discount_rate": "",
-                "color": ", ".join(item.get("colors", [])),
-                "sizes_available": "",
-                "stock_status": "unknown",
-                "product_url": item.get("url", ""),
-                "image_url": item.get("img", ""),
+                "color_text": ", ".join(item.get("colors", [])),
+                "front_images_url": img,
+                "product_detail_url": item.get("url", ""),
                 "crawled_at": crawled_at,
                 "source_site": config["source_site"],
             }

@@ -1,0 +1,31 @@
+{
+  "description": "주간 자동 크롤링 스케줄 — 매주 요일별 실행 (오전 9시)",
+  "weekly": {
+    "monday": {
+      "label": "국내 SPA",
+      "brand_ids": ["musinsa-standard", "eightsecondes", "uniqlo", "spao"]
+    },
+    "tuesday": {
+      "label": "해외 SPA",
+      "brand_ids": ["cos", "hm", "misso", "zara"]
+    },
+    "wednesday": {
+      "label": "디자이너 브랜드",
+      "brand_ids": []
+    },
+    "thursday": {
+      "label": "명품 브랜드",
+      "brand_ids": ["balenciaga", "dior", "chanel", "moncler"]
+    },
+    "friday": {
+      "label": "보세 브랜드",
+      "brand_ids": ["barnet"]
+    },
+    "saturday": {
+      "label": "키즈 브랜드",
+      "brand_ids": []
+    }
+  },
+  "keyword_sites": ["naver", "musinsa", "wconcept"],
+  "run_time": "09:00"
+}

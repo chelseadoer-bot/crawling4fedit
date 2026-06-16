@@ -60,22 +60,24 @@ def extract_products_from_payload(raw: str, crawled_at: str) -> list[dict]:
             prod_url = link.group(1) if link else f"{BASE}/ko-kr/product/{pid}"
             if prod_url.startswith("/"):
                 prod_url = BASE + prod_url
+            if img_url and not img_url.startswith("http"):
+                img_url = "https:" + img_url if img_url.startswith("//") else ""
+            price_val = price.group(1) if price else ""
             row = empty_row()
             row.update(
                 {
                     "brand": "COS",
-                    "product_id": pid,
                     "product_name": name.group(1),
-                    "category_large": "women",
-                    "category_small": "",
-                    "price_original": price.group(1) if price else "",
-                    "price_sale": "",
+                    "category": "women",
+                    "gender": "women",
+                    "regular_price": price_val,
+                    "current_price": price_val,
                     "discount_rate": "",
-                    "color": "",
-                    "sizes_available": "",
-                    "stock_status": "unknown",
-                    "product_url": prod_url,
-                    "image_url": img_url,
+                    "color_text": "",
+                    "color_chip": "",
+                    "color_classification_url": "",
+                    "front_images_url": img_url,
+                    "product_detail_url": prod_url,
                     "crawled_at": crawled_at,
                     "source_site": "cos.com",
                 }
@@ -124,22 +126,24 @@ def parse_products_from_list(items: list, crawled_at: str) -> list[dict]:
         )
         if isinstance(url, str) and url.startswith("/"):
             url = BASE + url
+        img_str = img if isinstance(img, str) else ""
+        if img_str and not img_str.startswith("http"):
+            img_str = "https:" + img_str if img_str.startswith("//") else ""
         row = empty_row()
         row.update(
             {
                 "brand": "COS",
-                "product_id": pid,
                 "product_name": str(name),
-                "category_large": "women",
-                "category_small": "",
-                "price_original": price,
-                "price_sale": "",
+                "category": "women",
+                "gender": "women",
+                "regular_price": price,
+                "current_price": price,
                 "discount_rate": "",
-                "color": "",
-                "sizes_available": "",
-                "stock_status": "unknown",
-                "product_url": url,
-                "image_url": img if isinstance(img, str) else "",
+                "color_text": "",
+                "color_chip": "",
+                "color_classification_url": "",
+                "front_images_url": img_str,
+                "product_detail_url": url,
                 "crawled_at": crawled_at,
                 "source_site": "cos.com",
             }
@@ -268,15 +272,20 @@ class CosCrawler(BaseBrandCrawler):
                     if pid in seen:
                         continue
                     seen.add(pid)
+                    dom_img = c.get("img", "")
+                    if dom_img and not dom_img.startswith("http"):
+                        dom_img = "https:" + dom_img if dom_img.startswith("//") else ""
                     row = empty_row()
                     row.update(
                         {
                             "brand": "COS",
-                            "product_id": pid,
                             "product_name": c["name"],
-                            "price_original": "",
-                            "product_url": c["href"],
-                            "image_url": c.get("img", ""),
+                            "category": "women",
+                            "gender": "women",
+                            "regular_price": "",
+                            "current_price": "",
+                            "front_images_url": dom_img,
+                            "product_detail_url": c["href"],
                             "crawled_at": crawled_at,
                             "source_site": "cos.com",
                         }

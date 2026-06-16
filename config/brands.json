@@ -11,7 +11,50 @@
       "default_url": "https://www.uniqlo.com/kr/ko/",
       "output_dir": "data/output/uniqlo",
       "last_crawled_at": "2026-06-04 16:44:22",
-      "last_status": "success"
+      "last_status": "success",
+      "schedule_group": "monday"
+    },
+    {
+      "id": "eightsecondes",
+      "group": "에잇세컨즈",
+      "name": "여성 전체",
+      "enabled": false,
+      "source_site": "8seconds.co.kr",
+      "crawl_type": "unsupported",
+      "crawler_id": null,
+      "default_url": "https://www.8seconds.co.kr/category/women",
+      "output_dir": "data/output/eightsecondes",
+      "last_crawled_at": null,
+      "last_status": null,
+      "schedule_group": "monday"
+    },
+    {
+      "id": "musinsa-standard",
+      "group": "무신사 스탠다드",
+      "name": "여성 전체",
+      "enabled": false,
+      "source_site": "musinsa.com",
+      "crawl_type": "unsupported",
+      "crawler_id": null,
+      "default_url": "https://www.musinsa.com/brands/musinsastandard",
+      "output_dir": "data/output/musinsa-standard",
+      "last_crawled_at": null,
+      "last_status": null,
+      "schedule_group": "monday"
+    },
+    {
+      "id": "spao",
+      "group": "SPAO",
+      "name": "여성 전체",
+      "enabled": false,
+      "source_site": "spao.com",
+      "crawl_type": "unsupported",
+      "crawler_id": null,
+      "default_url": "https://www.spao.com/category/women",
+      "output_dir": "data/output/spao",
+      "last_crawled_at": null,
+      "last_status": null,
+      "schedule_group": "monday"
     },
     {
       "id": "cos",
@@ -24,7 +67,8 @@
       "default_url": "https://www.cos.com/ko-kr/women/view-all.html",
       "output_dir": "data/output/cos",
       "last_crawled_at": "2026-06-04 16:44:22",
-      "last_status": "success"
+      "last_status": "success",
+      "schedule_group": "tuesday"
     },
     {
       "id": "hm",
@@ -37,7 +81,22 @@
       "default_url": "https://www2.hm.com/ko_kr/ladies/shop-by-product/view-all.html",
       "output_dir": "data/output/hm",
       "last_crawled_at": "2026-06-04 16:44:22",
-      "last_status": "success"
+      "last_status": "success",
+      "schedule_group": "tuesday"
+    },
+    {
+      "id": "misso",
+      "group": "미쏘",
+      "name": "전체",
+      "enabled": false,
+      "source_site": "misso.co.kr",
+      "crawl_type": "unsupported",
+      "crawler_id": null,
+      "default_url": "https://www.misso.co.kr/category/women",
+      "output_dir": "data/output/misso",
+      "last_crawled_at": null,
+      "last_status": null,
+      "schedule_group": "tuesday"
     },
     {
       "id": "zara",
@@ -50,7 +109,8 @@
       "default_url": "https://www.zara.com/kr/",
       "output_dir": "data/output/zara",
       "last_crawled_at": "2026-06-04 16:44:22",
-      "last_status": "success"
+      "last_status": "success",
+      "schedule_group": "tuesday"
     },
     {
       "id": "balenciaga",
@@ -63,7 +123,8 @@
       "default_url": "https://www.balenciaga.com/ko-kr/%EC%97%AC%EC%84%B1/%EC%97%AC%EC%84%B1-%EB%A0%88%EB%94%94-%ED%88%AC-%EC%9B%A8%EC%96%B4",
       "output_dir": "data/output/balenciaga",
       "last_crawled_at": "2026-06-04 16:44:22",
-      "last_status": "success"
+      "last_status": "success",
+      "schedule_group": "thursday"
     },
     {
       "id": "dior",
@@ -76,7 +137,8 @@
       "default_url": "https://www.dior.com/ko_kr/fashion/womens-fashion/ready-to-wear/all-ready-to-wear",
       "output_dir": "data/output/dior",
       "last_crawled_at": null,
-      "last_status": "failed"
+      "last_status": "failed",
+      "schedule_group": "thursday"
     },
     {
       "id": "chanel",
@@ -89,7 +151,8 @@
       "default_url": "https://www.chanel.com/kr/fashion/pret-a-porter/",
       "output_dir": "data/output/chanel",
       "last_crawled_at": null,
-      "last_status": "failed"
+      "last_status": "failed",
+      "schedule_group": "thursday"
     },
     {
       "id": "moncler",
@@ -102,7 +165,8 @@
       "default_url": "https://www.moncler.com/ko-kr/women/ready-to-wear",
       "output_dir": "data/output/moncler",
       "last_crawled_at": "2026-06-04 16:44:22",
-      "last_status": "success"
+      "last_status": "success",
+      "schedule_group": "thursday"
     },
     {
       "id": "barnet",
@@ -115,7 +179,8 @@
       "default_url": "https://the-barnnet.com/product/list_all.html?cate_no=299",
       "output_dir": "data/output/barnet",
       "last_crawled_at": "2026-06-04 16:44:22",
-      "last_status": "success"
+      "last_status": "success",
+      "schedule_group": "friday"
     }
   ]
 }

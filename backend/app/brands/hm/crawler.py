@@ -39,22 +39,28 @@ def parse_hm_product(prod: dict, crawled_at: str) -> dict | None:
     url = prod.get("url") or prod.get("link") or ""
     if pid and not url:
         url = f"https://www2.hm.com/ko_kr/productpage.{pid}.html"
+    img = image if str(image).startswith("http") else ""
+    if not img and str(image).startswith("//"):
+        img = "https:" + str(image)
+    price_clean = re.sub(r"[^\d]", "", price) or price
     row = empty_row()
     row.update(
         {
             "brand": "H&M",
-            "product_id": pid,
             "product_name": title,
-            "category_large": "women",
-            "category_small": "",
-            "price_original": re.sub(r"[^\d]", "", price) or price,
-            "price_sale": "",
+            "category": "women",
+            "gender": "women",
+            "regular_price": price_clean,
+            "current_price": price_clean,
             "discount_rate": "",
-            "color": prod.get("colorName") or prod.get("color") or "",
-            "sizes_available": "",
-            "stock_status": "unknown",
-            "product_url": url,
-            "image_url": image if str(image).startswith("http") else "",
+            "color_text": prod.get("colorName") or prod.get("color") or "",
+            "color_chip": "",
+            "color_classification_url": "",
+            "front_images_url": img,
+            "details": "",
+            "rating": str(prod.get("rating") or prod.get("averageRating") or ""),
+            "reviews": str(prod.get("numberOfReviews") or prod.get("reviewCount") or ""),
+            "product_detail_url": url,
             "crawled_at": crawled_at,
             "source_site": "hm.com",
         }
@@ -250,15 +256,21 @@ class HmCrawler(BaseBrandCrawler):
                     if pid in seen:
                         continue
                     seen.add(pid)
+                    dom_img = item.get("img", "")
+                    if dom_img and not dom_img.startswith("http"):
+                        dom_img = "https:" + dom_img if dom_img.startswith("//") else ""
+                    price_raw = re.sub(r"[^\d]", "", item.get("price", ""))
                     row = empty_row()
                     row.update(
                         {
                             "brand": "H&M",
-                            "product_id": pid,
                             "product_name": item["name"],
-                            "price_original": re.sub(r"[^\d]", "", item.get("price", "")),
-                            "product_url": item["href"],
-                            "image_url": item.get("img", ""),
+                            "category": "women",
+                            "gender": "women",
+                            "regular_price": price_raw,
+                            "current_price": price_raw,
+                            "front_images_url": dom_img,
+                            "product_detail_url": item["href"],
                             "crawled_at": crawled_at,
                             "source_site": "hm.com",
                         }

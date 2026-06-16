@@ -10,7 +10,16 @@ import {
   updateBrand,
 } from './api'
 
-const COLUMNS = ['이미지', '상품명', '가격', '컬러']
+// SIMPLE_COLUMN_LABELS 와 동기화 (백엔드 csv_schema.py 참조)
+const ALL_COLUMNS = [
+  '이미지', '상품명', '브랜드', '카테고리', '성별',
+  '정상가', '판매가', '할인율', '컬러', '소재',
+  '사이즈', '핏', '기장', '소매길이', '스타일',
+  '안감', '두께감', '계절감', '비침', '신축성',
+  '평점', '리뷰수', '상품링크', '수집일시',
+]
+const IMAGE_COL = '이미지'
+const LINK_COL = '상품링크'
 
 function formatLastCrawled(at) {
   if (!at) return '미수집'
@@ -504,32 +513,39 @@ export default function App() {
                       ? preview.crawl_job.message || '백그라운드에서 수집 중…'
                       : '업데이트(🔄)를 누르면 결과가 여기에 표시됩니다.'}
                 </div>
-              ) : (
-                <table>
-                  <thead>
-                    <tr>
-                      {COLUMNS.map((col) => (
-                        <th key={col}>{col}</th>
-                      ))}
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {preview.rows.map((row, i) => (
-                      <tr key={i}>
-                        {COLUMNS.map((col) => (
-                          <td key={col}>
-                            {col === '이미지' && row[col] ? (
-                              <img src={row[col]} alt="" className="thumb" loading="lazy" />
-                            ) : (
-                              row[col] || '—'
-                            )}
-                          </td>
+              ) : (() => {
+                const visibleCols = ALL_COLUMNS.filter(col =>
+                  preview.rows.some(row => row[col] && row[col] !== '—')
+                )
+                return (
+                  <table>
+                    <thead>
+                      <tr>
+                        {visibleCols.map((col) => (
+                          <th key={col}>{col}</th>
                         ))}
                       </tr>
-                    ))}
-                  </tbody>
-                </table>
-              )}
+                    </thead>
+                    <tbody>
+                      {preview.rows.map((row, i) => (
+                        <tr key={i}>
+                          {visibleCols.map((col) => (
+                            <td key={col}>
+                              {col === IMAGE_COL && row[col] ? (
+                                <img src={row[col]} alt="" className="thumb" loading="lazy" />
+                              ) : col === LINK_COL && row[col] ? (
+                                <a href={row[col]} target="_blank" rel="noreferrer" className="product-link">링크</a>
+                              ) : (
+                                row[col] || '—'
+                              )}
+                            </td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                )
+              })()}
             </div>
           </>
         )}
