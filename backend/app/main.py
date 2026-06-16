@@ -99,11 +99,11 @@ def root():
     return {
         "service": "Fashion Crawling Service",
         "docs": "/docs",
-        "brands": "/brands",
+        "brands": "/api/brands",
     }
 
 
-@app.get("/stats")
+@app.get("/api/stats")
 def get_stats():
     brands = load_brands_config()
     total_products = 0
@@ -144,9 +144,10 @@ class BrandUpdateRequest(BaseModel):
     name: str | None = None
     url: str | None = None
     group: str | None = None
+    category: str | None = None
 
 
-@app.post("/brands")
+@app.post("/api/brands")
 def create_brand(body: BrandCreateRequest):
     try:
         brand = add_brand(body.name, body.url, group=body.group)
@@ -167,10 +168,10 @@ def create_brand(body: BrandCreateRequest):
     }
 
 
-@app.patch("/brands/{brand_id}")
+@app.patch("/api/brands/{brand_id}")
 def patch_brand(brand_id: str, body: BrandUpdateRequest):
     try:
-        brand = update_brand(brand_id, name=body.name, url=body.url, group=body.group)
+        brand = update_brand(brand_id, name=body.name, url=body.url, group=body.group, category=body.category)
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
 
@@ -185,7 +186,7 @@ def patch_brand(brand_id: str, body: BrandUpdateRequest):
     }
 
 
-@app.delete("/brands/{brand_id}")
+@app.delete("/api/brands/{brand_id}")
 def remove_brand(brand_id: str):
     try:
         delete_brand(brand_id)
@@ -194,7 +195,7 @@ def remove_brand(brand_id: str):
     return {"ok": True}
 
 
-@app.get("/brands")
+@app.get("/api/brands")
 def list_brands():
     brands = load_brands_config()
     enriched = []
@@ -214,7 +215,7 @@ def list_brands():
     return {"brands": enriched}
 
 
-@app.get("/groups/{group_slug}/preview")
+@app.get("/api/groups/{group_slug}/preview")
 def preview_group_csv(group_slug: str, limit: int = 50):
     brands = load_brands_config()
     matched = [
@@ -253,7 +254,7 @@ def preview_group_csv(group_slug: str, limit: int = 50):
     }
 
 
-@app.get("/brands/{brand_id}")
+@app.get("/api/brands/{brand_id}")
 def get_brand(brand_id: str):
     brand = get_brand_meta(brand_id)
     if not brand:
@@ -268,7 +269,7 @@ def get_brand(brand_id: str):
     }
 
 
-@app.get("/brands/{brand_id}/preview")
+@app.get("/api/brands/{brand_id}/preview")
 def preview_brand_csv(brand_id: str, limit: int = 50):
     brand = get_brand_meta(brand_id)
     if not brand:
@@ -297,7 +298,7 @@ def preview_brand_csv(brand_id: str, limit: int = 50):
     }
 
 
-@app.get("/brands/{brand_id}/crawl/status")
+@app.get("/api/brands/{brand_id}/crawl/status")
 def crawl_brand_status(brand_id: str):
     brand = get_brand_meta(brand_id)
     if not brand:
@@ -305,7 +306,7 @@ def crawl_brand_status(brand_id: str):
     return job_to_dict(get_job(brand_id))
 
 
-@app.post("/brands/{brand_id}/crawl")
+@app.post("/api/brands/{brand_id}/crawl")
 def crawl_brand(brand_id: str, url: str | None = None, headless: bool = False):
     brand = get_brand_meta(brand_id)
     if not brand:
@@ -324,7 +325,7 @@ def crawl_brand(brand_id: str, url: str | None = None, headless: bool = False):
         raise HTTPException(status_code=500, detail=str(exc)) from exc
 
 
-@app.get("/brands/{brand_id}/download")
+@app.get("/api/brands/{brand_id}/download")
 def download_csv(brand_id: str):
     brand = get_brand_meta(brand_id)
     if not brand:

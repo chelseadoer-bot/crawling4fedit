@@ -80,7 +80,7 @@ body { background: var(--bg); min-height: 100vh; }
 
 .brand-list {
   list-style: none;
-  padding: 8px;
+  padding: 6px 0;
   flex: 1;
   overflow-y: auto;
 }
@@ -97,8 +97,55 @@ body { background: var(--bg); min-height: 100vh; }
   gap: 4px;
 }
 
+/* ── 대구분 (카테고리) ── */
+.cat-block {
+  margin-bottom: 2px;
+}
+
+.cat-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  padding: 7px 12px;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: left;
+  transition: color 0.15s;
+}
+
+.cat-header:hover { color: var(--text); }
+
+.cat-arrow {
+  font-size: 10px;
+  flex-shrink: 0;
+  width: 12px;
+  display: inline-block;
+  text-align: center;
+}
+
+.cat-label { flex: 1; }
+
+.cat-count {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* ── 브랜드 그룹 목록 ── */
+.group-list {
+  list-style: none;
+  padding: 0 6px 4px 6px;
+}
+
 .group-block {
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .group-head {
@@ -113,6 +160,10 @@ body { background: var(--bg); min-height: 100vh; }
   outline: 1px solid var(--border);
 }
 
+.group-head.disabled .brand-name {
+  color: var(--muted);
+}
+
 .btn-fold {
   width: 24px;
   height: 32px;
@@ -121,7 +172,7 @@ body { background: var(--bg); min-height: 100vh; }
   background: transparent;
   color: var(--muted);
   cursor: pointer;
-  font-size: 12px;
+  font-size: 11px;
   padding: 0;
 }
 
@@ -132,7 +183,7 @@ body { background: var(--bg); min-height: 100vh; }
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  padding: 8px 8px 8px 4px;
+  padding: 7px 8px 7px 4px;
   border: none;
   background: transparent;
   color: var(--text);
@@ -146,11 +197,17 @@ body { background: var(--bg); min-height: 100vh; }
   font-size: 13px;
 }
 
+/* ── 브랜드 안 아이템 목록 ── */
+.item-list {
+  list-style: none;
+  padding: 0;
+}
+
 .category-row {
   display: flex;
   align-items: center;
   gap: 2px;
-  margin-left: 20px;
+  margin-left: 22px;
   padding-right: 4px;
   border-radius: 8px;
 }
@@ -160,6 +217,11 @@ body { background: var(--bg); min-height: 100vh; }
   outline: 1px solid var(--border);
 }
 
+.category-row.disabled .category-name {
+  color: var(--muted);
+  opacity: 0.6;
+}
+
 .category-item {
   flex: 1;
   min-width: 0;
@@ -167,12 +229,12 @@ body { background: var(--bg); min-height: 100vh; }
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  padding: 8px 8px 8px 4px;
+  padding: 6px 8px 6px 4px;
   border: none;
   background: transparent;
   color: var(--text);
   font: inherit;
-  font-size: 13px;
+  font-size: 12px;
   cursor: pointer;
   text-align: left;
 }
@@ -187,6 +249,46 @@ body { background: var(--bg); min-height: 100vh; }
 .brand-count.sm {
   font-size: 11px;
   padding: 1px 6px;
+}
+
+/* ── 드래그&드롭 ── */
+.group-head[draggable] {
+  cursor: grab;
+}
+
+.group-head.dragging {
+  opacity: 0.4;
+}
+
+.cat-header.drop-target {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  outline: 1px dashed #666;
+  color: var(--text);
+}
+
+.drop-hint {
+  margin-left: auto;
+  font-size: 10px;
+  color: #888;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  white-space: nowrap;
+}
+
+/* 미지원 배지 */
+.badge-unsupported {
+  background: #2a2010;
+  color: #b8860b;
+  border: 1px solid #3a3010;
+  border-radius: 4px;
+  padding: 1px 8px;
+  font-size: 11px;
+}
+
+.table-empty.unsupported {
+  color: #b8860b;
 }
 
 .btn-icon {

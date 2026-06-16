@@ -10,7 +10,6 @@ import {
   updateBrand,
 } from './api'
 
-// SIMPLE_COLUMN_LABELS 와 동기화 (백엔드 csv_schema.py 참조)
 const ALL_COLUMNS = [
   '이미지', '상품명', '브랜드', '카테고리', '성별',
   '정상가', '판매가', '할인율', '컬러', '소재',
@@ -20,6 +19,15 @@ const ALL_COLUMNS = [
 ]
 const IMAGE_COL = '이미지'
 const LINK_COL = '상품링크'
+
+const CATEGORY_ORDER = ['SPA', '명품', '신진해외브랜드', '디자이너브랜드', '보세브랜드']
+const CATEGORY_LABELS = {
+  'SPA': 'SPA',
+  '명품': '명품',
+  '신진해외브랜드': '신진해외브랜드',
+  '디자이너브랜드': '디자이너브랜드',
+  '보세브랜드': '보세브랜드',
+}
 
 function formatLastCrawled(at) {
   if (!at) return '미수집'
@@ -40,23 +48,47 @@ function groupSlug(group) {
   )
 }
 
-function buildGroups(brands) {
-  const map = new Map()
+// 3단 계층: category → brand groups → items
+function buildCategoryTree(brands) {
+  const catMap = new Map()
+
   for (const brand of brands) {
-    const group = brand.group || brand.name
-    if (!map.has(group)) map.set(group, [])
-    map.get(group).push(brand)
+    const cat = brand.category || '기타'
+    if (!catMap.has(cat)) catMap.set(cat, new Map())
+    const groupMap = catMap.get(cat)
+    const grp = brand.group || brand.name
+    if (!groupMap.has(grp)) groupMap.set(grp, [])
+    groupMap.get(grp).push(brand)
   }
-  return [...map.entries()].map(([group, items]) => ({
+
+  const result = []
+  const seen = new Set()
+
+  for (const cat of CATEGORY_ORDER) {
+    if (catMap.has(cat)) {
+      seen.add(cat)
+      result.push({ category: cat, groups: buildGroupList(catMap.get(cat), cat) })
+    }
+  }
+  for (const [cat, groupMap] of catMap) {
+    if (!seen.has(cat)) {
+      result.push({ category: cat, groups: buildGroupList(groupMap, cat) })
+    }
+  }
+  return result
+}
+
+function buildGroupList(groupMap, categoryName) {
+  return [...groupMap.entries()].map(([group, items]) => ({
     group,
-    slug: groupSlug(group),
+    // gid: category+group 조합으로 전역 고유키 보장 (한글 브랜드명도 안전)
+    gid: `${categoryName}||${group}`,
+    slug: groupSlug(group),  // API 호출용 (영문 브랜드만 의미있음)
     items,
     totalCount: items.reduce((s, b) => s + (b.product_count ?? 0), 0),
-    lastCrawled: items
-      .map((b) => b.last_crawled_at)
-      .filter(Boolean)
-      .sort()
-      .pop(),
+    lastCrawled: items.map((b) => b.last_crawled_at).filter(Boolean).sort().pop(),
+    hasCrawlable: items.some((b) => b.crawlable),
+    enabled: items.some((b) => b.enabled),
   }))
 }
 
@@ -94,7 +126,8 @@ export default function App() {
   const [loading, setLoading] = useState(true)
   const [crawlingId, setCrawlingId] = useState(null)
   const [crawlingGroup, setCrawlingGroup] = useState(null)
-  const [expanded, setExpanded] = useState({})
+  const [expandedCats, setExpandedCats] = useState({})
+  const [expandedGroups, setExpandedGroups] = useState({})
   const [showAdd, setShowAdd] = useState(false)
   const [showEdit, setShowEdit] = useState(false)
   const [form, setForm] = useState({ group: '', name: '', url: '' })
@@ -102,13 +135,22 @@ export default function App() {
   const [message, setMessage] = useState('')
   const [error, setError] = useState('')
   const [crawlProgress, setCrawlProgress] = useState('')
+  const [dragGroup, setDragGroup] = useState(null)   // 드래그 중인 그룹 {gid, group, items}
+  const [dropTarget, setDropTarget] = useState(null)  // 드롭 hover 중인 카테고리명
 
-  const groups = useMemo(() => buildGroups(brands), [brands])
+  const categoryTree = useMemo(() => buildCategoryTree(brands), [brands])
 
   const selectedBrand =
     selection?.type === 'brand' ? brands.find((b) => b.id === selection.id) : null
-  const selectedGroup =
-    selection?.type === 'group' ? groups.find((g) => g.slug === selection.slug) : null
+
+  const selectedGroup = useMemo(() => {
+    if (selection?.type !== 'group') return null
+    for (const catNode of categoryTree) {
+      const g = catNode.groups.find((g) => g.gid === selection.gid)
+      if (g) return g
+    }
+    return null
+  }, [selection, categoryTree])
 
   const refresh = useCallback(async (keepSelection = true) => {
     const data = await fetchBrands()
@@ -120,13 +162,10 @@ export default function App() {
   }, [selection])
 
   const loadPreview = useCallback(async (sel) => {
-    if (!sel) {
-      setPreview(null)
-      return
-    }
+    if (!sel) { setPreview(null); return }
     try {
       if (sel.type === 'group') {
-        const data = await fetchGroupPreview(sel.slug)
+        const data = await fetchGroupPreview(sel.apiSlug)
         setPreview(data)
       } else {
         const data = await fetchPreview(sel.id)
@@ -141,17 +180,23 @@ export default function App() {
     fetchBrands()
       .then((data) => {
         setBrands(data.brands)
-        const gs = buildGroups(data.brands)
-        const exp = {}
-        for (const g of gs) exp[g.slug] = true
-        setExpanded(exp)
-        if (gs.length) {
-          const first = gs[0]
-          setSelection(
-            first.items.length > 1
-              ? { type: 'group', slug: first.slug }
-              : { type: 'brand', id: first.items[0].id }
-          )
+        // 모든 카테고리 기본 열기
+        const tree = buildCategoryTree(data.brands)
+        const cats = {}
+        const grps = {}
+        for (const catNode of tree) {
+          cats[catNode.category] = true
+          for (const g of catNode.groups) grps[g.gid] = false // 기본 접힘
+        }
+        setExpandedCats(cats)
+        setExpandedGroups(grps)
+        // 첫 번째 enabled 브랜드 자동 선택
+        const firstEnabled = data.brands.find((b) => b.enabled && b.has_csv)
+        if (firstEnabled) {
+          setSelection({ type: 'brand', id: firstEnabled.id })
+          const cat = firstEnabled.category || '기타'
+          const grpGid = `${cat}||${firstEnabled.group || firstEnabled.name}`
+          setExpandedGroups((prev) => ({ ...prev, [grpGid]: true }))
         }
       })
       .catch((err) => setError(err.message))
@@ -163,11 +208,7 @@ export default function App() {
   }, [selection, loadPreview])
 
   const openEdit = (brand) => {
-    setEditForm({
-      group: brand.group || '',
-      name: brand.name,
-      url: brand.default_url,
-    })
+    setEditForm({ group: brand.group || '', name: brand.name, url: brand.default_url })
     setShowEdit(true)
     setSelection({ type: 'brand', id: brand.id })
   }
@@ -180,20 +221,15 @@ export default function App() {
       setForm({ group: '', name: '', url: '' })
       setShowAdd(false)
       setSelection({ type: 'brand', id: brand.id })
-      setExpanded((prev) => ({ ...prev, [groupSlug(brand.group || brand.name)]: true }))
       await refresh(false)
       if (brand.crawlable && brand.crawl_started) {
         setCrawlingId(brand.id)
         setMessage(`「${brand.group} · ${brand.name}」 추가됨 — 크롤링 시작`)
         try {
-          const result = await waitForCrawl(
-            brand.id,
-            (job) => {
-              setCrawlProgress(job.message || '')
-              setMessage(job.message || '수집 중…')
-            },
-            { start: false }
-          )
+          const result = await waitForCrawl(brand.id, (job) => {
+            setCrawlProgress(job.message || '')
+            setMessage(job.message || '수집 중…')
+          }, { start: false })
           setMessage(`「${brand.group} · ${brand.name}」 ${result.count}개 수집 완료`)
           await refresh()
           await loadPreview({ type: 'brand', id: brand.id })
@@ -256,11 +292,8 @@ export default function App() {
       })
       setMessage(`「${brand.group} · ${brand.name}」 ${result.count}개로 업데이트`)
       await refresh()
-      if (selection?.type === 'brand' && selection.id === brandId) {
-        await loadPreview(selection)
-      } else if (selection?.type === 'group') {
-        await loadPreview(selection)
-      }
+      if (selection?.type === 'brand' && selection.id === brandId) await loadPreview(selection)
+      else if (selection?.type === 'group') await loadPreview(selection)
     } catch (err) {
       setError(err.message)
     } finally {
@@ -274,7 +307,7 @@ export default function App() {
     if (!crawlable.length) return
     setError('')
     setMessage('')
-    setCrawlingGroup(group.slug)
+    setCrawlingGroup(group.gid)
     try {
       let total = 0
       for (const brand of crawlable) {
@@ -287,9 +320,7 @@ export default function App() {
       }
       setMessage(`「${group.group}」 전체 ${total}개로 업데이트`)
       await refresh()
-      if (selection?.slug === group.slug || selection?.type === 'group') {
-        await loadPreview({ type: 'group', slug: group.slug })
-      }
+      if (selection?.type === 'group') await loadPreview({ type: 'group', gid: group.gid, apiSlug: group.slug })
     } catch (err) {
       setError(err.message)
     } finally {
@@ -298,16 +329,49 @@ export default function App() {
     }
   }
 
-  const toggleGroup = (slug) => {
-    setExpanded((prev) => ({ ...prev, [slug]: !prev[slug] }))
+  const toggleCat = (cat) => setExpandedCats((prev) => ({ ...prev, [cat]: !prev[cat] }))
+  const toggleGroup = (gid) => setExpandedGroups((prev) => ({ ...prev, [gid]: !prev[gid] }))
+
+  // ── 드래그&드롭: 브랜드 그룹 → 카테고리 이동 ──
+  const handleDragStart = (e, group) => {
+    setDragGroup(group)
+    e.dataTransfer.effectAllowed = 'move'
+  }
+
+  const handleDragEnd = () => {
+    setDragGroup(null)
+    setDropTarget(null)
+  }
+
+  const handleDragOverCat = (e, cat) => {
+    if (!dragGroup) return
+    e.preventDefault()
+    e.dataTransfer.dropEffect = 'move'
+    setDropTarget(cat)
+  }
+
+  const handleDropOnCat = async (e, targetCat) => {
+    e.preventDefault()
+    setDropTarget(null)
+    if (!dragGroup) return
+    // 같은 카테고리면 무시
+    const currentCat = dragGroup.items[0]?.category
+    if (currentCat === targetCat) { setDragGroup(null); return }
+
+    setError('')
+    try {
+      await Promise.all(dragGroup.items.map((b) => updateBrand(b.id, { category: targetCat })))
+      setMessage(`「${dragGroup.group}」→ ${targetCat} 이동됨`)
+      await refresh()
+    } catch (err) {
+      setError(err.message)
+    } finally {
+      setDragGroup(null)
+    }
   }
 
   if (loading) {
-    return (
-      <div className="app loading">
-        <div className="spinner" />
-      </div>
-    )
+    return <div className="app loading"><div className="spinner" /></div>
   }
 
   const mainTitle = selectedGroup
@@ -325,86 +389,129 @@ export default function App() {
         </div>
 
         <ul className="brand-list">
-          {groups.length === 0 && <li className="brand-empty">브랜드를 추가해주세요</li>}
-          {groups.map((group) => {
-            const isGroupActive = selection?.type === 'group' && selection.slug === group.slug
-            const isOpen = expanded[group.slug] !== false
-            const hasMultiple = group.items.length > 1
-            return (
-              <li key={group.slug} className="group-block">
-                <div className={`group-head ${isGroupActive ? 'active' : ''}`}>
-                  {hasMultiple && (
-                    <button
-                      type="button"
-                      className="btn-fold"
-                      onClick={() => toggleGroup(group.slug)}
-                      aria-label={isOpen ? '접기' : '펼치기'}
-                    >
-                      {isOpen ? '▾' : '▸'}
-                    </button>
-                  )}
-                  <button
-                    type="button"
-                    className="group-title-btn"
-                    onClick={() => setSelection({ type: 'group', slug: group.slug })}
-                  >
-                    <span className="brand-info">
-                      <span className="brand-name">{group.group}</span>
-                      <span className="brand-last">{formatLastCrawled(group.lastCrawled)}</span>
-                    </span>
-                    <span className="brand-count">{group.totalCount}</span>
-                  </button>
-                  {group.items.some((b) => b.crawlable) && (
-                    <button
-                      type="button"
-                      className="btn-refresh"
-                      title="그룹 전체 업데이트"
-                      disabled={crawlingGroup === group.slug}
-                      onClick={() => handleCrawlGroup(group)}
-                    >
-                      <RefreshIcon spinning={crawlingGroup === group.slug} />
-                    </button>
-                  )}
-                </div>
+          {categoryTree.length === 0 && <li className="brand-empty">브랜드를 추가해주세요</li>}
 
-                {isOpen &&
-                  group.items.map((brand) => {
-                    const isActive = selection?.type === 'brand' && selection.id === brand.id
-                    return (
-                      <div key={brand.id} className={`category-row ${isActive ? 'active' : ''}`}>
-                        <button
-                          type="button"
-                          className="category-item"
-                          onClick={() => setSelection({ type: 'brand', id: brand.id })}
-                        >
-                          <span className="brand-info">
-                            <span className="category-name">{brand.name}</span>
-                            <span className="brand-last">{formatLastCrawled(brand.last_crawled_at)}</span>
-                          </span>
-                          <span className="brand-count sm">{brand.product_count ?? 0}</span>
-                        </button>
-                        <button
-                          type="button"
-                          className="btn-icon"
-                          title="수정"
-                          onClick={() => openEdit(brand)}
-                        >
-                          <EditIcon />
-                        </button>
-                        {brand.crawlable && (
-                          <button
-                            type="button"
-                            className="btn-refresh sm"
-                            title="업데이트"
-                            disabled={crawlingId === brand.id}
-                            onClick={() => handleCrawl(brand.id)}
+          {categoryTree.map(({ category, groups }) => {
+            const catOpen = expandedCats[category] !== false
+            return (
+              <li key={category} className="cat-block">
+                {/* 대구분 헤더 */}
+                <button
+                  type="button"
+                  className={`cat-header${dropTarget === category ? ' drop-target' : ''}`}
+                  onClick={() => toggleCat(category)}
+                  onDragOver={(e) => handleDragOverCat(e, category)}
+                  onDragLeave={() => setDropTarget(null)}
+                  onDrop={(e) => handleDropOnCat(e, category)}
+                  aria-expanded={catOpen}
+                >
+                  <span className="cat-arrow">{catOpen ? '▾' : '▸'}</span>
+                  <span className="cat-label">{CATEGORY_LABELS[category] || category}</span>
+                  <span className="cat-count">{groups.reduce((s, g) => s + g.totalCount, 0) || ''}</span>
+                  {dropTarget === category && <span className="drop-hint">여기에 놓기</span>}
+                </button>
+
+                {catOpen && (
+                  <ul className="group-list">
+                    {groups.map((group) => {
+                      const isGroupActive = selection?.type === 'group' && selection.gid === group.gid
+                      const isOpen = expandedGroups[group.gid] !== false
+                      const hasMultiple = group.items.length > 1
+
+                      return (
+                        <li key={group.gid} className="group-block">
+                          <div
+                            className={`group-head ${isGroupActive ? 'active' : ''} ${!group.enabled ? 'disabled' : ''} ${dragGroup?.gid === group.gid ? 'dragging' : ''}`}
+                            draggable
+                            onDragStart={(e) => handleDragStart(e, group)}
+                            onDragEnd={handleDragEnd}
                           >
-                            <RefreshIcon spinning={crawlingId === brand.id} />
-                          </button>
-                        )}
-                      </div>
-                    )
-                  })}
+                            {hasMultiple && (
+                              <button
+                                type="button"
+                                className="btn-fold"
+                                onClick={() => toggleGroup(group.gid)}
+                                aria-label={isOpen ? '접기' : '펼치기'}
+                              >
+                                {isOpen ? '▾' : '▸'}
+                              </button>
+                            )}
+                            <button
+                              type="button"
+                              className="group-title-btn"
+                              onClick={() => {
+                                if (hasMultiple) {
+                                  setSelection({ type: 'group', gid: group.gid, apiSlug: group.slug })
+                                  toggleGroup(group.gid)
+                                } else {
+                                  setSelection({ type: 'brand', id: group.items[0].id })
+                                }
+                              }}
+                            >
+                              <span className="brand-info">
+                                <span className="brand-name">{group.group}</span>
+                                <span className="brand-last">
+                                  {group.enabled ? formatLastCrawled(group.lastCrawled) : '미지원'}
+                                </span>
+                              </span>
+                              <span className="brand-count">{group.totalCount || ''}</span>
+                            </button>
+                            {group.hasCrawlable && (
+                              <button
+                                type="button"
+                                className="btn-refresh"
+                                title="그룹 전체 업데이트"
+                                disabled={crawlingGroup === group.gid}
+                                onClick={() => handleCrawlGroup(group)}
+                              >
+                                <RefreshIcon spinning={crawlingGroup === group.gid} />
+                              </button>
+                            )}
+                          </div>
+
+                          {isOpen && hasMultiple && (
+                            <ul className="item-list">
+                              {group.items.map((brand) => {
+                                const isActive = selection?.type === 'brand' && selection.id === brand.id
+                                return (
+                                  <li key={brand.id} className={`category-row ${isActive ? 'active' : ''} ${!brand.enabled ? 'disabled' : ''}`}>
+                                    <button
+                                      type="button"
+                                      className="category-item"
+                                      onClick={() => setSelection({ type: 'brand', id: brand.id })}
+                                    >
+                                      <span className="brand-info">
+                                        <span className="category-name">{brand.name}</span>
+                                        <span className="brand-last">
+                                          {brand.enabled ? formatLastCrawled(brand.last_crawled_at) : '미지원'}
+                                        </span>
+                                      </span>
+                                      <span className="brand-count sm">{brand.product_count || ''}</span>
+                                    </button>
+                                    <button type="button" className="btn-icon" title="수정" onClick={() => openEdit(brand)}>
+                                      <EditIcon />
+                                    </button>
+                                    {brand.crawlable && (
+                                      <button
+                                        type="button"
+                                        className="btn-refresh sm"
+                                        title="업데이트"
+                                        disabled={crawlingId === brand.id}
+                                        onClick={() => handleCrawl(brand.id)}
+                                      >
+                                        <RefreshIcon spinning={crawlingId === brand.id} />
+                                      </button>
+                                    )}
+                                  </li>
+                                )
+                              })}
+                            </ul>
+                          )}
+                        </li>
+                      )
+                    })}
+                  </ul>
+                )}
               </li>
             )
           })}
@@ -414,7 +521,7 @@ export default function App() {
       <main className="main">
         {!selection ? (
           <div className="empty-main">
-            <p>왼쪽에서 사이트 또는 카테고리를 선택하세요.</p>
+            <p>왼쪽에서 브랜드를 선택하세요.</p>
           </div>
         ) : (
           <>
@@ -445,24 +552,18 @@ export default function App() {
                       {crawlingId === selectedBrand.id ? '업데이트 중…' : '업데이트'}
                     </button>
                     {selectedBrand.has_csv && (
-                      <a className="btn" href={downloadUrl(selectedBrand.id)} download>
-                        CSV
-                      </a>
+                      <a className="btn" href={downloadUrl(selectedBrand.id)} download>CSV</a>
                     )}
-                    <button type="button" className="btn" onClick={() => openEdit(selectedBrand)}>
-                      수정
-                    </button>
-                    <button type="button" className="btn ghost" onClick={handleDelete}>
-                      삭제
-                    </button>
+                    <button type="button" className="btn" onClick={() => openEdit(selectedBrand)}>수정</button>
+                    <button type="button" className="btn ghost" onClick={handleDelete}>삭제</button>
                   </>
                 )}
-                {selectedGroup && selectedGroup.items.some((b) => b.crawlable) && (
+                {selectedGroup && selectedGroup.hasCrawlable && (
                   <button
                     type="button"
                     className="btn primary with-icon"
                     onClick={() => handleCrawlGroup(selectedGroup)}
-                    disabled={crawlingGroup === selectedGroup.slug}
+                    disabled={crawlingGroup === selectedGroup.gid}
                   >
                     <RefreshIcon spinning={crawlingGroup === selectedGroup.slug} />
                     전체 업데이트
@@ -478,12 +579,7 @@ export default function App() {
             {selectedGroup && preview?.categories && (
               <div className="meta category-chips">
                 {preview.categories.map((c) => (
-                  <button
-                    key={c.id}
-                    type="button"
-                    className="chip"
-                    onClick={() => setSelection({ type: 'brand', id: c.id })}
-                  >
+                  <button key={c.id} type="button" className="chip" onClick={() => setSelection({ type: 'brand', id: c.id })}>
                     {c.name} {c.product_count}
                   </button>
                 ))}
@@ -494,6 +590,7 @@ export default function App() {
               <div className="meta">
                 <span>수집 {selectedBrand.product_count ?? 0}개</span>
                 <span>마지막 {selectedBrand.last_crawled_at || '—'}</span>
+                {!selectedBrand.enabled && <span className="badge-unsupported">미지원 사이트</span>}
               </div>
             )}
 
@@ -505,10 +602,14 @@ export default function App() {
             )}
 
             <div className="table-area">
-              {!preview?.rows?.length ? (
+              {!selectedBrand?.enabled ? (
+                <div className="table-empty unsupported">
+                  아직 크롤러가 지원되지 않는 브랜드입니다.
+                </div>
+              ) : !preview?.rows?.length ? (
                 <div className="table-empty">
                   {crawlingId
-                    ? '수집 중입니다. 29CM 대분류는 상품 수가 많아 수십 분 이상 걸릴 수 있습니다.'
+                    ? '수집 중입니다…'
                     : preview?.crawl_job?.status === 'running'
                       ? preview.crawl_job.message || '백그라운드에서 수집 중…'
                       : '업데이트(🔄)를 누르면 결과가 여기에 표시됩니다.'}
@@ -520,11 +621,7 @@ export default function App() {
                 return (
                   <table>
                     <thead>
-                      <tr>
-                        {visibleCols.map((col) => (
-                          <th key={col}>{col}</th>
-                        ))}
-                      </tr>
+                      <tr>{visibleCols.map((col) => <th key={col}>{col}</th>)}</tr>
                     </thead>
                     <tbody>
                       {preview.rows.map((row, i) => (
@@ -557,32 +654,18 @@ export default function App() {
             <h3>카테고리 추가</h3>
             <label>
               사이트 (그룹)
-              <input
-                value={form.group}
-                onChange={(e) => setForm({ ...form, group: e.target.value })}
-                placeholder="예: UNIQLO (비우면 URL에서 자동)"
-              />
+              <input value={form.group} onChange={(e) => setForm({ ...form, group: e.target.value })} placeholder="예: UNIQLO (비우면 URL에서 자동)" />
             </label>
             <label>
               카테고리명
-              <input
-                value={form.name}
-                onChange={(e) => setForm({ ...form, name: e.target.value })}
-                placeholder="예: 여성 상의"
-                required
-              />
+              <input value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} placeholder="예: 여성 상의" required />
             </label>
             <label>
               크롤링 URL
-              <input
-                value={form.url}
-                onChange={(e) => setForm({ ...form, url: e.target.value })}
-                placeholder="https://www.uniqlo.com/kr/ko/women/tops"
-                required
-              />
+              <input value={form.url} onChange={(e) => setForm({ ...form, url: e.target.value })} placeholder="https://www.uniqlo.com/kr/ko/women/tops" required />
             </label>
             <p className="form-hint">
-              ZARA · UNIQLO · H&M · COS · 29CM · THE BARNNET · DIOR · CHANEL · MONCLER · BALENCIAGA URL은 추가 후 자동 크롤링됩니다.
+              ZARA · UNIQLO · H&M · COS · THE BARNNET · DIOR · CHANEL · MONCLER · BALENCIAGA URL은 추가 후 자동 크롤링됩니다.
             </p>
             <div className="modal-actions">
               <button type="button" className="btn ghost" onClick={() => setShowAdd(false)}>취소</button>
@@ -598,27 +681,15 @@ export default function App() {
             <h3>카테고리 수정</h3>
             <label>
               사이트 (그룹)
-              <input
-                value={editForm.group}
-                onChange={(e) => setEditForm({ ...editForm, group: e.target.value })}
-                required
-              />
+              <input value={editForm.group} onChange={(e) => setEditForm({ ...editForm, group: e.target.value })} required />
             </label>
             <label>
               카테고리명
-              <input
-                value={editForm.name}
-                onChange={(e) => setEditForm({ ...editForm, name: e.target.value })}
-                required
-              />
+              <input value={editForm.name} onChange={(e) => setEditForm({ ...editForm, name: e.target.value })} required />
             </label>
             <label>
               크롤링 URL
-              <input
-                value={editForm.url}
-                onChange={(e) => setEditForm({ ...editForm, url: e.target.value })}
-                required
-              />
+              <input value={editForm.url} onChange={(e) => setEditForm({ ...editForm, url: e.target.value })} required />
             </label>
             <div className="modal-actions">
               <button type="button" className="btn ghost" onClick={() => setShowEdit(false)}>취소</button>

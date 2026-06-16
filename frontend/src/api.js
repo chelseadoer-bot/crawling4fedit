@@ -28,11 +28,12 @@ export async function createBrand(name, url, group = '') {
   return res.json()
 }
 
-export async function updateBrand(brandId, { name, url, group } = {}) {
+export async function updateBrand(brandId, { name, url, group, category } = {}) {
   const body = {}
   if (name !== undefined) body.name = name
   if (url !== undefined) body.url = url
   if (group !== undefined) body.group = group
+  if (category !== undefined) body.category = category
   const res = await fetch(`${API}/brands/${brandId}`, {
     method: 'PATCH',
     headers: { 'Content-Type': 'application/json' },

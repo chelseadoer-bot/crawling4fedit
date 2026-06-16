@@ -63,6 +63,12 @@ def load_brands_config() -> list[dict]:
     return data.get("brands", [])
 
 
+def save_brands_config(brands: list[dict]) -> None:
+    CONFIG_DIR.mkdir(parents=True, exist_ok=True)
+    with BRANDS_CONFIG.open("w", encoding="utf-8") as f:
+        json.dump({"brands": brands}, f, ensure_ascii=False, indent=2)
+
+
 GROUP_DISPLAY_NAMES = {
     "zara": "ZARA",
     "uniqlo": "UNIQLO",
@@ -194,6 +200,7 @@ def update_brand(
     name: str | None = None,
     url: str | None = None,
     group: str | None = None,
+    category: str | None = None,
 ) -> dict:
     brands = load_brands_config()
     brand = None
@@ -228,6 +235,9 @@ def update_brand(
         if not group:
             raise ValueError("사이트(그룹)명을 입력해주세요.")
         brand["group"] = group
+
+    if category is not None:
+        brand["category"] = category.strip()
 
     save_brands_config(brands)
     return brand
