@@ -1,4 +1,4 @@
-const API = import.meta.env.VITE_API_URL || '/api'
+const API = import.meta.env.VITE_API_URL || './api'
 
 async function parseError(res) {
   const data = await res.json().catch(() => ({}))
