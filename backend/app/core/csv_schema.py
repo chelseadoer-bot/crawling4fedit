@@ -1,63 +1,120 @@
-"""CSV 컬럼 명세 — alias_map 기반 표준 스키마"""
+"""CSV 컬럼 명세 — 표준 26컬럼 스키마"""
 
+import re
 from datetime import datetime
 
-# ── UI 표시 컬럼 (프론트엔드 테이블용) ──────────────────────────────────────
+# ── 통화 감지 및 포맷 ─────────────────────────────────────────────────────────
+_CURRENCY_SYMBOLS = {
+    "KRW": "₩", "USD": "$", "EUR": "€", "GBP": "£", "JPY": "¥", "CNY": "¥",
+}
+_SYMBOL_TO_CURRENCY = {"₩": "KRW", "$": "USD", "€": "EUR", "£": "GBP", "¥": "JPY"}
+_CURRENCY_KW = {
+    "krw": "KRW", "won": "KRW", "원": "KRW",
+    "usd": "USD", "dollar": "USD",
+    "eur": "EUR", "euro": "EUR",
+    "gbp": "GBP", "pound": "GBP",
+    "jpy": "JPY", "yen": "JPY", "엔": "JPY",
+}
+
+
+def detect_currency(raw: str) -> str:
+    """가격 문자열에서 통화 코드 감지. 기본값 KRW."""
+    if not raw:
+        return "KRW"
+    s = raw.strip()
+    if s and s[0] in _SYMBOL_TO_CURRENCY:
+        return _SYMBOL_TO_CURRENCY[s[0]]
+    sl = s.lower()
+    for kw, code in _CURRENCY_KW.items():
+        if kw in sl:
+            return code
+    return "KRW"
+
+
+def format_price(raw, currency: str = "KRW") -> str:
+    """가격 → 통화 기호 + 천단위 구분 (예: ₩89,900 / $89.90 / ¥9,900).
+    raw가 이미 기호를 포함하면 통화를 재감지해서 재포맷."""
+    if raw is None or raw == "":
+        return ""
+    s = str(raw).strip()
+    if not s:
+        return ""
+    # 기호 포함 입력이면 통화 재감지
+    detected = detect_currency(s)
+    if detected != "KRW" or s[0] in _SYMBOL_TO_CURRENCY:
+        currency = detected
+    sym = _CURRENCY_SYMBOLS.get(currency, "₩")
+    digits = re.sub(r"[^\d.]", "", s)
+    if not digits:
+        return s
+    try:
+        # 소수점 포함 여부
+        if "." in digits:
+            amount = float(digits)
+            return f"{sym}{amount:,.2f}"
+        else:
+            return f"{sym}{int(digits):,}"
+    except ValueError:
+        return s
+
+# ── 표준 26컬럼 (출력 순서 고정) ────────────────────────────────────────────
 SIMPLE_COLUMNS = [
-    "front_images_url",
-    "product_name",
+    "platform",
+    "is_ranking",
+    "rank",
     "brand",
+    "brand_likes",
+    "main_category",
     "category",
     "gender",
-    "regular_price",
-    "current_price",
-    "discount_rate",
-    "color_text",
-    "material",
+    "product_detail_url",
+    "product_name",
+    "color",
+    "color_chip",
+    "thumbnail",
+    "likes",
+    "views",
     "details",
-    "sizes_available",
-    "fit",
-    "length",
-    "sleeve_length",
-    "style",
-    "lining",
-    "thickness",
-    "season",
-    "transparency",
-    "elasticity",
+    "material",
+    "current_price",
+    "regular_price",
+    "discount_rate",
     "rating",
     "reviews",
-    "product_detail_url",
+    "sales",
+    "manufacture_date",
     "crawled_at",
+    "reorder",
 ]
 
 # 한글 레이블 (UI 헤더)
 SIMPLE_COLUMN_LABELS = {
-    "front_images_url":  "이미지",
-    "product_name":      "상품명",
-    "brand":             "브랜드",
-    "category":          "카테고리",
-    "gender":            "성별",
-    "regular_price":     "정상가",
-    "current_price":     "판매가",
-    "discount_rate":     "할인율",
-    "color_text":        "컬러",
-    "material":          "소재",
-    "details":           "상세설명",
-    "sizes_available":   "사이즈",
-    "fit":               "핏",
-    "length":            "기장",
-    "sleeve_length":     "소매길이",
-    "style":             "스타일",
-    "lining":            "안감",
-    "thickness":         "두께감",
-    "season":            "계절감",
-    "transparency":      "비침",
-    "elasticity":        "신축성",
-    "rating":            "평점",
-    "reviews":           "리뷰수",
+    "platform":           "플랫폼",
+    "is_ranking":         "랭킹여부",
+    "rank":               "순위",
+    "brand":              "브랜드",
+    "brand_likes":        "브랜드좋아요",
+    "main_category":      "메인카테고리",
+    "category":           "카테고리",
+    "gender":             "성별",
     "product_detail_url": "상품링크",
-    "crawled_at":        "수집일시",
+    "product_name":       "상품명",
+    "color":              "컬러",
+    "color_chip":         "컬러칩",
+    "thumbnail":          "이미지",
+    "likes":              "좋아요",
+    "views":              "조회수",
+    "details":            "상세설명",
+    "material":           "소재",
+    "current_price":      "판매가",
+    "regular_price":      "정상가",
+    "discount_rate":      "할인율",
+    "rating":             "평점",
+    "reviews":            "리뷰수",
+    "sales":              "판매량",
+    "manufacture_date":   "제조일",
+    "crawled_at":         "수집일",
+    "reorder":            "재입고차수",
 }
 
 # ── CSV 출력 컬럼 (파일 저장용) ──────────────────────────────────────────────
@@ -155,8 +212,27 @@ def _clean(v) -> str:
     return s
 
 
+_GENDER_KO = {
+    "women": "여성", "woman": "여성", "female": "여성", "ladies": "여성",
+    "men": "남성", "man": "남성", "male": "남성", "mens": "남성",
+    "kids": "공용", "unisex": "공용", "공용": "공용",
+    "여성": "여성", "남성": "남성",
+}
+
+
+def normalize_gender(v: str) -> str:
+    if not v:
+        return ""
+    return _GENDER_KO.get(v.strip().lower(), v.strip())
+
+
 def empty_row() -> dict:
-    return {col: "" for col in STANDARD_COLUMNS}
+    return {col: "" for col in SIMPLE_COLUMNS}
+
+
+def today_yymmdd() -> str:
+    """크롤링 날짜 YYMMDD (예: 260617)"""
+    return datetime.now().strftime("%y%m%d")
 
 
 def now_timestamp() -> str:
@@ -167,14 +243,37 @@ def today_str() -> str:
     return datetime.now().strftime("%Y%m%d")
 
 
+def make_product_row(currency: str = "KRW", **kwargs) -> dict:
+    """표준 26컬럼 행 생성.
+    - gender 한글 변환
+    - discount_rate 자동 계산 (current < regular 일 때)
+    - current_price / regular_price → 통화 기호 + 천단위 포맷 (예: ₩89,900)
+    """
+    row = empty_row()
+    row["is_ranking"] = "false"
+    for k, v in kwargs.items():
+        if k in row:
+            row[k] = _clean(v)
+    if row["gender"]:
+        row["gender"] = normalize_gender(row["gender"])
+
+    # discount_rate 자동 계산 (포맷 전 숫자 상태에서)
+    if not row["discount_rate"] and row["current_price"] and row["regular_price"]:
+        try:
+            c = int(re.sub(r"[^\d]", "", row["current_price"]))
+            r = int(re.sub(r"[^\d]", "", row["regular_price"]))
+            if r > 0 and c < r:
+                row["discount_rate"] = str(round((r - c) / r * 100))
+        except (ValueError, ZeroDivisionError):
+            pass
+
+    # 가격 통화 포맷 적용
+    for field in ("current_price", "regular_price"):
+        if row[field]:
+            row[field] = format_price(row[field], currency)
+
+    return row
+
+
 def format_price_krw(price) -> str:
-    if price is None or price == "":
-        return ""
-    if isinstance(price, str):
-        digits = "".join(ch for ch in price if ch.isdigit())
-        if not digits:
-            return price
-        return f"₩ {int(digits):,}"
-    if isinstance(price, (int, float)):
-        return f"₩ {int(price):,}"
-    return str(price)
+    return format_price(price, "KRW")

@@ -8,7 +8,7 @@ from playwright.sync_api import sync_playwright
 
 from app.brands.base import BaseBrandCrawler
 from app.brands.browser_utils import dismiss_popups, launch_browser, new_stealth_context
-from app.core.csv_schema import empty_row, now_timestamp
+from app.core.csv_schema import make_product_row, today_yymmdd
 
 CATEGORY_API_MAP = {
     "all-ready-to-wear": "diorcom_femme_pretaporter_tout",
@@ -34,6 +34,7 @@ def parse_api_product(prod: dict, crawled_at: str) -> dict | None:
             break
     if not price and isinstance(prod.get("price"), dict):
         price = str(prod["price"].get("value") or prod["price"].get("formatted") or "")
+    price_clean = re.sub(r"[^\d]", "", price) or price
 
     image = ""
     for key in ("uri", "image", "imageUrl", "thumbnail"):
@@ -46,32 +47,24 @@ def parse_api_product(prod: dict, crawled_at: str) -> dict | None:
             image = imgs[0].get("uri") or imgs[0].get("url") or ""
         elif isinstance(imgs, dict):
             image = next(iter(imgs.values()), {}).get("uri", "") if imgs else ""
+    img = image if str(image).startswith("http") else (f"https:{image}" if str(image).startswith("//") else "")
 
-    color = prod.get("subtitle") or prod.get("color") or ""
-    sku = prod.get("sku") or prod.get("code") or prod.get("backend_sku") or prod.get("id") or ""
     url = prod.get("url") or prod.get("productUrl") or ""
+    full_url = url if url.startswith("http") else (f"https://www.dior.com{url}" if url else "")
 
-    row = empty_row()
-    row.update(
-        {
-            "brand": "DIOR",
-            "product_id": str(sku),
-            "product_name": title,
-            "category_large": "여성 RTW",
-            "category_small": "",
-            "price_original": price,
-            "price_sale": "",
-            "discount_rate": "",
-            "color": color,
-            "sizes_available": "",
-            "stock_status": prod.get("status", "unknown"),
-            "product_url": url if url.startswith("http") else f"https://www.dior.com{url}" if url else "",
-            "image_url": image if image.startswith("http") else f"https:{image}" if image.startswith("//") else image,
-            "crawled_at": crawled_at,
-            "source_site": "dior.com",
-        }
+    return make_product_row(
+        brand="Dior",
+        main_category="명품",
+        category="여성 RTW",
+        gender="여성",
+        product_name=title,
+        regular_price=price_clean,
+        current_price=price_clean,
+        color=prod.get("subtitle") or prod.get("color") or "",
+        thumbnail=img,
+        product_detail_url=full_url,
+        crawled_at=crawled_at,
     )
-    return row
 
 
 def parse_api_payload(payload: dict, crawled_at: str) -> list[dict]:
@@ -97,7 +90,7 @@ def parse_api_payload(payload: dict, crawled_at: str) -> list[dict]:
         row = parse_api_product(prod, crawled_at)
         if not row:
             continue
-        key = row["product_id"] or row["product_name"]
+        key = row.get("product_detail_url") or row.get("product_name")
         if key in seen:
             continue
         seen.add(key)
@@ -128,27 +121,18 @@ def extract_from_dom(page, crawled_at: str) -> list[dict]:
         if key in seen:
             continue
         seen.add(key)
-        row = empty_row()
-        row.update(
-            {
-                "brand": "DIOR",
-                "product_id": re.search(r"/products/([^/?#]+)", item["href"]).group(1) if re.search(r"/products/", item["href"]) else "",
-                "product_name": item.get("name", ""),
-                "category_large": "여성 RTW",
-                "category_small": "",
-                "price_original": item.get("price", ""),
-                "price_sale": "",
-                "discount_rate": "",
-                "color": "",
-                "sizes_available": "",
-                "stock_status": "unknown",
-                "product_url": item.get("href", ""),
-                "image_url": item.get("img", ""),
-                "crawled_at": crawled_at,
-                "source_site": "dior.com",
-            }
-        )
-        products.append(row)
+        products.append(make_product_row(
+            brand="Dior",
+            main_category="명품",
+            category="여성 RTW",
+            gender="여성",
+            product_name=item.get("name", ""),
+            regular_price=item.get("price", ""),
+            current_price=item.get("price", ""),
+            thumbnail=item.get("img", ""),
+            product_detail_url=item.get("href", ""),
+            crawled_at=crawled_at,
+        ))
     return products
 
 
@@ -175,12 +159,12 @@ class DiorCrawler(BaseBrandCrawler):
             "https://www.dior.com/ko_kr/fashion/womens-fashion/ready-to-wear/all-ready-to-wear"
         )
         category_id = extract_category_id(target_url)
-        crawled_at = now_timestamp()
+        crawled_at = today_yymmdd()
         api_products: list[dict] = []
         captured_payloads: list[dict] = []
 
         with sync_playwright() as p:
-            browser = launch_browser(p, headless=False)
+            browser = launch_browser(p, headless=headless)
             context, page = new_stealth_context(browser)
 
             def on_response(response):
@@ -255,7 +239,7 @@ class DiorCrawler(BaseBrandCrawler):
         deduped = []
         seen = set()
         for row in products:
-            key = row.get("product_id") or row.get("product_name")
+            key = row.get("product_detail_url") or row.get("product_name")
             if key in seen:
                 continue
             seen.add(key)

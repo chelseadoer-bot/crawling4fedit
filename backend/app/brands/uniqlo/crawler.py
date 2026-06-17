@@ -6,7 +6,7 @@ import urllib.request
 from urllib.parse import parse_qs, urlencode, urlparse
 
 from app.brands.base import BaseBrandCrawler
-from app.core.csv_schema import empty_row, now_timestamp
+from app.core.csv_schema import make_product_row, today_yymmdd
 
 PRODUCTS_API = "https://www.uniqlo.com/kr/api/commerce/v5/ko/products"
 LIMIT = 36
@@ -125,39 +125,30 @@ def get_length(item: dict) -> str:
 def item_to_row(item: dict, crawled_at: str) -> dict:
     product_id = item.get("productId") or ""
     name = item.get("name") or ""
-    row = empty_row()
     img = get_image(item)
     if img and not img.startswith("http"):
         img = "https:" + img if img.startswith("//") else ""
     price = get_price(item)
-    row.update(
-        {
-            "brand": "UNIQLO",
-            "product_name": name,
-            "category": item.get("subCategoryName") or item.get("categoryName") or item.get("genderName") or "",
-            "gender": item.get("genderName") or "",
-            "regular_price": price,
-            "current_price": price,
-            "discount_rate": "",
-            "color_text": get_colors(item),
-            "color_chip": "",
-            "color_classification_url": "",
-            "front_images_url": img,
-            "material": get_material(item),
-            "details": "",
-            "rating": str(item.get("rating") or ""),
-            "reviews": str(item.get("reviewCount") or item.get("numReviews") or ""),
-            "product_detail_url": f"https://www.uniqlo.com/kr/ko/products/{product_id}/00" if product_id else "",
-            "sizes_available": get_sizes(item),
-            "fit": get_fit(item),
-            "length": get_length(item),
-            "sleeve_length": "",
-            "style": "",
-            "crawled_at": crawled_at,
-            "source_site": "uniqlo.com",
-        }
+    # fit/length → details로 통합
+    fit = get_fit(item)
+    length = get_length(item)
+    details_parts = [p for p in [fit, length] if p]
+    return make_product_row(
+        brand="UNIQLO",
+        product_name=name,
+        category=item.get("subCategoryName") or item.get("categoryName") or "",
+        gender=item.get("genderName") or "",
+        regular_price=price,
+        current_price=price,
+        color=get_colors(item),
+        thumbnail=img,
+        material=get_material(item),
+        details=" | ".join(details_parts),
+        rating=str(item.get("rating") or ""),
+        reviews=str(item.get("reviewCount") or item.get("numReviews") or ""),
+        product_detail_url=f"https://www.uniqlo.com/kr/ko/products/{product_id}/00" if product_id else "",
+        crawled_at=crawled_at,
     )
-    return row
 
 
 class UniqloCrawler(BaseBrandCrawler):
@@ -168,7 +159,7 @@ class UniqloCrawler(BaseBrandCrawler):
     def crawl(self, url: str | None = None, headless: bool = True) -> list[dict]:
         target_url = url or "https://www.uniqlo.com/kr/ko/women/tops"
         base_params = parse_uniqlo_params(target_url)
-        crawled_at = now_timestamp()
+        crawled_at = today_yymmdd()
         products: list[dict] = []
         seen: set[str] = set()
         offset = 0

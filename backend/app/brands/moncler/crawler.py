@@ -7,7 +7,7 @@ from playwright.sync_api import sync_playwright
 
 from app.brands.base import BaseBrandCrawler
 from app.brands.browser_utils import dismiss_popups, launch_browser, new_stealth_context
-from app.core.csv_schema import empty_row, now_timestamp
+from app.core.csv_schema import make_product_row, today_yymmdd
 
 BASE = "https://www.moncler.com"
 DEFAULT_URL = "https://www.moncler.com/ko-kr/women/ready-to-wear"
@@ -88,27 +88,19 @@ def parse_product(prod: dict, crawled_at: str) -> dict | None:
     price = parse_price(prod)
     price_digits = re.sub(r"[^\d]", "", price)
 
-    row = empty_row()
-    row.update(
-        {
-            "brand": "MONCLER",
-            "product_id": pid,
-            "product_name": name,
-            "category_large": "women",
-            "category_small": "ready-to-wear",
-            "price_original": price_digits or price,
-            "price_sale": "",
-            "discount_rate": "",
-            "color": parse_color(prod),
-            "sizes_available": "",
-            "stock_status": "unknown",
-            "product_url": product_url,
-            "image_url": parse_image(prod),
-            "crawled_at": crawled_at,
-            "source_site": "moncler.com",
-        }
+    return make_product_row(
+        brand="MONCLER",
+        main_category="명품",
+        category="여성 RTW",
+        gender="여성",
+        product_name=name,
+        regular_price=price_digits or price,
+        current_price=price_digits or price,
+        color=parse_color(prod),
+        thumbnail=parse_image(prod),
+        product_detail_url=product_url,
+        crawled_at=crawled_at,
     )
-    return row
 
 
 def ingest_search_payload(payload: dict, crawled_at: str, seen: set[str], out: list[dict]) -> int:
@@ -123,7 +115,7 @@ def ingest_search_payload(payload: dict, crawled_at: str, seen: set[str], out: l
         row = parse_product(prod, crawled_at)
         if not row:
             continue
-        key = row["product_id"]
+        key = row.get("product_detail_url") or row.get("product_name")
         if key in seen:
             continue
         seen.add(key)
@@ -145,7 +137,7 @@ class MonclerCrawler(BaseBrandCrawler):
     ) -> list[dict]:
         target_url = url or DEFAULT_URL
         cgid = extract_cgid(target_url)
-        crawled_at = now_timestamp()
+        crawled_at = today_yymmdd()
         captured: list[dict] = []
         all_products: list[dict] = []
         seen: set[str] = set()
@@ -179,7 +171,6 @@ class MonclerCrawler(BaseBrandCrawler):
                 if on_progress:
                     on_progress(len(all_products), i + 1)
 
-            # API 직접 페이지네이션 (스크롤로 못 받은 경우)
             start = 0
             total = None
             while True:
@@ -220,30 +211,24 @@ class MonclerCrawler(BaseBrandCrawler):
                     .map(a => ({
                       href: a.href,
                       name: (a.innerText||'').trim().split('\\n')[0],
-                      img: a.querySelector('img')?.src || ''
+                      img: (() => { const i = a.querySelector('img'); return i?.currentSrc || i?.src || i?.dataset?.src || i?.getAttribute('data-src') || ''; })()
                     })).filter(x => x.name.length > 2)"""
                 )
                 for item in dom:
-                    m = re.search(r"(L\d{5,}[A-Z0-9]+)", item["href"])
-                    pid = m.group(1) if m else item["href"]
-                    if pid in seen:
+                    key = item["href"]
+                    if key in seen:
                         continue
-                    seen.add(pid)
-                    row = empty_row()
-                    row.update(
-                        {
-                            "brand": "MONCLER",
-                            "product_id": pid,
-                            "product_name": item["name"],
-                            "category_large": "women",
-                            "category_small": "ready-to-wear",
-                            "product_url": item["href"],
-                            "image_url": item.get("img", ""),
-                            "crawled_at": crawled_at,
-                            "source_site": "moncler.com",
-                        }
-                    )
-                    all_products.append(row)
+                    seen.add(key)
+                    all_products.append(make_product_row(
+                        brand="MONCLER",
+                        main_category="명품",
+                        category="여성 RTW",
+                        gender="여성",
+                        product_name=item["name"],
+                        thumbnail=item.get("img", ""),
+                        product_detail_url=item["href"],
+                        crawled_at=crawled_at,
+                    ))
 
             browser.close()
 

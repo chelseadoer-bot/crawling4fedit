@@ -9,7 +9,7 @@ from playwright.sync_api import sync_playwright
 
 from app.brands.base import BaseBrandCrawler
 from app.brands.browser_utils import dismiss_popups, launch_browser, new_stealth_context
-from app.core.csv_schema import empty_row, now_timestamp
+from app.core.csv_schema import make_product_row, today_yymmdd
 
 GRID_API = (
     "https://www.balenciaga.com/on/demandware.store/Sites-BAL-R-APAC-Site/ko_KR/"
@@ -51,35 +51,28 @@ def parse_gtm_products(fragment: str, crawled_at: str) -> list[dict]:
             continue
         pid = str(data.get("id") or "")
         name = data.get("name") or data.get("productName") or ""
-        if not pid or not name or pid in seen:
+        if not name or pid in seen:
             continue
-        seen.add(pid)
+        seen.add(pid or name)
         price = str(data.get("price") or data.get("salePrice") or data.get("unitPrice") or "")
+        price_clean = re.sub(r"[^\d]", "", price) or price
         prod_url = data.get("url") or data.get("productUrl") or ""
         if prod_url and not prod_url.startswith("http"):
             prod_url = "https://www.balenciaga.com" + prod_url
         image = data.get("image") or data.get("imageUrl") or ""
-        row = empty_row()
-        row.update(
-            {
-                "brand": "BALENCIAGA",
-                "product_id": pid,
-                "product_name": name,
-                "category_large": data.get("category") or "",
-                "category_small": "",
-                "price_original": re.sub(r"[^\d]", "", price) or price,
-                "price_sale": "",
-                "discount_rate": "",
-                "color": data.get("variant") or data.get("color") or "",
-                "sizes_available": "",
-                "stock_status": "unknown",
-                "product_url": prod_url,
-                "image_url": image if str(image).startswith("http") else "",
-                "crawled_at": crawled_at,
-                "source_site": "balenciaga.com",
-            }
-        )
-        products.append(row)
+        products.append(make_product_row(
+            brand="BALENCIAGA",
+            main_category="명품",
+            gender="여성",
+            product_name=name,
+            category=data.get("category") or "",
+            regular_price=price_clean,
+            current_price=price_clean,
+            color=data.get("variant") or data.get("color") or "",
+            thumbnail=image if str(image).startswith("http") else "",
+            product_detail_url=prod_url,
+            crawled_at=crawled_at,
+        ))
     return products
 
 
@@ -95,7 +88,7 @@ def parse_dom_products(page, crawled_at: str) -> list[dict]:
             const name = el.querySelector('.name, .product-name, h2, h3')?.innerText?.trim()
                 || el.getAttribute('data-product-name') || '';
             const price = el.innerText.match(/₩[\\d,]+/)?.[0] || '';
-            if (name && a) out.push({ type: 'dom', name, href: a.href, price, img: el.querySelector('img')?.src || '' });
+            if (name && a) { const i = el.querySelector('img'); out.push({ type: 'dom', name, href: a.href, price, img: i?.currentSrc || i?.src || i?.dataset?.src || i?.getAttribute('data-src') || '' }); }
         }
         return out;
     }"""
@@ -106,28 +99,27 @@ def parse_dom_products(page, crawled_at: str) -> list[dict]:
         if item.get("type") == "gtm":
             batch = parse_gtm_products(f'data-gtmproduct="{item["gtm"]}"', crawled_at)
             for row in batch:
-                if row["product_id"] not in seen:
-                    seen.add(row["product_id"])
+                key = row.get("product_detail_url") or row.get("product_name")
+                if key not in seen:
+                    seen.add(key)
                     products.append(row)
         elif item.get("name"):
             key = item.get("href", item["name"])
             if key in seen:
                 continue
             seen.add(key)
-            row = empty_row()
-            row.update(
-                {
-                    "brand": "BALENCIAGA",
-                    "product_id": re.search(r"/(\d+)", item.get("href", "")).group(1) if re.search(r"/(\d+)", item.get("href", "")) else "",
-                    "product_name": item["name"],
-                    "price_original": re.sub(r"[^\d]", "", item.get("price", "")),
-                    "product_url": item.get("href", ""),
-                    "image_url": item.get("img", ""),
-                    "crawled_at": crawled_at,
-                    "source_site": "balenciaga.com",
-                }
-            )
-            products.append(row)
+            price_clean = re.sub(r"[^\d]", "", item.get("price", ""))
+            products.append(make_product_row(
+                brand="BALENCIAGA",
+                main_category="명품",
+                gender="여성",
+                product_name=item["name"],
+                regular_price=price_clean,
+                current_price=price_clean,
+                thumbnail=item.get("img", ""),
+                product_detail_url=item.get("href", ""),
+                crawled_at=crawled_at,
+            ))
     return products
 
 
@@ -147,7 +139,7 @@ class BalenciagaCrawler(BaseBrandCrawler):
             "%EC%97%AC%EC%84%B1-%EB%A0%88%EB%94%94-%ED%88%AC-%EC%9B%A8%EC%96%B4"
         )
         cgid = extract_cgid(target_url)
-        crawled_at = now_timestamp()
+        crawled_at = today_yymmdd()
         all_products: list[dict] = []
         seen: set[str] = set()
 
@@ -160,13 +152,12 @@ class BalenciagaCrawler(BaseBrandCrawler):
 
             def merge_batch(batch: list[dict]) -> None:
                 for row in batch:
-                    key = row["product_id"] or row["product_name"]
+                    key = row.get("product_detail_url") or row.get("product_name")
                     if key in seen:
                         continue
                     seen.add(key)
                     all_products.append(row)
 
-            # 초기 페이지 + 스크롤
             merge_batch(parse_gtm_products(page.content(), crawled_at))
             merge_batch(parse_dom_products(page, crawled_at))
 
@@ -193,7 +184,6 @@ class BalenciagaCrawler(BaseBrandCrawler):
                 if on_progress:
                     on_progress(len(all_products), round_i + 1)
 
-            # API 페이지네이션
             start = 0
             while start < 5000:
                 api_url = GRID_API.format(cgid=cgid, start=start, size=PAGE_SIZE)

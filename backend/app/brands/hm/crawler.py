@@ -10,20 +10,14 @@ from playwright.sync_api import sync_playwright
 
 from app.brands.base import BaseBrandCrawler
 from app.brands.browser_utils import dismiss_popups, launch_browser, new_stealth_context
-from app.core.csv_schema import empty_row, now_timestamp
+from app.core.csv_schema import make_product_row, today_yymmdd
 
 
 def parse_hm_product(prod: dict, crawled_at: str) -> dict | None:
     title = prod.get("title") or prod.get("productName") or prod.get("name") or ""
     if not title:
         return None
-    pid = str(
-        prod.get("articleCode")
-        or prod.get("productId")
-        or prod.get("id")
-        or prod.get("code")
-        or ""
-    )
+    pid = str(prod.get("articleCode") or prod.get("productId") or prod.get("id") or prod.get("code") or "")
     price = ""
     prices = prod.get("prices") or prod.get("price") or {}
     if isinstance(prices, dict):
@@ -33,39 +27,27 @@ def parse_hm_product(prod: dict, crawled_at: str) -> dict | None:
     image = ""
     images = prod.get("images") or prod.get("image") or []
     if isinstance(images, list) and images:
-        image = images[0].get("url") or images[0].get("src") or images[0] if isinstance(images[0], str) else ""
+        image = images[0].get("url") or images[0].get("src") or (images[0] if isinstance(images[0], str) else "")
     elif isinstance(images, dict):
         image = images.get("url") or images.get("src") or ""
     url = prod.get("url") or prod.get("link") or ""
     if pid and not url:
         url = f"https://www2.hm.com/ko_kr/productpage.{pid}.html"
-    img = image if str(image).startswith("http") else ""
-    if not img and str(image).startswith("//"):
-        img = "https:" + str(image)
+    img = image if str(image).startswith("http") else ("https:" + str(image) if str(image).startswith("//") else "")
     price_clean = re.sub(r"[^\d]", "", price) or price
-    row = empty_row()
-    row.update(
-        {
-            "brand": "H&M",
-            "product_name": title,
-            "category": "women",
-            "gender": "women",
-            "regular_price": price_clean,
-            "current_price": price_clean,
-            "discount_rate": "",
-            "color_text": prod.get("colorName") or prod.get("color") or "",
-            "color_chip": "",
-            "color_classification_url": "",
-            "front_images_url": img,
-            "details": "",
-            "rating": str(prod.get("rating") or prod.get("averageRating") or ""),
-            "reviews": str(prod.get("numberOfReviews") or prod.get("reviewCount") or ""),
-            "product_detail_url": url,
-            "crawled_at": crawled_at,
-            "source_site": "hm.com",
-        }
+    return make_product_row(
+        brand="H&M",
+        product_name=title,
+        gender="women",
+        regular_price=price_clean,
+        current_price=price_clean,
+        color=prod.get("colorName") or prod.get("color") or "",
+        thumbnail=img,
+        rating=str(prod.get("rating") or prod.get("averageRating") or ""),
+        reviews=str(prod.get("numberOfReviews") or prod.get("reviewCount") or ""),
+        product_detail_url=url,
+        crawled_at=crawled_at,
     )
-    return row
 
 
 def extract_hits(payload) -> list[dict]:
@@ -135,7 +117,7 @@ class HmCrawler(BaseBrandCrawler):
         on_progress=None,
     ) -> list[dict]:
         target_url = url or "https://www2.hm.com/ko_kr/ladies/shop-by-product/view-all.html"
-        crawled_at = now_timestamp()
+        crawled_at = today_yymmdd()
         captured: list[dict] = []
         listing_urls: list[str] = []
 
@@ -192,7 +174,7 @@ class HmCrawler(BaseBrandCrawler):
                     if not batch:
                         break
                     for row in batch:
-                        key = row["product_id"] or row["product_name"]
+                        key = row.get("product_detail_url") or row.get("product_name")
                         if key in seen_api:
                             continue
                         seen_api.add(key)
@@ -234,7 +216,7 @@ class HmCrawler(BaseBrandCrawler):
                     row = parse_hm_product(hit, crawled_at)
                     if not row:
                         continue
-                    key = row["product_id"] or row["product_name"]
+                    key = row.get("product_detail_url") or row.get("product_name")
                     if key in seen:
                         continue
                     seen.add(key)
@@ -246,7 +228,7 @@ class HmCrawler(BaseBrandCrawler):
                     .map(a => ({
                         href: a.href,
                         name: (a.querySelector('h2,h3,span')?.innerText || a.getAttribute('aria-label') || '').trim(),
-                        img: a.querySelector('img')?.src || '',
+                        img: (() => { const i = a.querySelector('img'); return i?.currentSrc || i?.src || i?.dataset?.src || i?.getAttribute('data-src') || ''; })(),
                         price: (a.innerText.match(/[\\d,]+\\s*원/) || [''])[0]
                     })).filter(x => x.name)"""
                 )
@@ -260,22 +242,16 @@ class HmCrawler(BaseBrandCrawler):
                     if dom_img and not dom_img.startswith("http"):
                         dom_img = "https:" + dom_img if dom_img.startswith("//") else ""
                     price_raw = re.sub(r"[^\d]", "", item.get("price", ""))
-                    row = empty_row()
-                    row.update(
-                        {
-                            "brand": "H&M",
-                            "product_name": item["name"],
-                            "category": "women",
-                            "gender": "women",
-                            "regular_price": price_raw,
-                            "current_price": price_raw,
-                            "front_images_url": dom_img,
-                            "product_detail_url": item["href"],
-                            "crawled_at": crawled_at,
-                            "source_site": "hm.com",
-                        }
-                    )
-                    products.append(row)
+                    products.append(make_product_row(
+                        brand="H&M",
+                        product_name=item["name"],
+                        gender="women",
+                        regular_price=price_raw,
+                        current_price=price_raw,
+                        thumbnail=dom_img,
+                        product_detail_url=item["href"],
+                        crawled_at=crawled_at,
+                    ))
 
             browser.close()
 

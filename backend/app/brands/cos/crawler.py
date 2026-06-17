@@ -9,7 +9,7 @@ from playwright.sync_api import sync_playwright
 
 from app.brands.base import BaseBrandCrawler
 from app.brands.browser_utils import dismiss_popups, launch_browser, new_stealth_context
-from app.core.csv_schema import empty_row, now_timestamp
+from app.core.csv_schema import make_product_row, today_yymmdd
 
 BASE = "https://www.cos.com"
 LIST_API = (
@@ -63,26 +63,16 @@ def extract_products_from_payload(raw: str, crawled_at: str) -> list[dict]:
             if img_url and not img_url.startswith("http"):
                 img_url = "https:" + img_url if img_url.startswith("//") else ""
             price_val = price.group(1) if price else ""
-            row = empty_row()
-            row.update(
-                {
-                    "brand": "COS",
-                    "product_name": name.group(1),
-                    "category": "women",
-                    "gender": "women",
-                    "regular_price": price_val,
-                    "current_price": price_val,
-                    "discount_rate": "",
-                    "color_text": "",
-                    "color_chip": "",
-                    "color_classification_url": "",
-                    "front_images_url": img_url,
-                    "product_detail_url": prod_url,
-                    "crawled_at": crawled_at,
-                    "source_site": "cos.com",
-                }
-            )
-            products.append(row)
+            products.append(make_product_row(
+                brand="COS",
+                product_name=name.group(1),
+                gender="women",
+                regular_price=price_val,
+                current_price=price_val,
+                thumbnail=img_url,
+                product_detail_url=prod_url,
+                crawled_at=crawled_at,
+            ))
         return products
 
     return products
@@ -129,26 +119,16 @@ def parse_products_from_list(items: list, crawled_at: str) -> list[dict]:
         img_str = img if isinstance(img, str) else ""
         if img_str and not img_str.startswith("http"):
             img_str = "https:" + img_str if img_str.startswith("//") else ""
-        row = empty_row()
-        row.update(
-            {
-                "brand": "COS",
-                "product_name": str(name),
-                "category": "women",
-                "gender": "women",
-                "regular_price": price,
-                "current_price": price,
-                "discount_rate": "",
-                "color_text": "",
-                "color_chip": "",
-                "color_classification_url": "",
-                "front_images_url": img_str,
-                "product_detail_url": url,
-                "crawled_at": crawled_at,
-                "source_site": "cos.com",
-            }
-        )
-        products.append(row)
+        products.append(make_product_row(
+            brand="COS",
+            product_name=str(name),
+            gender="women",
+            regular_price=price,
+            current_price=price,
+            thumbnail=img_str,
+            product_detail_url=url,
+            crawled_at=crawled_at,
+        ))
     return products
 
 
@@ -191,7 +171,7 @@ class CosCrawler(BaseBrandCrawler):
     ) -> list[dict]:
         target_url = url or f"{BASE}/ko-kr/women/view-all.html"
         sect_id = parse_sect_id(target_url)
-        crawled_at = now_timestamp()
+        crawled_at = today_yymmdd()
         all_products: list[dict] = []
         seen: set[str] = set()
         page_num = 1
@@ -240,7 +220,7 @@ class CosCrawler(BaseBrandCrawler):
                     break
 
                 for row in batch:
-                    key = row["product_id"]
+                    key = row.get("product_detail_url") or row.get("product_name")
                     if key in seen:
                         continue
                     seen.add(key)
@@ -275,22 +255,14 @@ class CosCrawler(BaseBrandCrawler):
                     dom_img = c.get("img", "")
                     if dom_img and not dom_img.startswith("http"):
                         dom_img = "https:" + dom_img if dom_img.startswith("//") else ""
-                    row = empty_row()
-                    row.update(
-                        {
-                            "brand": "COS",
-                            "product_name": c["name"],
-                            "category": "women",
-                            "gender": "women",
-                            "regular_price": "",
-                            "current_price": "",
-                            "front_images_url": dom_img,
-                            "product_detail_url": c["href"],
-                            "crawled_at": crawled_at,
-                            "source_site": "cos.com",
-                        }
-                    )
-                    all_products.append(row)
+                    all_products.append(make_product_row(
+                        brand="COS",
+                        product_name=c["name"],
+                        gender="women",
+                        thumbnail=dom_img,
+                        product_detail_url=c["href"],
+                        crawled_at=crawled_at,
+                    ))
 
             browser.close()
 

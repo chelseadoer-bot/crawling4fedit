@@ -24,11 +24,21 @@ from app.core.csv_schema import (
 
 # URL 값을 항상 쌍따옴표로 감싸야 하는 컬럼
 _URL_COLUMNS = {
-    "front_images_url",
-    "color_classification_url",
+    "thumbnail",
     "color_chip",
     "product_detail_url",
 }
+
+_GENDER_KO = {
+    "women": "여성", "woman": "여성", "female": "여성", "ladies": "여성",
+    "men": "남성", "man": "남성", "male": "남성",
+    "kids": "공용", "unisex": "공용", "kids/baby": "공용",
+    "여성": "여성", "남성": "남성", "공용": "공용",
+}
+
+
+def _normalize_gender(v: str) -> str:
+    return _GENDER_KO.get(v.strip().lower(), v)
 
 
 def _clean_row(row: dict, fields: list[str]) -> dict:
@@ -68,22 +78,52 @@ def save_standard_csv(products: list[dict], output_path: Path) -> None:
 # ── 레거시 호환: simple CSV (기존 코드가 save_simple_csv를 호출) ──────────────
 
 def standard_to_simple(row: dict) -> dict:
-    """STANDARD_COLUMNS row → SIMPLE_COLUMNS row (UI 표시용)"""
-    price = _clean(row.get("current_price") or row.get("regular_price") or row.get("가격", ""))
-    # 기존 한글 키 호환
-    result = {}
-    for col in SIMPLE_COLUMNS:
-        # 기존 파일에서 읽어온 경우 한글 키로 들어올 수 있음
-        label = SIMPLE_COLUMN_LABELS.get(col, col)
-        val = (
-            _clean(row.get(col))
-            or _clean(row.get(label))
-        )
-        result[col] = val
-    # 가격 포맷
-    if not result.get("current_price"):
-        result["current_price"] = format_price_krw(price) if price else ""
-    return result
+    """구 포맷 row → 표준 26컬럼 SIMPLE_COLUMNS row"""
+    current = _clean(
+        row.get("current_price") or row.get("판매가") or row.get("가격") or row.get("price_sale") or ""
+    )
+    regular = _clean(
+        row.get("regular_price") or row.get("정상가") or row.get("price_original") or current
+    )
+    discount = _clean(row.get("discount_rate") or row.get("할인율") or "")
+    if not discount and current and regular:
+        try:
+            c, r = int(current), int(regular)
+            if r > 0 and c < r:
+                discount = str(round((r - c) / r * 100))
+        except (ValueError, ZeroDivisionError):
+            pass
+
+    gender_raw = _clean(row.get("gender") or row.get("성별") or "")
+
+    return {
+        "platform":           _clean(row.get("platform") or ""),
+        "is_ranking":         _clean(row.get("is_ranking") or "false"),
+        "rank":               _clean(row.get("rank") or ""),
+        "brand":              _clean(row.get("brand") or row.get("브랜드") or ""),
+        "brand_likes":        _clean(row.get("brand_likes") or ""),
+        "main_category":      _clean(row.get("main_category") or ""),
+        "category":           _clean(row.get("category") or row.get("카테고리") or ""),
+        "gender":             _normalize_gender(gender_raw),
+        "product_detail_url": _clean(row.get("product_detail_url") or row.get("상품링크") or ""),
+        "product_name":       _clean(row.get("product_name") or row.get("상품명") or ""),
+        "color":              _clean(row.get("color") or row.get("color_text") or row.get("컬러") or ""),
+        "color_chip":         _clean(row.get("color_chip") or ""),
+        "thumbnail":          _clean(row.get("thumbnail") or row.get("front_images_url") or row.get("이미지") or ""),
+        "likes":              _clean(row.get("likes") or ""),
+        "views":              _clean(row.get("views") or ""),
+        "details":            _clean(row.get("details") or row.get("상세설명") or ""),
+        "material":           _clean(row.get("material") or row.get("소재") or ""),
+        "current_price":      current,
+        "regular_price":      regular,
+        "discount_rate":      discount,
+        "rating":             _clean(row.get("rating") or row.get("평점") or ""),
+        "reviews":            _clean(row.get("reviews") or row.get("리뷰수") or ""),
+        "sales":              _clean(row.get("sales") or ""),
+        "manufacture_date":   _clean(row.get("manufacture_date") or ""),
+        "crawled_at":         _clean(row.get("crawled_at") or row.get("수집일시") or ""),
+        "reorder":            _clean(row.get("reorder") or ""),
+    }
 
 
 def save_simple_csv(products: list[dict], output_path: Path) -> None:
@@ -113,5 +153,5 @@ def save_simple_csv(products: list[dict], output_path: Path) -> None:
 
 
 def col_exists_as_standard(row: dict) -> bool:
-    """row가 SIMPLE_COLUMNS 키를 이미 갖고 있는지 확인"""
-    return any(k in row for k in ("front_images_url", "product_name", "current_price"))
+    """row가 표준 26컬럼 키를 이미 갖고 있는지 확인"""
+    return any(k in row for k in ("thumbnail", "platform", "is_ranking"))

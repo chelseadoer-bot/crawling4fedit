@@ -8,7 +8,7 @@ import urllib.request
 from urllib.parse import parse_qs, urlparse
 
 from app.brands.base import BaseBrandCrawler
-from app.core.csv_schema import empty_row, now_timestamp
+from app.core.csv_schema import make_product_row, today_yymmdd
 
 LISTING_API = "https://display-bff-api.29cm.co.kr/api/v1/listing/items?colorchipVariant=control"
 PAGE_SIZE = 50
@@ -56,37 +56,31 @@ def item_to_row(item: dict, crawled_at: str) -> dict:
     url_obj = item.get("itemUrl") or {}
 
     name = info.get("productName") or event.get("itemName") or ""
-    price = info.get("displayPrice") or event.get("price") or ""
+    price = str(info.get("displayPrice") or event.get("price") or "")
     brand = info.get("brandName") or event.get("brandName") or "29CM"
     image = info.get("thumbnailUrl") or ""
     product_url = url_obj.get("webLink") or ""
-    item_id = item.get("itemId") or event.get("itemNo") or ""
 
     color = extract_color_from_name(name)
     if not color and info.get("colorName"):
         color = info.get("colorName")
 
-    row = empty_row()
-    row.update(
-        {
-            "brand": brand,
-            "product_id": str(item_id),
-            "product_name": name,
-            "category_large": event.get("largeCategoryName") or "",
-            "category_small": event.get("middleCategoryName") or "",
-            "price_original": str(price),
-            "price_sale": "",
-            "discount_rate": str(info.get("saleRate") or event.get("discountRate") or ""),
-            "color": color,
-            "sizes_available": "",
-            "stock_status": "out_of_stock" if info.get("isSoldOut") else "in_stock",
-            "product_url": product_url,
-            "image_url": image,
-            "crawled_at": crawled_at,
-            "source_site": "29cm.co.kr",
-        }
+    category = event.get("largeCategoryName") or event.get("middleCategoryName") or ""
+
+    return make_product_row(
+        platform="29cm",
+        brand=brand,
+        main_category=event.get("largeCategoryName") or "",
+        category=event.get("middleCategoryName") or category,
+        product_name=name,
+        regular_price=price,
+        current_price=price,
+        discount_rate=str(info.get("saleRate") or event.get("discountRate") or ""),
+        color=color,
+        thumbnail=image,
+        product_detail_url=product_url,
+        crawled_at=crawled_at,
     )
-    return row
 
 
 class Cm29Crawler(BaseBrandCrawler):
@@ -108,7 +102,7 @@ class Cm29Crawler(BaseBrandCrawler):
         if not large_id:
             raise ValueError("29CM URL에 categoryLargeCode가 필요합니다.")
 
-        crawled_at = now_timestamp()
+        crawled_at = today_yymmdd()
         products: list[dict] = []
         seen_ids: set[str] = set()
         page_num = 1

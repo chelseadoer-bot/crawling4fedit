@@ -49,14 +49,13 @@ def normalize_rows(rows: list[dict]) -> list[dict]:
     if not rows:
         return []
     first = rows[0]
-    # 이미 SIMPLE_COLUMNS(표준 영문 키) 형식이면 그대로
-    if "front_images_url" in first or "product_name" in first:
-        # 한글 레이블로 변환해서 프론트에 전달
+    # 표준 26컬럼 영문 키 형식이면 한글 레이블로 변환해서 프론트에 전달
+    if "thumbnail" in first or "platform" in first or "product_name" in first:
         return [_to_display(r) for r in rows]
     # 구 한글 키 파일 (이미지, 상품명, …)
     if "이미지" in first:
         return [_legacy_to_display(r) for r in rows]
-    # STANDARD_COLUMNS 형식
+    # 구 포맷 → 표준 26컬럼 변환
     return [standard_to_simple(row) for row in rows]
 
 
@@ -75,11 +74,21 @@ def _legacy_to_display(row: dict) -> dict:
         "이미지": "이미지",
         "상품명": "상품명",
         "가격": "판매가",
+        "판매가": "판매가",
         "컬러": "컬러",
+        "브랜드": "브랜드",
+        "카테고리": "카테고리",
+        "소재": "소재",
+        "상세설명": "상세설명",
+        "평점": "평점",
+        "리뷰수": "리뷰수",
+        "상품링크": "상품링크",
+        "수집일시": "수집일",
     }
     result = {label: "" for label in SIMPLE_COLUMN_LABELS.values()}
     for old_key, new_label in legacy_map.items():
-        result[new_label] = row.get(old_key, "")
+        if old_key in row:
+            result[new_label] = row[old_key]
     return result
 
 

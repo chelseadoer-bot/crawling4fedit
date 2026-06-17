@@ -12,7 +12,7 @@ from playwright.sync_api import sync_playwright
 
 from app.brands.base import BaseBrandCrawler
 from app.brands.browser_utils import dismiss_popups, launch_browser, new_stealth_context
-from app.core.csv_schema import empty_row, now_timestamp
+from app.core.csv_schema import make_product_row, today_yymmdd
 
 
 @dataclass(frozen=True)
@@ -153,15 +153,6 @@ def parse_product_dict(prod: dict, profile: SiteProfile, crawled_at: str, page_u
     if not name:
         return None
 
-    pid = first_str(
-        prod.get("productId"),
-        prod.get("product_no"),
-        prod.get("productNo"),
-        prod.get("articleCode"),
-        prod.get("code"),
-        prod.get("sku"),
-        prod.get("id"),
-    )
     price = normalize_price(
         prod.get("price")
         or prod.get("salePrice")
@@ -184,27 +175,16 @@ def parse_product_dict(prod: dict, profile: SiteProfile, crawled_at: str, page_u
 
     color = first_str(prod.get("color"), prod.get("colour"), prod.get("subtitle"))
 
-    row = empty_row()
-    row.update(
-        {
-            "brand": profile.brand_name,
-            "product_id": pid,
-            "product_name": strip_html(name),
-            "category_large": "",
-            "category_small": "",
-            "price_original": price,
-            "price_sale": "",
-            "discount_rate": "",
-            "color": color,
-            "sizes_available": "",
-            "stock_status": "unknown",
-            "product_url": url,
-            "image_url": image,
-            "crawled_at": crawled_at,
-            "source_site": profile.source_site,
-        }
+    return make_product_row(
+        brand=profile.brand_name,
+        product_name=strip_html(name),
+        regular_price=price,
+        current_price=price,
+        color=color,
+        thumbnail=image,
+        product_detail_url=url,
+        crawled_at=crawled_at,
     )
-    return row
 
 
 def extract_from_dom(page, profile: SiteProfile, crawled_at: str) -> list[dict]:
@@ -220,7 +200,7 @@ def extract_from_dom(page, profile: SiteProfile, crawled_at: str) -> list[dict]:
         if (seen.has(href)) continue;
         seen.add(href);
         const img = a.querySelector('img');
-        const imgSrc = img?.src || img?.dataset?.src || img?.getAttribute('data-src') || '';
+        const imgSrc = img?.currentSrc || img?.src || img?.dataset?.src || img?.getAttribute('data-src') || '';
         const texts = Array.from(a.querySelectorAll('span,p,h2,h3,div')).map(el => el.innerText.trim()).filter(Boolean);
         const name = texts.find(t => t.length > 2 && !/₩|원|KRW|\\d{1,3}(,\\d{3})+/.test(t)) || a.getAttribute('aria-label') || a.title || '';
         const priceText = texts.find(t => /₩|원|KRW|\\d{1,3}(,\\d{3})+/.test(t)) || '';
@@ -238,27 +218,15 @@ def extract_from_dom(page, profile: SiteProfile, crawled_at: str) -> list[dict]:
         if not key or key in seen:
             continue
         seen.add(key)
-        row = empty_row()
-        row.update(
-            {
-                "brand": profile.brand_name,
-                "product_id": re.search(r"(\d{5,})", key).group(1) if re.search(r"(\d{5,})", key) else "",
-                "product_name": item.get("name", ""),
-                "category_large": "",
-                "category_small": "",
-                "price_original": item.get("price", ""),
-                "price_sale": "",
-                "discount_rate": "",
-                "color": "",
-                "sizes_available": "",
-                "stock_status": "unknown",
-                "product_url": item.get("href", ""),
-                "image_url": item.get("img", ""),
-                "crawled_at": crawled_at,
-                "source_site": profile.source_site,
-            }
-        )
-        products.append(row)
+        products.append(make_product_row(
+            brand=profile.brand_name,
+            product_name=item.get("name", ""),
+            regular_price=item.get("price", ""),
+            current_price=item.get("price", ""),
+            thumbnail=item.get("img", ""),
+            product_detail_url=item.get("href", ""),
+            crawled_at=crawled_at,
+        ))
     return products
 
 
@@ -278,7 +246,7 @@ class PlaywrightSiteCrawler(BaseBrandCrawler):
         on_progress=None,
     ) -> list[dict]:
         target_url = url or self.profile.default_url
-        crawled_at = now_timestamp()
+        crawled_at = today_yymmdd()
         profile = self.profile
         captured: list[dict] = []
         api_products: list[dict] = []
@@ -342,7 +310,7 @@ class PlaywrightSiteCrawler(BaseBrandCrawler):
         deduped: list[dict] = []
         seen = set()
         for row in products:
-            key = row.get("product_id") or row.get("product_url") or row.get("product_name")
+            key = row.get("product_detail_url") or row.get("product_name")
             if key in seen:
                 continue
             seen.add(key)

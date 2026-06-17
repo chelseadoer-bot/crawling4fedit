@@ -14,7 +14,7 @@ from typing import Callable
 from playwright.sync_api import sync_playwright
 
 from app.brands.base import BaseBrandCrawler
-from app.core.csv_schema import _clean
+from app.core.csv_schema import _clean, format_price
 
 CONFIG_PATH = Path(__file__).parent / "config.json"
 
@@ -65,6 +65,54 @@ USER_AGENTS = [
         "Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0"
     ),
 ]
+
+# ── ZARA 카테고리 → 한글 대분류/소분류 매핑 ─────────────────────────────────
+# key: ZARA familyName (대문자)
+# value: (main_category, category_ko)
+_CATEGORY_MAP: dict[str, tuple[str, str]] = {
+    "SHIRT":              ("상의", "셔츠/블라우스"),
+    "T-SHIRT":            ("상의", "티셔츠"),
+    "SWEATER":            ("상의", "니트"),
+    "CARDIGAN":           ("상의", "가디건"),
+    "TOPS AND OTHERS":    ("상의", "탑"),
+    "BLOUSE":             ("상의", "블라우스"),
+    "TANK TOP":           ("상의", "탱크탑"),
+    "BLAZER":             ("아우터", "블레이저"),
+    "JACKET":             ("아우터", "자켓"),
+    "COAT":               ("아우터", "코트"),
+    "LEATHER JACKET":     ("아우터", "레더자켓"),
+    "TROUSERS":           ("바지", "슬랙스"),
+    "BERMUDA":            ("바지", "버뮤다 팬츠"),
+    "JEANS":              ("바지", "청바지"),
+    "SHORTS":             ("바지", "반바지"),
+    "LEGGINGS":           ("바지", "레깅스"),
+    "SKIRT":              ("치마", "스커트"),
+    "MINISKIRT":          ("치마", "미니스커트"),
+    "DRESS":              ("원피스", "원피스"),
+    "OVERALL":            ("원피스", "오버롤"),
+    "JUMPSUIT":           ("원피스", "점프수트"),
+    "FLAT SANDAL":        ("신발", "플랫 샌들"),
+    "HEELED SANDAL":      ("신발", "힐 샌들"),
+    "FLAT SHOES":         ("신발", "플랫슈즈"),
+    "HEELED SHOES":       ("신발", "힐"),
+    "ATHLETIC FOOTWEAR":  ("신발", "운동화"),
+    "BOOTS":              ("신발", "부츠"),
+    "HAND BAG-RUCKSACK":  ("가방", "핸드백/백팩"),
+    "EAU DE PARFUM":      ("기타", "향수"),
+    "ACCESSORIES":        ("기타", "액세서리"),
+    "JEWELLERY":          ("기타", "주얼리"),
+    "BELT":               ("기타", "벨트"),
+    "SCARF":              ("기타", "스카프"),
+}
+
+
+def map_category(family_name: str) -> tuple[str, str]:
+    """ZARA familyName → (main_category, category_ko). 매핑 없으면 원본 반환."""
+    key = (family_name or "").upper().strip()
+    if key in _CATEGORY_MAP:
+        return _CATEGORY_MAP[key]
+    return ("기타", family_name) if family_name else ("", "")
+
 
 # 한국어 수량 파싱 (만, 천)
 _KO_NUM_RE = re.compile(r"(\d+(?:\.\d+)?)\s*([만천]?)")
@@ -126,7 +174,8 @@ def normalize_price(price_val) -> str:
 
 def calc_discount_rate(current: str, regular: str) -> str:
     try:
-        c, r = int(current), int(regular)
+        c = int(re.sub(r"[^\d]", "", str(current)))
+        r = int(re.sub(r"[^\d]", "", str(regular)))
         if r > 0 and c < r:
             return str(round((r - c) / r * 100))
     except (ValueError, ZeroDivisionError):
@@ -229,10 +278,13 @@ def parse_composition(comp) -> str:
 
 
 def extract_colors(component: dict) -> tuple[str, str, str]:
-    """(color_names, color_chip_url, thumbnail_url)"""
+    """(color_names, color_chip_url, thumbnail_url)
+
+    ZARA API는 별도 컬러칩 이미지가 없으므로 color_chip은 빈값.
+    thumbnail은 originalName='p' (메인 상품 이미지) 우선.
+    """
     colors_detail = component.get("detail", {}).get("colors", [])
     names: list[str] = []
-    chip_url = ""
     thumb_url = ""
 
     for i, color in enumerate(colors_detail):
@@ -240,22 +292,27 @@ def extract_colors(component: dict) -> tuple[str, str, str]:
         if name and name not in names:
             names.append(name)
 
-        for media in color.get("xmedia", []):
-            raw_url = (
-                media.get("extraInfo", {}).get("deliveryUrl")
-                or media.get("url", "")
-            )
-            if not raw_url:
-                continue
-            hq = upgrade_image_url(raw_url)
-            if i == 0 and not thumb_url:
-                thumb_url = hq
-            if not chip_url:
-                chip_url = hq
+        if i == 0 and not thumb_url:
+            # originalName='p' 인 메인 이미지 우선, 없으면 첫 번째
+            first_url = ""
+            for media in color.get("xmedia", []):
+                raw_url = (
+                    media.get("extraInfo", {}).get("deliveryUrl")
+                    or media.get("url", "")
+                )
+                if not raw_url:
+                    continue
+                original_name = media.get("extraInfo", {}).get("originalName", "")
+                hq = upgrade_image_url(raw_url)
+                if not first_url:
+                    first_url = hq
+                if original_name == "p":
+                    thumb_url = hq
+                    break
+            if not thumb_url:
+                thumb_url = first_url
 
-    if not chip_url:
-        chip_url = thumb_url
-
+    # 최종 폴백: component 최상위 xmedia
     if not thumb_url:
         for media in component.get("xmedia", []):
             raw_url = (
@@ -264,10 +321,14 @@ def extract_colors(component: dict) -> tuple[str, str, str]:
             )
             if raw_url:
                 thumb_url = upgrade_image_url(raw_url)
-                chip_url = thumb_url
                 break
 
-    return ", ".join(names), chip_url, thumb_url
+    # 색상명 " / " → "," (ZARA 색상 구분자 통일)
+    color_str = ",".join(
+        n.replace(" / ", ",").replace("/", ",").strip() for n in names
+    )
+    # ZARA API는 별도 칩 이미지 없음 → color_chip 빈값
+    return color_str, "", thumb_url
 
 
 def extract_detail_info(component: dict) -> tuple[str, str]:
@@ -311,9 +372,11 @@ def component_to_spec_row(component: dict, config: dict, crawled_at: str) -> dic
     color, color_chip, thumbnail = extract_colors(component)
     details, material = extract_detail_info(component)
 
-    current_price = normalize_price(component.get("price"))
-    regular_price = normalize_price(component.get("oldPrice")) or current_price
-    discount_rate = calc_discount_rate(current_price, regular_price)
+    current_price_raw = normalize_price(component.get("price"))
+    regular_price_raw = normalize_price(component.get("oldPrice")) or current_price_raw
+    discount_rate = calc_discount_rate(current_price_raw, regular_price_raw)
+    current_price = format_price(current_price_raw, "KRW")
+    regular_price = format_price(regular_price_raw, "KRW")
 
     gender_hint = config.get("gender", "women")
     url_lower = config.get("default_url", "").lower()
@@ -323,12 +386,13 @@ def component_to_spec_row(component: dict, config: dict, crawled_at: str) -> dic
     elif re.search(r"[/-](kid|kids|bebe|nino)[/-]", url_lower):
         gender_hint = "kids"
 
-    sub_category = (
+    family_name = (
         component.get("familyName")
         or component.get("sectionName")
         or component.get("kindName")
         or ""
     )
+    main_cat, sub_category = map_category(family_name)
 
     return {
         "platform": "",
@@ -336,7 +400,7 @@ def component_to_spec_row(component: dict, config: dict, crawled_at: str) -> dic
         "rank": "",
         "brand": "ZARA",
         "brand_likes": "",
-        "main_category": config.get("main_category", "SPA해외"),
+        "main_category": main_cat,
         "category": sub_category,
         "gender": gender_hint,
         "product_detail_url": product_url,
@@ -360,37 +424,51 @@ def component_to_spec_row(component: dict, config: dict, crawled_at: str) -> dic
     }
 
 
+_GENDER_KO = {
+    "women": "여성", "woman": "여성", "female": "여성",
+    "men": "남성", "man": "남성", "male": "남성",
+    "kids": "공용", "unisex": "공용",
+}
+
+
 def spec_to_simple(row: dict) -> dict:
-    """spec row → SIMPLE_COLUMNS 호환 dict (프론트엔드 미리보기 / save_simple_csv용)"""
+    """spec v3 row → 표준 26컬럼 dict"""
+    current = row.get("current_price", "")
+    regular = row.get("regular_price", "") or current
+    discount = row.get("discount_rate", "")
+    if not discount:
+        discount = calc_discount_rate(current, regular)
+
+    gender_raw = (row.get("gender") or "").strip().lower()
+    gender = _GENDER_KO.get(gender_raw, row.get("gender", ""))
+
     return {
-        "front_images_url": row.get("thumbnail", ""),
-        "product_name": row.get("product_name", ""),
-        "brand": row.get("brand", "ZARA"),
-        "category": row.get("category", ""),
-        "gender": row.get("gender", ""),
-        "regular_price": row.get("regular_price", ""),
-        "current_price": row.get("current_price", ""),
-        "discount_rate": row.get("discount_rate", ""),
-        "color_text": row.get("color", ""),
-        "color_chip": row.get("color_chip", ""),
-        "color_classification_url": "",
-        "material": row.get("material", ""),
-        "details": row.get("details", ""),
-        "rating": row.get("rating", ""),
-        "reviews": row.get("reviews", ""),
+        "platform":           row.get("platform", ""),
+        "is_ranking":         row.get("is_ranking", "false"),
+        "rank":               row.get("rank", ""),
+        "brand":              row.get("brand", "ZARA"),
+        "brand_likes":        row.get("brand_likes", ""),
+        "main_category":      row.get("main_category", ""),
+        "category":           row.get("category", ""),
+        "gender":             gender,
         "product_detail_url": row.get("product_detail_url", ""),
-        "sizes_available": "",
-        "fit": "",
-        "length": "",
-        "sleeve_length": "",
-        "style": "",
-        "lining": "",
-        "thickness": "",
-        "season": "",
-        "transparency": "",
-        "elasticity": "",
-        "crawled_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-        "source_site": "zara.com",
+        "product_name":       row.get("product_name", ""),
+        "color":              row.get("color", ""),
+        "color_chip":         row.get("color_chip", ""),
+        "thumbnail":          row.get("thumbnail", ""),
+        "likes":              row.get("likes", ""),
+        "views":              row.get("views", ""),
+        "details":            row.get("details", ""),
+        "material":           row.get("material", ""),
+        "current_price":      current,
+        "regular_price":      regular,
+        "discount_rate":      discount,
+        "rating":             row.get("rating", ""),
+        "reviews":            row.get("reviews", ""),
+        "sales":              row.get("sales", ""),
+        "manufacture_date":   row.get("manufacture_date", ""),
+        "crawled_at":         row.get("crawled_at", ""),
+        "reorder":            row.get("reorder", ""),
     }
 
 
@@ -424,7 +502,8 @@ def extract_products_from_dom(page, config: dict, crawled_at: str) -> list[dict]
             const colors = Array.from(block.querySelectorAll('[aria-label][class*="color"]'))
                 .map(el => el.getAttribute('aria-label') || '')
                 .filter(Boolean);
-            const img = block.closest('li')?.querySelector('img')?.src || '';
+            const imgEl = block.closest('li')?.querySelector('img');
+            const img = imgEl?.currentSrc || imgEl?.src || imgEl?.dataset?.src || imgEl?.getAttribute('data-src') || '';
             const url = linkEl?.href || '';
             return { name, price, colors, img, url };
         }).filter(item => item.name);
@@ -441,7 +520,7 @@ def extract_products_from_dom(page, config: dict, crawled_at: str) -> list[dict]
 
         product_name, sales, reorder = parse_product_name(key)
         thumbnail = upgrade_image_url(item.get("img", ""))
-        current_price = re.sub(r"[^0-9]", "", item.get("price", ""))
+        current_price = format_price(re.sub(r"[^0-9]", "", item.get("price", "")), "KRW")
 
         rows.append({
             "platform": "",
@@ -449,7 +528,7 @@ def extract_products_from_dom(page, config: dict, crawled_at: str) -> list[dict]
             "rank": "",
             "brand": "ZARA",
             "brand_likes": "",
-            "main_category": config.get("main_category", "SPA해외"),
+            "main_category": "",
             "category": "",
             "gender": config.get("gender", "women"),
             "product_detail_url": item.get("url", ""),
