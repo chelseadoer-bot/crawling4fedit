@@ -14,7 +14,11 @@ from app.brands.playwright_catalog.crawler import ChanelCrawler
 from app.brands.uniqlo.crawler import UniqloCrawler
 from app.brands.zara.crawler import ZaraCrawler
 
-PROJECT_ROOT = Path(__file__).resolve().parents[3]
+_HERE = Path(__file__).resolve()
+# parents[3] = repo root (로컬), parents[2] = backend/ 루트 (Railway)
+_repo_root = _HERE.parents[3]
+_backend_root = _HERE.parents[2]
+PROJECT_ROOT = _repo_root if (_repo_root / "config").is_dir() else _backend_root
 CONFIG_DIR = PROJECT_ROOT / "config"
 BRANDS_CONFIG = CONFIG_DIR / "brands.json"
 
