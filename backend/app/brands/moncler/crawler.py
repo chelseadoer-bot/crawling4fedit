@@ -1,7 +1,7 @@
 """Moncler SearchApi-Search 크롤러 (여성 ready-to-wear)"""
 
 import re
-from urllib.parse import urlparse
+from urllib.parse import parse_qs, urlparse
 
 from playwright.sync_api import sync_playwright
 
@@ -26,11 +26,21 @@ COUNTRY_NAMES = {
 
 
 def extract_cgid(url: str) -> str:
-    path = urlparse(url).path.lower()
+    parsed = urlparse(url)
+    qs = parse_qs(parsed.query)
+    if qs.get("cgid"):
+        return qs["cgid"][0]
+
+    path = parsed.path.strip("/").lower()
+    if "view-all-new-arrivals" in path:
+        return "view-all-new-arrivals"
     if "ready-to-wear" in path:
         return CGID
     if "outerwear" in path:
         return "women-outerwear"
+    parts = [p for p in path.split("/") if p and p not in ("ko-kr", "en-us", "en-gb")]
+    if parts:
+        return parts[-1]
     return CGID
 
 
@@ -81,7 +91,7 @@ def parse_product(prod: dict, crawled_at: str) -> dict | None:
         return None
 
     rel_url = prod.get("productUrl") or prod.get("route") or ""
-    if not rel_url or "ready-to-wear" not in rel_url:
+    if not rel_url:
         return None
     product_url = rel_url if rel_url.startswith("http") else BASE + rel_url
 
@@ -150,8 +160,6 @@ class MonclerCrawler(BaseBrandCrawler):
                 u = response.url
                 if response.status != 200 or "SearchApi-Search" not in u:
                     return
-                if f"cgid={cgid}" not in u:
-                    return
                 try:
                     captured.append(response.json())
                 except Exception:
@@ -207,7 +215,7 @@ class MonclerCrawler(BaseBrandCrawler):
             if not all_products:
                 dom = page.evaluate(
                     """() => Array.from(document.querySelectorAll('a[href*=".html"]'))
-                    .filter(a => /L\\d{5,}/.test(a.href) && a.href.includes('ready-to-wear'))
+                    .filter(a => /L\\d{5,}/.test(a.href))
                     .map(a => ({
                       href: a.href,
                       name: (a.innerText||'').trim().split('\\n')[0],

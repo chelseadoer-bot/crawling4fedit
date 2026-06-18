@@ -146,7 +146,7 @@
       "crawler_id": "zara",
       "default_url": "https://www.zara.com/kr/",
       "output_dir": "data/output/zara",
-      "last_crawled_at": "2026-06-04 16:44:22",
+      "last_crawled_at": "2026-06-18 15:27:56",
       "last_status": "success",
       "schedule_group": "tuesday"
     },

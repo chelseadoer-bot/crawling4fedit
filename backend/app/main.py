@@ -42,21 +42,24 @@ SITE_DIR = PROJECT_ROOT / "site"
 
 
 def csv_path_for(brand_id: str) -> Path:
-    return PROJECT_ROOT / "data" / "output" / brand_id / f"{brand_id}_products.csv"
+    out_dir = PROJECT_ROOT / "data" / "output" / brand_id
+    latest = out_dir / f"{brand_id}_latest.csv"
+    if latest.exists():
+        return latest
+    return out_dir / f"{brand_id}_products.csv"
 
 
 def normalize_rows(rows: list[dict]) -> list[dict]:
     if not rows:
         return []
     first = rows[0]
-    # 표준 26컬럼 영문 키 형식이면 한글 레이블로 변환해서 프론트에 전달
-    if "thumbnail" in first or "platform" in first or "product_name" in first:
-        return [_to_display(r) for r in rows]
-    # 구 한글 키 파일 (이미지, 상품명, …)
     if "이미지" in first:
         return [_legacy_to_display(r) for r in rows]
-    # 구 포맷 → 표준 26컬럼 변환
-    return [standard_to_simple(row) for row in rows]
+    if "thumbnail" in first or "platform" in first:
+        return [_to_display(r) for r in rows]
+    if "product_name" in first or "product_detail_url" in first:
+        return [_to_display(standard_to_simple(r)) for r in rows]
+    return [_to_display(standard_to_simple(row)) for row in rows]
 
 
 def _to_display(row: dict) -> dict:

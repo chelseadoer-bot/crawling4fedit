@@ -3,7 +3,7 @@
 import html
 import json
 import re
-from urllib.parse import unquote, urlparse
+from urllib.parse import parse_qs, unquote, urlparse
 
 from playwright.sync_api import sync_playwright
 
@@ -27,7 +27,12 @@ URL_CGID_MAP = {
 
 
 def extract_cgid(url: str) -> str:
-    path = unquote(urlparse(url).path).strip("/").lower()
+    parsed = urlparse(url)
+    qs = parse_qs(parsed.query)
+    if qs.get("cgid"):
+        return qs["cgid"][0]
+
+    path = unquote(parsed.path).strip("/").lower()
     parts = path.split("/")
     if "women_rtw" in path or "레디" in path:
         return "women_rtw_all"
@@ -82,13 +87,22 @@ def parse_dom_products(page, crawled_at: str) -> list[dict]:
         const tiles = document.querySelectorAll('[data-gtmproduct], .product-tile, li[data-pid]');
         const out = [];
         for (const el of tiles) {
+            const a = el.querySelector('a[href*="/ko-kr/"]')
+                || el.querySelector('a[href*="/product"], a[href*="products"]')
+                || el.closest('a[href]');
             const gtm = el.getAttribute('data-gtmproduct');
-            if (gtm) { out.push({ type: 'gtm', gtm }); continue; }
-            const a = el.querySelector('a[href*="/product"], a[href*="products"]') || el.closest('a');
             const name = el.querySelector('.name, .product-name, h2, h3')?.innerText?.trim()
                 || el.getAttribute('data-product-name') || '';
             const price = el.innerText.match(/₩[\\d,]+/)?.[0] || '';
-            if (name && a) { const i = el.querySelector('img'); out.push({ type: 'dom', name, href: a.href, price, img: i?.currentSrc || i?.src || i?.dataset?.src || i?.getAttribute('data-src') || '' }); }
+            const imgEl = el.querySelector('img');
+            const img = imgEl?.currentSrc || imgEl?.src || imgEl?.dataset?.src || imgEl?.getAttribute('data-src') || '';
+            if (gtm) {
+                out.push({ type: 'gtm', gtm, href: a?.href || '', name, price, img });
+                continue;
+            }
+            if (name && a) {
+                out.push({ type: 'dom', name, href: a.href, price, img });
+            }
         }
         return out;
     }"""
@@ -98,7 +112,21 @@ def parse_dom_products(page, crawled_at: str) -> list[dict]:
     for item in raw:
         if item.get("type") == "gtm":
             batch = parse_gtm_products(f'data-gtmproduct="{item["gtm"]}"', crawled_at)
+            if not batch and item.get("name"):
+                batch = [make_product_row(
+                    brand="BALENCIAGA",
+                    main_category="명품",
+                    gender="여성",
+                    product_name=item["name"],
+                    regular_price=re.sub(r"[^\d]", "", item.get("price", "")),
+                    current_price=re.sub(r"[^\d]", "", item.get("price", "")),
+                    thumbnail=item.get("img", ""),
+                    product_detail_url=item.get("href", ""),
+                    crawled_at=crawled_at,
+                )]
             for row in batch:
+                if not row.get("product_detail_url") and item.get("href"):
+                    row["product_detail_url"] = item["href"]
                 key = row.get("product_detail_url") or row.get("product_name")
                 if key not in seen:
                     seen.add(key)
@@ -152,14 +180,27 @@ class BalenciagaCrawler(BaseBrandCrawler):
 
             def merge_batch(batch: list[dict]) -> None:
                 for row in batch:
-                    key = row.get("product_detail_url") or row.get("product_name")
+                    url = (row.get("product_detail_url") or "").strip()
+                    name = (row.get("product_name") or "").strip()
+                    if not name:
+                        continue
+                    if url:
+                        for existing in all_products:
+                            if (
+                                existing.get("product_name") == name
+                                and not (existing.get("product_detail_url") or "").strip()
+                            ):
+                                existing["product_detail_url"] = url
+                    key = url or name
                     if key in seen:
                         continue
                     seen.add(key)
+                    if url:
+                        seen.add(name)
                     all_products.append(row)
 
-            merge_batch(parse_gtm_products(page.content(), crawled_at))
             merge_batch(parse_dom_products(page, crawled_at))
+            merge_batch(parse_gtm_products(page.content(), crawled_at))
 
             for round_i in range(25):
                 page.evaluate("window.scrollBy(0, window.innerHeight)")

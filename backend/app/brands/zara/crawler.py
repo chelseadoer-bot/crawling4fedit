@@ -362,9 +362,24 @@ def extract_detail_info(component: dict) -> tuple[str, str]:
     return details, material
 
 
+def build_zara_product_url(component: dict) -> str:
+    """ZARA API seo 필드로 실제 상품 페이지 URL 생성."""
+    seo = component.get("seo") or {}
+    keyword = (seo.get("keyword") or "").strip()
+    product_id = (seo.get("seoProductId") or "").strip()
+    if keyword and product_id:
+        return f"https://www.zara.com/kr/ko/{keyword}-p{product_id}.html"
+
+    ref = (component.get("reference") or "").strip()
+    if ref:
+        base_ref = re.sub(r"-[VI]\d{4}$", "", ref)
+        if base_ref:
+            return f"https://www.zara.com/kr/ko/-p{base_ref}.html"
+    return ""
+
+
 def component_to_spec_row(component: dict, config: dict, crawled_at: str) -> dict:
-    ref = component.get("reference") or f"ZR-{component.get('id', '')}"
-    product_url = f"https://www.zara.com/kr/ko/-p{ref}.html" if ref else ""
+    product_url = build_zara_product_url(component)
 
     raw_name = (component.get("name") or "").strip()
     product_name, sales, reorder = parse_product_name(raw_name)
