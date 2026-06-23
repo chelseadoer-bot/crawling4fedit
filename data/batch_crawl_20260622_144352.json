@@ -1,0 +1,21 @@
+{
+  "success": [
+    {
+      "id": "dailyjou-24",
+      "count": 96,
+      "message": "96개 상품 수집 완료"
+    },
+    {
+      "id": "musinsa-top",
+      "count": 300,
+      "message": "300개 상품 수집 완료"
+    },
+    {
+      "id": "mixxo-47",
+      "count": 82,
+      "message": "82개 상품 수집 완료"
+    }
+  ],
+  "failed": [],
+  "skipped": []
+}

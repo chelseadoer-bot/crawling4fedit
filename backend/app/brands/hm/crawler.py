@@ -117,6 +117,27 @@ class HmCrawler(BaseBrandCrawler):
         on_progress=None,
     ) -> list[dict]:
         target_url = url or "https://www2.hm.com/ko_kr/ladies/shop-by-product/view-all.html"
+        for attempt_headless in (headless, False) if headless else (False,):
+            try:
+                products = self._crawl_once(target_url, attempt_headless, on_progress)
+                if products:
+                    return products
+            except RuntimeError:
+                if attempt_headless is False:
+                    raise
+        raise RuntimeError(
+            "H&M 사이트 접근이 차단되었습니다. 일반 Chrome에서 "
+            "https://www2.hm.com/ko_kr/ 페이지가 열리는지 확인한 뒤, "
+            "backend/scripts/hm_save_session.py 로 쿠키를 저장하거나 "
+            "data/hm_storage_state.json 을 준비한 후 다시 시도해주세요."
+        )
+
+    def _crawl_once(
+        self,
+        target_url: str,
+        headless: bool,
+        on_progress=None,
+    ) -> list[dict]:
         crawled_at = today_yymmdd()
         captured: list[dict] = []
         listing_urls: list[str] = []

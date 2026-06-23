@@ -1,0 +1,72 @@
+{
+  "success": [
+    {
+      "id": "spao-new",
+      "count": 483,
+      "message": "483개 상품 수집 완료"
+    },
+    {
+      "id": "wconcept-001001",
+      "count": 72981,
+      "message": "72981개 상품 수집 완료"
+    },
+    {
+      "id": "wconcept-001005",
+      "count": 45740,
+      "message": "45740개 상품 수집 완료"
+    },
+    {
+      "id": "wconcept-001004",
+      "count": 30265,
+      "message": "30265개 상품 수집 완료"
+    },
+    {
+      "id": "wconcept-001013",
+      "count": 27454,
+      "message": "27454개 상품 수집 완료"
+    },
+    {
+      "id": "wconcept-001003",
+      "count": 140019,
+      "message": "140019개 상품 수집 완료"
+    },
+    {
+      "id": "cos-new",
+      "count": 464,
+      "message": "464개 상품 수집 완료"
+    },
+    {
+      "id": "cos-viewall",
+      "count": 464,
+      "message": "464개 상품 수집 완료"
+    },
+    {
+      "id": "hm-new",
+      "count": 60,
+      "message": "60개 상품 수집 완료"
+    }
+  ],
+  "failed": [
+    {
+      "id": "wconcept-001002",
+      "message": "[Errno 28] No space left on device"
+    },
+    {
+      "id": "wconcept-001007",
+      "message": "[Errno 28] No space left on device"
+    },
+    {
+      "id": "wconcept-001006",
+      "message": "<urlopen error [Errno 11001] getaddrinfo failed>"
+    },
+    {
+      "id": "wconcept-001008",
+      "message": "<urlopen error [Errno 11001] getaddrinfo failed>"
+    },
+    {
+      "id": "hm-viewall",
+      "message": "H&M 사이트 접근이 차단되었습니다. 일반 Chrome에서 https://www2.hm.com/ko_kr/ 페이지가 열리는지 확인한 뒤, backend/scripts/hm_save_session.py 로 쿠키를 저장하거나 data/hm_storage_state.json 을 준비한 후 다시 시도해주세요."
+    }
+  ],
+  "skipped": []
+}

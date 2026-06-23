@@ -1,0 +1,108 @@
+"""사용자 요청 브랜드/카테고리 URL 카탈로그."""
+
+from app.brands.registry import detect_crawler_id, extract_source_site
+
+# (id, category, group, name, url)
+CATALOG_ENTRIES: list[tuple[str, str, str, str, str]] = [
+    # 보세브랜드
+    ("reetkeem-newest", "보세브랜드", "릿킴", "신상", "https://reetkeem.com/category/newest/24/"),
+    ("dailyjou-24", "보세브랜드", "데일리쥬", "카테고리", "https://dailyjou.com/product/list.html?cate_no=24"),
+    ("dearment-91", "보세브랜드", "디어먼트", "카테고리", "https://dear-ment.co.kr/product/list.html?cate_no=91"),
+    ("realcoco-51", "보세브랜드", "리얼코코", "카테고리", "https://realcoco.com/product/list.html?cate_no=51"),
+    ("beidelli-446", "보세브랜드", "베이델리", "카테고리", "https://beidelli.com/product/list.html?cate_no=446"),
+    ("tildeseoul-103", "보세브랜드", "틸데서울", "카테고리", "https://tildeseoul.co.kr/product/list.html?cate_no=103"),
+    ("slowand-122", "보세브랜드", "슬로우앤드", "카테고리", "https://m.slowand.com/product/list.html?cate_no=122"),
+    ("petrichoor-49", "보세브랜드", "페트리코어", "카테고리", "https://petrichoor.com/product/list.html?cate_no=49"),
+    ("frenchaube-69", "보세브랜드", "프렌치오브", "카테고리", "https://frenchaube.com/product/list.html?cate_no=69"),
+    ("merryaround-357", "보세브랜드", "메리어라운드", "카테고리", "https://merryaround.co.kr/product/list.html?cate_no=357"),
+    # 무신사
+    ("musinsa-top", "보세브랜드", "무신사", "상의 추천순", "https://www.musinsa.com/category/001/goods?gf=F"),
+    ("musinsa-outer", "보세브랜드", "무신사", "아우터 추천순", "https://www.musinsa.com/category/002/goods?gf=F"),
+    ("musinsa-pants", "보세브랜드", "무신사", "바지 추천순", "https://www.musinsa.com/category/003/goods?gf=F"),
+    ("musinsa-dress", "보세브랜드", "무신사", "원피스 추천순", "https://www.musinsa.com/category/100/goods?gf=F"),
+    # SPA
+    ("eightseconds-women", "SPA", "에잇세컨즈", "여성", "https://www.ssfshop.com/8seconds/WOMEN/list?dspCtgryNo=SFMA41&brandShopNo=BDMA07A01&brndShopId=8SBSS"),
+    ("uniqlo-tops", "SPA", "UNIQLO", "여성 상의", "https://www.uniqlo.com/kr/ko/women/tops"),
+    ("uniqlo-bra-tops", "SPA", "UNIQLO", "브라탑", "https://www.uniqlo.com/kr/ko/women/tops/bra-tops?path=%2C%2C57996%2C"),
+    ("uniqlo-shirts", "SPA", "UNIQLO", "셔츠/블라우스", "https://www.uniqlo.com/kr/ko/women/shirts-and-blouses"),
+    ("uniqlo-knit", "SPA", "UNIQLO", "니트", "https://www.uniqlo.com/kr/ko/women/sweaters-and-knitwear"),
+    ("uniqlo-outer", "SPA", "UNIQLO", "아우터", "https://www.uniqlo.com/kr/ko/women/outerwear"),
+    ("uniqlo-bottoms", "SPA", "UNIQLO", "하의", "https://www.uniqlo.com/kr/ko/women/bottoms"),
+    ("uniqlo-dress-skirt", "SPA", "UNIQLO", "원피스/스커트", "https://www.uniqlo.com/kr/ko/women/dress-and-skirts"),
+    ("spao-2605000015", "SPA", "SPAO", "카테고리1", "https://www.spao.com/c/ctg?dispCategoryNo=2605000015&pageId=1782084780672&preCornerNo=R13700002_header"),
+    ("spao-2605000051", "SPA", "SPAO", "카테고리2", "https://www.spao.com/c/ctg?dispCategoryNo=2605000051&pageId=1782084789733&preCornerNo=R13700002_header"),
+    ("spao-2605000064", "SPA", "SPAO", "카테고리3", "https://www.spao.com/c/ctg?dispCategoryNo=2605000064&pageId=1782084802212&preCornerNo=R13700002_header"),
+    ("spao-2605000122", "SPA", "SPAO", "카테고리4", "https://www.spao.com/c/ctg?dispCategoryNo=2605000122&pageId=1782084809984&preCornerNo=R13700002_header"),
+    ("spao-2605000068", "SPA", "SPAO", "카테고리5", "https://www.spao.com/c/ctg?dispCategoryNo=2605000068&pageId=1782084815351&preCornerNo=R13700002_header"),
+    ("spao-2605000073", "SPA", "SPAO", "카테고리6", "https://www.spao.com/c/ctg?dispCategoryNo=2605000073&pageId=1782084820412&preCornerNo=R13700002_header"),
+    ("spao-2605000006", "SPA", "SPAO", "카테고리7", "https://www.spao.com/c/ctg?dispCategoryNo=2605000006&pageId=1782084826292&preCornerNo=R13700002_header"),
+    ("spao-new", "SPA", "SPAO", "신상", "https://www.spao.com/u/new?dispCategoryNo=2605000005&pageId=1782084841850&preCornerNo=R13701005_menuCategory"),
+    ("29cm-women-all", "SPA", "29CM", "의류 전체", "https://www.29cm.co.kr/store/category/list?categoryLargeCode=268100100&sort=RECOMMENDED&defaultSort=RECOMMENDED"),
+    ("wconcept-001001", "SPA", "W컨셉", "카테고리1", "https://display.wconcept.co.kr/category/women/001001"),
+    ("wconcept-001005", "SPA", "W컨셉", "카테고리2", "https://display.wconcept.co.kr/category/women/001005"),
+    ("wconcept-001004", "SPA", "W컨셉", "카테고리3", "https://display.wconcept.co.kr/category/women/001004"),
+    ("wconcept-001013", "SPA", "W컨셉", "카테고리4", "https://display.wconcept.co.kr/category/women/001013"),
+    ("wconcept-001003", "SPA", "W컨셉", "카테고리5", "https://display.wconcept.co.kr/category/women/001003"),
+    ("wconcept-001002", "SPA", "W컨셉", "카테고리6", "https://display.wconcept.co.kr/category/women/001002"),
+    ("wconcept-001007", "SPA", "W컨셉", "카테고리7", "https://display.wconcept.co.kr/category/women/001007"),
+    ("wconcept-001006", "SPA", "W컨셉", "카테고리8", "https://display.wconcept.co.kr/category/women/001006"),
+    ("wconcept-001008", "SPA", "W컨셉", "카테고리9", "https://display.wconcept.co.kr/category/women/001008"),
+    ("cos-new", "SPA", "COS", "신상", "https://www.cos.com/ko-kr/women/new-arrivals.html"),
+    ("cos-viewall", "SPA", "COS", "모두보기", "https://www.cos.com/ko-kr/women/view-all.html"),
+    ("hm-new", "SPA", "H&M", "신상", "https://www2.hm.com/ko_kr/ladies/new-arrivals/view-all.html"),
+    ("hm-viewall", "SPA", "H&M", "의류 모두보기", "https://www2.hm.com/ko_kr/ladies/shop-by-product/view-all.html"),
+    ("mixxo-47", "SPA", "미쏘", "카테고리1", "https://mixxo.com/product/list.html?cate_no=47"),
+    ("mixxo-3547", "SPA", "미쏘", "카테고리2", "https://mixxo.com/product/list.html?cate_no=3547"),
+    ("mixxo-59", "SPA", "미쏘", "카테고리3", "https://mixxo.com/product/list.html?cate_no=59"),
+    ("mixxo-60", "SPA", "미쏘", "카테고리4", "https://mixxo.com/product/list.html?cate_no=60"),
+    ("mixxo-49", "SPA", "미쏘", "카테고리5", "https://mixxo.com/product/list.html?cate_no=49"),
+    ("mixxo-2414", "SPA", "미쏘", "카테고리6", "https://mixxo.com/product/list.html?cate_no=2414"),
+    ("mixxo-50", "SPA", "미쏘", "카테고리7", "https://mixxo.com/product/list.html?cate_no=50"),
+    ("zara-new-in", "SPA", "ZARA", "신상", "https://www.zara.com/kr/ko/woman-new-in-l1180.html?v1=2546081"),
+    ("zara-jackets", "SPA", "ZARA", "재킷", "https://www.zara.com/kr/ko/woman-jackets-l1114.html?v1=2664773"),
+    ("zara-blazers", "SPA", "ZARA", "블레이저", "https://www.zara.com/kr/ko/woman-blazers-l1055.html?v1=2420942"),
+    ("zara-dresses", "SPA", "ZARA", "드레스", "https://www.zara.com/kr/ko/woman-dresses-l1066.html?v1=2420896"),
+    ("zara-tops", "SPA", "ZARA", "탑", "https://www.zara.com/kr/ko/woman-tops-l1322.html?v1=2419940"),
+    ("zara-tshirts", "SPA", "ZARA", "티셔츠", "https://www.zara.com/kr/ko/woman-tshirts-l1362.html?v1=2420417"),
+    ("zara-shirts", "SPA", "ZARA", "셔츠", "https://www.zara.com/kr/ko/woman-shirts-l1217.html?v1=2420369"),
+    ("zara-knitwear", "SPA", "ZARA", "니트", "https://www.zara.com/kr/ko/woman-knitwear-l1152.html?v1=2420306"),
+    ("zara-skirts", "SPA", "ZARA", "스커트", "https://www.zara.com/kr/ko/woman-skirts-l1299.html?v1=2420454"),
+    ("zara-jeans", "SPA", "ZARA", "진", "https://www.zara.com/kr/ko/woman-jeans-l1119.html?v1=2419185"),
+    ("zara-cardigans", "SPA", "ZARA", "가디건", "https://www.zara.com/kr/ko/woman-cardigans-sweaters-l8322.html?v1=2419844"),
+    ("zara-coords", "SPA", "ZARA", "코오드", "https://www.zara.com/kr/ko/woman-co-ords-l1061.html?v1=2420285"),
+    ("zara-sweatshirts", "SPA", "ZARA", "스웨트셔츠", "https://www.zara.com/kr/ko/woman-sweatshirts-l1320.html?v1=2467841"),
+    ("zara-trousers", "SPA", "ZARA", "트라우저", "https://www.zara.com/kr/ko/woman-trousers-l1335.html?v1=2420795"),
+    # 디자이너
+    ("cerric-605", "디자이너브랜드", "세릭", "신상", "https://cerric.co/product/list.html?cate_no=605"),
+    ("barnet-new-418", "디자이너브랜드", "더바넷", "신상", "https://the-barnnet.com/product/list.html?cate_no=418"),
+    ("thecoldest-29", "디자이너브랜드", "더콜디", "신상", "https://thecoldestmoment.com/product/list.html?cate_no=29&sort_method=5"),
+    ("raive-210", "디자이너브랜드", "레이브", "여성 전체", "https://raivestudio.com/product/list.html?cate_no=210&sort_method=5&page=1"),
+    ("ojos-455", "디자이너브랜드", "오호스", "신상", "https://ojos.kr/product/list.html?cate_no=455&sort_method=5"),
+    ("sculptor-779", "디자이너브랜드", "스컬프터", "여성 전체", "https://sculptorpage.com/product/list.html?cate_no=779"),
+    ("sculptor-778", "디자이너브랜드", "스컬프터", "신상", "https://sculptorpage.com/product/list.html?cate_no=778"),
+    ("lowclassic-655", "디자이너브랜드", "로우클래식", "신상", "https://lowclassic.com/product/lw-list.html?cate_no=655"),
+    ("treemingbird-24", "디자이너브랜드", "트리밍버드", "신상", "https://treemingbird.com/product/list.html?cate_no=24"),
+    ("openyy-322", "디자이너브랜드", "오픈YY", "신상", "https://open-yy.com/product/list.html?cate_no=322"),
+]
+
+
+def entry_to_brand(entry: tuple[str, str, str, str, str]) -> dict:
+    brand_id, category, group, name, url = entry
+    crawler_id = detect_crawler_id(url)
+    if brand_id.startswith("barnet"):
+        crawler_id = "barnet"
+    return {
+        "id": brand_id,
+        "category": category,
+        "group": group,
+        "name": name,
+        "enabled": bool(crawler_id),
+        "source_site": extract_source_site(url),
+        "crawl_type": "dynamic" if crawler_id else "unsupported",
+        "crawler_id": crawler_id,
+        "default_url": url,
+        "output_dir": f"data/output/{brand_id}",
+        "last_crawled_at": None,
+        "last_status": None,
+        "schedule_group": "manual",
+    }

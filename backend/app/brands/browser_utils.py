@@ -11,11 +11,22 @@ STEALTH_INIT_SCRIPT = (
 )
 
 
-def launch_browser(playwright, headless: bool = True):
-    return playwright.chromium.launch(
-        headless=headless,
-        args=["--disable-blink-features=AutomationControlled"],
-    )
+def launch_browser(playwright, headless: bool = True, channel: str | None = None):
+    args = ["--disable-blink-features=AutomationControlled"]
+    if channel:
+        return playwright.chromium.launch(
+            headless=headless,
+            channel=channel,
+            args=args,
+        )
+    try:
+        return playwright.chromium.launch(
+            headless=headless,
+            channel="chrome",
+            args=args,
+        )
+    except Exception:
+        return playwright.chromium.launch(headless=headless, args=args)
 
 
 def new_stealth_context(browser, locale: str = "ko-KR"):

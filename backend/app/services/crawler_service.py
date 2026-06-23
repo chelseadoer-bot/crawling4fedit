@@ -1,4 +1,5 @@
 from datetime import datetime
+from inspect import signature
 from pathlib import Path
 from typing import Callable
 
@@ -51,10 +52,17 @@ def run_brand_crawl(
 
     target_url = url or brand.get("default_url")
     crawler = get_crawler(crawler_id)
-    crawl_kwargs: dict = {"url": target_url, "headless": headless}
+    crawl_kwargs: dict = {
+        "url": target_url,
+        "headless": headless,
+        "brand_name": brand.get("group") or brand.get("name"),
+    }
     if on_progress is not None:
         crawl_kwargs["on_progress"] = on_progress
-    products = crawler.crawl(**crawl_kwargs)
+
+    params = signature(crawler.crawl).parameters
+    filtered = {k: v for k, v in crawl_kwargs.items() if k in params}
+    products = crawler.crawl(**filtered)
 
     if not products:
         return {

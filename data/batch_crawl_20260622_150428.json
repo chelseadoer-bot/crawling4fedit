@@ -1,0 +1,138 @@
+{
+  "success": [
+    {
+      "id": "uniqlo-tops",
+      "count": 209,
+      "message": "209개 상품 수집 완료"
+    },
+    {
+      "id": "uniqlo-bra-tops",
+      "count": 17,
+      "message": "17개 상품 수집 완료"
+    },
+    {
+      "id": "uniqlo-shirts",
+      "count": 209,
+      "message": "209개 상품 수집 완료"
+    },
+    {
+      "id": "uniqlo-knit",
+      "count": 209,
+      "message": "209개 상품 수집 완료"
+    },
+    {
+      "id": "uniqlo-outer",
+      "count": 209,
+      "message": "209개 상품 수집 완료"
+    },
+    {
+      "id": "uniqlo-bottoms",
+      "count": 209,
+      "message": "209개 상품 수집 완료"
+    },
+    {
+      "id": "uniqlo-dress-skirt",
+      "count": 209,
+      "message": "209개 상품 수집 완료"
+    },
+    {
+      "id": "29cm-women-all",
+      "count": 24966,
+      "message": "24966개 상품 수집 완료"
+    },
+    {
+      "id": "zara-new-in",
+      "count": 521,
+      "message": "521개 상품 수집 완료"
+    },
+    {
+      "id": "zara-jackets",
+      "count": 792,
+      "message": "792개 상품 수집 완료"
+    },
+    {
+      "id": "zara-blazers",
+      "count": 342,
+      "message": "342개 상품 수집 완료"
+    },
+    {
+      "id": "zara-dresses",
+      "count": 1284,
+      "message": "1284개 상품 수집 완료"
+    },
+    {
+      "id": "zara-tops",
+      "count": 1885,
+      "message": "1885개 상품 수집 완료"
+    },
+    {
+      "id": "zara-tshirts",
+      "count": 1029,
+      "message": "1029개 상품 수집 완료"
+    },
+    {
+      "id": "zara-shirts",
+      "count": 908,
+      "message": "908개 상품 수집 완료"
+    },
+    {
+      "id": "zara-knitwear",
+      "count": 1351,
+      "message": "1351개 상품 수집 완료"
+    },
+    {
+      "id": "zara-skirts",
+      "count": 650,
+      "message": "650개 상품 수집 완료"
+    },
+    {
+      "id": "zara-jeans",
+      "count": 570,
+      "message": "570개 상품 수집 완료"
+    },
+    {
+      "id": "zara-cardigans",
+      "count": 826,
+      "message": "826개 상품 수집 완료"
+    },
+    {
+      "id": "zara-coords",
+      "count": 1289,
+      "message": "1289개 상품 수집 완료"
+    },
+    {
+      "id": "zara-sweatshirts",
+      "count": 184,
+      "message": "184개 상품 수집 완료"
+    },
+    {
+      "id": "zara-trousers",
+      "count": 1391,
+      "message": "1391개 상품 수집 완료"
+    },
+    {
+      "id": "barnet-new-418",
+      "count": 138,
+      "message": "138개 상품 수집 완료"
+    }
+  ],
+  "failed": [
+    {
+      "id": "cos-new",
+      "message": "COS 상품을 수집하지 못했습니다."
+    },
+    {
+      "id": "cos-viewall",
+      "message": "COS 상품을 수집하지 못했습니다."
+    },
+    {
+      "id": "hm-new",
+      "message": "H&M 사이트 접근이 차단되었습니다. 일반 Chrome에서 https://www2.hm.com/ko_kr/ 페이지가 열리는지 확인한 뒤, backend/scripts/hm_save_session.py 로 쿠키를 저장하거나 data/hm_storage_state.json 을 준비한 후 다시 시도해주세요."
+    },
+    {
+      "id": "hm-viewall",
+      "message": "H&M 사이트 접근이 차단되었습니다. 일반 Chrome에서 https://www2.hm.com/ko_kr/ 페이지가 열리는지 확인한 뒤, backend/scripts/hm_save_session.py 로 쿠키를 저장하거나 data/hm_storage_state.json 을 준비한 후 다시 시도해주세요."
+    }
+  ],
+  "skipped": []
+}

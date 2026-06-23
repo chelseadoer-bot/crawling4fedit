@@ -5,13 +5,18 @@ from urllib.parse import urlparse
 
 from app.brands.balenciaga.crawler import BalenciagaCrawler
 from app.brands.barnet.crawler import BarnetCrawler
+from app.brands.cafe24.crawler import Cafe24Crawler
 from app.brands.cm29.crawler import Cm29Crawler
 from app.brands.cos.crawler import CosCrawler
 from app.brands.dior.crawler import DiorCrawler
 from app.brands.hm.crawler import HmCrawler
 from app.brands.moncler.crawler import MonclerCrawler
+from app.brands.musinsa.crawler import MusinsaCrawler
 from app.brands.playwright_catalog.crawler import ChanelCrawler
+from app.brands.playwright_store.crawler import PlaywrightStoreCrawler
+from app.brands.spao.crawler import SpaoCrawler
 from app.brands.uniqlo.crawler import UniqloCrawler
+from app.brands.wconcept.crawler import WconceptCrawler
 from app.brands.zara.crawler import ZaraCrawler
 
 _HERE = Path(__file__).resolve()
@@ -33,6 +38,11 @@ CRAWLER_REGISTRY = {
     "chanel": ChanelCrawler,
     "moncler": MonclerCrawler,
     "barnet": BarnetCrawler,
+    "cafe24": Cafe24Crawler,
+    "musinsa": MusinsaCrawler,
+    "playwright_store": PlaywrightStoreCrawler,
+    "spao": SpaoCrawler,
+    "wconcept": WconceptCrawler,
 }
 
 DOMAIN_CRAWLER_MAP = {
@@ -57,7 +67,56 @@ DOMAIN_CRAWLER_MAP = {
     "www.moncler.com": "moncler",
     "the-barnnet.com": "barnet",
     "www.the-barnnet.com": "barnet",
+    "musinsa.com": "musinsa",
+    "www.musinsa.com": "musinsa",
+    "spao.com": "spao",
+    "www.spao.com": "spao",
+    "wconcept.co.kr": "wconcept",
+    "display.wconcept.co.kr": "wconcept",
+    "ssfshop.com": "playwright_store",
+    "www.ssfshop.com": "playwright_store",
+    "reetkeem.com": "playwright_store",
+    "www.reetkeem.com": "playwright_store",
+    "dailyjou.com": "cafe24",
+    "www.dailyjou.com": "cafe24",
+    "dear-ment.co.kr": "cafe24",
+    "www.dear-ment.co.kr": "cafe24",
+    "realcoco.com": "cafe24",
+    "www.realcoco.com": "cafe24",
+    "beidelli.com": "cafe24",
+    "www.beidelli.com": "cafe24",
+    "tildeseoul.co.kr": "cafe24",
+    "www.tildeseoul.co.kr": "cafe24",
+    "slowand.com": "cafe24",
+    "m.slowand.com": "cafe24",
+    "www.slowand.com": "cafe24",
+    "petrichoor.com": "cafe24",
+    "www.petrichoor.com": "cafe24",
+    "frenchaube.com": "cafe24",
+    "www.frenchaube.com": "cafe24",
+    "merryaround.co.kr": "cafe24",
+    "www.merryaround.co.kr": "cafe24",
+    "mixxo.com": "cafe24",
+    "www.mixxo.com": "cafe24",
+    "cerric.co": "cafe24",
+    "www.cerric.co": "cafe24",
+    "thecoldestmoment.com": "cafe24",
+    "www.thecoldestmoment.com": "cafe24",
+    "raivestudio.com": "cafe24",
+    "www.raivestudio.com": "cafe24",
+    "ojos.kr": "cafe24",
+    "www.ojos.kr": "cafe24",
+    "sculptorpage.com": "cafe24",
+    "www.sculptorpage.com": "cafe24",
+    "lowclassic.com": "cafe24",
+    "www.lowclassic.com": "cafe24",
+    "treemingbird.com": "cafe24",
+    "www.treemingbird.com": "cafe24",
+    "open-yy.com": "cafe24",
+    "www.open-yy.com": "cafe24",
 }
+
+CAFE24_HOSTS = {h for h, cid in DOMAIN_CRAWLER_MAP.items() if cid == "cafe24"}
 
 def load_brands_config() -> list[dict]:
     if not BRANDS_CONFIG.exists():
@@ -84,6 +143,11 @@ GROUP_DISPLAY_NAMES = {
     "chanel": "CHANEL",
     "moncler": "MONCLER",
     "barnet": "THE BARNNET",
+    "cafe24": "CAFE24",
+    "musinsa": "MUSINSA",
+    "playwright_store": "STORE",
+    "spao": "SPAO",
+    "wconcept": "WCONCEPT",
 }
 
 
@@ -116,8 +180,14 @@ def detect_crawler_id(url: str) -> str | None:
     host = urlparse(url).netloc.lower()
     if host in DOMAIN_CRAWLER_MAP:
         return DOMAIN_CRAWLER_MAP[host]
-    bare = host.replace("www.", "")
-    return DOMAIN_CRAWLER_MAP.get(bare)
+    bare = host.replace("www.", "").replace("m.", "")
+    if bare in DOMAIN_CRAWLER_MAP:
+        return DOMAIN_CRAWLER_MAP[bare]
+    if "cate_no=" in url and "product/list" in url:
+        return "cafe24"
+    if "musinsa.com" in host and "/category/" in url:
+        return "musinsa"
+    return None
 
 
 def get_crawler(crawler_id: str):

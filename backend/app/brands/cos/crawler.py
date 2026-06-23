@@ -170,6 +170,20 @@ class CosCrawler(BaseBrandCrawler):
         on_progress=None,
     ) -> list[dict]:
         target_url = url or f"{BASE}/ko-kr/women/view-all.html"
+        for attempt_headless in (headless, False) if headless else (False,):
+            try:
+                return self._crawl_once(target_url, attempt_headless, on_progress)
+            except RuntimeError as exc:
+                if attempt_headless is not False or "수집하지 못했습니다" not in str(exc):
+                    raise
+        raise RuntimeError("COS 상품을 수집하지 못했습니다.")
+
+    def _crawl_once(
+        self,
+        target_url: str,
+        headless: bool,
+        on_progress=None,
+    ) -> list[dict]:
         sect_id = parse_sect_id(target_url)
         crawled_at = today_yymmdd()
         all_products: list[dict] = []
@@ -182,6 +196,26 @@ class CosCrawler(BaseBrandCrawler):
             page.goto(target_url, wait_until="domcontentloaded", timeout=120000)
             dismiss_popups(page)
             page.wait_for_timeout(4000)
+
+            title = (page.title() or "").lower()
+            if "access denied" in title:
+                browser.close()
+                raise RuntimeError("COS 상품을 수집하지 못했습니다.")
+
+            captured_sect: list[str] = []
+
+            def on_request(request):
+                if "categoryProductList" not in request.url:
+                    return
+                match = re.search(r"sectId=(\d+)", request.url)
+                if match:
+                    captured_sect.append(match.group(1))
+
+            page.on("request", on_request)
+            page.reload(wait_until="domcontentloaded", timeout=120000)
+            page.wait_for_timeout(2500)
+            if captured_sect:
+                sect_id = captured_sect[0]
 
             while page_num <= 200:
                 api_url = LIST_API.format(

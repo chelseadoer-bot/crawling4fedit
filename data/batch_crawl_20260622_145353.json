@@ -1,0 +1,345 @@
+{
+  "success": [
+    {
+      "id": "reetkeem-newest",
+      "count": 12,
+      "message": "12개 상품 수집 완료"
+    },
+    {
+      "id": "dailyjou-24",
+      "count": 96,
+      "message": "96개 상품 수집 완료"
+    },
+    {
+      "id": "dearment-91",
+      "count": 55,
+      "message": "55개 상품 수집 완료"
+    },
+    {
+      "id": "realcoco-51",
+      "count": 4,
+      "message": "4개 상품 수집 완료"
+    },
+    {
+      "id": "beidelli-446",
+      "count": 20,
+      "message": "20개 상품 수집 완료"
+    },
+    {
+      "id": "tildeseoul-103",
+      "count": 419,
+      "message": "419개 상품 수집 완료"
+    },
+    {
+      "id": "slowand-122",
+      "count": 39,
+      "message": "39개 상품 수집 완료"
+    },
+    {
+      "id": "petrichoor-49",
+      "count": 634,
+      "message": "634개 상품 수집 완료"
+    },
+    {
+      "id": "frenchaube-69",
+      "count": 1432,
+      "message": "1432개 상품 수집 완료"
+    },
+    {
+      "id": "merryaround-357",
+      "count": 11,
+      "message": "11개 상품 수집 완료"
+    },
+    {
+      "id": "musinsa-top",
+      "count": 300,
+      "message": "300개 상품 수집 완료"
+    },
+    {
+      "id": "musinsa-outer",
+      "count": 240,
+      "message": "240개 상품 수집 완료"
+    },
+    {
+      "id": "musinsa-pants",
+      "count": 240,
+      "message": "240개 상품 수집 완료"
+    },
+    {
+      "id": "musinsa-dress",
+      "count": 300,
+      "message": "300개 상품 수집 완료"
+    },
+    {
+      "id": "eightseconds-women",
+      "count": 60,
+      "message": "60개 상품 수집 완료"
+    },
+    {
+      "id": "spao-2605000015",
+      "count": 25,
+      "message": "25개 상품 수집 완료"
+    },
+    {
+      "id": "spao-2605000051",
+      "count": 25,
+      "message": "25개 상품 수집 완료"
+    },
+    {
+      "id": "spao-2605000064",
+      "count": 25,
+      "message": "25개 상품 수집 완료"
+    },
+    {
+      "id": "spao-2605000122",
+      "count": 25,
+      "message": "25개 상품 수집 완료"
+    },
+    {
+      "id": "spao-2605000068",
+      "count": 25,
+      "message": "25개 상품 수집 완료"
+    },
+    {
+      "id": "spao-2605000073",
+      "count": 25,
+      "message": "25개 상품 수집 완료"
+    },
+    {
+      "id": "spao-2605000006",
+      "count": 25,
+      "message": "25개 상품 수집 완료"
+    },
+    {
+      "id": "mixxo-47",
+      "count": 82,
+      "message": "82개 상품 수집 완료"
+    },
+    {
+      "id": "mixxo-3547",
+      "count": 257,
+      "message": "257개 상품 수집 완료"
+    },
+    {
+      "id": "mixxo-59",
+      "count": 186,
+      "message": "186개 상품 수집 완료"
+    },
+    {
+      "id": "mixxo-60",
+      "count": 249,
+      "message": "249개 상품 수집 완료"
+    },
+    {
+      "id": "mixxo-49",
+      "count": 174,
+      "message": "174개 상품 수집 완료"
+    },
+    {
+      "id": "mixxo-2414",
+      "count": 128,
+      "message": "128개 상품 수집 완료"
+    },
+    {
+      "id": "mixxo-50",
+      "count": 66,
+      "message": "66개 상품 수집 완료"
+    },
+    {
+      "id": "cerric-605",
+      "count": 132,
+      "message": "132개 상품 수집 완료"
+    },
+    {
+      "id": "thecoldest-29",
+      "count": 112,
+      "message": "112개 상품 수집 완료"
+    },
+    {
+      "id": "raive-210",
+      "count": 412,
+      "message": "412개 상품 수집 완료"
+    },
+    {
+      "id": "ojos-455",
+      "count": 42,
+      "message": "42개 상품 수집 완료"
+    },
+    {
+      "id": "sculptor-779",
+      "count": 1164,
+      "message": "1164개 상품 수집 완료"
+    },
+    {
+      "id": "sculptor-778",
+      "count": 12,
+      "message": "12개 상품 수집 완료"
+    },
+    {
+      "id": "lowclassic-655",
+      "count": 197,
+      "message": "197개 상품 수집 완료"
+    },
+    {
+      "id": "treemingbird-24",
+      "count": 370,
+      "message": "370개 상품 수집 완료"
+    },
+    {
+      "id": "openyy-322",
+      "count": 104,
+      "message": "104개 상품 수집 완료"
+    }
+  ],
+  "failed": [
+    {
+      "id": "uniqlo-tops",
+      "message": "UniqloCrawler.crawl() got an unexpected keyword argument 'brand_name'"
+    },
+    {
+      "id": "uniqlo-bra-tops",
+      "message": "UniqloCrawler.crawl() got an unexpected keyword argument 'brand_name'"
+    },
+    {
+      "id": "uniqlo-shirts",
+      "message": "UniqloCrawler.crawl() got an unexpected keyword argument 'brand_name'"
+    },
+    {
+      "id": "uniqlo-knit",
+      "message": "UniqloCrawler.crawl() got an unexpected keyword argument 'brand_name'"
+    },
+    {
+      "id": "uniqlo-outer",
+      "message": "UniqloCrawler.crawl() got an unexpected keyword argument 'brand_name'"
+    },
+    {
+      "id": "uniqlo-bottoms",
+      "message": "UniqloCrawler.crawl() got an unexpected keyword argument 'brand_name'"
+    },
+    {
+      "id": "uniqlo-dress-skirt",
+      "message": "UniqloCrawler.crawl() got an unexpected keyword argument 'brand_name'"
+    },
+    {
+      "id": "spao-new",
+      "message": "상품을 수집하지 못했습니다: https://www.spao.com/u/new?dispCategoryNo=2605000005&pageId=1782084841850&preCornerNo=R13701005_menuCategory"
+    },
+    {
+      "id": "29cm-women-all",
+      "message": "Cm29Crawler.crawl() got an unexpected keyword argument 'brand_name'"
+    },
+    {
+      "id": "wconcept-001001",
+      "message": "상품을 수집하지 못했습니다: https://display.wconcept.co.kr/category/women/001001"
+    },
+    {
+      "id": "wconcept-001005",
+      "message": "상품을 수집하지 못했습니다: https://display.wconcept.co.kr/category/women/001005"
+    },
+    {
+      "id": "wconcept-001004",
+      "message": "상품을 수집하지 못했습니다: https://display.wconcept.co.kr/category/women/001004"
+    },
+    {
+      "id": "wconcept-001013",
+      "message": "상품을 수집하지 못했습니다: https://display.wconcept.co.kr/category/women/001013"
+    },
+    {
+      "id": "wconcept-001003",
+      "message": "상품을 수집하지 못했습니다: https://display.wconcept.co.kr/category/women/001003"
+    },
+    {
+      "id": "wconcept-001002",
+      "message": "상품을 수집하지 못했습니다: https://display.wconcept.co.kr/category/women/001002"
+    },
+    {
+      "id": "wconcept-001007",
+      "message": "상품을 수집하지 못했습니다: https://display.wconcept.co.kr/category/women/001007"
+    },
+    {
+      "id": "wconcept-001006",
+      "message": "상품을 수집하지 못했습니다: https://display.wconcept.co.kr/category/women/001006"
+    },
+    {
+      "id": "wconcept-001008",
+      "message": "상품을 수집하지 못했습니다: https://display.wconcept.co.kr/category/women/001008"
+    },
+    {
+      "id": "cos-new",
+      "message": "CosCrawler.crawl() got an unexpected keyword argument 'brand_name'"
+    },
+    {
+      "id": "cos-viewall",
+      "message": "CosCrawler.crawl() got an unexpected keyword argument 'brand_name'"
+    },
+    {
+      "id": "hm-new",
+      "message": "HmCrawler.crawl() got an unexpected keyword argument 'brand_name'"
+    },
+    {
+      "id": "hm-viewall",
+      "message": "HmCrawler.crawl() got an unexpected keyword argument 'brand_name'"
+    },
+    {
+      "id": "zara-new-in",
+      "message": "ZaraCrawler.crawl() got an unexpected keyword argument 'brand_name'"
+    },
+    {
+      "id": "zara-jackets",
+      "message": "ZaraCrawler.crawl() got an unexpected keyword argument 'brand_name'"
+    },
+    {
+      "id": "zara-blazers",
+      "message": "ZaraCrawler.crawl() got an unexpected keyword argument 'brand_name'"
+    },
+    {
+      "id": "zara-dresses",
+      "message": "ZaraCrawler.crawl() got an unexpected keyword argument 'brand_name'"
+    },
+    {
+      "id": "zara-tops",
+      "message": "ZaraCrawler.crawl() got an unexpected keyword argument 'brand_name'"
+    },
+    {
+      "id": "zara-tshirts",
+      "message": "ZaraCrawler.crawl() got an unexpected keyword argument 'brand_name'"
+    },
+    {
+      "id": "zara-shirts",
+      "message": "ZaraCrawler.crawl() got an unexpected keyword argument 'brand_name'"
+    },
+    {
+      "id": "zara-knitwear",
+      "message": "ZaraCrawler.crawl() got an unexpected keyword argument 'brand_name'"
+    },
+    {
+      "id": "zara-skirts",
+      "message": "ZaraCrawler.crawl() got an unexpected keyword argument 'brand_name'"
+    },
+    {
+      "id": "zara-jeans",
+      "message": "ZaraCrawler.crawl() got an unexpected keyword argument 'brand_name'"
+    },
+    {
+      "id": "zara-cardigans",
+      "message": "ZaraCrawler.crawl() got an unexpected keyword argument 'brand_name'"
+    },
+    {
+      "id": "zara-coords",
+      "message": "ZaraCrawler.crawl() got an unexpected keyword argument 'brand_name'"
+    },
+    {
+      "id": "zara-sweatshirts",
+      "message": "ZaraCrawler.crawl() got an unexpected keyword argument 'brand_name'"
+    },
+    {
+      "id": "zara-trousers",
+      "message": "ZaraCrawler.crawl() got an unexpected keyword argument 'brand_name'"
+    },
+    {
+      "id": "barnet-new-418",
+      "message": "BarnetCrawler.crawl() got an unexpected keyword argument 'brand_name'"
+    }
+  ],
+  "skipped": []
+}
