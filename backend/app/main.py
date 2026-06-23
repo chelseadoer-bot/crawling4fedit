@@ -21,6 +21,7 @@ from app.brands.registry import (
 )
 from app.core.csv_schema import SIMPLE_COLUMNS, SIMPLE_COLUMN_LABELS, normalize_column_name
 from app.core.csv_writer import standard_to_simple
+from app.core.product_store import storage_summary
 from app.services.crawl_job import get_job, job_to_dict, start_crawl_job
 
 app = FastAPI(
@@ -196,6 +197,14 @@ def patch_brand(brand_id: str, body: BrandUpdateRequest):
         "has_csv": path.exists(),
         "crawlable": bool(brand.get("crawler_id")),
     }
+
+
+@app.get("/api/brands/{brand_id}/storage")
+def brand_storage(brand_id: str):
+    brand = get_brand_meta(brand_id)
+    if not brand:
+        raise HTTPException(status_code=404, detail="브랜드를 찾을 수 없습니다.")
+    return storage_summary(brand_id)
 
 
 @app.delete("/api/brands/{brand_id}")

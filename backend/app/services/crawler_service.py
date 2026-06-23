@@ -74,13 +74,32 @@ def run_brand_crawl(
         }
 
     output_path = brand_output_path(brand_id)
-    save_simple_csv(products, output_path)
+    store_result = save_simple_csv(products, output_path)
+
+    delta = store_result.new_count + store_result.updated_count
+    msg = (
+        f"{store_result.total}개 스냅샷 저장 "
+        f"(신규 {store_result.new_count}, 변경 {store_result.updated_count}, "
+        f"동일 {store_result.unchanged_count}, 품절/삭제 {store_result.removed_count})"
+    )
+    if delta == 0:
+        msg += f" · delta 없음 ({store_result.period})"
+    else:
+        msg += f" · delta {delta}건 ({store_result.period})"
 
     return {
         "brand_id": brand_id,
         "success": True,
-        "count": len(products),
+        "count": store_result.total,
+        "new_count": store_result.new_count,
+        "updated_count": store_result.updated_count,
+        "unchanged_count": store_result.unchanged_count,
+        "removed_count": store_result.removed_count,
+        "period": store_result.period,
+        "delta_path": store_result.delta_path,
+        "catalog_path": store_result.catalog_path,
+        "archived_period": store_result.archived_period,
         "output_path": str(output_path),
         "crawled_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-        "message": f"{len(products)}개 상품 수집 완료",
+        "message": msg,
     }

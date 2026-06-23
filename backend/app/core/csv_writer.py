@@ -126,30 +126,12 @@ def standard_to_simple(row: dict) -> dict:
     }
 
 
-def save_simple_csv(products: list[dict], output_path: Path) -> None:
-    """SIMPLE_COLUMNS 순서로 저장. 날짜 파일 + latest 파일."""
-    # output_path 예: data/output/zara/zara_products.csv
-    # → 날짜 파일: data/output/zara/zara_20260616.csv
-    stem = output_path.stem  # e.g. "zara_products"
-    brand_id = stem.split("_")[0]  # "zara"
-    dated_name = f"{brand_id}_{today_str()}.csv"
-    dated_path = output_path.parent / dated_name
+def save_simple_csv(products: list[dict], output_path: Path):
+    """SIMPLE_COLUMNS 저장 + 증분(delta)/6개월 catalog 적치."""
+    from app.core.product_store import save_products
 
-    simple_rows = []
-    for row in products:
-        if col_exists_as_standard(row):
-            simple_rows.append(_clean_row(row, SIMPLE_COLUMNS))
-        else:
-            simple_rows.append(standard_to_simple(row))
-
-    _write_csv(simple_rows, SIMPLE_COLUMNS, dated_path)
-
-    # latest (기존 코드가 읽는 경로 유지)
-    latest_path = output_path.parent / f"{brand_id}_latest.csv"
-    _write_csv(simple_rows, SIMPLE_COLUMNS, latest_path)
-
-    # 기존 경로에도 저장 (main.py가 brand_id_products.csv 를 읽으므로 유지)
-    _write_csv(simple_rows, SIMPLE_COLUMNS, output_path)
+    brand_id = output_path.stem.split("_")[0]
+    return save_products(brand_id, products, output_path)
 
 
 def col_exists_as_standard(row: dict) -> bool:

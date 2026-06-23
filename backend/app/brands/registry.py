@@ -9,12 +9,15 @@ from app.brands.cafe24.crawler import Cafe24Crawler
 from app.brands.cm29.crawler import Cm29Crawler
 from app.brands.cos.crawler import CosCrawler
 from app.brands.dior.crawler import DiorCrawler
+from app.brands.goodwearmall.crawler import GoodwearmallCrawler
 from app.brands.hm.crawler import HmCrawler
+from app.brands.mango.crawler import MangoCrawler
 from app.brands.moncler.crawler import MonclerCrawler
 from app.brands.musinsa.crawler import MusinsaCrawler
 from app.brands.playwright_catalog.crawler import ChanelCrawler
 from app.brands.playwright_store.crawler import PlaywrightStoreCrawler
 from app.brands.spao.crawler import SpaoCrawler
+from app.brands.ssfshop.crawler import SsfshopCrawler
 from app.brands.uniqlo.crawler import UniqloCrawler
 from app.brands.wconcept.crawler import WconceptCrawler
 from app.brands.zara.crawler import ZaraCrawler
@@ -42,6 +45,9 @@ CRAWLER_REGISTRY = {
     "musinsa": MusinsaCrawler,
     "playwright_store": PlaywrightStoreCrawler,
     "spao": SpaoCrawler,
+    "ssfshop": SsfshopCrawler,
+    "goodwearmall": GoodwearmallCrawler,
+    "mango": MangoCrawler,
     "wconcept": WconceptCrawler,
 }
 
@@ -73,8 +79,15 @@ DOMAIN_CRAWLER_MAP = {
     "www.spao.com": "spao",
     "wconcept.co.kr": "wconcept",
     "display.wconcept.co.kr": "wconcept",
-    "ssfshop.com": "playwright_store",
-    "www.ssfshop.com": "playwright_store",
+    "ssfshop.com": "ssfshop",
+    "www.ssfshop.com": "ssfshop",
+    "m.ssfshop.com": "ssfshop",
+    "goodwearmall.com": "goodwearmall",
+    "display-topten10.goodwearmall.com": "goodwearmall",
+    "generalidea.co.kr": "cafe24",
+    "www.generalidea.co.kr": "cafe24",
+    "shop.mango.com": "mango",
+    "www.shop.mango.com": "mango",
     "reetkeem.com": "playwright_store",
     "www.reetkeem.com": "playwright_store",
     "dailyjou.com": "cafe24",
@@ -147,6 +160,9 @@ GROUP_DISPLAY_NAMES = {
     "musinsa": "MUSINSA",
     "playwright_store": "STORE",
     "spao": "SPAO",
+    "ssfshop": "8SECONDS",
+    "goodwearmall": "TOPTEN",
+    "mango": "MANGO",
     "wconcept": "WCONCEPT",
 }
 
@@ -183,10 +199,14 @@ def detect_crawler_id(url: str) -> str | None:
     bare = host.replace("www.", "").replace("m.", "")
     if bare in DOMAIN_CRAWLER_MAP:
         return DOMAIN_CRAWLER_MAP[bare]
-    if "cate_no=" in url and "product/list" in url:
+    if "cate_no=" in url and "product/" in url:
         return "cafe24"
-    if "musinsa.com" in host and "/category/" in url:
+    if "generalidea.co.kr/category/" in url:
+        return "cafe24"
+    if "musinsa.com" in host and ("/category/" in url or "/brand/" in url):
         return "musinsa"
+    if "goodwearmall.com/category/" in url:
+        return "goodwearmall"
     return None
 
 

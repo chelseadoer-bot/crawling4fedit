@@ -40,16 +40,28 @@ def parse_cate_no(url: str) -> str:
     cate = params.get("cate_no", [None])[0]
     if cate:
         return str(cate)
+    path_match = re.search(r"/category/[^/]+/(\d+)", parsed.path)
+    if path_match:
+        return path_match.group(1)
     path_match = re.search(r"/(?:new|category)/(\d+)", parsed.path)
     if path_match:
         return path_match.group(1)
     raise ValueError(f"Cafe24 URL에 cate_no가 필요합니다: {url}")
 
 
-def fetch_page(base: str, cate_no: str, page: int) -> dict:
+def list_page_url(base: str, cate_no: str) -> str:
+    return f"{base}/product/list.html?cate_no={cate_no}"
+
+
+def fetch_page(base: str, cate_no: str, page: int, referer: str | None = None) -> dict:
     query = urllib.parse.urlencode({"cate_no": cate_no, "page": page, "count": PAGE_SIZE})
     api_url = f"{base}/exec/front/Product/ApiProductList?{query}"
-    req = urllib.request.Request(api_url, headers=UA)
+    headers = {
+        **UA,
+        "Referer": referer or list_page_url(base, cate_no),
+        "Accept": "application/json, text/javascript, */*; q=0.01",
+    }
+    req = urllib.request.Request(api_url, headers=headers)
     with urllib.request.urlopen(req, timeout=60) as resp:
         return json.loads(resp.read())
 
@@ -99,6 +111,7 @@ class Cafe24Crawler(BaseBrandCrawler):
         base = site_base(url)
         cate_no = parse_cate_no(url)
         label = brand_label_from_url(url, brand_name or "")
+        referer = url if "cate_no=" in url else list_page_url(base, cate_no)
         crawled_at = today_yymmdd()
         products: list[dict] = []
         seen: set[str] = set()
@@ -106,7 +119,7 @@ class Cafe24Crawler(BaseBrandCrawler):
 
         while True:
             try:
-                data = fetch_page(base, cate_no, page_num)
+                data = fetch_page(base, cate_no, page_num, referer=referer)
             except Exception as exc:
                 if page_num == 1:
                     raise RuntimeError(f"Cafe24 API 실패 ({base}): {exc}") from exc

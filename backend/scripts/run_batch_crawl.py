@@ -16,10 +16,34 @@ from app.services.crawler_service import run_brand_crawl
 from scripts.brand_catalog_entries import CATALOG_ENTRIES, entry_to_brand
 
 
+REMOVED_BRAND_IDS = {
+    "realcoco-51",
+    "beidelli-446",
+    "mixxo",
+    "mixxo-47",
+    "mixxo-3547",
+    "mixxo-59",
+    "mixxo-60",
+    "mixxo-49",
+    "mixxo-2414",
+    "mixxo-50",
+    "massimo-dutti",
+    "arket",
+    "topten",
+    "general-idea",
+    "mango",
+}
+
+
 def sync_catalog() -> int:
     existing = {b["id"]: b for b in load_brands_config()}
     added = 0
     updated = 0
+    removed = 0
+    for bid in list(existing):
+        if bid in REMOVED_BRAND_IDS:
+            del existing[bid]
+            removed += 1
     for entry in CATALOG_ENTRIES:
         brand = entry_to_brand(entry)
         bid = brand["id"]
@@ -45,7 +69,7 @@ def sync_catalog() -> int:
     if backend_cfg.parent.exists():
         with backend_cfg.open("w", encoding="utf-8") as f:
             json.dump({"brands": list(existing.values())}, f, ensure_ascii=False, indent=2)
-    print(f"카탈로그 동기화: 추가 {added}, 갱신 {updated}, 총 {len(existing)}")
+    print(f"카탈로그 동기화: 추가 {added}, 갱신 {updated}, 삭제 {removed}, 총 {len(existing)}")
     return len(CATALOG_ENTRIES)
 
 
@@ -66,8 +90,18 @@ def run_batch(only_ids: list[str] | None = None, headless: bool = True) -> dict:
         try:
             out = run_brand_crawl(bid, headless=headless)
             if out.get("success"):
-                results["success"].append({"id": bid, "count": out.get("count"), "message": out.get("message")})
-                print(f"  OK {out.get('count')}개")
+                results["success"].append(
+                    {
+                        "id": bid,
+                        "count": out.get("count"),
+                        "new_count": out.get("new_count"),
+                        "updated_count": out.get("updated_count"),
+                        "unchanged_count": out.get("unchanged_count"),
+                        "period": out.get("period"),
+                        "message": out.get("message"),
+                    }
+                )
+                print(f"  OK {out.get('message')}")
             else:
                 results["failed"].append({"id": bid, "message": out.get("message")})
                 print(f"  FAIL {out.get('message')}")

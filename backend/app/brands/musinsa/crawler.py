@@ -16,12 +16,17 @@ from app.core.csv_schema import make_product_row, today_yymmdd
 SCROLL_ROUNDS = 20
 
 
-def parse_category_code(url: str) -> str:
+def parse_brand_slug(url: str) -> str | None:
+    m = re.search(r"/brand/([^/]+)/products", urlparse(url).path)
+    return m.group(1) if m else None
+
+
+def parse_category_code(url: str) -> str | None:
     path = urlparse(url).path.strip("/")
     m = re.search(r"category/(\d+)", path)
     if m:
         return m.group(1)
-    raise ValueError(f"무신사 카테고리 URL이 아닙니다: {url}")
+    return None
 
 
 def parse_gf(url: str) -> str:
@@ -120,13 +125,23 @@ class MusinsaCrawler(BaseBrandCrawler):
         url: str | None = None,
         headless: bool = True,
         on_progress=None,
+        brand_name: str | None = None,
         **_,
     ) -> list[dict]:
         target = url or "https://www.musinsa.com/category/001/goods?gf=F"
+        brand_slug = parse_brand_slug(target)
         category = parse_category_code(target)
         gf = parse_gf(target)
-        if "/goods" not in urlparse(target).path:
-            target = f"https://www.musinsa.com/category/{category}/goods?gf={gf}"
+        default_brand = brand_name or ("MUSINSA STANDARD" if brand_slug == "musinsastandard" else "MUSINSA")
+
+        if brand_slug:
+            if "?" not in target:
+                target = f"{target}?gf={gf}"
+        elif category:
+            if "/goods" not in urlparse(target).path:
+                target = f"https://www.musinsa.com/category/{category}/goods?gf={gf}"
+        else:
+            raise ValueError(f"무신사 카테고리/브랜드 URL이 아닙니다: {target}")
 
         crawled_at = today_yymmdd()
         captured: list[dict] = []
@@ -143,7 +158,7 @@ class MusinsaCrawler(BaseBrandCrawler):
                 u = response.url
                 if "musinsa" not in u:
                     return
-                if not any(k in u for k in ("goods", "product", "plp", "listing", "category")):
+                if not any(k in u for k in ("goods", "product", "plp", "listing", "category", "brand")):
                     return
                 try:
                     body = response.json()
@@ -163,6 +178,8 @@ class MusinsaCrawler(BaseBrandCrawler):
                 page.wait_for_timeout(900)
                 for prod in captured:
                     row = dict_to_row(prod, crawled_at)
+                    if row:
+                        row["brand"] = default_brand
                     if not row:
                         continue
                     key = row.get("product_detail_url") or row.get("product_name")
@@ -176,6 +193,7 @@ class MusinsaCrawler(BaseBrandCrawler):
 
             if len(products) < 5:
                 for row in extract_dom_products(page, crawled_at):
+                    row["brand"] = default_brand
                     key = row.get("product_detail_url") or row.get("product_name")
                     if key in seen:
                         continue
