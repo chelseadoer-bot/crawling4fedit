@@ -1,0 +1,28 @@
+## Summary
+
+- 스키마 전면 교체: alias_map 기반 표준 컬럼명 적용 (product_name, front_images_url, current_price, product_detail_url 등 24개)
+- CSV 품질: UTF-8-SIG, null/None/nan 금지, URL 쌍따옴표 처리, 날짜 파일명 brand_YYYYMMDD.csv + brand_latest.csv 이중 저장
+- 크롤러 상세 데이터: ZARA/UNIQLO/COS/H&M/BARNET 새 스키마 적용, 이미지 절대 https 경로 보장
+- BARNET 심층 크롤링: 상세 페이지 병렬 스크래핑으로 안감/두께감/계절감/비침/신축성 추출
+- 주간 스케줄: config/schedule.json (요일별 그룹), weekly_crawl.py (자동 실행), setup_scheduler.py (Windows 작업 스케줄러 매일 09:00)
+- 브랜드 정리: 에잇세컨즈 통일, 무신사스탠다드/SPAO/미쏘 추가, schedule_group 필드 추가
+- 프론트엔드: 값 있는 컬럼만 동적 표시, 상품링크 클릭 가능
+
+## 스케줄
+
+월: 국내 SPA (무신사스탠다드, 에잇세컨즈, UNIQLO, SPAO)
+화: 해외 SPA (COS, H&M, 미쏘, ZARA)
+수: 디자이너 (추가 예정)
+목: 명품 (BALENCIAGA, DIOR, CHANEL, MONCLER)
+금: 보세 (THE BARNNET)
+토: 키즈 (추가 예정)
+
+## Test plan
+
+- 백엔드 재시작 후 /api/brands 정상 응답 확인
+- 기존 CSV 파일 읽기 호환성 확인
+- 브랜드 업데이트 버튼으로 새 스키마 CSV 저장 확인
+- python backend/scripts/weekly_crawl.py 실행 후 오늘 요일 자동 감지 크롤링
+- python backend/scripts/setup_scheduler.py 로 작업 스케줄러 등록 확인
+
+Generated with Claude Code

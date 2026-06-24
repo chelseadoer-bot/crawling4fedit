@@ -1,0 +1,66 @@
+{
+  "success": [
+    {
+      "id": "musinsa-standard",
+      "count": 270,
+      "message": "270개 상품 수집 완료"
+    },
+    {
+      "id": "eightseconds-women",
+      "count": 60,
+      "message": "60개 상품 수집 완료"
+    },
+    {
+      "id": "realcoco-24",
+      "count": 75,
+      "message": "75개 상품 수집 완료"
+    },
+    {
+      "id": "realcoco-25",
+      "count": 136,
+      "message": "136개 상품 수집 완료"
+    },
+    {
+      "id": "realcoco-1149",
+      "count": 91,
+      "message": "91개 상품 수집 완료"
+    },
+    {
+      "id": "realcoco-1150",
+      "count": 132,
+      "message": "132개 상품 수집 완료"
+    },
+    {
+      "id": "realcoco-27",
+      "count": 108,
+      "message": "108개 상품 수집 완료"
+    },
+    {
+      "id": "realcoco-28",
+      "count": 66,
+      "message": "66개 상품 수집 완료"
+    },
+    {
+      "id": "beidelli-59",
+      "count": 1109,
+      "message": "1109개 상품 수집 완료"
+    },
+    {
+      "id": "topten-ssma42",
+      "count": 875,
+      "message": "875개 상품 수집 완료"
+    },
+    {
+      "id": "generalidea-355",
+      "count": 1981,
+      "message": "1981개 상품 수집 완료"
+    },
+    {
+      "id": "mango-women-sale",
+      "count": 124,
+      "message": "124개 상품 수집 완료"
+    }
+  ],
+  "failed": [],
+  "skipped": []
+}

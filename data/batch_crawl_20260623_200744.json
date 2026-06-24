@@ -1,0 +1,11 @@
+{
+  "success": [
+    {
+      "id": "eightseconds-women",
+      "count": 600,
+      "message": "600개 상품 수집 완료"
+    }
+  ],
+  "failed": [],
+  "skipped": []
+}
