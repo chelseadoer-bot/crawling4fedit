@@ -2,7 +2,10 @@
 
 from __future__ import annotations
 
+import json
 import re
+import time
+import urllib.request
 from urllib.parse import urlparse
 
 from playwright.sync_api import Page, sync_playwright
@@ -14,6 +17,8 @@ from app.core.csv_schema import make_product_row, today_yymmdd
 SKIP_NAMES = {"바로가기", "전체 상품", "신상품순", "인기상품순", "낮은가격순", "높은가격순"}
 PAGE_WAIT_MS = 2500
 BLOCK_WAIT_MS = 2000
+DETAIL_DELAY_SEC = 0.15
+DETAIL_API = "https://www.ssfshop.com/public/goods/detail/{god_no}/view"
 
 EXTRACT_PRODUCTS_JS = """() => {
     const out = [];
@@ -26,10 +31,12 @@ EXTRACT_PRODUCTS_JS = """() => {
         if (name.includes(',')) name = name.split(',')[0].trim();
         const card = a.closest('li, article, div') || a;
         const priceMatch = (card.innerText || '').match(/[\\d,]+\\s*원/);
+        const godMatch = href.match(/GM\\d+/);
         seen.add(href);
         out.push({
             name,
             href,
+            godNo: godMatch ? godMatch[0] : '',
             image: img?.currentSrc || img?.src || '',
             price: priceMatch ? priceMatch[0] : '',
         });
@@ -63,11 +70,154 @@ ADVANCE_PAGE_JS = """(nextPage) => {
     return 'shift';
 }"""
 
+_GOD_NO_RE = re.compile(r"(GM\d+)")
+
 
 def normalize_ssf_url(url: str) -> str:
     parsed = urlparse(url)
     host = parsed.netloc.replace("m.", "www.")
     return f"{parsed.scheme}://{host}{parsed.path}?{parsed.query}" if parsed.query else f"{parsed.scheme}://{host}{parsed.path}"
+
+
+def extract_god_no(href: str) -> str:
+    match = _GOD_NO_RE.search(href or "")
+    return match.group(1) if match else ""
+
+
+def fetch_goods_detail(god_no: str) -> dict | None:
+    if not god_no:
+        return None
+    req = urllib.request.Request(
+        DETAIL_API.format(god_no=god_no),
+        headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json"},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            return json.loads(resp.read().decode("utf-8"))
+    except Exception:
+        return None
+
+
+def category_from_detail(detail: dict) -> str:
+    goods = detail.get("goods") or {}
+    names = [
+        c.get("dspCtgryNm", "").strip()
+        for c in (goods.get("cateNameList") or [])
+        if isinstance(c, dict) and c.get("dspCtgryNm")
+    ]
+    return " > ".join(names)
+
+
+def gender_from_detail(detail: dict) -> str:
+    goods = detail.get("goods") or {}
+    god = goods.get("god") or {}
+    sex = (god.get("recomendSexCd") or "").strip()
+    mapping = {"WOMEN": "여성", "MEN": "남성", "KIDS": "공용"}
+    return mapping.get(sex.upper(), sex)
+
+
+def material_from_detail(detail: dict) -> str:
+    matr_map = detail.get("goodsMatrDscrInfoMap") or {}
+    parts: list[str] = []
+    for value in matr_map.values():
+        if isinstance(value, list):
+            parts.extend(str(x).strip() for x in value if x)
+        elif value:
+            parts.append(str(value).strip())
+    return " | ".join(parts)
+
+
+def rating_reviews_from_detail(detail: dict) -> tuple[str, str]:
+    raw = detail.get("productJsonLd")
+    if isinstance(raw, str):
+        try:
+            raw = json.loads(raw)
+        except json.JSONDecodeError:
+            raw = {}
+    if not isinstance(raw, dict):
+        raw = {}
+    agg = raw.get("aggregateRating") or {}
+    rating = agg.get("ratingValue")
+    reviews = agg.get("reviewCount")
+    if rating in (None, ""):
+        goods = detail.get("goods") or {}
+        count = goods.get("reviewCount") or 0
+        if count:
+            score = detail.get("score") or {}
+            total = score.get("totalScore")
+            if total not in (None, "", 0):
+                rating = round(float(total) / 2, 1)
+            reviews = count
+    return (
+        str(rating) if rating not in (None, "") else "",
+        str(reviews) if reviews not in (None, "") else "",
+    )
+
+
+def price_pair_from_detail(detail: dict, fallback_price: str = "") -> tuple[str, str]:
+    retail = detail.get("retail_price")
+    sale = detail.get("sale_price")
+    if retail in (None, "") and sale in (None, ""):
+        goods = detail.get("goods") or {}
+        god = goods.get("god") or {}
+        retail = god.get("rtlPrc") or retail
+        sale = god.get("lastSalePrc") or sale
+    regular = str(int(retail)) if retail not in (None, "") else fallback_price
+    current = ""
+    if sale not in (None, "") and regular:
+        try:
+            if int(sale) < int(regular):
+                current = str(int(sale))
+        except (TypeError, ValueError):
+            pass
+    elif sale not in (None, "") and not regular:
+        regular = str(int(sale))
+    return regular, current
+
+
+def detail_to_row(
+    item: dict,
+    detail: dict | None,
+    label: str,
+    crawled_at: str,
+    category_fallback: str = "",
+) -> dict:
+    god_no = item.get("godNo") or extract_god_no(item.get("href", ""))
+    fallback_price = re.sub(r"[^\d]", "", item.get("price", ""))
+    regular, current = fallback_price, ""
+    category = category_fallback
+    gender = ""
+    material = ""
+    rating = ""
+    reviews = ""
+
+    if detail:
+        regular, current = price_pair_from_detail(detail, fallback_price)
+        category = category_from_detail(detail) or category_fallback
+        gender = gender_from_detail(detail)
+        material = material_from_detail(detail)
+        rating, reviews = rating_reviews_from_detail(detail)
+
+    name = (item.get("name") or "").strip()
+    if not name and detail:
+        goods = detail.get("goods") or {}
+        name = (goods.get("godNm") or (goods.get("god") or {}).get("godNm") or "").strip()
+
+    return make_product_row(
+        brand=label,
+        platform="",
+        product_name=name,
+        category=category,
+        gender=gender,
+        regular_price=regular,
+        current_price=current,
+        material=material,
+        rating=rating,
+        reviews=reviews,
+        thumbnail=item.get("image", ""),
+        product_detail_url=item.get("href", ""),
+        crawled_at=crawled_at,
+    )
 
 
 def get_total_pages(page: Page) -> int:
@@ -112,6 +262,7 @@ class SsfshopCrawler(BaseBrandCrawler):
         headless: bool = True,
         on_progress=None,
         brand_name: str | None = None,
+        category_name: str | None = None,
         **_,
     ) -> list[dict]:
         if not url:
@@ -119,8 +270,10 @@ class SsfshopCrawler(BaseBrandCrawler):
         target = normalize_ssf_url(url)
         label = brand_name or "8SECONDS"
         crawled_at = today_yymmdd()
+        category_fallback = category_name or ""
         products: list[dict] = []
         seen: set[str] = set()
+        detail_cache: dict[str, dict | None] = {}
 
         with sync_playwright() as p:
             browser = launch_browser(p, headless=headless)
@@ -143,17 +296,19 @@ class SsfshopCrawler(BaseBrandCrawler):
                     if not href or href in seen:
                         continue
                     seen.add(href)
-                    price = re.sub(r"[^\d]", "", item.get("price", ""))
+
+                    god_no = item.get("godNo") or extract_god_no(href)
+                    if god_no not in detail_cache:
+                        detail_cache[god_no] = fetch_goods_detail(god_no)
+                        time.sleep(DETAIL_DELAY_SEC)
+
                     products.append(
-                        make_product_row(
-                            brand=label,
-                            platform=urlparse(target).netloc,
-                            product_name=name,
-                            regular_price=price,
-                            current_price=price,
-                            thumbnail=item.get("image", ""),
-                            product_detail_url=href,
-                            crawled_at=crawled_at,
+                        detail_to_row(
+                            item,
+                            detail_cache.get(god_no),
+                            label,
+                            crawled_at,
+                            category_fallback,
                         )
                     )
 

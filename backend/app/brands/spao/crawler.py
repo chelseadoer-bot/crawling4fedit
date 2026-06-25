@@ -1,8 +1,9 @@
-"""SPAO 크롤러 (공개 API)"""
+"""SPAO 크롤러 (공개 API + 상세 HTML 보강)"""
 
 from __future__ import annotations
 
 import json
+import re
 import time
 import urllib.parse
 import urllib.request
@@ -15,6 +16,8 @@ BASE = "https://www.spao.com"
 IMAGE_CDN = "https://static.elandrs.com/spao"
 PAGE_SIZE = 100
 DEFAULT_VENDOR = "LV26000002"
+DETAIL_DELAY_SEC = 0.12
+_ITEM_DETAIL_RE = re.compile(r"_state\.itemDetail\s*=\s*(\{.+?\});\s*\n", re.S)
 
 
 def parse_disp_category_no(url: str) -> str:
@@ -54,12 +57,21 @@ def api_get(url: str) -> dict:
     return payload
 
 
+def normalize_brand(name: str) -> str:
+    name = (name or "스파오").strip()
+    name = re.sub(r"^\[공식\]\s*", "", name)
+    return name or "스파오"
+
+
 def image_url(path: str) -> str:
     if not path:
         return ""
     if path.startswith("http"):
         return path
-    return f"{IMAGE_CDN}/{path.lstrip('/')}"
+    path = path.lstrip("/")
+    if not path.startswith("r/"):
+        path = f"r/{path}"
+    return f"{IMAGE_CDN}/{path}"
 
 
 def product_link(item: dict) -> str:
@@ -68,22 +80,142 @@ def product_link(item: dict) -> str:
     return f"{BASE}/i/item?itemNo={item_no}&lowerVendNo={vendor}"
 
 
-def parse_item(item: dict, crawled_at: str) -> dict | None:
-    name = (item.get("itemName") or "").strip()
-    if not name or not item.get("itemNo"):
+def colors_from_item(item: dict) -> str:
+    chips = item.get("colorChip") or []
+    names = [c.get("colorName", "").strip() for c in chips if c.get("colorName")]
+    return ", ".join(names)
+
+
+def price_pair_from_item(item: dict) -> tuple[str, str]:
+    regular = item.get("orgSellprice") or item.get("sellprice") or ""
+    final = item.get("finalDcPrice") or item.get("sellprice") or regular
+    dc_rate = item.get("dcRate") or 0
+    regular_s = str(regular) if regular not in (None, "") else ""
+    if not regular_s:
+        return "", ""
+    try:
+        if int(dc_rate) > 0 and int(final) < int(regular_s):
+            return regular_s, str(final)
+    except (TypeError, ValueError):
+        pass
+    return regular_s, ""
+
+
+def fetch_item_detail(item_no: str, vendor: str) -> dict | None:
+    if not item_no:
         return None
-    price = item.get("finalDcPrice") or item.get("sellprice") or item.get("orgSellprice") or ""
-    regular = item.get("orgSellprice") or price
+    url = f"{BASE}/i/item?itemNo={item_no}&lowerVendNo={vendor}"
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0", "Referer": f"{BASE}/"})
+    try:
+        html = urllib.request.urlopen(req, timeout=60).read().decode("utf-8", "ignore")
+    except Exception:
+        return None
+    match = _ITEM_DETAIL_RE.search(html)
+    if not match:
+        return None
+    try:
+        return json.loads(match.group(1))
+    except json.JSONDecodeError:
+        return None
+
+
+def category_from_detail(detail: dict | None, fallback: str = "") -> str:
+    if not detail:
+        return fallback
+    cat = detail.get("category") or {}
+    parts = [
+        cat.get("largeClassDispCategoryName", "").strip(),
+        cat.get("middleClassDispCategoryName", "").strip(),
+        cat.get("smallClassDispCategoryName", "").strip(),
+    ]
+    joined = " > ".join(p for p in parts if p)
+    return joined or fallback
+
+
+def material_from_detail(detail: dict | None) -> str:
+    if not detail:
+        return ""
+    desc = detail.get("descInfo") or {}
+    for entry in desc.get("itemProvideMntList") or []:
+        if not isinstance(entry, dict):
+            continue
+        name = (entry.get("itemProvideMntArtiName") or "").strip()
+        content = (entry.get("itemProvideMntArtiCon") or "").strip()
+        if not content:
+            continue
+        if "소재" in name or name.startswith("제품"):
+            return content
+    return ""
+
+
+def manufacture_date_from_detail(detail: dict | None) -> str:
+    if not detail:
+        return ""
+    desc = detail.get("descInfo") or {}
+    for entry in desc.get("itemProvideMntList") or []:
+        if not isinstance(entry, dict):
+            continue
+        name = (entry.get("itemProvideMntArtiName") or "").strip()
+        content = (entry.get("itemProvideMntArtiCon") or "").strip()
+        if not content:
+            continue
+        if "제조연월" in name or "제조년월" in name:
+            return content
+    return ""
+
+
+def image_from_detail(detail: dict | None) -> str:
+    if not detail:
+        return ""
+    images = (detail.get("images") or {}).get("itemImages") or []
+    for img in images:
+        if img.get("representYn") == "Y" and img.get("imagePath"):
+            return image_url(img["imagePath"])
+    for img in images:
+        if img.get("imagePath"):
+            return image_url(img["imagePath"])
+    return ""
+
+
+def enrich_row(row: dict, detail: dict | None, category_fallback: str = "") -> dict:
+    if not detail:
+        return row
+    detail_cat = category_from_detail(detail)
+    if detail_cat:
+        row["category"] = detail_cat
+    elif not row.get("category"):
+        row["category"] = category_fallback
+    if not row.get("material"):
+        row["material"] = material_from_detail(detail)
+    if not row.get("manufacture_date"):
+        row["manufacture_date"] = manufacture_date_from_detail(detail)
+    if not row.get("thumbnail"):
+        row["thumbnail"] = image_from_detail(detail)
+    return row
+
+
+def parse_item(item: dict, crawled_at: str, category_fallback: str = "") -> dict | None:
+    name = (item.get("itemName") or "").strip()
+    item_no = item.get("itemNo")
+    if not name or not item_no:
+        return None
+
+    vendor = item.get("lowerVendNo") or DEFAULT_VENDOR
+    regular, current = price_pair_from_item(item)
     thumb = image_url(item.get("representImagePath") or "")
     if not thumb and isinstance(item.get("image"), list) and item["image"]:
         thumb = image_url(item["image"][0].get("imagePath") or "")
-    return make_product_row(
-        brand=item.get("brandName") or "SPAO",
-        platform="www.spao.com",
+
+    category = (item.get("dispCategoryName") or "").strip()
+    row = make_product_row(
+        brand=normalize_brand(item.get("brandName") or "스파오"),
+        platform="",
         product_name=name,
+        category=category,
         gender="women",
-        regular_price=str(regular),
-        current_price=str(price),
+        regular_price=regular,
+        current_price=current,
+        color=colors_from_item(item),
         thumbnail=thumb,
         rating=str(item.get("reviewScore") or ""),
         reviews=str(item.get("reviewCount") or ""),
@@ -91,13 +223,21 @@ def parse_item(item: dict, crawled_at: str) -> dict | None:
         crawled_at=crawled_at,
     )
 
+    detail = fetch_item_detail(str(item_no), vendor)
+    time.sleep(DETAIL_DELAY_SEC)
+    return enrich_row(row, detail, category_fallback)
 
-def crawl_planshop(exhibition_no: str, crawled_at: str, on_progress=None) -> list[dict]:
+
+def crawl_planshop(
+    exhibition_no: str,
+    crawled_at: str,
+    on_progress=None,
+    category_fallback: str = "",
+) -> list[dict]:
     """기획전(/p/planshop?exhibitionNo=) 상품 수집."""
     products: list[dict] = []
     seen: set[str] = set()
     section_sn = 0
-    page_size = 100
 
     while section_sn < 20:
         item_start = 1
@@ -109,7 +249,7 @@ def crawl_planshop(exhibition_no: str, crawled_at: str, on_progress=None) -> lis
                     "previewYn": "N",
                     "exhibitionSectionSn": section_sn,
                     "itemStart": item_start,
-                    "itemSize": page_size,
+                    "itemSize": PAGE_SIZE,
                 }
             )
             data = api_get(f"{BASE}/v1/auto/exhibition/section/item/api?{query}")
@@ -126,7 +266,7 @@ def crawl_planshop(exhibition_no: str, crawled_at: str, on_progress=None) -> lis
 
             section_had_items = True
             for item in batch:
-                row = parse_item(item, crawled_at)
+                row = parse_item(item, crawled_at, category_fallback)
                 if not row:
                     continue
                 key = row.get("product_detail_url") or ""
@@ -139,9 +279,9 @@ def crawl_planshop(exhibition_no: str, crawled_at: str, on_progress=None) -> lis
                 on_progress(len(products), section_sn + 1)
 
             total = int(sections[0].get("total") or len(batch))
-            if item_start + page_size > total or len(batch) < page_size:
+            if item_start + PAGE_SIZE > total or len(batch) < PAGE_SIZE:
                 break
-            item_start += page_size
+            item_start += PAGE_SIZE
             time.sleep(0.1)
 
         if not section_had_items:
@@ -151,7 +291,7 @@ def crawl_planshop(exhibition_no: str, crawled_at: str, on_progress=None) -> lis
     return products
 
 
-def crawl_new(category_no: str, crawled_at: str, on_progress=None) -> list[dict]:
+def crawl_new(category_no: str, crawled_at: str, on_progress=None, category_fallback: str = "") -> list[dict]:
     url = f"{BASE}/api/item/new?size=1000&dispCategoryNo={category_no}"
     data = api_get(url)
     batch = data.get("data") or []
@@ -160,7 +300,7 @@ def crawl_new(category_no: str, crawled_at: str, on_progress=None) -> list[dict]
     products: list[dict] = []
     seen: set[str] = set()
     for item in batch:
-        row = parse_item(item, crawled_at)
+        row = parse_item(item, crawled_at, category_fallback)
         if not row:
             continue
         key = row.get("product_detail_url") or ""
@@ -173,7 +313,7 @@ def crawl_new(category_no: str, crawled_at: str, on_progress=None) -> list[dict]
     return products
 
 
-def crawl_category(category_no: str, crawled_at: str, on_progress=None) -> list[dict]:
+def crawl_category(category_no: str, crawled_at: str, on_progress=None, category_fallback: str = "") -> list[dict]:
     products: list[dict] = []
     seen: set[str] = set()
     page = 1
@@ -201,7 +341,7 @@ def crawl_category(category_no: str, crawled_at: str, on_progress=None) -> list[
         if not batch:
             break
         for item in batch:
-            row = parse_item(item, crawled_at)
+            row = parse_item(item, crawled_at, category_fallback)
             if not row:
                 continue
             key = row.get("product_detail_url") or ""
@@ -228,20 +368,22 @@ class SpaoCrawler(BaseBrandCrawler):
         url: str | None = None,
         headless: bool = True,
         on_progress=None,
+        category_name: str | None = None,
         **_kwargs,
     ) -> list[dict]:
         if not url:
             raise ValueError("URL이 필요합니다.")
         crawled_at = today_yymmdd()
+        category_fallback = category_name or ""
         if is_planshop_url(url):
             exhibition_no = parse_exhibition_no(url)
-            products = crawl_planshop(exhibition_no, crawled_at, on_progress)
+            products = crawl_planshop(exhibition_no, crawled_at, on_progress, category_fallback)
         else:
             category_no = parse_disp_category_no(url)
             if is_new_url(url):
-                products = crawl_new(category_no, crawled_at, on_progress)
+                products = crawl_new(category_no, crawled_at, on_progress, category_fallback)
             else:
-                products = crawl_category(category_no, crawled_at, on_progress)
+                products = crawl_category(category_no, crawled_at, on_progress, category_fallback)
         if not products:
             raise RuntimeError(f"SPAO 상품을 수집하지 못했습니다: {url}")
         return products

@@ -1,0 +1,708 @@
+{
+  "version": 1,
+  "period": "2026H1",
+  "products": {
+    "https://www.spao.com/i/item?itemNo=2605001699&lowerVendNo=LV26000002": {
+      "fingerprint": "7e7693ef8b6a86332570fc9e567e9c723eaaf8ce",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000815&lowerVendNo=LV26000002": {
+      "fingerprint": "7b42d850f4194fd2a596ab70ed479928b26fc4b4",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605002188&lowerVendNo=LV26000002": {
+      "fingerprint": "869708986646232dfa49b3617e89a279ff664133",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000416&lowerVendNo=LV26000002": {
+      "fingerprint": "b1f44badd87654c27f9f426ffc8011553261bae8",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2606006762&lowerVendNo=LV26000002": {
+      "fingerprint": "4f1ee9b93136cafa3a646b2bbb98719204cc238d",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2606006823&lowerVendNo=LV26000002": {
+      "fingerprint": "8b65fc4db5d3191d9a8c93e88e34df6d7b11f7a2",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001035&lowerVendNo=LV26000002": {
+      "fingerprint": "2d22f4a7c5255f2c461e5d7aa7e65338d4fc7841",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000544&lowerVendNo=LV26000002": {
+      "fingerprint": "7fbd4d716c9e78f3535c7df8d972dcb5e3cffde5",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605002097&lowerVendNo=LV26000002": {
+      "fingerprint": "bcd2eb92b110d72d99f8b9cec6df5a8becc31ca6",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001020&lowerVendNo=LV26000002": {
+      "fingerprint": "ad36e1d90856a4de71dd5d455e9067c746027348",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001551&lowerVendNo=LV26000002": {
+      "fingerprint": "2bd49ecd28f2ec287ce7e610c8cb389c53b600f8",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000726&lowerVendNo=LV26000002": {
+      "fingerprint": "04009176a8196b799bc1f0272a10d088bd9a1a1e",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605005361&lowerVendNo=LV26000002": {
+      "fingerprint": "163b00e5ccf5dc06431beff53c956dd5c99b6d2f",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001068&lowerVendNo=LV26000002": {
+      "fingerprint": "0781df7363af1478526402c3a771dafe54b17761",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2606008573&lowerVendNo=LV26000002": {
+      "fingerprint": "df38e8cc9481bf166c6d463864d5921e85c95f47",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000748&lowerVendNo=LV26000002": {
+      "fingerprint": "0db21526c3894a3d3a494cfd6a73ef90064fb27c",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001681&lowerVendNo=LV26000002": {
+      "fingerprint": "08b8fa4b7d642fb8aa9dd4142571950a7cd1803f",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2606009010&lowerVendNo=LV26000002": {
+      "fingerprint": "678db5810db519390c83dc214da866cb2ac6fedf",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001310&lowerVendNo=LV26000002": {
+      "fingerprint": "0638e4212c68692a04a0a63aee041db8d3b71bd8",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001622&lowerVendNo=LV26000002": {
+      "fingerprint": "b68591ac13dec4f0597d0aabe90fa543f58942dd",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000757&lowerVendNo=LV26000002": {
+      "fingerprint": "6ed84a392cc39a23b06dbf80465d2f72d046db17",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000447&lowerVendNo=LV26000002": {
+      "fingerprint": "7ff77bb6408ac1d8c712fa311579a59155bd4d90",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000747&lowerVendNo=LV26000002": {
+      "fingerprint": "1402bc6d11ed22c6346727e13d2bf2db5b7453a6",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000678&lowerVendNo=LV26000002": {
+      "fingerprint": "bdb7df2980edc64079caf22741be51bceb9cd576",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001769&lowerVendNo=LV26000002": {
+      "fingerprint": "c7ea34d441b48a823fb42f1e7f7c4374b4ca12df",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000920&lowerVendNo=LV26000002": {
+      "fingerprint": "92e7a0307ec435b21ce1c015383260abe66e771e",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000812&lowerVendNo=LV26000002": {
+      "fingerprint": "311f58e19d646cdbb9e144c361105999e48334ca",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000677&lowerVendNo=LV26000002": {
+      "fingerprint": "3a317f8acd6b57deb54927f6adea9c13a22295a9",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000454&lowerVendNo=LV26000002": {
+      "fingerprint": "a18f7155da7938377a18e26be76c5a6c1e067ace",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605002076&lowerVendNo=LV26000002": {
+      "fingerprint": "519686b697ce87189fad5c75ad921132fa69abc2",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605004938&lowerVendNo=LV26000002": {
+      "fingerprint": "136a2395144c02f490ee14d95034c13d6115f9f0",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000639&lowerVendNo=LV26000003": {
+      "fingerprint": "8c8d9d08696a4362a3502ef00e1f39e6ac619f53",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605002219&lowerVendNo=LV26000002": {
+      "fingerprint": "86b85363987f3115144ab3fcac21945170b49495",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000917&lowerVendNo=LV26000002": {
+      "fingerprint": "f2e9dfc808f424750612ee4ff7618c7aeb299086",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605002151&lowerVendNo=LV26000002": {
+      "fingerprint": "4f13fd1fcb4432d479de28008cdcfb8e9bb0b8ca",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001087&lowerVendNo=LV26000002": {
+      "fingerprint": "ab04f5ecac434087d887cb6aa29281dcd1c79a2c",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000647&lowerVendNo=LV26000002": {
+      "fingerprint": "887ad0253a2e42581663940de48faf1ced60d02e",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001601&lowerVendNo=LV26000003": {
+      "fingerprint": "63081466b9c627b6ee4e3ffb46693270efd71d74",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2606008677&lowerVendNo=LV26000002": {
+      "fingerprint": "b52444bdf5a9bf8c64ce652a1065da44fb2069bf",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001401&lowerVendNo=LV26000002": {
+      "fingerprint": "070bb3d58f9a8873b3c36e428855663053b766a1",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605004937&lowerVendNo=LV26000002": {
+      "fingerprint": "5d2ed1bc4cf9b9746910576df3f5bbeda21f70e6",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000582&lowerVendNo=LV26000002": {
+      "fingerprint": "0718acab61d8381106d4652034bb69cf44831731",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000770&lowerVendNo=LV26000002": {
+      "fingerprint": "3bf692cff73bb171cc5aa5020ad7572a3d48f59e",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001174&lowerVendNo=LV26000002": {
+      "fingerprint": "b4e571bcc22ff1d4fc22e8379a840065023be148",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001754&lowerVendNo=LV26000003": {
+      "fingerprint": "138b897f8972554ba78f4fcc1684701ba9d48e0f",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000682&lowerVendNo=LV26000003": {
+      "fingerprint": "f7bd592451df76c1b616d944a1aaa06f0307493d",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001464&lowerVendNo=LV26000002": {
+      "fingerprint": "757de6c117c6fc715677bb5356af37cc13026791",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001033&lowerVendNo=LV26000002": {
+      "fingerprint": "71d542b85f6fc8d6d2355cd979e27d1bf713d8d2",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000934&lowerVendNo=LV26000002": {
+      "fingerprint": "e6fb7e52a1371bfdd27341aa2f9bc8423260c3bf",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001667&lowerVendNo=LV26000002": {
+      "fingerprint": "d90a74fb76a824eba4c00eed51d0dfb794397643",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001383&lowerVendNo=LV26000002": {
+      "fingerprint": "078ed989192f677b495a305b27af08ae8b18a859",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000936&lowerVendNo=LV26000002": {
+      "fingerprint": "97ee59b64e3fd0c2762f2f448c336a4ffae75520",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001760&lowerVendNo=LV26000002": {
+      "fingerprint": "8804ba032c7591c388d1ca8dda85d8aa600ee6bf",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000557&lowerVendNo=LV26000002": {
+      "fingerprint": "28645d6d5ec23b85b5fb9e2316357c59d1c23eae",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000976&lowerVendNo=LV26000002": {
+      "fingerprint": "5b9530b92d00b0e042d9db03602447719f6ec3cd",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001127&lowerVendNo=LV26000002": {
+      "fingerprint": "ff7c3ba7e46ea49956839a7d7479a2f6600b6d05",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001335&lowerVendNo=LV26000002": {
+      "fingerprint": "9c6e5a48e352eb00a74413502888f9c1f8c82da0",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000858&lowerVendNo=LV26000002": {
+      "fingerprint": "c0542e8019e6b4aa0cc4940fbfaae96241bfc49b",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000751&lowerVendNo=LV26000002": {
+      "fingerprint": "e5cfcd74b6711c9f1183e0609bb843fe75013d9d",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001103&lowerVendNo=LV26000002": {
+      "fingerprint": "b3e5d023868f9e81e157f001cda644e9037f1175",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000739&lowerVendNo=LV26000002": {
+      "fingerprint": "67a8a1e1a3c3bd34c44cbb6f336d8df57405729b",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000850&lowerVendNo=LV26000002": {
+      "fingerprint": "3732ece5d11b538fda183a48518a42ac04a84ff8",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001511&lowerVendNo=LV26000002": {
+      "fingerprint": "b118f0771667a1e57799405b7f25a5a80fa52b35",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000541&lowerVendNo=LV26000002": {
+      "fingerprint": "1e22cca961a44c41345d2dafc583136a4c505e8a",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000762&lowerVendNo=LV26000003": {
+      "fingerprint": "6fe760e856306de2e09d1b5fd566b7a73a483102",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001281&lowerVendNo=LV26000002": {
+      "fingerprint": "6a89aeb3190cb4cf2d36e253920bc47b6f088550",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605004823&lowerVendNo=LV26000003": {
+      "fingerprint": "07fc04da052110f174c0dcc08d31804f7a3a16c9",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2606009017&lowerVendNo=LV26000002": {
+      "fingerprint": "77f355374d00a7282c88aa9f39981e2eb8f3d79b",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2606008769&lowerVendNo=LV26000002": {
+      "fingerprint": "c0324803ab259b1edf1dcfac91f85b3af66af6cf",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000906&lowerVendNo=LV26000002": {
+      "fingerprint": "0b4c1d9807fc015efcc6f057054ea1253b376ec3",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000483&lowerVendNo=LV26000002": {
+      "fingerprint": "3422a26016777f6818c853e14dab30dcba4a8f49",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605005659&lowerVendNo=LV26000003": {
+      "fingerprint": "e5dc6d09d8b0847e8cad6ca46b059a46cac8c029",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000768&lowerVendNo=LV26000003": {
+      "fingerprint": "b6562dbe6061b91cf17c3df82b7828a33a0772bc",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000927&lowerVendNo=LV26000002": {
+      "fingerprint": "823323ec90ee00bcb7ba20defe52cd11c0ddcd46",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605005349&lowerVendNo=LV26000002": {
+      "fingerprint": "4ebf3cfcf5c7761e78f5fe6342c73d9ca7c951e6",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001523&lowerVendNo=LV26000002": {
+      "fingerprint": "85d3a3984cd73b7e2f11ac0cc3639c72b48e788c",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001277&lowerVendNo=LV26000002": {
+      "fingerprint": "ba02309212823be6c2a339aaf3b324023caf6f8d",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000509&lowerVendNo=LV26000002": {
+      "fingerprint": "3b3fe7a2b363fbc9cebf531f30d1427dba5c23d1",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2606008687&lowerVendNo=LV26000002": {
+      "fingerprint": "2061ca8796c276cc4c0592421cc4393adebff067",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605002078&lowerVendNo=LV26000002": {
+      "fingerprint": "5ec659ed8308166476ddfb9cb4f50ea34b1eeb2b",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000795&lowerVendNo=LV26000002": {
+      "fingerprint": "da0b50b57cea986a1f4bb43cf1f259e69e105da8",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001043&lowerVendNo=LV26000002": {
+      "fingerprint": "e542f2421ee64489f0bc9c04168e3ef907466ef9",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000563&lowerVendNo=LV26000002": {
+      "fingerprint": "7b88852d66132d16ac1d146a987dbe883cfffb6f",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605004553&lowerVendNo=LV26000002": {
+      "fingerprint": "82caa4b523f0caf4b25f4f5b12bb8d80711c59b9",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2606007636&lowerVendNo=LV26000002": {
+      "fingerprint": "7e117fd88c8ffa4f8605b08aad341801863b0c45",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001507&lowerVendNo=LV26000003": {
+      "fingerprint": "8fd9bfeddb2ee5a0649ac7f26d9b8752b3159ae3",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001576&lowerVendNo=LV26000002": {
+      "fingerprint": "36b6781ddaeecad02c3a3081a30a41d561349047",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605004844&lowerVendNo=LV26000002": {
+      "fingerprint": "2c6b626206a0bb06d62941fdaa16d0688d4ea612",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000567&lowerVendNo=LV26000003": {
+      "fingerprint": "af23b26c4d2c74da8beb2b063f156b2f18149739",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001321&lowerVendNo=LV26000003": {
+      "fingerprint": "22e35d63442e1e72d4e6970128a8bec59eb59e79",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000635&lowerVendNo=LV26000002": {
+      "fingerprint": "4a818900ee7a8a9c6e4bcdb99f2aa202f05c3678",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000969&lowerVendNo=LV26000002": {
+      "fingerprint": "30e77ff6fdb81a09d2e5bfcf30e913070a50860c",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001270&lowerVendNo=LV26000002": {
+      "fingerprint": "6bc37324aa853ea9cd26af3d51e64a5b67c4eeb6",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2606006947&lowerVendNo=LV26000002": {
+      "fingerprint": "f0a0373e561fdac3b9d0377c3c6237b573c55a7f",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2606006957&lowerVendNo=LV26000002": {
+      "fingerprint": "fb378fcfaec2273d5d90f04170687d5fd29550c7",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000675&lowerVendNo=LV26000002": {
+      "fingerprint": "3eb8554fb948b0de41451dc4847909ae8b930ec3",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000637&lowerVendNo=LV26000003": {
+      "fingerprint": "7dcb943e69d5864c0610ab0909439dcb25cdc396",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605002067&lowerVendNo=LV26000003": {
+      "fingerprint": "40af9d6561f1dd42f150711eb4dfadf1ae6b11a3",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605002147&lowerVendNo=LV26000002": {
+      "fingerprint": "a5b441f6cfb5caa8fd7843d323e1e1e1b337568a",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000733&lowerVendNo=LV26000002": {
+      "fingerprint": "2dfa1ffd13acb960d5e2f6194f685797e3bb44c3",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001697&lowerVendNo=LV26000002": {
+      "fingerprint": "0dc08108fa9422474fb3d48f85197fbf91100b16",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605002122&lowerVendNo=LV26000002": {
+      "fingerprint": "caf2307a9bb22fa0b642fa077a496eacec45e07b",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000450&lowerVendNo=LV26000002": {
+      "fingerprint": "461f2dc71879026d9be119a08644b17cd0cb0229",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001238&lowerVendNo=LV26000002": {
+      "fingerprint": "d2419899204298a173bc13234031dd77d38e8733",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001670&lowerVendNo=LV26000002": {
+      "fingerprint": "672e2d2893869846750fcce1942029f0d2bb849d",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001792&lowerVendNo=LV26000003": {
+      "fingerprint": "c58452c984cdc1090ca9400c7a779c9b51103703",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001057&lowerVendNo=LV26000003": {
+      "fingerprint": "cef8c0b389c68fa0e8cab623666c0dfd6262bb5a",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000989&lowerVendNo=LV26000003": {
+      "fingerprint": "49f7aac1b29a791b4f7dc033e62cd1927f8fda4a",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000945&lowerVendNo=LV26000003": {
+      "fingerprint": "3b17234b9042167585e3e6f9dbff3ae8d1f54856",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000569&lowerVendNo=LV26000002": {
+      "fingerprint": "6a8e48c6f140c67a94c5469f0b6a5fd0d6dcc06a",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000770&lowerVendNo=LV26000003": {
+      "fingerprint": "f9a782f038410a022e2b9ccecf7e9800b9b1f98f",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605001464&lowerVendNo=LV26000003": {
+      "fingerprint": "49d939d733a23d17563f1af8687c39f1b3137272",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2606009939&lowerVendNo=LV26000002": {
+      "fingerprint": "10bc8505822767c9840699585d7a7e3a59bc6155",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605005659&lowerVendNo=LV26000002": {
+      "fingerprint": "259515b0c94377497d7cae4303056bff8a16c29f",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2606009887&lowerVendNo=LV26000002": {
+      "fingerprint": "f014403843ea8c5afad7523d43ccb8c4e5c85020",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2605000768&lowerVendNo=LV26000002": {
+      "fingerprint": "f3c534fa6ed39225f49ae8382d21595bb0cd1b7b",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    },
+    "https://www.spao.com/i/item?itemNo=2606009878&lowerVendNo=LV26000002": {
+      "fingerprint": "48f548b5644d9d87dac2c04486d75db848652380",
+      "first_seen": "2026-06-25 14:41:48",
+      "last_seen": "2026-06-25 14:41:48",
+      "period": "2026H1"
+    }
+  }
+}

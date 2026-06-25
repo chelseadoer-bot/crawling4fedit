@@ -56,6 +56,7 @@ def run_brand_crawl(
         "url": target_url,
         "headless": headless,
         "brand_name": brand.get("group") or brand.get("name"),
+        "category_name": brand.get("name") or "",
     }
     if on_progress is not None:
         crawl_kwargs["on_progress"] = on_progress

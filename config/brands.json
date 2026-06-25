@@ -131,7 +131,7 @@
       "crawler_id": "hm",
       "default_url": "https://www2.hm.com/ko_kr/ladies/shop-by-product/view-all.html",
       "output_dir": "data/output/hm",
-      "last_crawled_at": "2026-06-04 16:44:22",
+      "last_crawled_at": "2026-06-25 14:21:24",
       "last_status": "success",
       "schedule_group": "tuesday"
     },
@@ -1091,8 +1091,8 @@
       "crawler_id": "hm",
       "default_url": "https://www2.hm.com/ko_kr/ladies/new-arrivals/view-all.html",
       "output_dir": "data/output/hm-new",
-      "last_crawled_at": null,
-      "last_status": null,
+      "last_crawled_at": "2026-06-25 14:22:10",
+      "last_status": "success",
       "schedule_group": "manual"
     },
     {
@@ -1106,8 +1106,8 @@
       "crawler_id": "hm",
       "default_url": "https://www2.hm.com/ko_kr/ladies/shop-by-product/view-all.html",
       "output_dir": "data/output/hm-viewall",
-      "last_crawled_at": null,
-      "last_status": null,
+      "last_crawled_at": "2026-06-25 14:22:57",
+      "last_status": "success",
       "schedule_group": "manual"
     },
     {
