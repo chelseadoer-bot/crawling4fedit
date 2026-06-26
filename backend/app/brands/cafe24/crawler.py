@@ -49,6 +49,20 @@ def parse_cate_no(url: str) -> str:
     raise ValueError(f"Cafe24 URL에 cate_no가 필요합니다: {url}")
 
 
+def price_pair(item: dict) -> tuple[str, str]:
+    regular = str(item.get("product_price") or item.get("price") or "").split(".")[0]
+    sale = str(item.get("sale_price") or "").split(".")[0]
+    if regular and sale:
+        try:
+            if int(sale) < int(regular):
+                return regular, sale
+        except (TypeError, ValueError):
+            pass
+    if regular:
+        return regular, ""
+    return sale, ""
+
+
 def list_page_url(base: str, cate_no: str) -> str:
     return f"{base}/product/list.html?cate_no={cate_no}"
 
@@ -66,9 +80,9 @@ def fetch_page(base: str, cate_no: str, page: int, referer: str | None = None) -
         return json.loads(resp.read())
 
 
-def item_to_row(item: dict, base: str, brand_name: str, crawled_at: str) -> dict:
+def item_to_row(item: dict, base: str, brand_name: str, crawled_at: str, category: str = "") -> dict:
     name = strip_html(item.get("product_name") or item.get("product_name_tag") or "")
-    price = str(item.get("product_price") or item.get("price") or "").split(".")[0]
+    regular, current = price_pair(item)
     product_no = str(item.get("product_no") or "")
     image = item.get("image_medium") or item.get("image_big") or item.get("image_small") or ""
     if image.startswith("/"):
@@ -76,15 +90,15 @@ def item_to_row(item: dict, base: str, brand_name: str, crawled_at: str) -> dict
     elif image.startswith("//"):
         image = "https:" + image
 
-    sale_price = str(item.get("sale_price") or "").split(".")[0]
     detail_url = f"{base}/product/detail.html?product_no={product_no}" if product_no else ""
 
     return make_product_row(
         brand=brand_name,
-        platform=urlparse(base).netloc,
+        platform="",
         product_name=name,
-        regular_price=price,
-        current_price=sale_price or price,
+        category=category,
+        regular_price=regular,
+        current_price=current,
         discount_rate=str(item.get("discount_rate") or ""),
         color=item.get("option_text") or item.get("color") or "",
         thumbnail=image,
@@ -104,6 +118,7 @@ class Cafe24Crawler(BaseBrandCrawler):
         headless: bool = True,
         on_progress=None,
         brand_name: str | None = None,
+        category_name: str | None = None,
         **_,
     ) -> list[dict]:
         if not url:
@@ -111,6 +126,7 @@ class Cafe24Crawler(BaseBrandCrawler):
         base = site_base(url)
         cate_no = parse_cate_no(url)
         label = brand_label_from_url(url, brand_name or "")
+        category = category_name or ""
         referer = url if "cate_no=" in url else list_page_url(base, cate_no)
         crawled_at = today_yymmdd()
         products: list[dict] = []
@@ -134,7 +150,7 @@ class Cafe24Crawler(BaseBrandCrawler):
                 if not pid or pid in seen:
                     continue
                 seen.add(pid)
-                products.append(item_to_row(item, base, label, crawled_at))
+                products.append(item_to_row(item, base, label, crawled_at, category))
 
             if on_progress:
                 on_progress(len(products), page_num)

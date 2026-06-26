@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "period": "2026H1",
+  "products": {
+    "https://howus.kr/products/backless-cotton-one-piece": {
+      "fingerprint": "87a20f25fcc9e11faa8b97f25aa0afbcc525d661",
+      "first_seen": "2026-06-26 14:15:45",
+      "last_seen": "2026-06-26 14:15:45",
+      "period": "2026H1"
+    },
+    "https://howus.kr/products/line-sleeveless-dress": {
+      "fingerprint": "ef8c250df39301a3205b8099e849a96883c08d0b",
+      "first_seen": "2026-06-26 14:15:45",
+      "last_seen": "2026-06-26 14:15:45",
+      "period": "2026H1"
+    }
+  }
+}

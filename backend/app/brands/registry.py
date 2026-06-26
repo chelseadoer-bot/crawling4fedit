@@ -11,11 +11,14 @@ from app.brands.cos.crawler import CosCrawler
 from app.brands.dior.crawler import DiorCrawler
 from app.brands.goodwearmall.crawler import GoodwearmallCrawler
 from app.brands.hm.crawler import HmCrawler
+from app.brands.imweb.crawler import ImwebCrawler
+from app.brands.makeshop.crawler import MakeshopCrawler
 from app.brands.mango.crawler import MangoCrawler
 from app.brands.moncler.crawler import MonclerCrawler
 from app.brands.musinsa.crawler import MusinsaCrawler
 from app.brands.playwright_catalog.crawler import ChanelCrawler
 from app.brands.playwright_store.crawler import PlaywrightStoreCrawler
+from app.brands.shopify.crawler import ShopifyCrawler
 from app.brands.spao.crawler import SpaoCrawler
 from app.brands.ssfshop.crawler import SsfshopCrawler
 from app.brands.uniqlo.crawler import UniqloCrawler
@@ -48,6 +51,9 @@ CRAWLER_REGISTRY = {
     "ssfshop": SsfshopCrawler,
     "goodwearmall": GoodwearmallCrawler,
     "mango": MangoCrawler,
+    "makeshop": MakeshopCrawler,
+    "imweb": ImwebCrawler,
+    "shopify": ShopifyCrawler,
     "wconcept": WconceptCrawler,
 }
 
@@ -127,6 +133,27 @@ DOMAIN_CRAWLER_MAP = {
     "www.treemingbird.com": "cafe24",
     "open-yy.com": "cafe24",
     "www.open-yy.com": "cafe24",
+    "ohne.me": "cafe24",
+    "www.ohne.me": "cafe24",
+    "en.grovestore.com": "cafe24",
+    "grovestore.com": "cafe24",
+    "diagonal.co.kr": "cafe24",
+    "m.diagonal.co.kr": "cafe24",
+    "www.diagonal.co.kr": "cafe24",
+    "notyourrose.com": "cafe24",
+    "www.notyourrose.com": "cafe24",
+    "lowtideofficial.com": "cafe24",
+    "www.lowtideofficial.com": "cafe24",
+    "lemaire.fr": "shopify",
+    "www.lemaire.fr": "shopify",
+    "howus.kr": "shopify",
+    "www.howus.kr": "shopify",
+    "eenk.co.kr": "imweb",
+    "www.eenk.co.kr": "imweb",
+    "eenkshop.com": "imweb",
+    "www.eenkshop.com": "imweb",
+    "aftermonday.com": "makeshop",
+    "www.aftermonday.com": "makeshop",
 }
 
 CAFE24_HOSTS = {h for h, cid in DOMAIN_CRAWLER_MAP.items() if cid == "cafe24"}
@@ -163,6 +190,9 @@ GROUP_DISPLAY_NAMES = {
     "ssfshop": "8SECONDS",
     "goodwearmall": "TOPTEN",
     "mango": "MANGO",
+    "makeshop": "MAKESHOP",
+    "imweb": "IMWEB",
+    "shopify": "SHOPIFY",
     "wconcept": "WCONCEPT",
 }
 
@@ -199,7 +229,13 @@ def detect_crawler_id(url: str) -> str | None:
     bare = host.replace("www.", "").replace("m.", "")
     if bare in DOMAIN_CRAWLER_MAP:
         return DOMAIN_CRAWLER_MAP[bare]
+    if "/collections/" in url:
+        return "shopify"
+    if "shopbrand.html" in url:
+        return "makeshop"
     if "cate_no=" in url and "product/" in url:
+        return "cafe24"
+    if re.search(r"/category/[^/]+/\d+", url):
         return "cafe24"
     if "generalidea.co.kr/category/" in url:
         return "cafe24"

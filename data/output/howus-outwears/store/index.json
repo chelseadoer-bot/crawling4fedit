@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "period": "2026H1",
+  "products": {
+    "https://howus.kr/products/salt-terry-hood-zip-up": {
+      "fingerprint": "1729b9c1d3fa5736fc1063bbed2ae2a887f0374e",
+      "first_seen": "2026-06-26 14:15:44",
+      "last_seen": "2026-06-26 14:15:44",
+      "period": "2026H1"
+    },
+    "https://howus.kr/products/drive-logo-hood-zip-up": {
+      "fingerprint": "3ac950d39f6c2c7810951f6ee87466271a3f60f8",
+      "first_seen": "2026-06-26 14:15:44",
+      "last_seen": "2026-06-26 14:15:44",
+      "period": "2026H1"
+    },
+    "https://howus.kr/products/letter-blouson-jacket": {
+      "fingerprint": "a40f2a5d45f93c724f497a20fce726f580e9a3bd",
+      "first_seen": "2026-06-26 14:15:44",
+      "last_seen": "2026-06-26 14:15:44",
+      "period": "2026H1"
+    },
+    "https://howus.kr/products/drive-wind-breaker": {
+      "fingerprint": "f2ccc65d2a2935e8110303aef57cab5227665afd",
+      "first_seen": "2026-06-26 14:15:44",
+      "last_seen": "2026-06-26 14:15:44",
+      "period": "2026H1"
+    },
+    "https://howus.kr/products/still-dry-suede-jacket": {
+      "fingerprint": "f0fe1e71a18baaaa75cb2961667e65510ba74440",
+      "first_seen": "2026-06-26 14:15:44",
+      "last_seen": "2026-06-26 14:15:44",
+      "period": "2026H1"
+    }
+  }
+}

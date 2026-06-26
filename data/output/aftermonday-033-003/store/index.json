@@ -1,0 +1,474 @@
+{
+  "version": 1,
+  "period": "2026H1",
+  "products": {
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bm96W1w%3D&branduid=2588328&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "b8b538b94af1a36484f2c30f4f00e1ee2bba78cf",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=amp3UA%3D%3D&branduid=2588306&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "5c6cb97e810853a439d6fc92b7f2292bf0fdf3c6",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bmd3Uw%3D%3D&branduid=2588301&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "7d8d9392e59d5d3de42f160aace7f90b1f67312f",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=Zm13Ug%3D%3D&branduid=2588292&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "93cb2497a13219f066f1a28bf1990214e74a97a6",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=amx3VQ%3D%3D&branduid=2588281&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "966870cacaaf9751615d93f1a2d004e23c25e62b",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=Z253VA%3D%3D&branduid=2588287&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "ac8734291de5a3468b4ae1730aaa8e3ebf222e31",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=amp3Vw%3D%3D&branduid=2588263&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "d2d712d5b9f9678dd03ca943b4df9c23e5bb97f1",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bmp0W1s%3D&branduid=2588233&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "b6daf585351cf299c7d0b6f57450caa2f1a0863f",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bWh3WQ%3D%3D&branduid=2588238&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "76a724e089192fd51320d94bc3c82ba0ad6c5cab",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bm95W1U%3D&branduid=2588226&current_category=033003&mcode=003&scode=003&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "fd5781363510e00174cf66a44cd6a73e18bda294",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=Zmx3UFw%3D&branduid=2588167&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "57e69aa88d624430ce19742eab6fb158471a0b89",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=a2d3UF0%3D&branduid=2588147&current_category=033003&mcode=003&scode=001&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "e97b9aa2fe89f94dd252ba57d52e17bf4970503e",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bm5%2BW11G&branduid=2588154&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "c9644aaf3c8f707775168edc9bc3e2f5168bcda0",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=Zmh3UF8%3D&branduid=2588143&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "c810532fcae484ee0746a3ea8d5e04e202eab9b6",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=Zmd3UFg%3D&branduid=2588129&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "dd9e7737d172b07ab1d73d5644f904bc3edf3998",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=aGt3UFk%3D&branduid=2588134&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "1cd5ffcb5815fc9600959b25ee09f2b87d34efe5",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=a2p3UFo%3D&branduid=2588122&current_category=033003&mcode=003&scode=001&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "18668b3ab4062a38bcc83945c1148d9e291ea020",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bmp4W11D&branduid=2588108&current_category=033003&mcode=003&scode=003&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "fecaeb05e0cd245ca54bfd2b0bcc5941ba902657",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bmx8W11M&branduid=2588109&current_category=033003&mcode=003&scode=003&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "21143e40550a40ae858873e179f3deff4826b74b",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bm50W11N&branduid=2588101&current_category=033003&mcode=003&scode=001&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "200b8533d31b556dfb02e5a174470c74caba9adb",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bGd3U1w%3D&branduid=2588086&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "fc32b18b43ada50c477c078089d5a903816b1f1e",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bWx3U10%3D&branduid=2588087&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "ff543388bd9b241b08180682d756e0c4b6b5468b",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bmx6W15G&branduid=2588070&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "0bb845d8b18e6541d92907cf39e3c025623cf3c2",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bmx7W15H&branduid=2588076&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "428401290f22eea2864de508ffd792df58712d3a",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bml4W15A&branduid=2588061&current_category=033003&mcode=003&scode=003&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "0a71c67b67eab2d281fa438a90caf204aaf45d9c",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bG13U1k%3D&branduid=2588050&current_category=033003&mcode=003&scode=001&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "b0df716f82fcc4064aeb16e9ca0dae2e92471c8a",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bmt7W15C&branduid=2588058&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "d99141a7e3ff297f764ab8a4b822a939fd110639",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=aGd3U1s%3D&branduid=2588038&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "1823d97886fd2a864cbd1503d0812f95fcae75fb",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bmd3U1U%3D&branduid=2588028&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "18b0cc547aee2878f34d1e3fc096771b99447b85",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=aWl3Ulw%3D&branduid=2584734&current_category=033003&mcode=003&scode=001&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "a7c51bf247d787dbf3c0aa1b424053f756be3687",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bm98W19F&branduid=2588022&current_category=033003&mcode=003&scode=003&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "457f2f464e45b4b5538d6634480d72497a82f49d",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=aGt3Ul4%3D&branduid=2588004&current_category=033003&mcode=003&scode=001&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "7e29516e3be526d13ef3b335626531c2168e106a",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bGh3Ul8%3D&branduid=2588008&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "af974bcd448df37b0d5679eae8fc2e76240de839",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bW93Ulg%3D&branduid=2587987&current_category=033003&mcode=003&scode=003&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "d44c4690394c602e25b7a366853bdd614bf7937a",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=aGZ3Ulk%3D&branduid=2587994&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "20c88e1d3d992b0e5c902b95c01f0653471e57f8",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bm51W19C&branduid=2588000&current_category=033003&mcode=003&scode=001&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "cf2d0d9131b7b21577a2fda89c7b0c733f2a7c1c",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bWh3Uls%3D&branduid=2587975&current_category=033003&mcode=003&scode=003&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "dffd9782d4063a5e1718a6a5c5948c773172b1a1",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=aWp3UlQ%3D&branduid=2587961&current_category=033003&mcode=003&scode=003&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "7576133dc3cb7e677c5f012bab1ab2956992a014",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=Zmh3UlU%3D&branduid=2587962&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "4efcf2ff727d44aab33c22e786087b808ead95e3",
+      "first_seen": "2026-06-26 13:12:38",
+      "last_seen": "2026-06-26 13:12:38",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=ZmV9&branduid=2588328&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "b8b538b94af1a36484f2c30f4f00e1ee2bba78cf",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=aGV8&branduid=2588306&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "5c6cb97e810853a439d6fc92b7f2292bf0fdf3c6",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bmp0W14%3D&branduid=2588301&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "7d8d9392e59d5d3de42f160aace7f90b1f67312f",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=aG53Ug%3D%3D&branduid=2588292&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "93cb2497a13219f066f1a28bf1990214e74a97a6",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bW93VQ%3D%3D&branduid=2588281&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "966870cacaaf9751615d93f1a2d004e23c25e62b",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bmp3VA%3D%3D&branduid=2588287&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "ac8734291de5a3468b4ae1730aaa8e3ebf222e31",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bm1%2FW1o%3D&branduid=2588263&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "d2d712d5b9f9678dd03ca943b4df9c23e5bb97f1",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bmt%2BW1s%3D&branduid=2588233&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "b6daf585351cf299c7d0b6f57450caa2f1a0863f",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bmt1W1Q%3D&branduid=2588238&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "76a724e089192fd51320d94bc3c82ba0ad6c5cab",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bm57W1U%3D&branduid=2588226&current_category=033003&mcode=003&scode=003&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "fd5781363510e00174cf66a44cd6a73e18bda294",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bm95W11E&branduid=2588167&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "57e69aa88d624430ce19742eab6fb158471a0b89",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bm16W11F&branduid=2588147&current_category=033003&mcode=003&scode=001&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "e97b9aa2fe89f94dd252ba57d52e17bf4970503e",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bm98W11G&branduid=2588154&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "c9644aaf3c8f707775168edc9bc3e2f5168bcda0",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bmt9W11H&branduid=2588143&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "c810532fcae484ee0746a3ea8d5e04e202eab9b6",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bm13UFg%3D&branduid=2588129&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "dd9e7737d172b07ab1d73d5644f904bc3edf3998",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=Z2h3UFk%3D&branduid=2588134&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "1cd5ffcb5815fc9600959b25ee09f2b87d34efe5",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=a2V8Vw%3D%3D&branduid=2588122&current_category=033003&mcode=003&scode=001&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "18668b3ab4062a38bcc83945c1148d9e291ea020",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bmh%2FW11D&branduid=2588108&current_category=033003&mcode=003&scode=003&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "fecaeb05e0cd245ca54bfd2b0bcc5941ba902657",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bmp0W11M&branduid=2588109&current_category=033003&mcode=003&scode=003&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "21143e40550a40ae858873e179f3deff4826b74b",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bm13UFU%3D&branduid=2588101&current_category=033003&mcode=003&scode=001&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "200b8533d31b556dfb02e5a174470c74caba9adb",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bm9%2BW15E&branduid=2588086&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "fc32b18b43ada50c477c078089d5a903816b1f1e",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bm5%2BW15F&branduid=2588087&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "ff543388bd9b241b08180682d756e0c4b6b5468b",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=Z2V%2FUw%3D%3D&branduid=2588070&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "0bb845d8b18e6541d92907cf39e3c025623cf3c2",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=Z213U18%3D&branduid=2588076&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "428401290f22eea2864de508ffd792df58712d3a",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bGZ3U1g%3D&branduid=2588061&current_category=033003&mcode=003&scode=003&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "0a71c67b67eab2d281fa438a90caf204aaf45d9c",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bml9W15B&branduid=2588050&current_category=033003&mcode=003&scode=001&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "b0df716f82fcc4064aeb16e9ca0dae2e92471c8a",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bmd3U1o%3D&branduid=2588058&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "d99141a7e3ff297f764ab8a4b822a939fd110639",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bm50W15D&branduid=2588038&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "1823d97886fd2a864cbd1503d0812f95fcae75fb",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=amx3U1U%3D&branduid=2588028&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "18b0cc547aee2878f34d1e3fc096771b99447b85",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bm18W19E&branduid=2584734&current_category=033003&mcode=003&scode=001&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "a7c51bf247d787dbf3c0aa1b424053f756be3687",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bm17W19F&branduid=2588022&current_category=033003&mcode=003&scode=003&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "457f2f464e45b4b5538d6634480d72497a82f49d",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bm13Ul4%3D&branduid=2588004&current_category=033003&mcode=003&scode=001&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "7e29516e3be526d13ef3b335626531c2168e106a",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bm96W19H&branduid=2588008&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "af974bcd448df37b0d5679eae8fc2e76240de839",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bmt0W19A&branduid=2587987&current_category=033003&mcode=003&scode=003&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "d44c4690394c602e25b7a366853bdd614bf7937a",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bmp6W19B&branduid=2587994&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "20c88e1d3d992b0e5c902b95c01f0653471e57f8",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=aGt3Ulo%3D&branduid=2588000&current_category=033003&mcode=003&scode=001&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "cf2d0d9131b7b21577a2fda89c7b0c733f2a7c1c",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=Zmd3Uls%3D&branduid=2587975&current_category=033003&mcode=003&scode=003&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "dffd9782d4063a5e1718a6a5c5948c773172b1a1",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bm11W19M&branduid=2587961&current_category=033003&mcode=003&scode=003&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "7576133dc3cb7e677c5f012bab1ab2956992a014",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    },
+    "https://aftermonday.com/shop/shopdetail.html?GfDT=bWV%2BWA%3D%3D&branduid=2587962&current_category=033003&mcode=003&scode=004&search=&sort=manual&type=Y&xcode=033": {
+      "fingerprint": "4efcf2ff727d44aab33c22e786087b808ead95e3",
+      "first_seen": "2026-06-26 14:15:59",
+      "last_seen": "2026-06-26 14:15:59",
+      "period": "2026H1"
+    }
+  }
+}

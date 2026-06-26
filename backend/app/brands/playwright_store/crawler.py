@@ -92,10 +92,10 @@ class PlaywrightStoreCrawler(BaseBrandCrawler):
                     products.append(
                         make_product_row(
                             brand=hint["brand"],
-                            platform=urlparse(url).netloc,
+                            platform="",
                             product_name=item["name"],
                             regular_price=price,
-                            current_price=price,
+                            current_price="",
                             thumbnail=item.get("img", ""),
                             product_detail_url=item.get("href", ""),
                             crawled_at=crawled_at,

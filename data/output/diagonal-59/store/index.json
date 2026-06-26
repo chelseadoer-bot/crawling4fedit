@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "period": "2026H1",
+  "products": {
+    "https://m.diagonal.co.kr/product/detail.html?product_no=6847": {
+      "fingerprint": "5c669defc100d9a48fabc27fe523e53c4ad4f3b1",
+      "first_seen": "2026-06-26 14:15:40",
+      "last_seen": "2026-06-26 14:15:40",
+      "period": "2026H1"
+    },
+    "https://m.diagonal.co.kr/product/detail.html?product_no=6848": {
+      "fingerprint": "5727db29d854a48f66f896320400ae4b6e708cd1",
+      "first_seen": "2026-06-26 14:15:40",
+      "last_seen": "2026-06-26 14:15:40",
+      "period": "2026H1"
+    },
+    "https://m.diagonal.co.kr/product/detail.html?product_no=6231": {
+      "fingerprint": "a06d8f53929e45c8fca2d1ef70ccaad6f67f4925",
+      "first_seen": "2026-06-26 14:15:40",
+      "last_seen": "2026-06-26 14:15:40",
+      "period": "2026H1"
+    },
+    "https://m.diagonal.co.kr/product/detail.html?product_no=6230": {
+      "fingerprint": "b6fff5b38ceb41d379360af19d61b0adb7481241",
+      "first_seen": "2026-06-26 14:15:40",
+      "last_seen": "2026-06-26 14:15:40",
+      "period": "2026H1"
+    },
+    "https://m.diagonal.co.kr/product/detail.html?product_no=6289": {
+      "fingerprint": "a2886f7935f135d2adb8e18c0858a6cfd6d46653",
+      "first_seen": "2026-06-26 14:15:40",
+      "last_seen": "2026-06-26 14:15:40",
+      "period": "2026H1"
+    },
+    "https://m.diagonal.co.kr/product/detail.html?product_no=5423": {
+      "fingerprint": "70b173b00ceb5e183f7864e106b4d1da3fdba545",
+      "first_seen": "2026-06-26 14:15:40",
+      "last_seen": "2026-06-26 14:15:40",
+      "period": "2026H1"
+    },
+    "https://m.diagonal.co.kr/product/detail.html?product_no=5422": {
+      "fingerprint": "160ea3afe4e8651f7c0de6a21b51ec8e7a957e4c",
+      "first_seen": "2026-06-26 14:15:40",
+      "last_seen": "2026-06-26 14:15:40",
+      "period": "2026H1"
+    },
+    "https://m.diagonal.co.kr/product/detail.html?product_no=5319": {
+      "fingerprint": "69c250d58f0c6f26a4383618cf22e849acad573d",
+      "first_seen": "2026-06-26 14:15:40",
+      "last_seen": "2026-06-26 14:15:40",
+      "period": "2026H1"
+    },
+    "https://m.diagonal.co.kr/product/detail.html?product_no=5207": {
+      "fingerprint": "f15837392e664a7ccf11652e2c8d57480569f8ed",
+      "first_seen": "2026-06-26 14:15:40",
+      "last_seen": "2026-06-26 14:15:40",
+      "period": "2026H1"
+    },
+    "https://m.diagonal.co.kr/product/detail.html?product_no=4568": {
+      "fingerprint": "ec2c9694b465265ee78a3f9d0eec07d5d7bec971",
+      "first_seen": "2026-06-26 14:15:40",
+      "last_seen": "2026-06-26 14:15:40",
+      "period": "2026H1"
+    },
+    "https://m.diagonal.co.kr/product/detail.html?product_no=4548": {
+      "fingerprint": "7a0c6c1f3be26bbfb6cc06c961e40ddaa0306e4f",
+      "first_seen": "2026-06-26 14:15:40",
+      "last_seen": "2026-06-26 14:15:40",
+      "period": "2026H1"
+    },
+    "https://m.diagonal.co.kr/product/detail.html?product_no=4547": {
+      "fingerprint": "e6f308d39ef2260f21ed0916cf611b7f80bcd0d9",
+      "first_seen": "2026-06-26 14:15:40",
+      "last_seen": "2026-06-26 14:15:40",
+      "period": "2026H1"
+    },
+    "https://m.diagonal.co.kr/product/detail.html?product_no=3647": {
+      "fingerprint": "cab1e9a95ae6a4ba8d322aca187b70bf6b4fdee4",
+      "first_seen": "2026-06-26 14:15:40",
+      "last_seen": "2026-06-26 14:15:40",
+      "period": "2026H1"
+    },
+    "https://m.diagonal.co.kr/product/detail.html?product_no=5318": {
+      "fingerprint": "ad4b0537703e22703b91a2f8531415c8efd52977",
+      "first_seen": "2026-06-26 14:15:40",
+      "last_seen": "2026-06-26 14:15:40",
+      "period": "2026H1"
+    }
+  }
+}

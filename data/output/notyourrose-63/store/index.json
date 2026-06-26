@@ -1,0 +1,624 @@
+{
+  "version": 1,
+  "period": "2026H1",
+  "products": {
+    "https://notyourrose.com/product/detail.html?product_no=2030": {
+      "fingerprint": "93a2eed1412441c4851ff7b36495dcd0ac81d404",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=2032": {
+      "fingerprint": "381d09c54b6cdbd486bbf6b91433d57135559403",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=2031": {
+      "fingerprint": "c6bb88b967330aafddf76ac6c706b373eab5119b",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=2033": {
+      "fingerprint": "9cbb1697bf835a443480e9190adaba7d4c0819ef",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=2034": {
+      "fingerprint": "599c62897d410e6a685bf332717d81ce833c1b8f",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=2025": {
+      "fingerprint": "b7fe16986c15efc1033a06a7afb6974f1ca52ff1",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=2027": {
+      "fingerprint": "77a709da8c7b19580dcd9b47c31300f160f9f553",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=2026": {
+      "fingerprint": "39c26bae8572667cf9c5db311b0cd779c3487732",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=2028": {
+      "fingerprint": "c63e8b6123f02b5edfc43e47407d4951367ef504",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=2029": {
+      "fingerprint": "5e52c467c0541380bfc13a386d26b3690d72d935",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=2013": {
+      "fingerprint": "155fd32e4ceca55c5a63c17165d04446b1e406f3",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=2015": {
+      "fingerprint": "6aca7f6de539476c3af1b18852acc931bec2727c",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=2035": {
+      "fingerprint": "f543c67d99332f810c36dc816aef272b89ffc0be",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=2036": {
+      "fingerprint": "4011735f7393b2b9be022fe94210976bc7e012dd",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=2037": {
+      "fingerprint": "838e89f8c10fac14c3156f1772e8512a4fadef1c",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=2049": {
+      "fingerprint": "ab3a6635c34dd2bf436a08c0a9124ec2433dec5c",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=2039": {
+      "fingerprint": "acd5b87ce3232e05d823777867cf0ad988c62a12",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=2038": {
+      "fingerprint": "79380683ded49ecce27da4d861fc3ae2162bb434",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1934": {
+      "fingerprint": "8ba30856b9be0bf2cff3de0c5b0074196b57f904",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1932": {
+      "fingerprint": "df0158b60d3d8b36d7b260c5fd025aa549ef3412",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1933": {
+      "fingerprint": "be9f42d901abb18b79987e041d48527262bc53f0",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1930": {
+      "fingerprint": "ca0da47cfc943a333dfd953adf99debb4cbd6309",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1931": {
+      "fingerprint": "96d4843f1cda8bb793d46428f665d34b4ff68e73",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1928": {
+      "fingerprint": "3774ed26af638a1bfb3a173cf61f680db906954c",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1926": {
+      "fingerprint": "5fa9a4880dd982b4172209f48a382fdd0c45588c",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1924": {
+      "fingerprint": "af15ff95bf3f43d49c4f34335c53296cfb2244d1",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1925": {
+      "fingerprint": "6f728c80cbef302b5fa312e81b7745c415d5cc0d",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1939": {
+      "fingerprint": "19e6a47cf2d5c2eaaabfeac3d6ae9e8130c0e5f9",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1940": {
+      "fingerprint": "f8bedef4256b3b2b741a2f210bbcb5ced2524259",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1937": {
+      "fingerprint": "7aac429264ae0a95dccb2a0227f23b7857d466c5",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1938": {
+      "fingerprint": "8f73a1cc65880460cd102e518da05f6e6728eb20",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1935": {
+      "fingerprint": "fce8f9137e524d9e21022264066333dcf115a1d6",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1936": {
+      "fingerprint": "fa205c6f383505ebfee4a1fb231777fb9534d6cc",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1955": {
+      "fingerprint": "338c8048ea80761f21cec096f8cdf2bee711d4ad",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1956": {
+      "fingerprint": "9597a34998387daccd5c564ba4309373f0ff7292",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1957": {
+      "fingerprint": "38ce65e54496dab10284396e630df5fbfaa3ec83",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1958": {
+      "fingerprint": "dd23f392654bc33980cae571395bb45c9636ee45",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1953": {
+      "fingerprint": "50aecf77c26e4cc70b635d9f53040c5ffe4cee83",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1954": {
+      "fingerprint": "c635c794a20e9ae2abc7f353ffd8ed6504bc34f5",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1952": {
+      "fingerprint": "2005b3c2870b429382fe9ae462c9379bec36af28",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1950": {
+      "fingerprint": "72ec675c53d4eac3cd87e6b59e3298d6dd5f5229",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1943": {
+      "fingerprint": "756b42b1f6e88872c124a2ebb9c933911e3bd0a8",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1942": {
+      "fingerprint": "a778568d48d7d63660de7a9edea6dc2d7907ecd7",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=442": {
+      "fingerprint": "8995eb9fb5e614073953b006b4a8efafb290ecf3",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=374": {
+      "fingerprint": "d511ee8d75aca001f065945112e05eff8e85de7b",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=881": {
+      "fingerprint": "05e2fdfbf5e60e32eaf01920602e79dddd70b1f5",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=879": {
+      "fingerprint": "4f05c6d5e83879fcf58b86eaaeda9b769c2458d4",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1374": {
+      "fingerprint": "0c1bf940db62379b61c728098e8969ad3ef89d0f",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1536": {
+      "fingerprint": "77913231355f8814e1fa37dcf61bdb38a9503389",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1370": {
+      "fingerprint": "0c8f5f13dbef6abb6399d19e4979c0d8922eeb20",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1384": {
+      "fingerprint": "f06e109fb13b36017a863eed21959c1759532c5e",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=375": {
+      "fingerprint": "7d72e5c5fdcc937299024a78ede76afa20202d1c",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=273": {
+      "fingerprint": "1eccbc8a747ec41b87296e32446aa79a9cb77fbc",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1554": {
+      "fingerprint": "8399176b508145c46c30f4d9baa5b1aa35d13daf",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1092": {
+      "fingerprint": "10949232ffc71157c7d604f803510f06538090a4",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1545": {
+      "fingerprint": "4f243db9608892e875e8c8211f65e6bfba8343a8",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=482": {
+      "fingerprint": "94ee7337a72392f0304b18d37ee1602a3c8d49f3",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=309": {
+      "fingerprint": "bf198a48916b9ca5b55638bb87d3f0c17cba6647",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=310": {
+      "fingerprint": "ae89c4ff55acdafe9a8220930b2e671aff756eae",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1705": {
+      "fingerprint": "615410da0b7ceb47050d8095d9e9612f0b85b267",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1704": {
+      "fingerprint": "7fc9c5b4dc0e46e86f2358ae028ec071f3b75e8e",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1558": {
+      "fingerprint": "119124ec14270933d4dd0451a64b8b3ceb819f95",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=544": {
+      "fingerprint": "23b6ef7f2d36580529e77435e9f12d20132d7923",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1702": {
+      "fingerprint": "4bf73592434f610e1b264ad7c253e04425e368a8",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1546": {
+      "fingerprint": "84a5343643252d25ef4869076174b0911fd98088",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1547": {
+      "fingerprint": "7a87302546c17d907966c8858996b1f90a0fec74",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1104": {
+      "fingerprint": "7f0086a69def28af2968e2723fe84c38e4cf306e",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1103": {
+      "fingerprint": "4b3125763cf865da3c05c3e70a8274b63c8ba848",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1105": {
+      "fingerprint": "531848cf845b2bd965bcafbc93c9ce1ff46d4286",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1106": {
+      "fingerprint": "7f637759c0ab6a62975fa816aadeae77bf779834",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=909": {
+      "fingerprint": "eb03a9966e5de8fd1c28bc1117828cdfabe81b9c",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1542": {
+      "fingerprint": "db7066af1ef66a5490e2e265c5236d65cde178e9",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1706": {
+      "fingerprint": "86f7662c9f626d976ab83b78daa00ca923a39b90",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1707": {
+      "fingerprint": "c201ad5a50c28ed139523197406c61a73e5ffedd",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1698": {
+      "fingerprint": "4f064820eef7e4fb85d59f636aa8954a3518d97d",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1006": {
+      "fingerprint": "8b5f16bb4098961ffe3dcdf9288a25a9e10265c8",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1007": {
+      "fingerprint": "d9f6be3b937f77519316ebaba25db6766139bc9e",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=897": {
+      "fingerprint": "6cd3a36fffc509750948f229f126eea5a62d43b3",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=896": {
+      "fingerprint": "7f1ec2f05ddd428843083b6f98fba62db050f2c0",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=290": {
+      "fingerprint": "1aff1112e65d65e12c333f7e7313772a8df64552",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=471": {
+      "fingerprint": "1d3f4e24b4bdbc2d87c6efa5af44456e93fff8bf",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=913": {
+      "fingerprint": "d96fde833bee84fd95b345760bcffee46001aa10",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=883": {
+      "fingerprint": "a397647cad0cba5765176ad66c9bf982effd6cd0",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=882": {
+      "fingerprint": "6055f55fd4b4034488c0863bf37c59e5e3119c4a",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1257": {
+      "fingerprint": "97f674767990c872df23b20af56e1752667a08f1",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1700": {
+      "fingerprint": "70d3e3d7741707ac6f07ef209b98b66b85f1246c",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1699": {
+      "fingerprint": "9068806b1a0af586832d84bd22de3c3b71e8a690",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1712": {
+      "fingerprint": "44518a5662abef3483f48b8b8f6a888c0a089a02",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1711": {
+      "fingerprint": "cf30200e8b62e0ff6ac650e2e6fdbbe523e72635",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1710": {
+      "fingerprint": "135891a505f605e823d3bf3be1a58d30db50f3ed",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1709": {
+      "fingerprint": "032eb75c637cc3fc2ec9ef883b2e01d807be7fae",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1708": {
+      "fingerprint": "43a9d3dc8e996513475e95916b633e8ba36903ad",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1697": {
+      "fingerprint": "5fd730c1641eddac3a482d8aeb570e270aaca25e",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1696": {
+      "fingerprint": "26287b8a1cbdf767b5b897e9127343f2404a4734",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1695": {
+      "fingerprint": "639a2838e683a209a809e672ced81f7f044d1e06",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1694": {
+      "fingerprint": "34ac3e88af147f62805969644a49cf1c9dd5d89d",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=1249": {
+      "fingerprint": "feb3b2da51025dd5a9df3e37796cbab1bcf4811e",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=513": {
+      "fingerprint": "c5bb2ee44f99a8693ce98961bc3d0f7f6058ef8a",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=506": {
+      "fingerprint": "3d3683812da43a477c3b8598f78b43e1a1282524",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=504": {
+      "fingerprint": "3017bdc79477bb01f3b0f5291b4106616ce3f841",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=503": {
+      "fingerprint": "8f3e27dd18833dc7b525e25efad328619845d2e1",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=791": {
+      "fingerprint": "41c4f3f07fac6d41f8602a139112b4f6eaf8178e",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    },
+    "https://notyourrose.com/product/detail.html?product_no=792": {
+      "fingerprint": "22e9940bee55986ec340dbd90d01f4de26291903",
+      "first_seen": "2026-06-26 14:15:41",
+      "last_seen": "2026-06-26 14:15:41",
+      "period": "2026H1"
+    }
+  }
+}
