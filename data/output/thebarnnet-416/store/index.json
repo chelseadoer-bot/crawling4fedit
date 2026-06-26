@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "period": "2026H1",
+  "products": {
+    "https://the-barnnet.com/product/detail.html?product_no=3571": {
+      "fingerprint": "5effd55c9cd931c11c54458ee6824b3e06d8cf9f",
+      "first_seen": "2026-06-26 16:42:53",
+      "last_seen": "2026-06-26 16:42:53",
+      "period": "2026H1"
+    },
+    "https://the-barnnet.com/product/detail.html?product_no=3565": {
+      "fingerprint": "31b539fcd9f7119ab1a25dc48c7f0fb81d945e89",
+      "first_seen": "2026-06-26 16:42:53",
+      "last_seen": "2026-06-26 16:42:53",
+      "period": "2026H1"
+    }
+  }
+}

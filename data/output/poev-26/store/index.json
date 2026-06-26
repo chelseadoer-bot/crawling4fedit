@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "period": "2026H1",
+  "products": {
+    "https://poev.kr/product/detail.html?product_no=293": {
+      "fingerprint": "ac14f8f6a34a1d12de69f50e7728d6d1b9e7ec4f",
+      "first_seen": "2026-06-26 16:43:01",
+      "last_seen": "2026-06-26 16:43:01",
+      "period": "2026H1"
+    },
+    "https://poev.kr/product/detail.html?product_no=292": {
+      "fingerprint": "52046d6fe2cabd4e04cd2762b1843b8ab3db847a",
+      "first_seen": "2026-06-26 16:43:01",
+      "last_seen": "2026-06-26 16:43:01",
+      "period": "2026H1"
+    },
+    "https://poev.kr/product/detail.html?product_no=291": {
+      "fingerprint": "609f1a305fe639bd39965621078a564fc6a6dcd8",
+      "first_seen": "2026-06-26 16:43:01",
+      "last_seen": "2026-06-26 16:43:01",
+      "period": "2026H1"
+    }
+  }
+}

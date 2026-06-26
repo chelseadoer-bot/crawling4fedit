@@ -1,0 +1,3294 @@
+{
+  "version": 1,
+  "period": "2026H1",
+  "products": {
+    "https://mangomanyplease.com/product/detail.html?product_no=4957": {
+      "fingerprint": "50b59f643cb2619482d9754e24cff6d70813e383",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4956": {
+      "fingerprint": "92cc851189c76daef3dcb82daa77513b83444ab7",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4962": {
+      "fingerprint": "47ab4d58f88aea5b84e124dee8caa3cafc3e4416",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4961": {
+      "fingerprint": "8b2f241b4d2024ea19cded23dbdd80b7b96138e4",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4948": {
+      "fingerprint": "94ba09bf2b1ab1c65ac4aa41383ea3736d5a120b",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4947": {
+      "fingerprint": "7620d79f2fb94b31d01f66da8535e6af70337734",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4960": {
+      "fingerprint": "be807beb0b4cf54e4b0aab347bae91d02467a3b3",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4959": {
+      "fingerprint": "3ce483c6a57ec189d51010e65514cbeb3d1602c2",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4958": {
+      "fingerprint": "de5fec0312a0b3a0bf4a5e82d2fd1da908041ac4",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4950": {
+      "fingerprint": "8903ac445c025177449ffa96d8335a0931dd640f",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4949": {
+      "fingerprint": "091c159256f85b9e8e8900cf01733b74ef592b5f",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4964": {
+      "fingerprint": "31dfb18bc8df37072eebe6512379db14aab9df8e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4963": {
+      "fingerprint": "eea77153c87ae1c4843e9b9b74ea57c13ed7cc0e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4967": {
+      "fingerprint": "5784a81207ac52cc6d6f788a003814f5c35fef68",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4966": {
+      "fingerprint": "b7cb238cc5fe88dcc70445392884c611aa963e9d",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4965": {
+      "fingerprint": "0dea5a586cffbc279ecba8ee383102f6225ee4ab",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4953": {
+      "fingerprint": "d4354fc397928ce9a8fc732c053a81b2b9655bbf",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4952": {
+      "fingerprint": "eb4f5118db6f42caa6157adbffc98272bb569eb1",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4951": {
+      "fingerprint": "a57e3e718f54f712f28746fc7bfb334f5a2f6e65",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4955": {
+      "fingerprint": "956c1de00ecb90f7a9f28d7dbf595f3f728dd56b",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4954": {
+      "fingerprint": "8619e199198cf5239a468fc7371f98ced122d57c",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4972": {
+      "fingerprint": "3cbd0821acf893e380f0f8f2e46cb4c3f48858b1",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4970": {
+      "fingerprint": "4c60279b3b2b8566af9ab4d481f63f81397e6db0",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4971": {
+      "fingerprint": "332aec0ec5cb6d0480a47d2570031cd22aa6c889",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4969": {
+      "fingerprint": "d484f74ae7f9a80626dccf2405923f812e46f789",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4968": {
+      "fingerprint": "23ddb3a7213d8b1ecb2bb5b5efa117394e33482a",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4980": {
+      "fingerprint": "743202bdeebf42352855a06ae3dca2d37ae9c7df",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4979": {
+      "fingerprint": "e5954a625dcd6b65577512ca1026c345a223e22a",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4978": {
+      "fingerprint": "9dbbe68831afbbe9f6bb6e9dbed3a1ad84a6ed04",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4977": {
+      "fingerprint": "10c755f9cdf33cc2d6843016b6b86347133cf483",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4976": {
+      "fingerprint": "ac1d37c6315863cf0a2bd8601db87601b58defb3",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4975": {
+      "fingerprint": "6c414ab9eec52b49c52379142e85a30cf95c4697",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4974": {
+      "fingerprint": "3620c234194476ed8ecacac0522266b592434c52",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4973": {
+      "fingerprint": "d956f7cd2ac875698d01486d79ae7ee98ff72812",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4981": {
+      "fingerprint": "a5c1e08e5694a08d8e28234fb0575d161a0559c6",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4945": {
+      "fingerprint": "7e058b3f0669f2a591be128447da1475db3f15f6",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4944": {
+      "fingerprint": "ff0fd670c51f84c2a0f90b32f5a66889b6332a96",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4943": {
+      "fingerprint": "fbd4f2f2af2b001b721f85b3b0f5c22f86e819cf",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4924": {
+      "fingerprint": "4416c4a4a58edf2b8e2d152c4671220210036715",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4263": {
+      "fingerprint": "34a221c842d4e47fba9a2fd46751dc6d038b65d7",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4928": {
+      "fingerprint": "1ac23d00550412490b21cb8749004fe07a0a7bba",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4927": {
+      "fingerprint": "28c1e1765ddcb4080caa435cfd29ce060571205e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4903": {
+      "fingerprint": "67983536715ab2eba321a44da5f6c9b153d9b9db",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4901": {
+      "fingerprint": "76fba6f51ed160adfbb9eadc94e60e3513c0de20",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4932": {
+      "fingerprint": "61079d0f3f8aab19fae0c8d13052bad087e652f5",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4931": {
+      "fingerprint": "880346efcf402bee022267c4e456775104c07cc0",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4940": {
+      "fingerprint": "08e42c8decd8933a547df091776d3f05ae3e717c",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4939": {
+      "fingerprint": "040b3042ee42d12e51619e481ced636b0e5bd712",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4930": {
+      "fingerprint": "85c01a3d0a5e157e31dd720c1c548f095f6f2672",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4929": {
+      "fingerprint": "ed5a0b7b799b646310e7f03393a63a7dbb299420",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4913": {
+      "fingerprint": "85fb7be4cdd5b7d05cfec88c955601c6d93cc4bf",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4912": {
+      "fingerprint": "fea9397bb239a31b50078f48f25eff76369f1d30",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4911": {
+      "fingerprint": "c17c802011338d7d6a1a0a733506e59eb8b4935f",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4910": {
+      "fingerprint": "0d0faddf3bc0160778c7770fc347feaecc27ffab",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4917": {
+      "fingerprint": "c2cda9624f229456bf6befed42f3610456ba6181",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4916": {
+      "fingerprint": "0200cbf59e585bee2b5bc2be7f8d0f9849f093c7",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4915": {
+      "fingerprint": "dd7cb9098d2681d9d29e794c9b8941a5ba80475a",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4914": {
+      "fingerprint": "73002fa9dcf391868cfa86f244f68714d7921ea9",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4936": {
+      "fingerprint": "4f00933349c643ae98283b7ee026b9112cbd138b",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4935": {
+      "fingerprint": "997e561d1f5e68577ac34c8b552ecadc5b01d954",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4934": {
+      "fingerprint": "1ee8788c34c730ccd572712088cf60e96638e8cc",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4938": {
+      "fingerprint": "ac29acf1ef1cf23c3e99d690b9213476ee36217c",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4937": {
+      "fingerprint": "a942bd418296ff99fc0501f2ef064a7147559085",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4919": {
+      "fingerprint": "83bc1ffc4ac61b54df691ffc1bdfd43ad88db5d1",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4918": {
+      "fingerprint": "7b762552065a81c1c08f7968519f1d6f8bf72426",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4909": {
+      "fingerprint": "01f2a6449b17430e6f0ed9ec79641399929678ef",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4908": {
+      "fingerprint": "1740d9a385e83ff80654719a5b5c66a7a9b844ec",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4907": {
+      "fingerprint": "e71f735d9a5624a9befcdc2c7cff3a5e9fd972b8",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4906": {
+      "fingerprint": "3d191a5f3668e5a0c4e6e6163f5450a1d0416977",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4933": {
+      "fingerprint": "6d10b1ed3eb229e0af867c659771690cb947512f",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4942": {
+      "fingerprint": "c19fe3f3aafbe93bcc2159ced391233d03e22f51",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4941": {
+      "fingerprint": "7d8ba2ae7fa1b1d2a12440028cc8479a6a3f3adf",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4923": {
+      "fingerprint": "89a6387f18cc0661bb59389278b3dd7c56fc19d6",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4922": {
+      "fingerprint": "ab83a285494111a7050b9c64b499d37e03a9815f",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4905": {
+      "fingerprint": "ed831c0957ba1d31f87dc3c82573a382d030d768",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4904": {
+      "fingerprint": "a245a4dad5643477c024e01c2df0e482f223ecd0",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4902": {
+      "fingerprint": "f0a7b32b5f7c6c2c5d2513e276181a52d2218ebe",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4900": {
+      "fingerprint": "0abfc45f96b98941b608bf8263cf5970320311e0",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4899": {
+      "fingerprint": "6d7aee34f1014f106cd03f55cc23ea8115993318",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4898": {
+      "fingerprint": "427098caf420ae5875277a0eaad4b8334a1c8d3d",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4926": {
+      "fingerprint": "3a553205f1a9acd5dcabddb5360d2842f5f5672b",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4925": {
+      "fingerprint": "32e85986799c74f96ce7b439305deee338431df7",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4921": {
+      "fingerprint": "9be7ed8109f90a253d873a31c03ed7dedf0216ff",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4920": {
+      "fingerprint": "0bfb2dae0c4cc7bfa382d257bc76a36eeaac2c44",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4897": {
+      "fingerprint": "2e3a594321786026a6f95dc69f7a0fa18d8f692f",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4891": {
+      "fingerprint": "cfa19c3c4f052350dc68f5789a216964f9573dfd",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4890": {
+      "fingerprint": "1769f390eb25f57c899f80c7d68a46a123d4d679",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4889": {
+      "fingerprint": "f215f76338b1294ace82f3d155e08b5bc2194f9e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4285": {
+      "fingerprint": "4541b5f1cfb621e91826f987c689e365c92c4763",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4286": {
+      "fingerprint": "93ce9f851eab49b2a14ab19c403f920c35df0f02",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4051": {
+      "fingerprint": "5f51a5199dac264c4f8a9e579ccbf7617cd7913e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4052": {
+      "fingerprint": "01debada521202cd82a170e1a176b1767d9fc76d",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4053": {
+      "fingerprint": "5fc6566dd6657d3afb544469aef0b59df813ec00",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4283": {
+      "fingerprint": "748a04f9b8c91981d6701c397b9727791ce9a9e1",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4284": {
+      "fingerprint": "b2d5e93448f45d1efc6ff1a997fc0c722b291402",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4273": {
+      "fingerprint": "99ab6f61da5ee25383b5fea5922e82234bb93b23",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4274": {
+      "fingerprint": "e7d9871b32cc4fd0807216e622084720c817fa3a",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4177": {
+      "fingerprint": "7d60b0eb56c97c5a1f94d3b99e75519f971e30d1",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4178": {
+      "fingerprint": "91a573d527f6acfdaeed095a4a06e074adbb9409",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4185": {
+      "fingerprint": "065f7fdc4f4d0e968c8cd928c4568db95ac90fc4",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4186": {
+      "fingerprint": "1fdc6750d9728265c743db7fe338955c78985670",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3598": {
+      "fingerprint": "ebbe9eaae693909547e1efb29e17e2c1f72ab462",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4245": {
+      "fingerprint": "4071632ecf4ac84c9722858ec36ffb17a7c38764",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4246": {
+      "fingerprint": "99a8923c3d4d91dcec0814a3dbac3d5ef5abd776",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4247": {
+      "fingerprint": "f717b78cb3d9c9b00c424d27cc0eb016fcb8b517",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4248": {
+      "fingerprint": "6b59bac7b87cd18d25260ba4f59852e85ef1b268",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4235": {
+      "fingerprint": "8769eb0b51262836b9dd31c22145ce1c3e2b94b3",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4236": {
+      "fingerprint": "0ebcd0db9372674d9dd6eabbd242aa411eb1c36c",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4237": {
+      "fingerprint": "81dd76d792cd0400d51df3401663f5b865a5a611",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4238": {
+      "fingerprint": "8d328fd89f68a14d1c4f16285ffb5c652e2f447b",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3586": {
+      "fingerprint": "b4ea85b20f647512c651bde93cdf62ce30d4a1eb",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2934": {
+      "fingerprint": "57e2729f11c5108e6a29b0d83aeaa5e6bacb1b42",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4239": {
+      "fingerprint": "4e704dddf46a19adf747746dbc7c4118510dcd1a",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4240": {
+      "fingerprint": "1347d62beb1327ad82ddd90296d96fa985a84ce9",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2565": {
+      "fingerprint": "ad9ad70a5a29a4c3e6056461ed0e91e4e813369c",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4241": {
+      "fingerprint": "5ce4717fa048f66b870eabb7a72780b9cadbff82",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4243": {
+      "fingerprint": "1d26047cf17855c49ec473cb7161ad5c81a94727",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4242": {
+      "fingerprint": "7ada58e8842e97f3bfd691b0cc06d7c62b83d00c",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4244": {
+      "fingerprint": "de9a220a4645875130e89c8ed8ef63e270589eb4",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3576": {
+      "fingerprint": "ad45f109b34b6894e7fdd33499742086fd4fd8a0",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2508": {
+      "fingerprint": "60e30f11a1e0f22dd6f703e53ff88b0b348c1496",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4167": {
+      "fingerprint": "17a0523b9922260a42f58d79e7b048b4fb82e233",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4168": {
+      "fingerprint": "08345a14406a5e041d04727b0110b0991fd56b0f",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=1465": {
+      "fingerprint": "2a9f04a14e11c520d112a32ef236532f45a0bdaf",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2047": {
+      "fingerprint": "2da37642a4e466f9af436951aafa0604cfb69a20",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4885": {
+      "fingerprint": "6557b5c725ca12fc5a08484b90055a0661cb1f9c",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4887": {
+      "fingerprint": "d8a756ee94e1da64b83b527f3a6d31d208b2949d",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4886": {
+      "fingerprint": "1cca15a1063c78578b77b98f6ee327c57f28abdb",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3477": {
+      "fingerprint": "bae4ebf6496f4d2e338e01b7544d7bcb7c2dcf35",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4840": {
+      "fingerprint": "1205c1503add380abf3ed67c8305ce689086b3b8",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4839": {
+      "fingerprint": "ee1d85f95f352f411bf0a211b13b972035f77b2f",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4838": {
+      "fingerprint": "9dfe04b4962ef5234941a54d7c9ef560e934e04b",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4836": {
+      "fingerprint": "e19cdce82a0a23da7b43b3fdb4464be0f4337abb",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4837": {
+      "fingerprint": "62dfd1c321df21f7a8f8bd54e602af769967037f",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4835": {
+      "fingerprint": "8ffac0ba15b5f2ae2e46fec372efd1c3aa9fc5ca",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4826": {
+      "fingerprint": "8103c7262b45c0140ef52007de3c53602910cf62",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4825": {
+      "fingerprint": "ba0419628d1e172740465c9363c815d68acefc5e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4824": {
+      "fingerprint": "82db6c646daf1a7ec8fdb14957d6c71b558ec775",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4822": {
+      "fingerprint": "a53154e16c3009d2da650128c24d2075a2c85445",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4823": {
+      "fingerprint": "6baa0732bd299c6b959daea5b56acc7d76034b94",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4831": {
+      "fingerprint": "14ba9542b431633c7c3cbdeb94f255fc56f2091a",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4830": {
+      "fingerprint": "d7560ef979519164873daea25aa1f1a3c45f258e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4829": {
+      "fingerprint": "d5aecc22b8c9ff80cc07c7c30727382825931906",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4828": {
+      "fingerprint": "16a566812d70ac9dafc0bfe9e78df01c4a46231f",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4827": {
+      "fingerprint": "d6eba9d8aaf3aa23ec69493adeb43f6311dbedcd",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4834": {
+      "fingerprint": "629b62db5d4c12aa9a27cca5f8c352e721507fec",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4833": {
+      "fingerprint": "12a82417c3ad68549f3265316a034afba85ae4e5",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4832": {
+      "fingerprint": "896eff3cdf19a7f345553f577d38601133f0af06",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4821": {
+      "fingerprint": "b9929e058d634e4f78f0a93fe8e347a963b158c1",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4819": {
+      "fingerprint": "eebad7b2151c5c1ee1c277640ef3a1c5c4ee828c",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4820": {
+      "fingerprint": "888b01e986277e31592b3f829efad5779800c107",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4818": {
+      "fingerprint": "c3dcd5dac47a620d04d999a48f3e2126faba5cf6",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4816": {
+      "fingerprint": "0f495fd4209521002e6b4ffc0f6b2d222537a166",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4817": {
+      "fingerprint": "e4692b9a94bf1e1ddc80e508104e916f1b6e47ec",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4815": {
+      "fingerprint": "394cd1478534ea27d8318d571fdcf13867ef639a",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4814": {
+      "fingerprint": "630bfe4ea3c4ead73573b1eaf97ccbac5f9ab546",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2961": {
+      "fingerprint": "5dbf859f1f1e62dad0149299f1419e2d4e4df377",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4813": {
+      "fingerprint": "6ba8ac724f8736ce13abb80c56f178b8d6b67f95",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4812": {
+      "fingerprint": "9b2b99fd47356ca5325cd41cb506fbb2a1cf4783",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4059": {
+      "fingerprint": "2b36b156119a923c91bfefab3e8ef3e2e096c1fe",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4058": {
+      "fingerprint": "27d1ea2ddcf636f5def9a3acb4b4a734760b0b57",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4060": {
+      "fingerprint": "f512a6bf28c327045a673f3f3abef2052c008e7b",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4872": {
+      "fingerprint": "3f7563d3c92c4e58bd5e8b427503f98f028c96b5",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4871": {
+      "fingerprint": "6c6bc70993a01cbbc42d11926edb1fa4934f1378",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4870": {
+      "fingerprint": "f2fe26906044f49e27ece74775f56edb772a8aa9",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4876": {
+      "fingerprint": "797e8192e57e1ab46cf8c3d3ae5f193226bd3d57",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4875": {
+      "fingerprint": "9e6d4b27f696010a5468493025a49fe3c05398f5",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4874": {
+      "fingerprint": "b24b7c5421827108c8cfe7a2802f9af7ecc34ea3",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4879": {
+      "fingerprint": "7621afcb2a36bb37948b19848135f8b0713335d0",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4878": {
+      "fingerprint": "2ee8a83b8855620f3dd38550defaf114249f7820",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4877": {
+      "fingerprint": "329832de43d26027796ef21236bd46be11f7a997",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4865": {
+      "fingerprint": "cf033863f1db738aecd3200010e9f420fd805ff5",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4864": {
+      "fingerprint": "c6ef24868fbd0efdb8d095f4dc477789c30ca861",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4863": {
+      "fingerprint": "58e7790d04da41660b335611f9d435746942b920",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4883": {
+      "fingerprint": "a495134fe6bbafdca98702f9b5044d746a78ffe2",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4882": {
+      "fingerprint": "ba68b7e2f93740b38c812dd1b46eb9b96f907793",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4881": {
+      "fingerprint": "ceb7c8d2f4d9eca8fff2f0a6a96e7b96ccee68b5",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4859": {
+      "fingerprint": "ad0f16053ad6e420cadea9adcc49389775797305",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4858": {
+      "fingerprint": "541fe0d3d222b6378f70e61801be8a5dab6031bb",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4857": {
+      "fingerprint": "730f152d0d6d6e53aa16d0f8581ad2561d73ebab",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4862": {
+      "fingerprint": "6e3367c7b1ceca74b54f1d487d49f04e1a39886e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4861": {
+      "fingerprint": "16b32f79914a114e6dd7e1fad1af6912876571de",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4860": {
+      "fingerprint": "d63fa7606e6175860b41312c65544b613c790bc1",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4811": {
+      "fingerprint": "e9eaebb200b33c4cab29dcc91e8d7c3c9e18944e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4004": {
+      "fingerprint": "77a7132521176a13f9d112a81fcb78245fcf612d",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4005": {
+      "fingerprint": "e3ee8646e86b627b4110897fe439d73f09d9fef7",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4006": {
+      "fingerprint": "672feb2cdd54be05f878dcde9a66c5541c44aa53",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4880": {
+      "fingerprint": "810557bda3ff0db91c809409554096925e9a3103",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4867": {
+      "fingerprint": "76e8df30481f4fe0e2b49efd530e0e0e0e9e22f6",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4866": {
+      "fingerprint": "257e0fa8c35cba7309a7273825673192e3ad465e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4873": {
+      "fingerprint": "d19b931922b85e0283bf0f8d4182c8415fd71f02",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4856": {
+      "fingerprint": "abaa7dd596f03e6ba21fb23d3dbf86331946daff",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4855": {
+      "fingerprint": "d6619527e9e10aade237b85eb670f4b3ae992f90",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4869": {
+      "fingerprint": "0b495462350883e952aa498f3b7c40233abc7283",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4868": {
+      "fingerprint": "55ce4419784a67fc568a192f41bc5287ff30ef30",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4846": {
+      "fingerprint": "38db03432b356373ff3d3ad7a156e4465df08d6d",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4845": {
+      "fingerprint": "90883fe5550f4cf018e85ffa3be6f053c6adf451",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4844": {
+      "fingerprint": "af15e72746f31b3ecbd3ca880a39fd51dbc6791f",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4843": {
+      "fingerprint": "d6dd957a5cb5026df5519b22b28c55081545c120",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4854": {
+      "fingerprint": "4185d48d2690198287cff838740cf7232c326e75",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4853": {
+      "fingerprint": "c2cd62ed61d97e30a84ab45a03d9ecc485619013",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4852": {
+      "fingerprint": "7aa87997df5d38f72addb5629f619c2a53f7b117",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4851": {
+      "fingerprint": "0a3e5b4746960b91353fd8cfc559531ea286e5c1",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4850": {
+      "fingerprint": "072052af01ab9388e9364aa041c9f3a2da85a02a",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4849": {
+      "fingerprint": "4e317348065646141d8b14d42a183081e3fc0019",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4848": {
+      "fingerprint": "af84b5c1b5d48d875d7bd25692eea21235faf5b8",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4847": {
+      "fingerprint": "87e0aec1745b71cd8b6b82ba0b3ccd2ff442ee35",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4842": {
+      "fingerprint": "bf3009b617eb2fda8bbbdae9da87a7aac816d281",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4841": {
+      "fingerprint": "27ea36fc5d72294a98dfd6ff4db414c54a3e317e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4722": {
+      "fingerprint": "b48ef65ae41c870a78be4a481d3a67492715f3f3",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4723": {
+      "fingerprint": "045fbebbef9dc0729c4f456bb497be733d0ed848",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4714": {
+      "fingerprint": "dc1aaf922863cf32749047b7cb089b8721329330",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4715": {
+      "fingerprint": "d32391408a05571e24809fb719454979899964a9",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4716": {
+      "fingerprint": "8ed743639340ac48976c395be169f0b35d2234eb",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4717": {
+      "fingerprint": "55bd6ad8ff3e9c61e8dcc1f9187dfb41ceb5c533",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4724": {
+      "fingerprint": "52c9d3aca32ba33ef59d4a388f953c8c94e8df71",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4730": {
+      "fingerprint": "54ad0e5034d3fbd8b70526ca5d5ee3f6c52485f2",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4634": {
+      "fingerprint": "b087ff09f0386479515b35649e37f3cf9e1dcb6a",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4396": {
+      "fingerprint": "7327ad003ccd1573b3ca1c0c2a07f442c156b838",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4397": {
+      "fingerprint": "2797e39bc753ed96097e8a9bc152dfdc28090dde",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4720": {
+      "fingerprint": "a6de0446c35bb9521c3b423a9516ac6e0a388de5",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4721": {
+      "fingerprint": "9aa3c9eebd5ca50d703dadd017bf76e45aa1bca1",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4695": {
+      "fingerprint": "720783468957a919dcd96ae939692aa51d185ae5",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4696": {
+      "fingerprint": "c5f3d93d6d730f56073ddad408cc634d6dc29ffa",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4712": {
+      "fingerprint": "5ab7419dd7116f8ae2e157050776d4cd356d3cbd",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4713": {
+      "fingerprint": "6d66e7997d885f9abe45a9fbbf92445f669daaf8",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4707": {
+      "fingerprint": "c052ed3525b75b8daa3ffcf665d0260e93560c98",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4708": {
+      "fingerprint": "4a66d6ddf93728a6ff055055d6cc313bebed8ad0",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4688": {
+      "fingerprint": "3fb804b1ba5e87f7c3c61285d751b93abf717a41",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4689": {
+      "fingerprint": "99642a7d0fa38e7ccda4cd1c499657bad3f40c80",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4690": {
+      "fingerprint": "ed35ac8b3110ca74c42f1a06c162cb2ec099fa2c",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4686": {
+      "fingerprint": "8faba38968615fa6b15e4ac72af0581eaf1443a5",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4687": {
+      "fingerprint": "29e1953c1f51277169022a91c8c2ff1bde32786e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4679": {
+      "fingerprint": "2948ac7484e362c6c016ebc0119d58645c2c8f82",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4680": {
+      "fingerprint": "a01b062d1487eae7d1ab74925ff4f9715e4b1a22",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4681": {
+      "fingerprint": "8b2947b667178e54ff3dfa162d6d5a664fe499e9",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4745": {
+      "fingerprint": "c4fe09da82e0e6c5fd1a60e188cf9c665fd00d94",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4746": {
+      "fingerprint": "aa1b665c38611ebdf0adfebb5d1bba2c243f3584",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4735": {
+      "fingerprint": "1e535b4c37716d19e122545119c17ac446d70ba2",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4736": {
+      "fingerprint": "7928905901b8f5dd383513545ef9e9f75933fa1f",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4737": {
+      "fingerprint": "f599e30188ab5191f9696404c0753a81fc853d83",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4691": {
+      "fingerprint": "126dcc497137bd95daf21b639a8d09ff8cdadfa8",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4692": {
+      "fingerprint": "f02d21dd18111a855c0265b19e01c6b17690ce7b",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4693": {
+      "fingerprint": "6d189ad025ad2cb167e531755dd6c393b40477ba",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4694": {
+      "fingerprint": "7248eb8e0aaa6a7ba8862d71ce029ada8faea60e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4684": {
+      "fingerprint": "c6eb7a96e87f6b031c9ee2aa545f8b29abf97e1e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4685": {
+      "fingerprint": "df59f3fa0ad6a9cf8e23587550e5135a0cfeeca5",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4718": {
+      "fingerprint": "d6ea638e97f1d7268fd58c35d182062aca2247ee",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4719": {
+      "fingerprint": "47303e45bc92a47ec83d7a4271016da797d97995",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4697": {
+      "fingerprint": "00b79068e365bfde07850190c4782820e46bfe0b",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4698": {
+      "fingerprint": "bfc272837bebff6fb313dac21d4774261984b2f9",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4699": {
+      "fingerprint": "f078954d2bd91326227e1015bd62c45360bb7650",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4744": {
+      "fingerprint": "74102decf28aebf66390fa02968070c0f0f0f099",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4710": {
+      "fingerprint": "3e1993fbf2090ed0c0af8d02882760f9edcc3b0e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4711": {
+      "fingerprint": "c3a1eecb93c2f2bed5f132eb73972ca49f6afa25",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4682": {
+      "fingerprint": "30fea267157e1a39bdae67c4b9a45faeda6e70bd",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4683": {
+      "fingerprint": "c31e5f286e48d45d611fd04d1dfc4beb6fee0541",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4703": {
+      "fingerprint": "e483943d6e043a24f22ca78c01ef6002ed6f2162",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4702": {
+      "fingerprint": "5bdf1abe1b5a11c5faeaf357cd44d3af1a2b3cc3",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4704": {
+      "fingerprint": "4acbe5a0e1b67e87a57a92107490904ffddbbb32",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4705": {
+      "fingerprint": "5a5f1731971b37ff5f64cad7d77977d34ecea701",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4706": {
+      "fingerprint": "5f87e9d2b4a09beeab1e6e99772125dbe3f77ef2",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4727": {
+      "fingerprint": "ee449e77795a8bbd9286f17b029d63ae1731ed3c",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4729": {
+      "fingerprint": "2ae54ca7a69beef24a7cf066d233789ba3d120d2",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4728": {
+      "fingerprint": "b1e51d29c2abbc2bbb78eae05c4407be4abe41ff",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4700": {
+      "fingerprint": "06b680a06531b68a02fc55d581d01147f4e34c52",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4701": {
+      "fingerprint": "ad3c9ae494af76051e79bda8042e82542907be90",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4709": {
+      "fingerprint": "35831b0de31e0ea11e6d559b086b12f08bcd26a7",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4738": {
+      "fingerprint": "d2ba7418271dc6d1201be8aa5299f56631177a46",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4739": {
+      "fingerprint": "fa6e6d6650425b3c149a7902d6b8ea8dbd28b58f",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4740": {
+      "fingerprint": "d7802daccd7b7d6a468bb5d71812a3d1f3d183cb",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4731": {
+      "fingerprint": "a84131f049723ecd5d94a3ded8ab7efec5ffeb75",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4732": {
+      "fingerprint": "f731b086c878edf75a087149dbc35c8bd9f7111b",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4733": {
+      "fingerprint": "11f7e8ed5a71c5754cf778a183549235ee55a832",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4734": {
+      "fingerprint": "27d617d686d9d5327f5e0d18a7414549dec68f5b",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3667": {
+      "fingerprint": "0e4767adad2bc7fe1db1e483b4f43ba9c92bd09a",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4741": {
+      "fingerprint": "e6156d7df73628213e4389a8c1efe7dc94a0adf0",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4743": {
+      "fingerprint": "1230a633e51a8b2b973d1b0037c1cce4c26e7231",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4742": {
+      "fingerprint": "7530e98c85343178d764bed61ff858bb07989503",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4150": {
+      "fingerprint": "e5802f485195dac7d6a7ddaa6aff36b529bb96bc",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4151": {
+      "fingerprint": "0c46488da8637bd4c2808910c9262a28f8784245",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2548": {
+      "fingerprint": "fffa06ebfad4f4f8311059e810ad32debc4a9297",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3556": {
+      "fingerprint": "f09b0e23418751ed2a3a3f5546718b681aab0166",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4264": {
+      "fingerprint": "d505955e4923b638a26b0bf390dca3eb276e2e99",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4265": {
+      "fingerprint": "298549fd1fd8954cbd8fe0028389442676690131",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=1452": {
+      "fingerprint": "7f651d155dbb5dc1c424916df75fc401e85a36be",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2563": {
+      "fingerprint": "06c4f423b3625b918216eac4b5a829164a612bc0",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2020": {
+      "fingerprint": "bd7d7139499e15a14ee21195b17daeb742f8b88b",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3540": {
+      "fingerprint": "65b33ceb3b29755ed1bbbf3ea03fe2f53bf1e208",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3587": {
+      "fingerprint": "a3ad4e308dd881d45d2896d6f1ebc44aa132cc9b",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4174": {
+      "fingerprint": "304d4b9256538715f3a1dd7669c84f68b52e2c28",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2980": {
+      "fingerprint": "2d20b978f45e134f57cdda4e91ba8d1dc4b1000c",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4268": {
+      "fingerprint": "d9e54c91702d916d9e34ff1ad3956ddd7617a0b4",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4156": {
+      "fingerprint": "0d99f8d9fa967ad744462b3e43aa1266a3848e68",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4157": {
+      "fingerprint": "ff2d336d08ff25b1566c82a21fe5b094a40a81cd",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4158": {
+      "fingerprint": "c1fdc54e45640daae9f52dca82506ef49693d5dd",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4159": {
+      "fingerprint": "34b9a4c3c5df5f13ceb15bac6db3adc84efe554d",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=1506": {
+      "fingerprint": "613b7008b75b63ff8ac41c0670396133ee170423",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4182": {
+      "fingerprint": "b28647baf6f4f5ae2eb35a6ecdbc371bb9d239c9",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4181": {
+      "fingerprint": "6a7d4ba885f5e946f4165e4b1c5cd54fe86afd8e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4214": {
+      "fingerprint": "666cad92129664c68bcbd832b77572e3bd28b1ff",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4215": {
+      "fingerprint": "9f1c8dee05eef02c5231e02317563a6e297914f4",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4216": {
+      "fingerprint": "545eb4d208cbd3d69309615746d9685048453873",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4222": {
+      "fingerprint": "ed1130fc9c6dede9293b16685afc8586a7c28336",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4224": {
+      "fingerprint": "2b892ed598755f69f0d0f435646471806c7db886",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4153": {
+      "fingerprint": "435c84c8e91802392356f71ed869906bf0307252",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4154": {
+      "fingerprint": "aeae458d44533af53c12b9a25aee2e5d8ed7accf",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4217": {
+      "fingerprint": "35cce3f58fdc049944a13676bb5d9ce296077767",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4218": {
+      "fingerprint": "25e3e948d180ed9d1f887b12c918fd528c45f97b",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4225": {
+      "fingerprint": "2d25e48df50f52b9fee180ca724fb480cc7ecfbd",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4227": {
+      "fingerprint": "d8a78bbcd49ce8e8f71f99b6a4d269154444dfaa",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4259": {
+      "fingerprint": "b5ecb2a9cdd4c50dfb7e50bc473c77179040926c",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4260": {
+      "fingerprint": "1b8118261bcab9ec3f9f9c235ef746f129ee44d0",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4278": {
+      "fingerprint": "da8419d68d82a343af2c608e2a5f183518acb41a",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4290": {
+      "fingerprint": "8559c8d59e26223d433fb47acf5736c390f4eeb8",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4291": {
+      "fingerprint": "2179cac8431b97d87ec21f4a8eeeea5ea5ba40a2",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4279": {
+      "fingerprint": "43966903c0f83d15820fe2d64a9ad09abcc095e8",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4281": {
+      "fingerprint": "a8940807629724bc0122d4d79f4885f880beee7b",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4282": {
+      "fingerprint": "5d462e04d26a5e48c5094ef5879fe563a36572c2",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4292": {
+      "fingerprint": "bbef844f1d653d0a3006720409bfc5005fa5f0b0",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4200": {
+      "fingerprint": "c27b0d37b2e80ac7bb375afdb93e9bac30bf1ce4",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4213": {
+      "fingerprint": "8ae82bd95fb6f157c8836e8a6b3c05baba26eb79",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4228": {
+      "fingerprint": "c40bd8bbada4d73c64c916560defa043a2368d4f",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4233": {
+      "fingerprint": "2fa035274026606857b9d72b0dc90e28ef32667e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4234": {
+      "fingerprint": "b89037fd6d22cf03de49f1e8d11413f84e659be7",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4261": {
+      "fingerprint": "ae085b3e67d6b36513a87d494d4683ed5b57dd03",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4271": {
+      "fingerprint": "78c35e6ce81119d37dbcd3e2ed8fad1fe71ce623",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4272": {
+      "fingerprint": "2d8077cfaeeb3c46e913ad98e0f807f9a865ad6f",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4275": {
+      "fingerprint": "c251909d8d6d7ecf8c0b1bb84fddfd47f10a775a",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4276": {
+      "fingerprint": "cf6a06e9166f8a18e777dbe59b4f509345ab6c7a",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4269": {
+      "fingerprint": "07a48c0c12cf70690e8e487a5b4a0e61d66eda79",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4270": {
+      "fingerprint": "73fc6cd546481815cd9e71434c24668b8ab66587",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4287": {
+      "fingerprint": "f6c663033a0bc55da0b64226178e88ecab43e49c",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4288": {
+      "fingerprint": "8d579c660baed0f087824032f3bf96405c82a537",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4294": {
+      "fingerprint": "535142b2ee44c40cf555c3cd10433f9147a46b92",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4295": {
+      "fingerprint": "b292644c7d62558a85eac280e422db3f079d501a",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4289": {
+      "fingerprint": "b4395c5f1dfa3e5b3504ad794128c5d15bba07e3",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4252": {
+      "fingerprint": "39612313d2a107a5e463d10524a418a837e39a91",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4258": {
+      "fingerprint": "d7643993f654c49d3fc2ed5ca381f98bb1e7f947",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4257": {
+      "fingerprint": "20edbc162907ccaae5c949277ca8d6b0ba1305c8",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2610": {
+      "fingerprint": "8c84805cf12ac20071813fce0849664598c63ce4",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3646": {
+      "fingerprint": "f696095604d04695da0b1fadf30dbfc6e5719f8e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3042": {
+      "fingerprint": "465f19c7b1dda303393f95a093dfa2b204cc0f20",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4372": {
+      "fingerprint": "5d9c755995fa82ac45844bdbda9ec28ced1c8569",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3640": {
+      "fingerprint": "d76bf39d81bb4db3de0ff4b9b0fac0159d1107eb",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2865": {
+      "fingerprint": "a6506794a037d0fd1928f40cb740cdaf348a30c4",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3639": {
+      "fingerprint": "9dc714c57f715541c0426d760377f99fb7ae41b6",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3985": {
+      "fingerprint": "26a313bc1049d6b72aaabd844744dbc8e7323fcc",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3986": {
+      "fingerprint": "5dd7743afd0e304fc76e2b88db3ddd9808c77c6e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4016": {
+      "fingerprint": "8f164a0a660ac6a16ee732027c2109bea493d7cd",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4017": {
+      "fingerprint": "3ea657683fa2210afc87114065a7db4319a4e95f",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4359": {
+      "fingerprint": "a8854b054bb43949c7ebf8c0ecb65257d517c8bd",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4358": {
+      "fingerprint": "121da9ca9a20ac4015753c9427275174e9c32464",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4054": {
+      "fingerprint": "8df660fcd1eb4d7cca3aeeacdc9377bddcad5e93",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4056": {
+      "fingerprint": "ebd788d868452c7e2027cb20b54fdf2617dabc5a",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4055": {
+      "fingerprint": "bcd758af281e6e2fd28af05aa6fd340d470be6e0",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4057": {
+      "fingerprint": "52112fe49a23841df11852ac333889c1b8a00dbd",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2011": {
+      "fingerprint": "6124827b45e5d6929988f15ebb07729f7e1d24cd",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4018": {
+      "fingerprint": "2a106700cecdd40648a8c58a399540cfd2751f58",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3977": {
+      "fingerprint": "da70ea20f7b433963114e74b0c9e47a2e14c8fd5",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3978": {
+      "fingerprint": "5f27f2bbf55e08256540495fafd5922307f9607e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4012": {
+      "fingerprint": "a5bbde9d8129b172ab8644b112eb940f5a52ead8",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4013": {
+      "fingerprint": "994e7f2a7d5a1180ca5ca46933d43f599e569699",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4014": {
+      "fingerprint": "c6537928a103c337f88e18efd95a64f29532da66",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4015": {
+      "fingerprint": "3617e7e4eb2b9475947c973a93249fde634f1db0",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4345": {
+      "fingerprint": "36b5a149f3c5d8ee8ceac6ffb6548d40a5736e42",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4346": {
+      "fingerprint": "c3b9cf2ff46213d9be0c5f6ef9abb864a1cccb24",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4000": {
+      "fingerprint": "8db85f66c206341a9e91fc1eb21bafcc2dd3c4ee",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4001": {
+      "fingerprint": "e1e3f0d54a6539a2e93349fcd91e031f301ec2df",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4355": {
+      "fingerprint": "b5123eb3b18d3d08aa2f661d52018703445f6f84",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4354": {
+      "fingerprint": "2c8821bc4e4394a49503ac4629eabb440d1e7c08",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4023": {
+      "fingerprint": "df1c29d968ed70f985587eab4bd66496bb436825",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4356": {
+      "fingerprint": "812a278254d51553a8d00ac40a3c366355f22157",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4010": {
+      "fingerprint": "dddec6284b84dd82f40517d6d590b8525074e8e8",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4011": {
+      "fingerprint": "f274b4dd57d2d71fbf8cfa5b3487f86338130c23",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3987": {
+      "fingerprint": "ef3a484fa90b7e54fb52833519c51d3d19582de0",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4022": {
+      "fingerprint": "fc7c3b76fcfb894270fcc18488d08656e42595af",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3981": {
+      "fingerprint": "0d3b8d79d04f9f86754c785c1d088450e5e0845b",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3982": {
+      "fingerprint": "7db6d5f279b1703c06ffc03d039228f78bfa2b56",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3983": {
+      "fingerprint": "cb38a8d4d1397c6585fe69dba03a9c6adfb5e290",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3984": {
+      "fingerprint": "7ed602b5719d77d037e9d207f936c74822e8cd72",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3973": {
+      "fingerprint": "0e49df9d93c12b8dde45d6e938a722812e79e053",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=1942": {
+      "fingerprint": "4e9e6e90f65d49a363ec2ff64eaafdc016c3ec04",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3979": {
+      "fingerprint": "c794cce40ee4d6383d51b28eb2a344b8055f2969",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3980": {
+      "fingerprint": "943ed0bbec0fb0e02b03975248d531719a71232f",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=1509": {
+      "fingerprint": "420a8e78d961e5558e78e4dab1758c95923a9ae1",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3489": {
+      "fingerprint": "8cc6686ba989d98263a2da610c277135ea371b48",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4280": {
+      "fingerprint": "44f799ee2e2268efdeb7611558bd50f3bb0c38f8",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3993": {
+      "fingerprint": "ae877710646cac1176b02e15f9952e654f0d9107",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3995": {
+      "fingerprint": "3d7079f2ddb85d9c75843286b50939b2312b9809",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3994": {
+      "fingerprint": "188e2b9d659bea08abc4ece2d9d5f0a63eec0359",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3996": {
+      "fingerprint": "f91314d63cf8fa659d957093532724a35fc98d0d",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3624": {
+      "fingerprint": "be40180849be306dfb1d845300ce6b34ea49f83f",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4349": {
+      "fingerprint": "7b9fddcb7f865c887d9b16fdbda81fc3d031f3c6",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4350": {
+      "fingerprint": "66a0c4c0b330fe1b5d78703199229d13575e87b4",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3975": {
+      "fingerprint": "e26cb7ebadf43fe1e3fcd8ba1793b87c44fa9af3",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3974": {
+      "fingerprint": "e680f6e8325738630f16abee69eddd8d7e619f6d",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3497": {
+      "fingerprint": "ba2c735ac48eef8bc46f2071e040d384a93ad353",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3553": {
+      "fingerprint": "ce1cafbbdbf89e3ed39f9079bb2adb5565003219",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=1371": {
+      "fingerprint": "465eebf830ed8c9aa5951f166d253faddeb560af",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3544": {
+      "fingerprint": "49214811fc999341d898a63d32dbb4524662c97b",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3545": {
+      "fingerprint": "93992663096d6e187d722fdd92c7c9c789b65517",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3972": {
+      "fingerprint": "81e72dea4c89a2b5c4e5a092699b2f9aefe93cda",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4075": {
+      "fingerprint": "1c3f3d2405d99e6c755a3586c71d70eab8c05fe3",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4027": {
+      "fingerprint": "972e0223c4efa70540730b13a016a32bb648c536",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4002": {
+      "fingerprint": "0443ce536f3cca3d58cc9660f9c73e33f480ae80",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4003": {
+      "fingerprint": "58c00933da69eb49850655feff789844d8f700ca",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4007": {
+      "fingerprint": "095f6cada90698866cde0b5ae82c81b1d9293255",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4008": {
+      "fingerprint": "50c8700179acf548a077c6b88353e14a652b2a20",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4009": {
+      "fingerprint": "145bbec376ed97ec5e0c0b199618aa3b26d96268",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3997": {
+      "fingerprint": "d0f74183b1f683ade73f872eff4fb977517e35c4",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3998": {
+      "fingerprint": "71dbebddd8fde6f1ec7e4020d9b9bbc1dca25077",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3992": {
+      "fingerprint": "4f96064f763bd0250b8ff32e642df90e893acd0d",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4020": {
+      "fingerprint": "b1f8a8831ff3797c1a168d6c0180279b3f4e8a95",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4024": {
+      "fingerprint": "467186c8f476dcaf574d07a3a147c3d023598973",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4025": {
+      "fingerprint": "272b31eb5632fd72e1cfd3ab7150aa65c5fbc964",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4026": {
+      "fingerprint": "7e8a1372bc1c27a465807bdd6af7549c73842ff3",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4028": {
+      "fingerprint": "72f02656f56bff19adf800d2bbf00eaaab133717",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4202": {
+      "fingerprint": "8f62a2a91bcf6b546d0076350b821ff1b08f374b",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4029": {
+      "fingerprint": "1ebb3e7aaeadc12a9396971fd4d9666ad9b05a85",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4204": {
+      "fingerprint": "a94727f852da13516dc1c304aa2dd1c1cce5fc4c",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3483": {
+      "fingerprint": "560f92f939a550b4eaef01999b79a9c5ae0c73b3",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3530": {
+      "fingerprint": "e78f853ab83885d62f9165f98cd19cf114e5202b",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3514": {
+      "fingerprint": "3951c92698211e3937bdf07d1f94bf1c04a9b7ef",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3513": {
+      "fingerprint": "5c2b4ad179aaac9f1c9679b5e0834bc98c6e6148",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3508": {
+      "fingerprint": "3870cec99a94cb0804442c073640b4c13847d90f",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3503": {
+      "fingerprint": "dde6c83f3456a231563a5efb4d30956fe23abf60",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3486": {
+      "fingerprint": "732bf4ae3d995ed5b9e97e4d6f4af22669a49627",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3506": {
+      "fingerprint": "a5c6299400186b37aae0fd644e995e3ebfa1e390",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3484": {
+      "fingerprint": "360f6be4c3e0e55b7817200a63a5ec9c8d15bc22",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3475": {
+      "fingerprint": "5582bf975d40e52276a6c2ee30781bdc16cb6603",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3480": {
+      "fingerprint": "0db794a55f5c3bf8f5412d9e24daf1b93d0aa96b",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3491": {
+      "fingerprint": "a101e38c6d20d0b1102fdc00308958ccc9cf8da5",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3492": {
+      "fingerprint": "a460caa7f09c84cf4cdf13ed186979cb8d77cf46",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3512": {
+      "fingerprint": "409d9e7f798f11b5d7e1fc00c6412e643948eae0",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3519": {
+      "fingerprint": "11cdc2928184e9fb66461e595990a8e8bf4c4482",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3055": {
+      "fingerprint": "9aec17280605d523d3994ccef32cf68366dc2c80",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2854": {
+      "fingerprint": "c647cbcc488b3e06bcca5c56204fbbeab0fa5038",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2855": {
+      "fingerprint": "80ad1dd6dff547dd7e94881d6e2254bbf6c071f5",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2868": {
+      "fingerprint": "c49624908c6da7367ac7db9d3e553667b1601cae",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2864": {
+      "fingerprint": "f48725d8625afbabaa104c0082808966014d990a",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3019": {
+      "fingerprint": "c9f5180eeda0079fd3c5d7bfcb6623b644191cc6",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2882": {
+      "fingerprint": "25af2f3cdf11b48a1c0fcdb9841cb4d315a90440",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2886": {
+      "fingerprint": "544eade4a7f7a1143959154c1272846934791fef",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2507": {
+      "fingerprint": "1e17768e2eb913e2a3463ba4cfad8c4d0102d4b8",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=1965": {
+      "fingerprint": "bb7890494c9074642a680f81bd925edba32aceb9",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=1966": {
+      "fingerprint": "e65992021590a4a278ad9091613901e046b7d979",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4161": {
+      "fingerprint": "8e4c9dc4dde651af320580ac4b17bd0decd0ba00",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3547": {
+      "fingerprint": "57c3e51e3b5b46435ec9ec963c803a5636016cb8",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4219": {
+      "fingerprint": "83765af56404e58b5b3e60a96216cd2eb57faf6e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4221": {
+      "fingerprint": "1b14f95401531bf6efd2f20a557a4532cb800d56",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4187": {
+      "fingerprint": "4b2f994a809c0f3708382e6d39b3c8732234bc25",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4193": {
+      "fingerprint": "a69230a3e825e0c1b56486e95b607c8abfd3494e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4169": {
+      "fingerprint": "69481f03b49c780edb20528a5d07659861dc4271",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4170": {
+      "fingerprint": "4b7093f27777f237ee7f963ca55bc5b0dce3e2b7",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4183": {
+      "fingerprint": "7dafb695ff9f6b73efca7ebfc0cf1fe158b3101d",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4184": {
+      "fingerprint": "23684b53ee1d4668fa267ff62412ed9cf7daf758",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4148": {
+      "fingerprint": "9a3373b8f7db8ed83c56f10d0d4c67263e1d0df3",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4146": {
+      "fingerprint": "90ac0b4062ff5bf4661bb33d63081eb89a28f220",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3568": {
+      "fingerprint": "539e870f336b6e2a9a864737242c32ec7ffa25bc",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3563": {
+      "fingerprint": "94350b2a15ea530fdb4c1520fac1078953f2bd54",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3585": {
+      "fingerprint": "92f7dfb1a8653265806b279b73e2748a699eb35a",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4145": {
+      "fingerprint": "e9e85d9acb6648618aae513f185aa865f418e0fb",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4152": {
+      "fingerprint": "bf3b9f916439ffb68808d898b1681aa470da07b3",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4301": {
+      "fingerprint": "afe086666a04940a04bde187a350a1526df93301",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4302": {
+      "fingerprint": "f7eba157cc83a49fde815ecac9e161c71ac84437",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3554": {
+      "fingerprint": "43538d72c7b4cc6124995495b3b5c6ced211d2e7",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4147": {
+      "fingerprint": "4e28b23605a07e6025db6ca85ebbc599ca01d0ac",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3561": {
+      "fingerprint": "313e73e2abf1868ca9f33cb038f94ee85e767f06",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3557": {
+      "fingerprint": "69963cb0c10e32e21d5a76c3856d28f43f568f01",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3549": {
+      "fingerprint": "c58f8239b7a5023e8782d30a72fc95c94fdd1403",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3529": {
+      "fingerprint": "a63e4bc0e000658a8a2463f95ab6716598f8d222",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3571": {
+      "fingerprint": "b1304e9450649f4d1ca19edeced94cd830cfb6d4",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3552": {
+      "fingerprint": "ebea4019772230505eb0ada9a2e54d28ef544b8c",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3548": {
+      "fingerprint": "f120a354d3974cd0a51a401367d06425e7b94c9e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3538": {
+      "fingerprint": "5ac4ea609e9c6a8c30f3c82d0aafa2de78a10494",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3594": {
+      "fingerprint": "718a4eaa8623ee68f08e5bb553f956ab2393e25e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2967": {
+      "fingerprint": "3982fd2f923cf96c1d37acd5fa57b61ce3c018c3",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2949": {
+      "fingerprint": "2b7c0ed2207c2f98ca0aecbdd8586f4296165ef3",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2990": {
+      "fingerprint": "dc4a8a1a252411a49ccee81a85767eae1d4c9471",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2587": {
+      "fingerprint": "a778a17aaefc32756846dfc5fd377772d0221ab2",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2937": {
+      "fingerprint": "c79e33142a20517e8728abef994155c0ad8dbb2e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2935": {
+      "fingerprint": "1dab99eeed72cb0af059561758529e6c93ec76ae",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2534": {
+      "fingerprint": "09dbc31f9439c1f145010b64f02103f258ef7e02",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2048": {
+      "fingerprint": "ba6655dafa46f0ad4faef0be07c897df64686235",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2026": {
+      "fingerprint": "b9daa80874af2b891490603f2d31a6b65f838fdb",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=1372": {
+      "fingerprint": "1c627d5ad2c3e7f9c4a119c823f7972c2abec0d2",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3635": {
+      "fingerprint": "c070869a82228e6b944cc87d6bf834217e6dc4ff",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=1066": {
+      "fingerprint": "46a6f3a7e6be0f618f86044ad0e964ebf3ec2f2f",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=473": {
+      "fingerprint": "609344d8103c4cab5cde1958f7c3f21adfba18f0",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4380": {
+      "fingerprint": "0aabd3499fabf45036bddd05ba63a21551e315ab",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4341": {
+      "fingerprint": "6c4c8b00da8611182fcfdd9f693c286aaa677c1e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4342": {
+      "fingerprint": "6bb6211e661ba4aac9e1465d8cb0c1674891468e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4315": {
+      "fingerprint": "4e1aed0b11ddbdd647f997d14c6879abd20fce3e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4316": {
+      "fingerprint": "7bc315e88f18d5fc51e08ac3227a6295550a40f9",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4317": {
+      "fingerprint": "6e6bfe5005af424fd73a1c9e7f59b75a697960d9",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4338": {
+      "fingerprint": "c95f256031512c9d89858c034a2fa27ac95bf3a0",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4339": {
+      "fingerprint": "6a92c6c3301084ce5a1001a7b1206750f5dbae84",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4391": {
+      "fingerprint": "e9bf3d3bdd8265a88ea4fd68eee35a669c53ba63",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4395": {
+      "fingerprint": "f7232b2e52643f9e0a7bd3d9b3e2fb2ac07c051a",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4394": {
+      "fingerprint": "ad843670a021cdc78d60be7478e69ff8a130ffde",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4393": {
+      "fingerprint": "e0a96a165e485359757efa12f18187faa5ecda2f",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4412": {
+      "fingerprint": "ed8bf6f75e3c426417609b01e16d166a7e5b6f69",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4413": {
+      "fingerprint": "346a3ee2414ea74be378178c242e57a1ccbf255d",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4414": {
+      "fingerprint": "fbcf5ceee54e0eb3506740a600dde0e3216a0019",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4415": {
+      "fingerprint": "31c015491c4993a7d0e2cbfe2d63fb456be148d1",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4416": {
+      "fingerprint": "f0ba464d21754d6d949223eb38f3e9086eb49707",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4385": {
+      "fingerprint": "93c27eb53696937e64a85622f580175b16780aae",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4386": {
+      "fingerprint": "12fec92954e72098dfdcf58405a8c33e2d633f63",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4383": {
+      "fingerprint": "69e3b9b6f674bbb68981295e244196b08f30cd48",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4367": {
+      "fingerprint": "93c35f2e2c44d0e35873feb05e319214c2120b8f",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4368": {
+      "fingerprint": "4c920ef0f66bafed4ad0b61d55736504b8a5281a",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4357": {
+      "fingerprint": "4efc2342814eaa7add0e16852a389be55266af11",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4417": {
+      "fingerprint": "11efcd24ec71fdccc9e0d4e6aef93c7da1588fbc",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4418": {
+      "fingerprint": "9c71665703e3e73152f9381ef52e458906b43a31",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4419": {
+      "fingerprint": "2e4b87f1954bb5712da51fe361a4dfa005d48aa6",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4420": {
+      "fingerprint": "b9643b137ef7c0dae715c7cf6b114fc4e84e5766",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4421": {
+      "fingerprint": "122ce18f5062d0d2519670574531f80a141f22be",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4422": {
+      "fingerprint": "488601b59a50ec9f9ef5617a5d891c0737155fbb",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4201": {
+      "fingerprint": "a97df784df9f28e598f5ebd38e5029a56ff7969b",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3670": {
+      "fingerprint": "56e282b3a890b1a519422fd2a31a18ba998c8d5a",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3666": {
+      "fingerprint": "6ed82132ec853173d509a69a000f9ca97956c9d0",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3643": {
+      "fingerprint": "6719a168dae91f6c47c070b10e1b069641202bd7",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3669": {
+      "fingerprint": "99da781ad8a3fa0b05e1a2477aa92ef7dd5aac27",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3636": {
+      "fingerprint": "997c333698d08b5a880eb2a098e5bc3f048317aa",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3570": {
+      "fingerprint": "265ffa10cec6a7b66eb81eb2b41d17f355343a24",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3481": {
+      "fingerprint": "ab834debd61230b18de69a8e8164ef643280868e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3490": {
+      "fingerprint": "d3ff57bb8d8f261ea230c49576e192143451d18b",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3504": {
+      "fingerprint": "d7dd713eba1839054cb342ead177c8730685b807",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3507": {
+      "fingerprint": "f85b6f214b0ededfe31e9058a50a306f500a3f6e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2873": {
+      "fingerprint": "b87565505553a0674724b4fe7809591659afce09",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2871": {
+      "fingerprint": "0a1aa96bb59b6c4d543c51cffa070803353133f9",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2470": {
+      "fingerprint": "bde926fd7f719b9558c7326e4cdb4e2cfa485a1a",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3016": {
+      "fingerprint": "42e1656230b289d71bf9d7394479b9b61e8ac1b9",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3014": {
+      "fingerprint": "48fbd0856545cb7e500752365654ba3452389e4e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=3006": {
+      "fingerprint": "ccaf6b792387febafb8054af4411bcc9403fae51",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2601": {
+      "fingerprint": "0586090b8e9cedb216702a91163a140e61255f92",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=1611": {
+      "fingerprint": "c502b255c0d99dd97a6c8dc71a7136ee88e20229",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=585": {
+      "fingerprint": "e896322bb73cdfec87648636aa65a1c6b003cf9a",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=620": {
+      "fingerprint": "aa3ed556114035e71fa3049d808b2950be9cbbac",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4579": {
+      "fingerprint": "6d70a9a327d5bb464ca74bc358cea7e32889661e",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4578": {
+      "fingerprint": "7fea664de8b7a311716973ba71e10cccaeeda765",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4577": {
+      "fingerprint": "87585204eb31e1e323485cf74fb4626a46801684",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4210": {
+      "fingerprint": "19965da3f6f8c86d8970b80debe5ec3be4fe0dfe",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4076": {
+      "fingerprint": "243a9cde880e259949f8c37ec09e4ce15b3c0bd7",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=4384": {
+      "fingerprint": "e9fef8308f4b4d35d6743f51a23ad52ad5dbc4fe",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2617": {
+      "fingerprint": "dafeff648925811f08937f6f92e316353083f04d",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    },
+    "https://mangomanyplease.com/product/detail.html?product_no=2618": {
+      "fingerprint": "deea0f20bbbb0b234c463902fc62f67f8f40d602",
+      "first_seen": "2026-06-26 16:42:59",
+      "last_seen": "2026-06-26 16:42:59",
+      "period": "2026H1"
+    }
+  }
+}

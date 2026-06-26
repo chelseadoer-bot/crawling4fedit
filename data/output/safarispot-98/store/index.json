@@ -1,0 +1,3702 @@
+{
+  "version": 1,
+  "period": "2026H1",
+  "products": {
+    "https://safarispot.kr/product/detail.html?product_no=1368": {
+      "fingerprint": "7b72abd0ce7a1d73b78c5ca47e7fa3ab13182452",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1358": {
+      "fingerprint": "8bd53bb02e01fb81042f80c79f0b75f8083964f0",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1354": {
+      "fingerprint": "9d621b57b343b3c173f4e96119d03d8009962cec",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1353": {
+      "fingerprint": "128867e9fc75281f45d70c749bb1121b4f17e866",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1347": {
+      "fingerprint": "a05100609e880593aad310829baa8f1d4632043c",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1342": {
+      "fingerprint": "512a9d020906744ac9fa1fcc4b5c11246b6a39a8",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=958": {
+      "fingerprint": "c46d7d8e19f8d5052ab23fa77678432174142adf",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1338": {
+      "fingerprint": "c4a1a053d27dcdc0a0f536e2f7b4982f15d8bf9f",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=964": {
+      "fingerprint": "e266235db73debf12ecdbbd39c94eb320d112408",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=965": {
+      "fingerprint": "52999fdc7a651c74bf8b4542d8e4b2e4e1e7bdee",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1340": {
+      "fingerprint": "e2aac999b8ffae1f3a947b5e6a92acdf82cd8976",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1339": {
+      "fingerprint": "e6710ad00d24da8e4a2273b645085c49dc742893",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1336": {
+      "fingerprint": "3f70bb6b5387d1f09b3c173e57ccadf778cb4303",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=950": {
+      "fingerprint": "43f4c0c78876eb668e4fdb84c0a18cb91eb8fa2c",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=877": {
+      "fingerprint": "afd5bb0f56f6e5062f417322b176b082836d5e32",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1329": {
+      "fingerprint": "64988d9cbc4ca5e2c89d759ef5b5b378d980355c",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1328": {
+      "fingerprint": "b70fc2e34ac6038e8825e7878e3d7e8818bbcf3f",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=961": {
+      "fingerprint": "8c73b5ae3323b75a39cdc9337ceaaa9c52749683",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=962": {
+      "fingerprint": "cbae365d9eab0a86f096731040c1e53017e2398d",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=904": {
+      "fingerprint": "8de7b8cb055d5dafde056af4f6358407299454e8",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=914": {
+      "fingerprint": "fc59ed1befc2b2ffe589f4f6a4a3d480c9ca1127",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=949": {
+      "fingerprint": "2e97d49ac7ebef40860efa0c7b290497c1ec54b9",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=943": {
+      "fingerprint": "87c85410dfd9fdb513c270b37cb711334599c774",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=876": {
+      "fingerprint": "3a21d30f1287790404e714afd0c8a3a68d3d81f4",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=959": {
+      "fingerprint": "d7eeffb41b533c8d414ccdf6d2d8eca32cb3f947",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=960": {
+      "fingerprint": "a0698d68c8fdcdd96d0922c0ae3452019a3a2321",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=966": {
+      "fingerprint": "441be4eb0732fbb0b22ad335ae5bcaf4236f549a",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=951": {
+      "fingerprint": "a064bb7322f9f69681268954af1933c3431b7ab3",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=952": {
+      "fingerprint": "84ee63ad4551a7cca31f01033b60a980cc4e9d4d",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=944": {
+      "fingerprint": "a77c359ca4591ec037d87e9e3042fd959aeeaab4",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=947": {
+      "fingerprint": "240ee8b01fce8984f978badf883d2d3d164d93d1",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=948": {
+      "fingerprint": "2c962384d62442e7073724d1de439f614d4a49cb",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=864": {
+      "fingerprint": "32da0fa2ccfd6c4d82b9f33192c0645774aac02c",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=865": {
+      "fingerprint": "a6090929b2e578954cbccf52c0587d3853c454a5",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=866": {
+      "fingerprint": "b7ecd9bf58b2e5da6dd1a9bc96bde2ed0363a364",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=867": {
+      "fingerprint": "0669b59861c6ec8712b44e25cc846a7817573a58",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=981": {
+      "fingerprint": "3d6049b3c6ea3a92bc5bcc8694fcaacd29e12ec3",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=982": {
+      "fingerprint": "e31f0840700251c9ee58911d2ada90a482f0bb8b",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=920": {
+      "fingerprint": "c88946c99b38f063e6dc924758c8db07eb501fbb",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=975": {
+      "fingerprint": "eb79f204790c8f076a2d3162bb4d9cfaab3c764b",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=955": {
+      "fingerprint": "d056b95c5a29dfea0f3a4239fb42bd19544f3c22",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=870": {
+      "fingerprint": "26a423e9f2a11263a2b1761ea79b1e9324ad68fa",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=969": {
+      "fingerprint": "2a4d3e853002b1d39422ce7be4754e10d5b8dc8b",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=998": {
+      "fingerprint": "f32ec56447c37c9d03057484930fb40ff3eda8c9",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=370": {
+      "fingerprint": "3fb2b783aeaabe1c822fdecbbb8f2b34b4801cdc",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=281": {
+      "fingerprint": "df35fa9b83ca101626a310de947d1b742b191018",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=559": {
+      "fingerprint": "e26a3a7db55aa2c4d45dc0e9c9137893248fcea4",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=351": {
+      "fingerprint": "699f17501bdc3dc436233fa17fadb491f7f4d5e1",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=275": {
+      "fingerprint": "3272baf26e1ceb79ed8052c152ea918b4587d05a",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=352": {
+      "fingerprint": "c4b414b1bc103f8f1478e62fcbf6551312a66549",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=274": {
+      "fingerprint": "49de830099d324443799b7f5d148ff9072113349",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=371": {
+      "fingerprint": "ff014f5daee8cb69daede28d314a71001f6b6a73",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=560": {
+      "fingerprint": "cc0aaee3651b96bba577aacdea76a097b8165997",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=537": {
+      "fingerprint": "7b5860fdd5a21f51982acdd7fe9b7ddd9a19d62f",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=356": {
+      "fingerprint": "9c87a3545b1b2219e469a9e49b5078a953217cde",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=497": {
+      "fingerprint": "8788478a8381dde0e7570a18677c8b38a6817ea4",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=631": {
+      "fingerprint": "c00ceb8794d078fa72faf566dad0ad3ee5ac092d",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=558": {
+      "fingerprint": "8dbf59e3aa6b0a8a5a845730b11d81facd820712",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=751": {
+      "fingerprint": "6e415403b5f0720c76a4f2f134c0690450a2cfc1",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=534": {
+      "fingerprint": "e19316d786cea6c8e1239a78d448c23b843b5a89",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=557": {
+      "fingerprint": "d2783bbcf62c72939e4f34c553ac0cb7095ab4d5",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=779": {
+      "fingerprint": "0bbcbadb97de4aa89003cb5a63a5ca8a1b482d19",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=637": {
+      "fingerprint": "a3325b5052a8e70d8a354ed4456011b21ecb39a0",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=350": {
+      "fingerprint": "6fb890284a5f00108fd58a097ed44dc6bff042d4",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=348": {
+      "fingerprint": "1ec819832f8ad0c2e2b4916b9eccb88e4619f400",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=776": {
+      "fingerprint": "1e099bf45cc6676efbc4da84fe8d3edc415a585d",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=781": {
+      "fingerprint": "165eaa1cd26f378d92da00959036890be003bd97",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=602": {
+      "fingerprint": "c47519e4f69725e8470d2303a8b611de3a1310d5",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1079": {
+      "fingerprint": "86c48f758d64ad848c9e5e9fda4e973630f2537e",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1363": {
+      "fingerprint": "471c40b19dd1dc87af7a1e4ced6b2c9b8fca60eb",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=679": {
+      "fingerprint": "06a1ff97e61e51e716e086e23aca24b825ae1d12",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=638": {
+      "fingerprint": "9243ce2bb6ed1454487cf4d1e486526e41cee0cd",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=633": {
+      "fingerprint": "eeb891301b9d89818e742c838680101ee88114a8",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=632": {
+      "fingerprint": "ce789d38676d39ea5d2b2eaf6537bada20074dcd",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=639": {
+      "fingerprint": "1d8a7c9c601d84731884037c6c91525caed8b18c",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=525": {
+      "fingerprint": "3c21aa84509bdc0085a1cad9954f04a84c5423de",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=601": {
+      "fingerprint": "29ba3fe07eed2ff562e5e2366f43565a68dfdcd8",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=630": {
+      "fingerprint": "8964ef351d872893f7495a63bb40bd6e29bbaef2",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=629": {
+      "fingerprint": "36680b7fd79053ffe326a5b3f4e32285e7178982",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=533": {
+      "fingerprint": "1be2079172cf8a7179a36a9c4d892c1d1b42e4ca",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=529": {
+      "fingerprint": "9d628bf5f214feff68d941047959e129ab44c9c9",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=797": {
+      "fingerprint": "bfccb5b12d22bcbf24eb8208984fe8651bc91409",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=729": {
+      "fingerprint": "e9450e3929d852367541b4b1548ae14ef18e9cd7",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=697": {
+      "fingerprint": "9a9b6f0fb411ead66b2fb18f709677cffea06c75",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1248": {
+      "fingerprint": "c8c885b4ca7784a752d5577c7950f1755f674d69",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=747": {
+      "fingerprint": "ecc520acc0f9816d5b4cfe50578c1b777c1a3244",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=530": {
+      "fingerprint": "392da3a4b6f5c5b5f025307fc9000a96ad2f7113",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=810": {
+      "fingerprint": "39d435996983c10dd92e81edd1ef7d6ca1902b5d",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=746": {
+      "fingerprint": "5e5dc388449f536cd65a45296933478ecad19cf3",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=634": {
+      "fingerprint": "72e6d7987749e7e311a8ba12fa9b28192038e1ab",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=516": {
+      "fingerprint": "49742443489021cf41dfa56513131d5526b19427",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=442": {
+      "fingerprint": "ed5a2ee87f3273685b1f78777d03cdd8a3c72210",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1214": {
+      "fingerprint": "dec6afc17c592a3518fbe77e4388b4791447e771",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=792": {
+      "fingerprint": "bbe7f9333aceb58e8d2ca2ea3866d99878e6e158",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=531": {
+      "fingerprint": "110ec16c11b89afcce62b58ef1b9033580fa6d0d",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=954": {
+      "fingerprint": "1953de91702dde2665e1299ad79681e840f1301a",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=495": {
+      "fingerprint": "893189d51dfeceba21471692c0de63eec536919f",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=728": {
+      "fingerprint": "1ae1143a9ceaec7f8955319d7299ad27527ea003",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=526": {
+      "fingerprint": "a8e168a6432314e0358ae4718d2f92862beb7288",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1254": {
+      "fingerprint": "ef5e4070cfebe49c490d9c6fe0d8f94c73005318",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1241": {
+      "fingerprint": "41b2219e54f6957190a010b452bf8a6ef5ffd8c4",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=549": {
+      "fingerprint": "118dd2c018ff7d421d939a4d583a585593c6f8a5",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=459": {
+      "fingerprint": "2abcc657740cdd4ddd78eb4fa602545e7680bc43",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=330": {
+      "fingerprint": "36162edb03c27511939049274a66751206803edb",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=780": {
+      "fingerprint": "65db6c5386d39467161318a0819b263e7cb6fcea",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=663": {
+      "fingerprint": "9d8e22fcd691d907c7cf41a1eafb090cff9e3cdb",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=547": {
+      "fingerprint": "77d5d6bc8c2a3580232ca6131fe3f5912d82fbc7",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1060": {
+      "fingerprint": "a35eea69249f2b9f4342abe296d44c081281159f",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=802": {
+      "fingerprint": "a0b9950c083f4f409716ee747960946c73b1465c",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=743": {
+      "fingerprint": "4cf08a3f03ad03668f8de15ce719e6fbf2c876cc",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=448": {
+      "fingerprint": "bd3c49fc229381bba061aa437cbcbcc51e8d6f97",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=799": {
+      "fingerprint": "3341425699c14a7f666ef4380a108ad24f62dd82",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=730": {
+      "fingerprint": "3e095c4e565a30a1c68d7198f12e0bb63ed9167f",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1269": {
+      "fingerprint": "7019866e07b6398f59ce39e22dff2a75802cbc65",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1238": {
+      "fingerprint": "2bce10eb1b3e436925061e2454c5b657cae15b5e",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=752": {
+      "fingerprint": "d3ca121fc4c6c5174f3bba4d17af09627cfc1a8b",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=750": {
+      "fingerprint": "53139db33bd5b773571588c7ba138597d2424772",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=677": {
+      "fingerprint": "5b2254c227362169f26913202649a55398453dd6",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=394": {
+      "fingerprint": "59fd58f95ff6e0ce1c16753fc6d759be76ab2a60",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1273": {
+      "fingerprint": "8764777fe600b94f0da20437a0e9c79529508b76",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1243": {
+      "fingerprint": "d4bf7fe716ca52f6e5f70a51e78eed9d67137e48",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1232": {
+      "fingerprint": "5ef957e6ab3cd196724201304199c31df917f67e",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1019": {
+      "fingerprint": "3633f585f74b10d1a7af11d2406c756cbfd56f35",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=673": {
+      "fingerprint": "199cc9aa5bfd7c10e5548c6444eae60c46b6684a",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=662": {
+      "fingerprint": "f90ff392becd1a231e8495bae4dab9616b36b1f5",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=661": {
+      "fingerprint": "7775ca3af1b8b25ab6bfbb11d838239f70771a90",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=544": {
+      "fingerprint": "8cc0c982a3d2f737de1cd876e536df14382c39ef",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=503": {
+      "fingerprint": "84b0a66154199057eac3457f0b56ee00128b4754",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=322": {
+      "fingerprint": "f127cfb5c71c5e42670b4ef272c555c976d9315c",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1275": {
+      "fingerprint": "9fa9130ab4eb9f8cda1cd14a276c491801d65308",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1245": {
+      "fingerprint": "03e01a63529ec9ac977794a9a56d5d84e8932820",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=822": {
+      "fingerprint": "1c09e3c3da5baf69e4c63e1e206bd435da57928c",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=696": {
+      "fingerprint": "18a748f069da77a128a9f54b87e5f82451512bef",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=664": {
+      "fingerprint": "8b185521034c90d1e1d57d5e641bf81745bfacf3",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=659": {
+      "fingerprint": "4f555bbba1cb131d3ccba65ff89baf25acb02015",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1017": {
+      "fingerprint": "434fd07f294b2003b77cc2f555e81223cf090ddc",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=956": {
+      "fingerprint": "cb8d18b2cf0b28b7affe486de4f04bfd1b7e855c",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=821": {
+      "fingerprint": "ad43e3d2dc4c2192770b70feda0a490460490900",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=800": {
+      "fingerprint": "6a8fb354508c0493dc563f543d52e1e85760c6ca",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=758": {
+      "fingerprint": "b8d1ca388762918df18a4a814c166e7b38b9c44f",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=522": {
+      "fingerprint": "f5eb563e0c9ce5eef372101617bf51226aa1e4d2",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1284": {
+      "fingerprint": "94de1a2c8d9954ecf6c63091c3657881096c3763",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=924": {
+      "fingerprint": "af5c211fe64c1025a75b70408ba4018e08ea4b38",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=829": {
+      "fingerprint": "d28ed4369ab657138e2faacec47215cc412ca6bb",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=796": {
+      "fingerprint": "01417ec9aae82494a1cfda584b7c0ae485a013ca",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=769": {
+      "fingerprint": "93feabd6c6fb17333e94b95bc8b7bc2d68a47b5d",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=756": {
+      "fingerprint": "dc0ecc5a2cb159c83f23cebfbbce043c14312dd4",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=454": {
+      "fingerprint": "255ee95ec2752568097285a86ac446bf97cdf98d",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1345": {
+      "fingerprint": "99aff08c9ad401169cdbc29b5a4c43821b37ca10",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1236": {
+      "fingerprint": "202e8bc7e09c28c95b25e484d3cac6397dc3bb93",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1023": {
+      "fingerprint": "a96a484afc723520401a0be20507fea42cea5f6e",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=990": {
+      "fingerprint": "0c50f74462df991796ab1029237d8ef6db83f38d",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=934": {
+      "fingerprint": "5e6b1ba5ce01484d7241a7ab7a80f36ae797dd98",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=929": {
+      "fingerprint": "a063ec479c00e9dd307e0e69ee1cc3a285a81c28",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=793": {
+      "fingerprint": "3fa2e29c90a06b04b7b8a573db14905c7dbb922b",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=700": {
+      "fingerprint": "c96569e091da43b8c1679e41f75e801cc91c0139",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=542": {
+      "fingerprint": "5b495908b349f116f158a414bcb03f1504122b39",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=536": {
+      "fingerprint": "1c7511197031e60171d951eca0dab639ba54615e",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=507": {
+      "fingerprint": "7f2cee209aa5d35b82e8a2e43e333aadc3473f5e",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=455": {
+      "fingerprint": "8af3f89a819aae3ccaa14133dddf4233e7caf709",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1196": {
+      "fingerprint": "04ef8d49ff81c3a0cda84e4b4c68b9ec297e53b5",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=814": {
+      "fingerprint": "bfca7d228e3cb213a6cde24e421f7204ac445606",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=706": {
+      "fingerprint": "f8c9f65c265af9634cbb9617037655585831ae23",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=644": {
+      "fingerprint": "607b9ca7b1b32107d9374c0b26f93646d0abeaa0",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=550": {
+      "fingerprint": "0b93194725de1c685293d8b7d476bdbda3cf7147",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=325": {
+      "fingerprint": "b50425861d1418bf8dada43245f6fda9b8511e1c",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1346": {
+      "fingerprint": "e2d35559e0afa4961d38ecf0a8f33079cd59f22b",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1277": {
+      "fingerprint": "30e8aa5d73d47bd875c8a0e4223c1ef7ff87fa76",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1197": {
+      "fingerprint": "a127f68b7c4083c2612c91f4dd611b39c605a436",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1075": {
+      "fingerprint": "71c1ac54e21069248ce8f794d2c309f535c06fc9",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1071": {
+      "fingerprint": "26b14c11c2c683a8659d7cd030610097aba1bba3",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1016": {
+      "fingerprint": "a05757d4dbfa0b36f285dfa10e7bdf270e799cde",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=971": {
+      "fingerprint": "3693500f91a5eaa9086e0d4b0c22f5a6b3e1de95",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=970": {
+      "fingerprint": "669a0f2f9354e9cc998a9e230854f6ba51052986",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=861": {
+      "fingerprint": "2d4c70fcd9ef8d8c355fd8b8ddb2ea4248b57d7a",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=731": {
+      "fingerprint": "de873efc778c4b158a7d194efd9f98a48a361f6c",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=626": {
+      "fingerprint": "09944367b20377577af4d1e458f2e9718cf447d2",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=527": {
+      "fingerprint": "0ddb07dc5a971af2c232f78b8656a977093b5151",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=465": {
+      "fingerprint": "5ea3ed80191d3cf43eacbd3a801c4b0c2ccbd3f8",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=419": {
+      "fingerprint": "531b7b5583c982745f1cf9f194abcd02f07674af",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=327": {
+      "fingerprint": "d0b7a0a4198be2ee4b9036e1378c9b94f02e18a5",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1362": {
+      "fingerprint": "64b8d07f25fa545b4ee42c5dc9512f5fc7355ea4",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1327": {
+      "fingerprint": "6e9ffbf1c209ea10230f5fa6ede26e8f3745de6a",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1253": {
+      "fingerprint": "b8db7c4fb62e5c60243becb3f2332cb869d4cf0f",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1015": {
+      "fingerprint": "e0b310e07823aa0ea3f2d5409ed8a809529df2a1",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=883": {
+      "fingerprint": "084d41cac3746563372f7336eb239c4ea4d134a7",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=804": {
+      "fingerprint": "b3997ada4b56e3f219eb09ee02c758f408627e52",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=777": {
+      "fingerprint": "74c91f10e22c0aa19f03eeafb6610ea2377f7e01",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=764": {
+      "fingerprint": "9dccc24d76c08bc0aa05562a45ec18556ca26f30",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=745": {
+      "fingerprint": "64a01e31a4c482b7a2c365d4200b16e71e860752",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=733": {
+      "fingerprint": "b5143dbc268cd7c94d83d22e18a0cd8fac43a633",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=709": {
+      "fingerprint": "ff9e7e840546e760e7d5924ce7631b6fb2e3c0c9",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=642": {
+      "fingerprint": "e84c1086b5c1736acedf62a76259bc69964770c2",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=520": {
+      "fingerprint": "8e3bc76ed7e524827b367bdee0e59d892ba703c6",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=464": {
+      "fingerprint": "9c57d559f5d7743c93a653268bc319a209d42b03",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=384": {
+      "fingerprint": "7e89e09a24cb36a8199cc2d37d5838f0b075547a",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1372": {
+      "fingerprint": "d65003bb1cf58f87d01c8e62da2a6c1269799a7a",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1369": {
+      "fingerprint": "d42f553a33b7a1e2aa8db113f66c9553b9e71f1d",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1360": {
+      "fingerprint": "143ef513e3b92ae05954c02b1f6af339feee67f8",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1355": {
+      "fingerprint": "eb2200af6043d36f0fa60024570da85668983db2",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1349": {
+      "fingerprint": "0481d41d53c3e8b917301bef4378784980bc2a8a",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1294": {
+      "fingerprint": "b8eaca42e20af2096223c1198f608c378a8b0bd5",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1281": {
+      "fingerprint": "b3785a18a246a0e2ea9b327acd87ed94ce156256",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1270": {
+      "fingerprint": "0aeee75b3148778993e50e6b5b93a2adf36b1883",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1267": {
+      "fingerprint": "f48d2fa8e892857d58bd42b1bec30cff9eb681ad",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1264": {
+      "fingerprint": "8385c48ef605b079b12ab156f6b2ea11707855a3",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1234": {
+      "fingerprint": "bdfaf69d0c5916b533f5fbc15605fdcfb069a733",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1087": {
+      "fingerprint": "56b108d2a84e118ab94f5f22d02e8c83feb4557d",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1082": {
+      "fingerprint": "9d31801c4bfab56a939b654cf62f3828d9d979aa",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1078": {
+      "fingerprint": "4abf0ca5a91e33a765b1d8087f37ea4279c25610",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1067": {
+      "fingerprint": "37cac59cd96070da9e6532a91221ef2245bfa0f9",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1021": {
+      "fingerprint": "8d01fe0586e78d55cd2b3581e8415fbc48d39f96",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1018": {
+      "fingerprint": "60be0481fd4e40516f587dbb3521ab72ac9eb26f",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1014": {
+      "fingerprint": "7bbce242463dfb6c6ab465791182e77f86cf7fd6",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=815": {
+      "fingerprint": "05d72fd8691d97c976c9cf579b4b48c2e4c2d4d8",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=807": {
+      "fingerprint": "ae11220a48f67073a53cab04853b0440a2ad27e5",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=761": {
+      "fingerprint": "57a142e63f2f79d817651c3fcb40b8be4d18ae9a",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=759": {
+      "fingerprint": "06592e5e4ae9b71adc4618ef8b6d15857d9a9f13",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=734": {
+      "fingerprint": "cc907c2d013998f916bdba4c318f82449794d373",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=668": {
+      "fingerprint": "8468a313dcea5b44bb41a7308067c9a31fc29321",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=654": {
+      "fingerprint": "9628fe9c95f5a209f1cb8764174003579dc74ac8",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=628": {
+      "fingerprint": "1b4001a991dbfdcf7a4c47e37a15c9efced2dc9f",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=627": {
+      "fingerprint": "d3c5c70be48a65fa19cd5c84ccf9b4f182d5662d",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=447": {
+      "fingerprint": "4607364b04b68c7e76b0aa0d0b221600e5f3e504",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=440": {
+      "fingerprint": "9352e615fa2998bb0238e19966fc05288fc82335",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=403": {
+      "fingerprint": "861caf65c634a346d1666b68593e0823db4279b1",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=383": {
+      "fingerprint": "8355e01598702cf93bd96db77e2a49bcd533063d",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=332": {
+      "fingerprint": "03bdffd936a35e7bfe74fa19fb59f962866977fb",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=331": {
+      "fingerprint": "0b79ffdeef493940e6d8b404c2bb0ad1c21aec59",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=282": {
+      "fingerprint": "82efcc0a2edc83f1809b53ff6c44540c8f3b53b9",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=279": {
+      "fingerprint": "9bcd00ff1c2262500a626164fa70708b1d4107a5",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1359": {
+      "fingerprint": "fc998c218de5894ccd388e3a1905fb819b004a87",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1357": {
+      "fingerprint": "09fbd4e47c82fb5ed5b6b4442866bccc2f0e2f64",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1351": {
+      "fingerprint": "b3508ec47738737460a36c0ac4f23126616769e1",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1266": {
+      "fingerprint": "6015f6360fedfec3a90d4daf0fcc06b553dab24e",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1255": {
+      "fingerprint": "56a6a09ea4348558749bea3fc59571bda3c0f0f4",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1244": {
+      "fingerprint": "39e7acc32b09e4dbb67078279d028821b9854703",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1239": {
+      "fingerprint": "44bf948fd02fded70fafe013a1d1d5d99b274fce",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1231": {
+      "fingerprint": "72acae7e0f36d86308ad203ff4962fdbb9830099",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1230": {
+      "fingerprint": "22e85bec3f8c3599e3937ccb55eb32eea1b5ae3b",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1083": {
+      "fingerprint": "d1cd625bee60d783c3ebe27dcce63548e935ea4b",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1074": {
+      "fingerprint": "31a5b13894cd96321793d54b3579cdc429fa4e80",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1066": {
+      "fingerprint": "cae97614a0f05d8a8712277186a8ba0879bb8b5b",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=933": {
+      "fingerprint": "ac5b1aa5f948a87076202723492455570859532d",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=858": {
+      "fingerprint": "d1ace10e83b6e8c2dbc308f370feea5b062fd4b7",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=828": {
+      "fingerprint": "85eef455ccb622dad7e0c577e47f99a0e473c780",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=824": {
+      "fingerprint": "e17dd3dbd14323c53e3af743bf24268267242ed9",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=820": {
+      "fingerprint": "fee0f2e410d6b40641ed1d0a79cbbdb69ceddf1f",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=819": {
+      "fingerprint": "8479fbf15a6adf9e7c6cec8532d0ed833a8a12c7",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=817": {
+      "fingerprint": "26a98aef0a18b783f513df4f764a4d194d2b937d",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=816": {
+      "fingerprint": "ef2a3b94c3f1146fd9e6ed45c06a9dcb13caece1",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=757": {
+      "fingerprint": "eeb04c811db6e45e0824e96bdab1dac924578944",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=742": {
+      "fingerprint": "f165fb4930da8c2132c92cd57cd8de230d663dff",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=741": {
+      "fingerprint": "1e41c8a4a07844a994ddbec90315e6981a09d464",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=740": {
+      "fingerprint": "abd8f3655ad03aaef32a9cc4ae66c8d1b6d5ab31",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=703": {
+      "fingerprint": "5c73c1681024f6aac9eb1416898319218ee896bb",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=698": {
+      "fingerprint": "cdfc39e4dbd7afc2b1377f8c04d4eb378bc10643",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=678": {
+      "fingerprint": "7b7ec8ac833551a5c6e411d82f67c56f7ec715b3",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=555": {
+      "fingerprint": "6842ba0c517254eded1ce36ae4cd648670417e43",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=535": {
+      "fingerprint": "f211b5d1a3c196b597a09fefb769ec8b472c6c60",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=528": {
+      "fingerprint": "b6bee15702bb40681a95d30165b9bca9aff04a1c",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=385": {
+      "fingerprint": "80ed3e7ff04a0797995862c16c730e8e497c93fd",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=355": {
+      "fingerprint": "ac2426276c0e42abf701e007e960c30521509506",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=354": {
+      "fingerprint": "1cf4c03c91c8ab87f064a7d070be93df38cf4309",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=324": {
+      "fingerprint": "4b34b7ea8f9172e41bea5d33c42f6281ef994a5f",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1344": {
+      "fingerprint": "15519fbc7e163f1ca1f87bb6c361f122c6f4bf58",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1341": {
+      "fingerprint": "94856716a210b20d3970e6b6c1cd11d7b8adb095",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1337": {
+      "fingerprint": "d93d047f9e2a5918a7071cfb0b52be197bde055b",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1280": {
+      "fingerprint": "69ad082ad8d5454f23395d638128d76d4afbde17",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1279": {
+      "fingerprint": "5754e8ed884710cd47007fb4f20774db3c5205be",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1278": {
+      "fingerprint": "214b70d968c5b1083e334b85021c1e55e5d09531",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1265": {
+      "fingerprint": "d4dd5d63c4e7f2c224d76330650641241c28d5d7",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1263": {
+      "fingerprint": "c171e59f3711f7a42754ede4a949af6f95b9e5c9",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1259": {
+      "fingerprint": "ac53bef3b1c181d27c7b2210476a31f662835cc9",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1256": {
+      "fingerprint": "d2698713db59c49440de760327edd570bfe877af",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1252": {
+      "fingerprint": "17104c7caf221183fd0e9cb415bd057b606a18bd",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1088": {
+      "fingerprint": "7768287696e4783a4db6fd1608e8781523040ecd",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1084": {
+      "fingerprint": "7fc7dc8283a854f741bb8c9458d790faca46b5dd",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1077": {
+      "fingerprint": "793bf196a5ee168d70016321a26827180a5e8367",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1076": {
+      "fingerprint": "246adcbc195bbf2ca434dfb84f6f6dd936ce923e",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1073": {
+      "fingerprint": "61a359aa860e9daa4aef02c4ecb4015ab276eda6",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1072": {
+      "fingerprint": "c0433903eab3f91a9031b96e28625401b15c7d35",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1070": {
+      "fingerprint": "113f94225e02d6dc9675d81223d7ef04a59d7e69",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1069": {
+      "fingerprint": "07faa3b69d68a4956b2c54c53b625d96ee4a9cb2",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1068": {
+      "fingerprint": "2d0a0bd4bae55ac66be6df1e8132c2b29dee761c",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1065": {
+      "fingerprint": "a4c9532e7c98578ab9c227dd1fb3c3c05bb1105a",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1022": {
+      "fingerprint": "f585ce21ded173e623ce02bb80fb1d1b9b9e75d0",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1020": {
+      "fingerprint": "30f48d4d9212a6fe5eb01d8828995e25878ee0fb",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=825": {
+      "fingerprint": "8625dfdcf91b4e0988c08f24957482da22670f48",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=818": {
+      "fingerprint": "520847a2961b179135c81b498cdcd7b8465778ef",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=808": {
+      "fingerprint": "ff6e18e8c8078464673503badb4e1bb14e2fbeff",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=803": {
+      "fingerprint": "55430db170f7dae34a8b35a1ee5b20978b8592c2",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=754": {
+      "fingerprint": "a05960b59696ad1ca4947afdf43b741864a47fb8",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=749": {
+      "fingerprint": "b738f8c619812bad20db782505d3ab17f2e13cad",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=748": {
+      "fingerprint": "3bb8d437c2d96bd8dc92748fc64a511020eafa42",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=725": {
+      "fingerprint": "115c9db923eb07d2ebf505739ec8de15ede664a1",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=724": {
+      "fingerprint": "dd044b209deb94c4a2c37b71b9bc014d4b343be0",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=656": {
+      "fingerprint": "f02301d7cd81cde83d61e47494b16d055974c5b1",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=554": {
+      "fingerprint": "2f615c20900f69887ad98deb3dbc1d0ea6908db5",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=532": {
+      "fingerprint": "2541da22ec8d9ca09cd8f39660a252ac2ad5ea07",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=467": {
+      "fingerprint": "8a72f2ec549aad2f5a9345389f1878c32e6d4f45",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=466": {
+      "fingerprint": "1839a0541ff1c09123e5143b5e979e6f8acc566f",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=329": {
+      "fingerprint": "0ca65523649999c3923870a8dc5f34d22c94efbe",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=326": {
+      "fingerprint": "0f539013f7df4773b5bcbcc92919882c7a48984f",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=278": {
+      "fingerprint": "87eee470284266343d48d677d034350b6d43b442",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=997": {
+      "fingerprint": "0b367e4a2ac0ce886cb122ed2be6c048293bfe6b",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=988": {
+      "fingerprint": "96e0523895482f83e3f9c0023dd51142c8a64eab",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=978": {
+      "fingerprint": "5f6658ad911d5081b39c6af8ec94151887f22a18",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=973": {
+      "fingerprint": "fc49e0155a016bb0b061911b63c2d888fcce8a31",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=972": {
+      "fingerprint": "b070ec1ce0813eb679f18b755c9a4637bf1dfd73",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=938": {
+      "fingerprint": "b92ba8196610256cf749da682216b1f6158e6a2e",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=937": {
+      "fingerprint": "c83e8bcb6a8011ae7a89c9c2b2f60fef8c104cb2",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=935": {
+      "fingerprint": "5a268ad391f522c11f7dad7842f238fae4dbb1d4",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=931": {
+      "fingerprint": "343f9c860315bb75d0e175ea7c1abe5173e42963",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=928": {
+      "fingerprint": "3cf95ed61e11b1150ec9450f75e6b528a79a19e2",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=927": {
+      "fingerprint": "cbe860198adf5691bc6f3b259fbc0113def307aa",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=926": {
+      "fingerprint": "a1ce88e21baf628ebdbee570018e4d93acc7d584",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=923": {
+      "fingerprint": "5a5d7d107e65d27493ee7468b561ba7c889e77c2",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=922": {
+      "fingerprint": "06aca03897ab09c66edf852a859306e1298d5184",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=917": {
+      "fingerprint": "9aac6ad904679a66116b3d5f67f08eb159b62cee",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=916": {
+      "fingerprint": "2c5809b15f1aac83bc58994b01749b901e98cf1e",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=913": {
+      "fingerprint": "ae28330b347751a1f7a0241e45aa47622f248b81",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=912": {
+      "fingerprint": "94a68d2a0907dd96b509eb0b446468e42d980432",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=911": {
+      "fingerprint": "c12f588cff336b9c463dd1896806a486ea4e46e7",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=910": {
+      "fingerprint": "20b2348e1fd9b778d5177d11de191801e187aaef",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=908": {
+      "fingerprint": "c698274152e4df99124db4780d13ddc6bdad827e",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=903": {
+      "fingerprint": "200946852187b534ec823dc09854a0799b664d3a",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=902": {
+      "fingerprint": "ad5fbccb836ee92358ee461b1d4dd4cdc9132cc5",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=901": {
+      "fingerprint": "308dd901d77270c309f702cc7a6d0951524d6613",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=899": {
+      "fingerprint": "3da9f06d04190aae355b2e05e23ea79384fd2304",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=894": {
+      "fingerprint": "1f12f63a5dd3e7c106ec2e2ddc37329dd2490c72",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=893": {
+      "fingerprint": "c2be593afb22f1d97285c64b5a5a8ebaf7134030",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=892": {
+      "fingerprint": "03ea00369dc4cfc92388b2094a03db428fa03dda",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=889": {
+      "fingerprint": "205a7106b614dd3980997953cb400b2b09874af6",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=888": {
+      "fingerprint": "b907aa5cb8ed139d308dde9959def5102507c882",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=887": {
+      "fingerprint": "7b82e5a20beb0bea1c1177771da66a0d6010b0a3",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=886": {
+      "fingerprint": "746552aa60b66aa2977c9baef8c7e798cbc5d656",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=885": {
+      "fingerprint": "4dd99b0ec04569664d846eff749650baec596c47",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=884": {
+      "fingerprint": "5248094400e3a19aaaa316998b8335e48fd5cf75",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=881": {
+      "fingerprint": "289fd295e55eecfe545ab5c304ad07cd4dea703b",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=880": {
+      "fingerprint": "7db029fef1449c56b96a92dfc226faf84b2b2b1b",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=875": {
+      "fingerprint": "9d45bb5051402d1d488baee6e03142d1a16e38b7",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=874": {
+      "fingerprint": "f047952cb57cb306446e40a397274c08b7c85503",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=873": {
+      "fingerprint": "e0ee9a02a60db9fc85f604e3f4b6b8cc024f75e6",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=869": {
+      "fingerprint": "f0ca491567e80ea8f83855d4fd36e2cd379bdf71",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=857": {
+      "fingerprint": "101d5f109b57f573bf59554f8e41d6ba19f105dc",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=854": {
+      "fingerprint": "a4a1037fc20978e60fdedbe83ce6e9c62fb57b5b",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=850": {
+      "fingerprint": "df25c3a5497a8d9add15db9c5154c342eb8519af",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=849": {
+      "fingerprint": "e9d98480f7879f80f239d5adeade8c7bf80c3046",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=983": {
+      "fingerprint": "42d7f15b4f08a52d9a36d6e1db865c189bb02015",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=543": {
+      "fingerprint": "15955c3c76b9c2d1c7eaacf9e2657722d53334be",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=963": {
+      "fingerprint": "63413c17765482b353da9f7f58f0d684f6e41bbd",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=496": {
+      "fingerprint": "793f7d2d69938d89b12cb54a59668d80bd623a42",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=523": {
+      "fingerprint": "ebf6c73d467cc2d98050bcbfbd702a09ad533480",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=460": {
+      "fingerprint": "a530bce4f59a2c2020635fc364bdb088379810a0",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=676": {
+      "fingerprint": "60f4c848c66e458b3298adf0096317c2e27404fc",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=498": {
+      "fingerprint": "0fb0bee66f98fc561882d4647be7b2c1a9657d2d",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=461": {
+      "fingerprint": "f4f57c9b54504bafa98586e53a652039f7516982",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=669": {
+      "fingerprint": "d76b307ace66c4bf068a6a02488f8e2dd26c67ab",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=333": {
+      "fingerprint": "6cd312c638e83391e0a0dd048a0a73c5f3ccf9aa",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=483": {
+      "fingerprint": "0ab76bb4263b07ad7a02b77ebc3de8742095b864",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=674": {
+      "fingerprint": "660db0e22fb4f3ca9fe9f575b48ceeabca63625d",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=399": {
+      "fingerprint": "8d8da1f66cd0aea8a107a2d48cac1806719d48f4",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=482": {
+      "fingerprint": "31556b117ace22a2d10dda122dcc3ccf9c88dddd",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=449": {
+      "fingerprint": "a30ab35e450e3b0bfa199ffc5400d4b2c3139181",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=334": {
+      "fingerprint": "19b0f75cec0ef767a194e76a8ddeb4b29ce9939d",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=392": {
+      "fingerprint": "0689ddd785b9410d705e184d9751063f36283686",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=393": {
+      "fingerprint": "372ebfa7815b932f5020cb22d7799c5e39acfac0",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=381": {
+      "fingerprint": "67a15993139da437ebb17fceb5bd7c2883b768df",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=336": {
+      "fingerprint": "2889473fbf19467ab2ab7d2ae61ca1386505639b",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=358": {
+      "fingerprint": "2eeeec4c1b15749990ff7b51551b34f2c79b2a73",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=382": {
+      "fingerprint": "e711d0285439441350f173b1564a86487d677eac",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=418": {
+      "fingerprint": "e796c53db9f5f31cbb798bbc8c73775037c3f7ab",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=423": {
+      "fingerprint": "48cc418820a5c79f58f9168f73e2ea996b23526d",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=422": {
+      "fingerprint": "bd0e0359f760c6035e1ce47f9bc745d091331902",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=294": {
+      "fingerprint": "d3eaae910bd3ab6e41da1df7b6cda67162188f73",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=493": {
+      "fingerprint": "6e4c468a62ce22670e044060e64fdade703f0e0f",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=469": {
+      "fingerprint": "5c6f855660830b92faa59b78e9d707cc7be2eba3",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=480": {
+      "fingerprint": "423b84dd19dce940539257b532bc96473aaa6a97",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=450": {
+      "fingerprint": "f69ccab7a0629527d3e4bf2f9bc6003531307bf2",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=417": {
+      "fingerprint": "e714e0542a2ceb89d82748722324d108b9fde409",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=291": {
+      "fingerprint": "2ac81152a6c4bb9b0a5d128ace4c23a3842d4205",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=453": {
+      "fingerprint": "6ac4bcd33939cf3f180d103b40c7e69d8ae782f4",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=293": {
+      "fingerprint": "f357262af74619d9ecd3818b0f6eabfd64ff7d06",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=288": {
+      "fingerprint": "5d2cf77f7c128c773cb780e438dcaee90b00177f",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=451": {
+      "fingerprint": "77d77d4a97103a001a0f5885ce36fbe2b1c2a3e7",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=390": {
+      "fingerprint": "ab7e6a9e40ba49438b06f7aa93c404ff53c09347",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=292": {
+      "fingerprint": "15feea049d4060557a0fbb8fa790adc456613c76",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=812": {
+      "fingerprint": "9334d847b8d29cac913ccf1699d52770add4fdbe",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=675": {
+      "fingerprint": "6892f9b97766bd245b6c8328a55ddd23eccdf4d7",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=372": {
+      "fingerprint": "1bf6d28d4f3d1489e649b6af5af99947261b6ccb",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=337": {
+      "fingerprint": "ef8e8d8aec1d2c3129e82bf08418376e29ffe7f0",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=653": {
+      "fingerprint": "b0a7713c554e223ddad4bebeab7e1162c345e3e4",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=468": {
+      "fingerprint": "4450eddb9a916c50c863069b71a6a8796ebf04b0",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=445": {
+      "fingerprint": "00567ea18b36cf4e5e035508999fd5d9b2ea0857",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=373": {
+      "fingerprint": "25282dc9413afd643c7f6e6824edcfb829e39d26",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=492": {
+      "fingerprint": "9d3996e9e4c759975300a30b99e7d0ea666dc36a",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=446": {
+      "fingerprint": "833c5bf2fb7572dadd509f364495af2ff7e94389",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=269": {
+      "fingerprint": "619dfbf957044e53f37359b1dcdec7cb7cbbc940",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=765": {
+      "fingerprint": "9999760391a3f0f68b7050d174ce8a0fd71faed6",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=652": {
+      "fingerprint": "e84e7b5a95cceec8c23b329a9ae430cdd4873937",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=479": {
+      "fingerprint": "31117da242222507346abf9a885ef9acee4213c1",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=405": {
+      "fingerprint": "a7d71e0f45c16554fdca25cad2defb91335e5dd4",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=404": {
+      "fingerprint": "f05240465a568064468fd124b02805ee6d59af78",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=285": {
+      "fingerprint": "40a29e6b8f60a6764a0e68de2170d12f877a2671",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=271": {
+      "fingerprint": "8606e8042817b53d9d594f71232a21b920f2fc94",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=774": {
+      "fingerprint": "197c1feb1dfa781f45591c4753112913c1126fcd",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=681": {
+      "fingerprint": "972a3211a8e40da26c8a50ac4f9e512ce2949e37",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=546": {
+      "fingerprint": "3c32827498678e2c7d06d1449226b0503464d4fe",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=472": {
+      "fingerprint": "08277c4a6f2decf1c8855805146641da88799bc2",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=470": {
+      "fingerprint": "1aafab72ad2ab3a5ec52f31e4825485b8d1f7fca",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=421": {
+      "fingerprint": "806ba3883f5d8df80ea486f40ba00583b2a0bad3",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=411": {
+      "fingerprint": "100aa530797b4dd751668b0e2e2de8376da9c825",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=286": {
+      "fingerprint": "3aba9a8d0a8efa0d83ad4ab205fd81cd52e0a242",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=823": {
+      "fingerprint": "79d6c7bdd1afb7caa1b54155ed624922eeb065eb",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=478": {
+      "fingerprint": "8427bfd8409d9a2624658eb6618edd8c10442a51",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=410": {
+      "fingerprint": "365e2294d5375c706977838415f3dc23b39cda7e",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=408": {
+      "fingerprint": "eae783e80b0cdf8efbe5833e85f71a2b35dc0a41",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=406": {
+      "fingerprint": "d631024d37b4df953d5b668956ef9c6ffd7c5377",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=402": {
+      "fingerprint": "864c2370fb7dc306f102501821a7337021f9d2a5",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=276": {
+      "fingerprint": "b8354719ad25179d40a1836e1d60a94d4daaf333",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=273": {
+      "fingerprint": "0e2dc7f94e23263da4acd7a20178726d8af2bc34",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=272": {
+      "fingerprint": "352f628b9ca0aae0adb12d801fc799b0945fc94f",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=270": {
+      "fingerprint": "0bccec7fb5f4a459024fabf29608a456ac51ca8d",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=942": {
+      "fingerprint": "8056d316318d176a6fbee535fc7e9b601c25b50a",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=906": {
+      "fingerprint": "3a0a009b5678f70b4ec03c26938e2a59ff56b1da",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=905": {
+      "fingerprint": "069c51dddd29d2c36bc06dd958bf1ad9b2d499c2",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=882": {
+      "fingerprint": "4ad0c38dda31b6851c18270e74d95492a7a8fdb3",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=879": {
+      "fingerprint": "098145dee3d6acb9957d5c14266343092320d091",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=872": {
+      "fingerprint": "dababcd6fe118e199a28034f7c125a41adae3762",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1370": {
+      "fingerprint": "4b6e69c1f86f1e10616fddfe8e81b0e1a4a9ac32",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1367": {
+      "fingerprint": "3ee4311953c16f6ce7cccdaef27648c3dea4b753",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1364": {
+      "fingerprint": "14b5ced167748589cffb03f877ec3f3c18f4fcaa",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=945": {
+      "fingerprint": "ef55cb9d6f060a2c5d03aa79c1779ca0019149ae",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=946": {
+      "fingerprint": "f2ce61ab31874f02d5f20a7ec885b865c2a925fb",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1348": {
+      "fingerprint": "4e03379d5f8a0eab12b86cf5612975e29ecee0c3",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1343": {
+      "fingerprint": "c73e747a6d500ec9d6b888d2a10e541ed00e8753",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=953": {
+      "fingerprint": "bf4d7cb3028f3e410a3f89b7c7528080d29d9141",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1335": {
+      "fingerprint": "2b8a0fa02d4b5a6f2472ce70f1a41d9ab0ebecca",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=900": {
+      "fingerprint": "9a4fff0931718d3a4d4c9eac99e03dc142efc61a",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=878": {
+      "fingerprint": "749bba7e5da1b7b0b0571a2db3d047dde8e63e7b",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=968": {
+      "fingerprint": "b08ef1bb4c3f798847ffa58e7180ef16a7426437",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=967": {
+      "fingerprint": "e78153f1c124dd4427823403fe92d5e0260dd7e9",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=280": {
+      "fingerprint": "2432ec4d5641b484aff1460358042632759c39f2",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=401": {
+      "fingerprint": "f1a6a33a6efcbd0cba962028f9cbdd9ef9e3dbcb",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=513": {
+      "fingerprint": "c7acfa68c990bdb3084990609767895093d088ef",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=514": {
+      "fingerprint": "ae605f1ee12629786363a1001024bec362e22a35",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=524": {
+      "fingerprint": "b4a638addd0aa471c29169361b971e6edbe6d39f",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=657": {
+      "fingerprint": "15150ce0323f1007d20f02f0e43d36c2f32b5267",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=635": {
+      "fingerprint": "e890816b41f1a377a12697f2594a8e9727df1ad7",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=636": {
+      "fingerprint": "a02a2030c506d98c27976f3ab557262fab31a590",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=346": {
+      "fingerprint": "8677cb9b3c833f14ff7cad7e6efd0393caae611a",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=539": {
+      "fingerprint": "e1b0b7c3ec6e900f7c194898b80bb7a355deea6b",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=357": {
+      "fingerprint": "e233e977c89369490ce3be557fbf72395d32052f",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=680": {
+      "fingerprint": "b68d6ff495cc86e0766691493748b1faf7b2606e",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=347": {
+      "fingerprint": "6b1275c251abe107a70c1f9fea137475bf38363f",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=345": {
+      "fingerprint": "037e41057d6c48dfc9fdca31617385d565a3bf47",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=647": {
+      "fingerprint": "a7a251f308682b8204133151a0cb37b53d56ce06",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=671": {
+      "fingerprint": "2247041259a0ef045de6f86b9383b888b2a7d6bc",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=732": {
+      "fingerprint": "6373f73e351d7a657a261db2a905b590211cc64a",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=424": {
+      "fingerprint": "30120697deeef43044ab7afc98c00cb2bb52fa61",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=515": {
+      "fingerprint": "ac35adfcbdb5a938b9742ab1bfacc6291f3e08c0",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=521": {
+      "fingerprint": "b91fb4ce4172ffa2c00a05152968aa928987660a",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=400": {
+      "fingerprint": "8e7d1a8ab810b65c7b6928f5ec098a39cf4dd784",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=499": {
+      "fingerprint": "e63df3b2494fbbfbe08723d93a27b2851d23e70b",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=552": {
+      "fingerprint": "878bee322303cce1f621c65586d8eb94e2981542",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=541": {
+      "fingerprint": "1f02b3000cca5c042f1a703b69907b836aaac8cb",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=772": {
+      "fingerprint": "5d45218ca8e3bca23dbce7587a67e27f8d7f6b01",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=775": {
+      "fingerprint": "b7fa5fb3cc2caa760112d94339c10338742e67ab",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=701": {
+      "fingerprint": "3f8cfc91edd8d34b0a58fdc6afea3d91b9a21ec9",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=511": {
+      "fingerprint": "ce39e6a1e340f385cb7c3b73e846fae8d4af7cbe",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=801": {
+      "fingerprint": "7b2bb012a9db51f7586b3ad74d9cbc0a4b5ab1fa",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=646": {
+      "fingerprint": "0aaf8f90fadd4ee944d07a01d88773c651a366ae",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=509": {
+      "fingerprint": "d5f5e752727acbfcebdc54e8a4ad0f9a05486e5c",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=672": {
+      "fingerprint": "4a7f7224ecbdfc5e839062c3d85ddcc4364b0098",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=335": {
+      "fingerprint": "3e59ca05127e1f7da69e4147412f2270aacdf176",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=707": {
+      "fingerprint": "0136f867a55231b62271007fdbc9fe870f60d1c7",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=702": {
+      "fingerprint": "e9faa7c129edba8a263651775cd8e892df8be24e",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=551": {
+      "fingerprint": "e82583ab9340eb52d2688f423b20f6d40ee826d2",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=500": {
+      "fingerprint": "d41b4fe6468a16089d5fa46d87f884b876aa99cc",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=788": {
+      "fingerprint": "89bfe962a2756c8d796b0fadcd934af10d8e1553",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=650": {
+      "fingerprint": "41f4e688549cad439a75b8bf549b2f66b3e4bcd5",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=510": {
+      "fingerprint": "96b0c75917a32dd93d7117fcb01cd36ea31f6e04",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=323": {
+      "fingerprint": "b61b715551bc8d8340c3baa1a83e28a47d361b11",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=827": {
+      "fingerprint": "333f097821e68292d5b93ae04abc9e8f8625e84c",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=489": {
+      "fingerprint": "baade633adf15d57a6020cc723e337808000400d",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=735": {
+      "fingerprint": "dd6122e799affd07342648b351b39e64bf2fccb3",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=548": {
+      "fingerprint": "95163247cbd51ab19521cee203e875e098b2c39c",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=502": {
+      "fingerprint": "2e9c0941ad43701205c609da101a075e6241c411",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=826": {
+      "fingerprint": "3cdec465147eac291b0e783d7d96125d480b95ca",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=714": {
+      "fingerprint": "d82b1ab31388d625167f19fb56cf70c41bb89e32",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=773": {
+      "fingerprint": "fbcb1b62489046281207ebe073715c7be2d91397",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=705": {
+      "fingerprint": "01e0465146abd28c8d5807c9e1dd26034fe2a30b",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1240": {
+      "fingerprint": "899c435276f129371876118b022ffe69445bf59c",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=991": {
+      "fingerprint": "34044633d615550bbe99440476d69ea9eac8908e",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=744": {
+      "fingerprint": "281288c32f3c78324f8b75b91f726e115f7cc163",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=490": {
+      "fingerprint": "6725bd7965f766d135964a033f50d8b0d4e4d64d",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=711": {
+      "fingerprint": "0d112c0a1ec35a603d37577751b7f9aeb1a3404e",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=670": {
+      "fingerprint": "19f1ce343f2b1596ec23e78b1601834165427670",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=491": {
+      "fingerprint": "ea58dc38e59fc107d36f24ec159ac3de7dc8cc30",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=890": {
+      "fingerprint": "cfd9e6b15a055309a3d684ad75a43ec40855f92f",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=715": {
+      "fingerprint": "89457cfb41f2eb831761a42360b1b4fbd88d3242",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=518": {
+      "fingerprint": "5d51c6b227df56cb5a2517a9ffa0e0c71598ee50",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=391": {
+      "fingerprint": "2cb281f8313c22f36aa27f504d0adaff29fadfe0",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1235": {
+      "fingerprint": "7a0b4270e775e7db7c7f2df1003d87b41e1951c6",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=651": {
+      "fingerprint": "a06a3e8f1b332390e01dbfa7557d0acb062c11da",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1260": {
+      "fingerprint": "4623e53651752d21801b3dcff381905296c0a8f2",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=813": {
+      "fingerprint": "70c8f13dac038a818ae5225c8dbbef01c822b00c",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=811": {
+      "fingerprint": "ead186e385cbc28db8a0ea7a1923a8159351971b",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=666": {
+      "fingerprint": "0912517cc5833a36dd6f5eaa6cbaf079c03a8337",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=625": {
+      "fingerprint": "e3b64672a20cbc636d47dd304323e8ba99c4a323",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=508": {
+      "fingerprint": "1daf49343df3d0f37430c06c8d5197b9eed3a307",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1282": {
+      "fingerprint": "fe120dc98af9dd9479d0698f966eb1d67b54070c",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1198": {
+      "fingerprint": "9640e4d913c62013fd47dcf16c653024cb304501",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1195": {
+      "fingerprint": "2f0182a4a4d4d0df5325ed3bf0d2072ed4014182",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=798": {
+      "fingerprint": "162c93000de77b18a05a98fe7f94005b1e6461af",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=710": {
+      "fingerprint": "371cd38aa9e41f300556f18186e839e03ae4e067",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=512": {
+      "fingerprint": "d4743dccbae8543e403b097bd4f0c3907ec251f5",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=298": {
+      "fingerprint": "cfa327b5d39a9314463962e4c06db66a43bb4839",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=296": {
+      "fingerprint": "85da6e699c9828885325f79a7ca52ac48eb96242",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=809": {
+      "fingerprint": "756dec28c27cc0a98221e4c959bc55a23c348189",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=713": {
+      "fingerprint": "df849f6a2a786dc792af8c29735eb00219020cd6",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=665": {
+      "fingerprint": "c66c9d2092caebcb90df2e188675378f2d1b4142",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=623": {
+      "fingerprint": "064672d54c8bf55f4346078cf251d93e515ad2f7",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=488": {
+      "fingerprint": "0409296a03183d774b058d95ed7d62a2e75284fe",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=318": {
+      "fingerprint": "b185ecef8912ed2e6dc91d2f7272058a5d95e52a",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1237": {
+      "fingerprint": "72ff9214d5b8e51566ce825df0fb77bc8538e643",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1081": {
+      "fingerprint": "65808de8be03f7ebc600a1969233b5f4846dbaaa",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=770": {
+      "fingerprint": "d14dc7e54b0cfad6b45700a79032f6707745e4ac",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=760": {
+      "fingerprint": "d5c062162c981e1de1d450959a4d473df825345b",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=739": {
+      "fingerprint": "bf905b81b25a2a5f85518a2fae39df1b49695254",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=517": {
+      "fingerprint": "2a3ef396916306ac7d07a50c7c354e13d929a271",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1361": {
+      "fingerprint": "d2bb49f98c02b4bc62bd8970f8cdb1fb9e044ccb",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1333": {
+      "fingerprint": "8019b8d92bfc4188758e6c23a536ea8a6db4e014",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1276": {
+      "fingerprint": "5bca885cb80b0b1fea0dfaa5602b02c26c9ba67c",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1261": {
+      "fingerprint": "41497cedb82c7f66e43b379bd46d525a8453ed30",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1064": {
+      "fingerprint": "bd557167a8de68b6d37bc53e4954487da1491584",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=726": {
+      "fingerprint": "1923e84999922820e657b2f31376d24874583ae7",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=712": {
+      "fingerprint": "3afda39e6eb4ad3a3a9a7aa3b95471eb9145a7b7",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=645": {
+      "fingerprint": "6f5300d84a4b04e4887053f1c96bb94827286a75",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=297": {
+      "fingerprint": "e9edde2a1ac4c0a330bdcd7529310de2e44c8365",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=871": {
+      "fingerprint": "9e8031e31a87139a3fd527f2b4767e9c6fc6bfff",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=667": {
+      "fingerprint": "fbd2c5912019673fc40febcc097c67c344d814a0",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=494": {
+      "fingerprint": "7aa89ed54daac679546ab3870dda149134dcaa2a",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=300": {
+      "fingerprint": "4f9d8793479e28cfb7efbce1b9a8e6c94aec54a2",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1258": {
+      "fingerprint": "726324bcf05774974f7dfbfe5f3ba3b5793d3d70",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1242": {
+      "fingerprint": "2a7a28a0b8bf8024f95710c3de0f6f0d04080f39",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1233": {
+      "fingerprint": "229b55fa64f3949855129b8c2b0a09692f087ad5",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=771": {
+      "fingerprint": "d07f76430fabf78850dfba35b9c9b8e0f45827e7",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=699": {
+      "fingerprint": "ffeee20965ebe53ceec0a8d1b1d69d3054730459",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=506": {
+      "fingerprint": "50c1b1c496366a8ec244a7d6b32cdce93d4557f0",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=473": {
+      "fingerprint": "7f1d42ca6df2b54ec52fa38279a7894b2481ad50",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=439": {
+      "fingerprint": "5dd43aaafa54ce65725b25b34a68a8637fd9434e",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=320": {
+      "fingerprint": "4755c12f79adde5aa883c6bea9150f9e9cab5c37",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=319": {
+      "fingerprint": "54edb6613366ed2ee00d0dab96b4ebc23c63916c",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=295": {
+      "fingerprint": "6c65a914e4cc9af4fb2b5e0f6a5d284ba3ed4383",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1257": {
+      "fingerprint": "8c5af9325e943e5cb419fad73e653c513b953de3",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1080": {
+      "fingerprint": "7761848c17cad9d6e7159d9f84e655afb3c9cdc4",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=860": {
+      "fingerprint": "bd97ca77aac5e38ad2541a4c8603eec5da8e57c0",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=721": {
+      "fingerprint": "6e56dcfa395a112651040f9871165534af819a3c",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=720": {
+      "fingerprint": "dda0617e574674a66a1cf614625cc791e0876a14",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=708": {
+      "fingerprint": "5172f4183fb079cd05a0940f998cda1cf5f0d33c",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=649": {
+      "fingerprint": "bcebe3f566a6b47d977c20bb573662a1c13501b7",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=505": {
+      "fingerprint": "090651adecf68261b86653812b1a22b9a539e765",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=474": {
+      "fingerprint": "cd7d39b0dfcae64d50bc1c57541d5ec5b1f4f4e9",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=321": {
+      "fingerprint": "9da1dd3b0594c2b22b2606993b2796fefc016a67",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1371": {
+      "fingerprint": "7b3885f6bcdf1d141236a3245a2593e2c28eb64a",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1366": {
+      "fingerprint": "97fb94a66789d6417838e81f2115f73bc7301685",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1352": {
+      "fingerprint": "92160566dd9840731341a937b58dd3850a249f7d",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1283": {
+      "fingerprint": "50d6908b1aa52cf69b62bbfa8832cdff566358fa",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1272": {
+      "fingerprint": "8c6059e09dbe529f97fc46393066e6d1bb73566e",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1271": {
+      "fingerprint": "5f6fe6f50084ac64f3d2086d4d688e2e89b3970a",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=475": {
+      "fingerprint": "df533277b730c8dabd256e5a91d24c969b365ef5",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=299": {
+      "fingerprint": "53c4db8e282ea134d352dbcc9145da8b5afa8602",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=283": {
+      "fingerprint": "ddd7038826bbec428b6c904a9cb3eeb9bf7edac2",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=994": {
+      "fingerprint": "9a621a590af109aee168462b9660c27ae2c5e741",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=993": {
+      "fingerprint": "c099a79598dd40c1f2b7da0e88dd68b00fa89d87",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=987": {
+      "fingerprint": "2dca098d3df1afe987fbed41d1e9b3a08c4fe64a",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=974": {
+      "fingerprint": "4536483b9d2ccca1468f438e6dab808a3001bf28",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=941": {
+      "fingerprint": "310d10fc9e0c0c4efe3077c669870a4eb4a653f1",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=932": {
+      "fingerprint": "0be8c76648b267c7ac572de02feafd38a9f2dd8f",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=915": {
+      "fingerprint": "f1e4c9464e9cfad9c6b761f41050d5e197942f05",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=907": {
+      "fingerprint": "bb99b187632e8dc7937dd4c7cf4eeada14ccb350",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=898": {
+      "fingerprint": "0b2d7452a8a19ef9f583ebcd6d6fd71fa6f0a43c",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=897": {
+      "fingerprint": "fbccd05c040c0470c4b53ec904ef406a6e8e4aa5",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=896": {
+      "fingerprint": "d6347ff31a296688722e6624b88bd0b65ec447ff",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=895": {
+      "fingerprint": "5c3f4c8cec99be52301f271206477d7515c57736",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=957": {
+      "fingerprint": "9922069b61f397a442fafdfa7419c218c571a3a9",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=984": {
+      "fingerprint": "d2af6319539013df4a6a756ea489262e8646e594",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=481": {
+      "fingerprint": "b1a159a6e86b6c8535052cdd05e3168d3e507320",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=338": {
+      "fingerprint": "de36f09ab59f0289636e9539e6aa10dd34e08e4b",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=284": {
+      "fingerprint": "a0a3cf1469ebdcea820a7d60ead8e51ba63d6f79",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=806": {
+      "fingerprint": "34bb2e48aa586b6b28f4212fc1e6e3fe80120eb7",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=398": {
+      "fingerprint": "239ddc21da2bec217a3592a46b526d9637d7b5ad",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=805": {
+      "fingerprint": "9602c710ddc45be1f72c35c11d3c6b4117567d46",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=658": {
+      "fingerprint": "d2095021391b7806041345dde6fa5f1f8a5e5ab9",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=443": {
+      "fingerprint": "9ebe3ef28e08a29aba7bb6948f26cd71b35ce33b",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=624": {
+      "fingerprint": "3532e21d1803f0bf005d490a68fb15f57d6e15e1",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=444": {
+      "fingerprint": "c4654cf382d71db7404824688b715d2f8201bcc6",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=386": {
+      "fingerprint": "d9df13ef1bec35509d78528d871f8adda2be265e",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=476": {
+      "fingerprint": "4284f7394fff1d0d37c4a4948dacee7e63817781",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=452": {
+      "fingerprint": "41ef094bb41911ad73d04709106f24879c89e7cb",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=622": {
+      "fingerprint": "24f12b18a26376cd7b3d13e9b4db8a68e3c576bb",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=387": {
+      "fingerprint": "53c155df7e579bfafeb122ee3b1aeacc5826555a",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=704": {
+      "fingerprint": "e89b46cf69d7345172402265b9e2aef299cd2cd7",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=655": {
+      "fingerprint": "58872472ff039696abf3714bda0f46b4e8ac2458",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=353": {
+      "fingerprint": "ab0000a3e1304b6060a1f51a1b5136f03f90f9de",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=1063": {
+      "fingerprint": "7e5fe824864a3d19c5813cbef57e0e891cb2489d",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=441": {
+      "fingerprint": "eb9c6fd14c858b74169e3fbcad2a4c38e55b202a",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=389": {
+      "fingerprint": "fa4d07b7281a0d0029039e04a12c251f7d7cc127",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=388": {
+      "fingerprint": "da22f0a1fa5b29cccf3b7dff10ec208207fcb49a",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=986": {
+      "fingerprint": "5e10f63dee6ca05fa03cd010c8035a2f263d3249",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=985": {
+      "fingerprint": "d0363eb8b350a5e4a14060953f704decb7a97f44",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=977": {
+      "fingerprint": "cd1d8201897c67264dd3b21ccc227aff6337fc23",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=921": {
+      "fingerprint": "0785139848e4f3b304d97f694354c8a38a354a10",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    },
+    "https://safarispot.kr/product/detail.html?product_no=891": {
+      "fingerprint": "90d8e1fbb40e89b9ce074fde8781b3d559dedddb",
+      "first_seen": "2026-06-26 16:43:37",
+      "last_seen": "2026-06-26 16:43:37",
+      "period": "2026H1"
+    }
+  }
+}

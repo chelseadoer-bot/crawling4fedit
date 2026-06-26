@@ -1,0 +1,1368 @@
+{
+  "version": 1,
+  "period": "2026H1",
+  "products": {
+    "https://matinkim.com/product/detail.html?product_no=9239": {
+      "fingerprint": "958dff4a9a505fddaeb2d2a4dc3f9d56e37b5c6a",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=9238": {
+      "fingerprint": "ec7619e589ea4cc1230c2f7a44dfd5f6cfb45310",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=9237": {
+      "fingerprint": "c88f62be489d40e1f5a6b3720267ecad483f3cb4",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=9236": {
+      "fingerprint": "e4bdb2cfd60e475fad4597cb540acc0eeb50b000",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=9235": {
+      "fingerprint": "179983b9aa7903a39d0c2d190414608c511bf544",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=9234": {
+      "fingerprint": "d8e1d4d242f3a4209c42346dba09ba10bc6a8d11",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=9233": {
+      "fingerprint": "d2bd2bd5d3d2dd12a187832c0fe505096cc58791",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=9232": {
+      "fingerprint": "95eabac5caa63b998e179858444bd6236694f284",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=9231": {
+      "fingerprint": "3fe759be8dfb5b29864058052eb41c91c445d2ea",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=9168": {
+      "fingerprint": "1119fd09803355edc3157ffb850f2a4f1ba506c0",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=9167": {
+      "fingerprint": "32442fdfab04225df24d4ea4065e15fc4dd68b59",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=9166": {
+      "fingerprint": "ce552da6c51b7260901d489cfa4abe8dd99f4c4f",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=9165": {
+      "fingerprint": "16dc1b77db1790e40c42b90824e38b0a6a8d1b08",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=9064": {
+      "fingerprint": "ac6d40a83de38edd94780658ad3cdb7be89957a9",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=9063": {
+      "fingerprint": "0efb45e9b1d357a0021ad3202fcbbf958e458c42",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=9062": {
+      "fingerprint": "66041ff43ca3271cc4ce308d2e03c2919b1c558f",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=9061": {
+      "fingerprint": "70070ce876ec6be0dfc1aa6b57bed2d531b81504",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=9057": {
+      "fingerprint": "740b06e160bbdbde767660df8e62c53d6e1967bd",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=9056": {
+      "fingerprint": "37c9e40b8e8b51afffc61a2ae92e96fa4e9b1d80",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=9055": {
+      "fingerprint": "fb242dc2622e7ab7a857f8b0e9169fb69944fb68",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=9054": {
+      "fingerprint": "5efb42aa4759d17582f320249445c726c30ac154",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8984": {
+      "fingerprint": "8a499c46dcea4f5e014f067f524549cf61c3f896",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8991": {
+      "fingerprint": "3bdd3b071d0f549fe3f9d607dba61370d15631a2",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8990": {
+      "fingerprint": "fe5867af7f2a94a2b4ccfe2f948d92a68538f65c",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8987": {
+      "fingerprint": "cc62b9b2c42d826d6933610767cc963454b2653c",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8986": {
+      "fingerprint": "92cc3995453b06a5348ae9ce90551bf33ce6a07f",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8985": {
+      "fingerprint": "f4e9dd41493740a66d044e2e5e2fdc11e8004a64",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8968": {
+      "fingerprint": "92472af9ba1672b9fa10f1ae1ee89147ca8f007b",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8967": {
+      "fingerprint": "d2231daa7427d6648d024e555262a3048add3983",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8966": {
+      "fingerprint": "657abdfe3061af3017c44e502e6324c988b8d989",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8965": {
+      "fingerprint": "42c388d49add8735bec09f5b3c3076d2d7e1f462",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8964": {
+      "fingerprint": "f4a329818bd84d2a1b4affa9c072f26d5e87ec3c",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8891": {
+      "fingerprint": "47c2dbdcf31706f14954693807cad6e0b8d0ecab",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8893": {
+      "fingerprint": "a7e1eda652d1017c58ea354986fc62d54d8abf37",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8892": {
+      "fingerprint": "b2bc24f4cd5645e4520590d078de82a984eedcff",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8896": {
+      "fingerprint": "f74cc3abd8ace1840dc1c5e024dfc540aba48cae",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8895": {
+      "fingerprint": "1ade99c36d0133b24e443f435888beed3cbb46a5",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8894": {
+      "fingerprint": "e245ad49c0666f73f2a5bc73c051b446ac529bc9",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8712": {
+      "fingerprint": "4646937c225513ba7ac50b87781d9948aa4fc0c1",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8713": {
+      "fingerprint": "9d36e9fb6bef950c7081ba326c9cb18929146e11",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8714": {
+      "fingerprint": "53f70da007524879858db44e8a5a11b9f7e9d589",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8715": {
+      "fingerprint": "c37d4c1e1b6897b88703efdcfa9625cf478502b2",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8716": {
+      "fingerprint": "e19b6116a1edd69aad8ee963e2ac5ed22b649dc1",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8717": {
+      "fingerprint": "b846d18e5cc27bcd333f619ab95724c9189abdd0",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8718": {
+      "fingerprint": "7fce393ae5ac18b9a947f780d8f47b01eabdaf88",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8721": {
+      "fingerprint": "45fc08fbd89306e19e5696e5d6ca67efe8d46b32",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8719": {
+      "fingerprint": "54c3f177addec06f5be8ad297733e53eee1eb902",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8720": {
+      "fingerprint": "a9d53de46718020fc44782e893a569e084346f49",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8722": {
+      "fingerprint": "c759ec19afa66ed856bc1a3a83c87790f1dc1eda",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8724": {
+      "fingerprint": "f4a81c3f48df16ec91c95773882e063abbb0c64d",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8725": {
+      "fingerprint": "e24deaebdf20aa3fb0db42f631761b68b1e1ef9f",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8723": {
+      "fingerprint": "d6c848af8226b7740393e5df154b71aec9437acb",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8726": {
+      "fingerprint": "9316904cc3f57fff9f20581a86c24c7b9762c443",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8727": {
+      "fingerprint": "2d4a287d70e9ed76d84c23ee268d57a9c86dc022",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8728": {
+      "fingerprint": "759d0487b4d3d673daa5c3825e11bae5df0c3f70",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8729": {
+      "fingerprint": "fddd8aae4127fefbfc8541a55a1abb33930849fc",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8821": {
+      "fingerprint": "1e93d301c5f72dced3d2867203810281bffe8b14",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=9254": {
+      "fingerprint": "31f2895781b7ac2cf6711c8c65c2b3db416f213f",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8820": {
+      "fingerprint": "78dec6b6b0b3460784d89a5a764eae012f811b78",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8730": {
+      "fingerprint": "8ef7b489ae2cb6b1c0f4d7a4b0c49a759faae7c0",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8731": {
+      "fingerprint": "60edd96ece3885e4834f48e581ce892a07db3005",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8732": {
+      "fingerprint": "d0f87a854d6f0ef74b702255d087b8c08c9856cc",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8733": {
+      "fingerprint": "b2384c30f61306f235ab30d043cc11827dc9caff",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8734": {
+      "fingerprint": "8c7883b312e028844ca53bb90d2fd5ac9fdd53db",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8512": {
+      "fingerprint": "88644514a8773c8034d5eb7d32fdf1eee3296692",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8511": {
+      "fingerprint": "466ed19207ff581548c5c3e62c0616936f2a7bf6",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8510": {
+      "fingerprint": "3d7a743aedd80b2171ab1ed9f6b57003e39e5a3d",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8509": {
+      "fingerprint": "2274b5e7078a4cf4b595b0d2fe281a68bded1518",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8508": {
+      "fingerprint": "93408bf94e770064e7ecd545e42d6f9dc518e7c2",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8507": {
+      "fingerprint": "c8da4142b965f980d2affb36b8d4f31c0276ce75",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8506": {
+      "fingerprint": "63ff6356dfe87d2f67de7eabe3cf26c0cda4f1be",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8505": {
+      "fingerprint": "af21efb3d0281dd970a17244e686028e397b48b0",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8681": {
+      "fingerprint": "9321c8f090ee6723dec759cf4dd36dbc9e7cb2cf",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8680": {
+      "fingerprint": "448eebd61ef618da59c8d07a48c8483d93873a1a",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8679": {
+      "fingerprint": "8208b035ec0c8309df7db252fe061fe839484578",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8574": {
+      "fingerprint": "19ac6fd0c76423ae8cce5473ac592ca85bb7e30a",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8575": {
+      "fingerprint": "c2cc1fa975e201a03a89406f230334cad253ed17",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8556": {
+      "fingerprint": "ddd02de7044a95ccce25f13e4ad4c82c9680380d",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8557": {
+      "fingerprint": "36887694d58120a5fe3109e6ef970f9119c18030",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8558": {
+      "fingerprint": "73c063ae63f4d3bbd0b999026e10859b7c555c2e",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8562": {
+      "fingerprint": "379c0fdcfb63529df8e59f4131e30997c00d314d",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8563": {
+      "fingerprint": "dabb56e87651d37e668ef3e50eb0dfb9d6c3d761",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8564": {
+      "fingerprint": "72ca256c0d4fd8698ba4bff2c6d0a6d661000e69",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8555": {
+      "fingerprint": "138c6573a8625900bf35eb0dffd3a297f80e7865",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8554": {
+      "fingerprint": "1f044f6f66bcea7514ada2ff0b71c129b222d3e9",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8559": {
+      "fingerprint": "ace50b675aa9892fb1c840a2206310e6427afd3f",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8560": {
+      "fingerprint": "6e4a5e8394a0cce6e85bc1861996d441caef48b4",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8561": {
+      "fingerprint": "e59390f2b113799c46df533b4ee626d5e184079e",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8565": {
+      "fingerprint": "37c8ca6f5e77101afe43fa3ce7473f925f60d83f",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8576": {
+      "fingerprint": "4d369db6955d67cc04919a20acae0dc562381a68",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8566": {
+      "fingerprint": "e5930ed02e58bebe8e7186a93d9f36bc01b3f79c",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8515": {
+      "fingerprint": "36e020649ef364ba56ed2f35848a5a9c4ccaba94",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8514": {
+      "fingerprint": "1a4346abfadfa48ca2c0d3871a7bad1444a28ea1",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8513": {
+      "fingerprint": "330f8196c0edafc1880638ab95d81158ff524abe",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8494": {
+      "fingerprint": "ea844ba70b89b7497e94c78c52b2e3b84779c19a",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8493": {
+      "fingerprint": "da5f24b11b94d505718f991956f566f7a9bed29f",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8492": {
+      "fingerprint": "887f5570392759867a2083cae2446c73a9fb0815",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8491": {
+      "fingerprint": "62bcc3a24d77d96a64452adb13a5760c9549db69",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8490": {
+      "fingerprint": "881ea038447b95d7c9b4c89d0969f0f820c77a2b",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8489": {
+      "fingerprint": "4534cd05d50220dda6e60abda684a3a18c02203f",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8488": {
+      "fingerprint": "17fca795bbdf5efd4b78ecbb3098e17b6a882ff6",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8487": {
+      "fingerprint": "b95cbc9a32a922446ecd774d8de07d043337120a",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8486": {
+      "fingerprint": "b212ca687a1d8b869dc8823d9e0466c5c310b46c",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8485": {
+      "fingerprint": "1990c39646f4038169bd34d79239ecfbfb576121",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8484": {
+      "fingerprint": "975a7bbfd0e25ff7c271088ededd720cc3eacc9f",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8483": {
+      "fingerprint": "a0a8944fd0635a30f3e20f521625ca5eda5783a7",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8482": {
+      "fingerprint": "5afc23a6450fc264e759dbabd79d7f6f049f2344",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8481": {
+      "fingerprint": "c2a44294ce5161942af81f6b4c0d1dba02f878f6",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8480": {
+      "fingerprint": "67a5d0906af9fb76c213bc2288cd1b99996b86ea",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8479": {
+      "fingerprint": "e008509c1bd3e2bb4b85a7843c01bdfa3fdf85c7",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8477": {
+      "fingerprint": "aefed90243a09ea426fccfff9a5f63e29f197c42",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8407": {
+      "fingerprint": "659365c5a102f51b1f2295eb133fe0d21de44bbd",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8406": {
+      "fingerprint": "36e956ede33e7377cf4e4f8a5b8145ae87990c28",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8405": {
+      "fingerprint": "51208319639b71f073698bdff05e3b30a795272d",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8404": {
+      "fingerprint": "4a38aeb1280563d332e8f4304a0ebbf06fb4d09d",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8403": {
+      "fingerprint": "892a621f7d3ece0a322ab5b9d8697d01c8583b92",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8402": {
+      "fingerprint": "1d6a4c8a8393301208861155504fb8664a3edbb6",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8401": {
+      "fingerprint": "7570321d4505b018f35b9f9fa1bc29bf71faba92",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8400": {
+      "fingerprint": "ace5668b84f12eb236be2c8138331f089bd0e58e",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8399": {
+      "fingerprint": "81a1ec30edd163a4c7740e49af04e5657c300a8c",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8398": {
+      "fingerprint": "ec158e208605ac19215a8962d52ce88c0b5d0f96",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8397": {
+      "fingerprint": "8c4d2e9db3b3bc4411d0bfad36e5ee83d2b5a788",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8396": {
+      "fingerprint": "21bec31fdd52876051a5c02e83bd25728a51a604",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8393": {
+      "fingerprint": "c5fc381543ce622a414421c12b22ab5528f51b9f",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8392": {
+      "fingerprint": "2b80264b4179451fc010a7366e4858e801cda626",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8394": {
+      "fingerprint": "e6e1689d522a27ec210e7e411314e6b80f140184",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8395": {
+      "fingerprint": "6123373146effeac1a3d71714162c96c3a5d6bea",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8385": {
+      "fingerprint": "27e9c1cee22a951c160c83dd4fc12294a4bce473",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8384": {
+      "fingerprint": "bd4c23480d4dc3ff23b85c5a505ecf15b95136df",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8383": {
+      "fingerprint": "f28c559044bb250ea4a628f05d901bd64b6bfd54",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8250": {
+      "fingerprint": "30822354108048a7333016c719de3303c3dd05e0",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8249": {
+      "fingerprint": "71c2ff28cf4f5a0a6ad9fb2c73c2a28133281d5a",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8248": {
+      "fingerprint": "e63e8d658721a09894a17c6ffb132c880daac8ca",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8247": {
+      "fingerprint": "5bfafd09246e565bbec44eb0048d295e4a22269a",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8246": {
+      "fingerprint": "a4f070738818cb4d929761551393b3b3168da612",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8245": {
+      "fingerprint": "2b74f29d006b0072a275b70e290b05acf4f684ed",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8244": {
+      "fingerprint": "d04c604995bd5e3c94f9a8a900fadd3e55e323ef",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8243": {
+      "fingerprint": "cf50b43256c19547836ef2733e46c1de2ad39d51",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8253": {
+      "fingerprint": "dae231e76da76f8b4e66ffd6227ee4072a3c29be",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8252": {
+      "fingerprint": "2857b9ad78b61ccb30c35b8155782eec5d75ed63",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8251": {
+      "fingerprint": "c010df0cf897e901f8c799ab489f8dd27791f58c",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8202": {
+      "fingerprint": "89a7c3152e66618ea3371af996d02ff426afe3ec",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8203": {
+      "fingerprint": "07dbfdc0dbce0113af07873bd983ca964e4de40e",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8204": {
+      "fingerprint": "169d2860b26adcb93be094d1e8b8f162fd5a87d0",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8205": {
+      "fingerprint": "0c6492a46e797b4696a5a40c5976eb8b81b95e6d",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8228": {
+      "fingerprint": "a6f2dea18ecff35fca11d186482fbef1a3766a92",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8099": {
+      "fingerprint": "2c0f106c3539198edf3a6024ee061f3421e33a03",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8100": {
+      "fingerprint": "65b04c4dbb60f91558d1916cc9a8ffa828cf9750",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8577": {
+      "fingerprint": "d7a6613a6766c05d42686330c29dafe6955e1c14",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8583": {
+      "fingerprint": "4b22e5d1bb4a83ac5455cf3824feba14e6272b53",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8578": {
+      "fingerprint": "35ef26525130d8d05346dc73b9b00d924fc8a0a3",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8227": {
+      "fingerprint": "847dabf077105e12fef57dc8d08c15fdfa11f059",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8226": {
+      "fingerprint": "1a5f1bdc391617697c27f31f6ed83a56e5ec0b5b",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8225": {
+      "fingerprint": "8c8e9c7d05942e7509f56f37d2f73dc9e0ef806a",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8224": {
+      "fingerprint": "2a015d733cec79256a82272e6a688fa14b50e95f",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8223": {
+      "fingerprint": "c7bdf622fe229cc44a0999a06014ba57f3ffa579",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8222": {
+      "fingerprint": "353c00a16e7c421e89a7439e91ca46fde7fa1cbd",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8221": {
+      "fingerprint": "28189e12e2306e04cdaa1bf123cdd1ed85d48f92",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8220": {
+      "fingerprint": "a4ba6e1c2cf1dc76bbbc92d3527bd1d3e13d0d92",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8219": {
+      "fingerprint": "c27659d65962f1d7e16365afcb32a497f4fdc2ce",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8162": {
+      "fingerprint": "e9dbbb96615c0771247980b8a64a9586b7c329ed",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8161": {
+      "fingerprint": "d9f1ba55c0dbf2ccc1590cb28ffe1ee4a7331fbf",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8160": {
+      "fingerprint": "0e928756168c66e64b09e6ef15ba8a7477fffe27",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8159": {
+      "fingerprint": "ef7611b885e433b9505dfe71c021436456bef314",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8158": {
+      "fingerprint": "375111e7364c1bc786fe6430ce72fb8ab1c684d2",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8157": {
+      "fingerprint": "d83053fdbd2b444c5f37c422d3de1bc0040411d1",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8156": {
+      "fingerprint": "64bbb0a0abb9f69ba7af2b113d33a053b136036c",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8110": {
+      "fingerprint": "5a425788d7f76dd8acde190a5e68e2396f7db814",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8109": {
+      "fingerprint": "2564ce8a400aa422b67ce740c7fa586695c67a2d",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8108": {
+      "fingerprint": "176723f8b9ebadce409f66b8440bffc6d0326790",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8107": {
+      "fingerprint": "b95957e5d0b446fd27d5c67d294fcd5892419b13",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8106": {
+      "fingerprint": "7bede35ac4c4bf6fb9013498846b666d3aeae4d9",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8105": {
+      "fingerprint": "1586fe13c6d54bdb36edc1f397a793e2fe15bef3",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8104": {
+      "fingerprint": "520868b007e9029e00d415cbea22cbd5a7bd0bb8",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8114": {
+      "fingerprint": "428c0a1abd510209d73746970115f856f106cb34",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8113": {
+      "fingerprint": "c8eb9d5a1e0fe70254f5cc7e21417f2cf17f5198",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8089": {
+      "fingerprint": "f7dfb5d9e2f014b45a306737052ebacb8b48d10b",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8088": {
+      "fingerprint": "4ea4bce48e3565bcab394d39bb3a2714fd5ff43c",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8087": {
+      "fingerprint": "775ad3ae517a1c84d1807e632fb9779c5e716cfa",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8086": {
+      "fingerprint": "8f6b4398760f79b89138a7ab935db4d8a0817471",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8085": {
+      "fingerprint": "844f70e89d76b3543b0f44873d089307fc0f189a",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8084": {
+      "fingerprint": "e83f3e1420122ab144f0e1200dfab1e45f73a215",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7973": {
+      "fingerprint": "12fcc0c8de05578d73b612a4b8ae5f317c5e1afe",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7972": {
+      "fingerprint": "610f704dcd51cd482d317d0fb497288a3d5e03d4",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7971": {
+      "fingerprint": "e0f53239b4186b4f8a645375b98558af17849494",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7970": {
+      "fingerprint": "db6ca67de1119df812e1fe7d625b87ea68383b81",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7969": {
+      "fingerprint": "3e47413e2be165114415fb341b9aee9c0fa7c6f2",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7968": {
+      "fingerprint": "3c5625d01bf9edf80313fa69c3fe564eedb15003",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8008": {
+      "fingerprint": "509a2cdac29a27c295fdd977708f5cf9196516ea",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8006": {
+      "fingerprint": "ac1dfbff77a37fee15f7b084ee79e2f837dc17e1",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8005": {
+      "fingerprint": "43516d6b8395cc961466941809c0b33138861b80",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7351": {
+      "fingerprint": "dff32aeb83bccf18e21356b41cd72d20c907ff3c",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7352": {
+      "fingerprint": "45343df788a14b1a71f1a95991145f638244e261",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7353": {
+      "fingerprint": "f0c3ea6ddca253e39af6312a6e563d7c4a2fbf8b",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7912": {
+      "fingerprint": "2456995a55649ccc3b1bbfdee4e7d66950273e60",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=6440": {
+      "fingerprint": "f4df3d8a3e388c25aff8b06bc8c04350f34e8479",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7911": {
+      "fingerprint": "7610d4b503b37f3e4fc785b9c2185576ec2a1a69",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7910": {
+      "fingerprint": "a68eaa5c4df0defb67dc5852b6eb925ec240dd77",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7909": {
+      "fingerprint": "814f37f46eceac2d0314c1cf0d1fbf9093570a0c",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7885": {
+      "fingerprint": "09e16247a8ac7bfe1bc0b9d101a3363354abc54b",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7886": {
+      "fingerprint": "b14193c8eb6b7c37b113b1a7b57b6b49717f1ed2",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7664": {
+      "fingerprint": "00bf753fb1668e0f8414ffae179d256280639342",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7666": {
+      "fingerprint": "34bc30bc9846d3e3b9339887605a21386e509cee",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7430": {
+      "fingerprint": "b58f370a35ffa8af40ddc038d2ce835fffbfd8db",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7457": {
+      "fingerprint": "ebfc8ea30e05270aff1d755c4888c8da3b273aed",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7456": {
+      "fingerprint": "c90187a63d4b8eba577585ab5251d9156597de9b",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7452": {
+      "fingerprint": "974dc466eeb5a9bced30374e87536d0b5407b137",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7451": {
+      "fingerprint": "cef19f2c3ed7b34af21df94d98abe2b9c4c81136",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7455": {
+      "fingerprint": "7410993b431e2bf572256b95bda6a57fcb0c85e5",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7453": {
+      "fingerprint": "1682c4b92f24f16e4eac3907980fb4f26352492f",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7454": {
+      "fingerprint": "f376c9a6a19c233e2db5df522be886b917db6e68",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7447": {
+      "fingerprint": "d35e76e28dac1a1896f9bf6986e237ffca49d0de",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7446": {
+      "fingerprint": "89797e0f14a1640d1227919af1780399018249f7",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7445": {
+      "fingerprint": "60d71523c4e85c29f4a272d5de85ef23a37f8e5f",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7450": {
+      "fingerprint": "9cb82d9819b05a89da969f9ca72f656fde29d580",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7439": {
+      "fingerprint": "53bbe8d03ad0c8615e0e7a791d92fb5935fe5ff6",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7438": {
+      "fingerprint": "0a53d77bbe7d21fb486f2ab1966d7087826d915a",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7437": {
+      "fingerprint": "814887a01bfe24adfad9be734f5cc6b8dd71405f",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7357": {
+      "fingerprint": "cd69bd52769982d82a0f555064dba3e798c2ab52",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7356": {
+      "fingerprint": "e0b50b4aec4c9d118514fc244616e385b408eff1",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=7354": {
+      "fingerprint": "dcfc145bb4759979fa8729777f351ddcec9e6cce",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=4294": {
+      "fingerprint": "c55d5bf8e59ee8f289a12d28c074f20dee3d9b42",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8995": {
+      "fingerprint": "641f6e401374b10dcbe31b41bbe8ef6ec055b3e4",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=5038": {
+      "fingerprint": "3678bd527c91236044d2c328f195082c626c59e4",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=8994": {
+      "fingerprint": "e450fff8924e018d57904ba8f253a9c4eabf187d",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=4590": {
+      "fingerprint": "ab8a3de3340b1d22ba987c461c892742f772ed3e",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    },
+    "https://matinkim.com/product/detail.html?product_no=4589": {
+      "fingerprint": "cda6423f117324d25e2cae29cb999ce3199e5d56",
+      "first_seen": "2026-06-26 16:42:37",
+      "last_seen": "2026-06-26 16:42:37",
+      "period": "2026H1"
+    }
+  }
+}

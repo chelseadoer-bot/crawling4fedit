@@ -1,0 +1,3330 @@
+{
+  "version": 1,
+  "period": "2026H1",
+  "products": {
+    "https://instantfunk.kr/product/detail.html?product_no=2161": {
+      "fingerprint": "c2c125c2acc875e3eb2da3ca6bc979a9b16c43a0",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2909": {
+      "fingerprint": "51e690d3b2589b1b90776bccc99dcc855b581f11",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2849": {
+      "fingerprint": "a8b447216a173f89205445c56487c805a771075a",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2689": {
+      "fingerprint": "2d3ecef43198b6c432b57279cd23e8bba6999d60",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2848": {
+      "fingerprint": "9858338268620aa84c8b049d916b96902a7e65ed",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2685": {
+      "fingerprint": "ae2ace0352352ad4aa501b474b15b8c5d4359722",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2850": {
+      "fingerprint": "9a5c4fcf811a8fc836fe3e816e7313ae72da0cab",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2694": {
+      "fingerprint": "34a9a6d84665b58e8811f7ecd689788282e78bf6",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2687": {
+      "fingerprint": "20c92aa90e3a367084d319eab2ab7e71a5cb178f",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2846": {
+      "fingerprint": "03f39e220c0031e98b16aeeac02f7e554e55bed6",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2692": {
+      "fingerprint": "ba2f8020107a60fb11e278038abedade4f1979ba",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2902": {
+      "fingerprint": "1f5df9ed345d5433afc45924d03a0d56de235b4b",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2844": {
+      "fingerprint": "03e0369ef1231940ec7249a43083f4fbc83af095",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2915": {
+      "fingerprint": "b22417b456930505ff13eaee868f79bca006b16f",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2920": {
+      "fingerprint": "4df21abca72a4e7f640a86b83e7492d208f234ef",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2359": {
+      "fingerprint": "1a2a5edad373d87e6547207a19e123f585f7bc0c",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2348": {
+      "fingerprint": "61ce84121c4c34461289ad0f3f9c6f6ae7ed2391",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2693": {
+      "fingerprint": "a1135fd82192493fa1a60de0508529ddf37eeb1a",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3147": {
+      "fingerprint": "819489ca3f73042316b9374ea9420b9939b0ec4d",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2892": {
+      "fingerprint": "d3e60959febc850ae414b577ae553d5777cd2a7d",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2682": {
+      "fingerprint": "a8930d2ee57dc33541d70b2f14c40bee9ac12dbd",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2872": {
+      "fingerprint": "9945b0fe1541f36787e15a1d70720fc0c29203f7",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2979": {
+      "fingerprint": "75431bd077f6264334ac022bed85354797ff6dd5",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2852": {
+      "fingerprint": "10ea9fa8e277f9a8dd73d436127e0a16f562a952",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2894": {
+      "fingerprint": "5ebe97e6b4b1dd3f90649d61ee4d6f603809ea4f",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3210": {
+      "fingerprint": "b55d0663a73d299329e1c2c6c66df7eca4d5ba73",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2884": {
+      "fingerprint": "6eefa744ea9385d1c575dbb0f130e7dec42a2d5e",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2901": {
+      "fingerprint": "60d5c10c952edf67dd31b9ff0180aea8e8518269",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3148": {
+      "fingerprint": "ff6109820a48e836fc149313af513df18aa27312",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2900": {
+      "fingerprint": "c110c83699697e970d69402917bba36fd5b149b4",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2843": {
+      "fingerprint": "ac38544505b7c3301da38d4c9d572e585d374ec8",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2929": {
+      "fingerprint": "01b3fdcda4918c1822e4f35cfdbfffb3c0901bf7",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2867": {
+      "fingerprint": "9413a9c948e30fe1472f233542f2f6557360ffe5",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2729": {
+      "fingerprint": "c5a23d8629da8a6520199e48389137bce7b7a935",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2341": {
+      "fingerprint": "e3262aebabcffef2951818119b5d169a2b39b909",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2917": {
+      "fingerprint": "2e9a4300b4d547479698a8926dc06544b4b9d7ee",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2730": {
+      "fingerprint": "7dd1c669573b8f9b80cbb68b0976ced956de879c",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2674": {
+      "fingerprint": "48fa321d856c3fdf67e227ee29dfcc693d90534c",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3143": {
+      "fingerprint": "9ca35b38c264e5ff43be4402b0aba4d66c458314",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3099": {
+      "fingerprint": "0f2a5b18a2daec35da69e6ebcbfd9ea9853b7493",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2981": {
+      "fingerprint": "f8e483e8a5f51e913384509287f779c751f7ce74",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3104": {
+      "fingerprint": "af118e451d333f20a13698b739a9d14bb266b91d",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2877": {
+      "fingerprint": "b2b94e35e517c2ff895ffe815df76b06c6b8a15a",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2994": {
+      "fingerprint": "dddab8b3258f90fc737bd09ff078974b8cab7fe4",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2879": {
+      "fingerprint": "e30201786ede2677d83a961e5cb32b1cc12dc909",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3103": {
+      "fingerprint": "6c1af554e62d74d6e37d6c7029f906fa19cf9343",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2977": {
+      "fingerprint": "0bf7c03588ac275f313cee87ea848482688d30ac",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2319": {
+      "fingerprint": "4bb24ad42a333e487472067c93dcf38f4892ac77",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2937": {
+      "fingerprint": "e33e90cc077a9f169a4607c9dfc0a86da891806a",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2924": {
+      "fingerprint": "d74c4185c6ba6acf960ec3a8f9dc1905cf56994a",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1514": {
+      "fingerprint": "c60d6a2ccf2ce74b96e08d1579f4da6f841342c8",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2657": {
+      "fingerprint": "112ed4468a86426d601a4b7304fc495e06f5fb4f",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2530": {
+      "fingerprint": "46be64040b91e1f6fd6dcd02ea74dc47350c8408",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2511": {
+      "fingerprint": "fcf07a137eff49161bb14aff7b2517bb353ff2e4",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1817": {
+      "fingerprint": "46ff2a88567b9969883279f5a3957c0df244c360",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2847": {
+      "fingerprint": "4b1d77a7b469ca7f5714d79bb46834ea110f8294",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2782": {
+      "fingerprint": "ce93ca2f5f7e8728ba5062f8f42d46647b8e1981",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2660": {
+      "fingerprint": "bdff7d97455fde499a197a8457fd4d0630536066",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2921": {
+      "fingerprint": "c455ad45eef9944ea76f68ea3440292375959447",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2890": {
+      "fingerprint": "1e9cbf689063e56eacdd396e9fbb1c98e81fd39e",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2885": {
+      "fingerprint": "ca7b6f1a70f36bf6219cc4ff6d7cfec67befcf61",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2732": {
+      "fingerprint": "02d132c4952e1c6aa4e20d08d84f95897011a3d1",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1830": {
+      "fingerprint": "94b64d7bc98ba908768fe85d53098f1c4ca7df77",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2993": {
+      "fingerprint": "25bbfc40490f134fd4507de33cae033fddd14e18",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2318": {
+      "fingerprint": "3bd16fdd3b2687259d6a9466f49970aa488df044",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2927": {
+      "fingerprint": "acdcd57b65223631aa506f5b26acea87dfcc6656",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2876": {
+      "fingerprint": "d7b9799de385143e2c5105a04da3080ab6e3846b",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1801": {
+      "fingerprint": "95b003341d227e67b29eb20ee4dbd6c2a3026aa5",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3101": {
+      "fingerprint": "d57c502db41cf63b5174c4fb739c92e34606e341",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2698": {
+      "fingerprint": "1efc61e46cfa952841a4260df197cbe8ed5b993d",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1763": {
+      "fingerprint": "23fea6b77046df0ac622ba1e4cc03d3b0d536e41",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3011": {
+      "fingerprint": "fa3be2e8c457c08dbcd7a4391e08706927be7ce3",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3100": {
+      "fingerprint": "2a43a05a9334ae20667f549c0d603955e9119a2c",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2903": {
+      "fingerprint": "166616224ff45fa645483a6b7de9ec6f83d59c6e",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1046": {
+      "fingerprint": "75fd8414463b8f5a74230ec752700caca00c86de",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2781": {
+      "fingerprint": "aa942dd3c951c53af1c090b30274f5d9d978e044",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2722": {
+      "fingerprint": "e8d5a5e0ab9cd98fad01fa2826115991eb39a11f",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=826": {
+      "fingerprint": "f2bbc0d300cee3087d9abb62831dd1f7ac899cc3",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2656": {
+      "fingerprint": "163416578fac81329ac3ad4728edfbce28c6d80d",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=859": {
+      "fingerprint": "c20c729ef0c84dbe9a035d12fe7967b572c93f0d",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3102": {
+      "fingerprint": "6b394ecc527ac9fdabdc6782a76fc4375a31280d",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=858": {
+      "fingerprint": "61086ee40df35c64bcf07e053e9e36a6120c4f88",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=857": {
+      "fingerprint": "e72f1738c02ba88eb835428d7892eeeac14d8c46",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2643": {
+      "fingerprint": "62bd8257cef306ca220f64d857fa5b679cbefb08",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2842": {
+      "fingerprint": "225c0c3881125f6f9aae173b15d490d54776b5b1",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2936": {
+      "fingerprint": "b4152c731aa8a680ac59dfaf20fb452160b72fb9",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2559": {
+      "fingerprint": "a38e744a2c5f454ece532ffc7db555a0f8e82f5f",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2978": {
+      "fingerprint": "5fa59ecf44cca4b71165aac0950a2a2b4bca1893",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2928": {
+      "fingerprint": "b58614fc82b344798e7b48d3657bb3aef993c824",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2723": {
+      "fingerprint": "6a05ad79522a495d89ed0f6fdbd7c5b54b346dc0",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3299": {
+      "fingerprint": "46f8c75b69025b547febb5345cdc6e28802cbd4a",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3201": {
+      "fingerprint": "0dd27f09bdb9fcffff793824f73746bb7ea36119",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3111": {
+      "fingerprint": "3b644310237cfb8682bab3fc42215e488bc52a08",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2995": {
+      "fingerprint": "73cbd0783ba435463a0bc4894bd99cc2fbb406c7",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2891": {
+      "fingerprint": "32e6ff308b7de8945e49ea6ce04300374d995b81",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2841": {
+      "fingerprint": "342cd165358e019926584c06b945f1d903787996",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2766": {
+      "fingerprint": "84765f8f21647ac6a39de431ec866b6fb490e70b",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2404": {
+      "fingerprint": "d90dd9889ce0fd809615c633c71ff129b1ac0326",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2699": {
+      "fingerprint": "7953164c8066fb3699a22f3f2c17e47554a0ebd3",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3110": {
+      "fingerprint": "40829ff989c61c639cca8aa819e063b86ff91c54",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1827": {
+      "fingerprint": "05bb21c52daa01544bc9ff5e04095dde716ab5e9",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3245": {
+      "fingerprint": "e3732f4ed2e42c0704135ac53a7dde19eaf8357c",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2982": {
+      "fingerprint": "fb148ef3cdb15565a8a6db270627e263119b3b16",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2875": {
+      "fingerprint": "d1b25458a36dd21f67b614afeee8eb33c0959241",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2666": {
+      "fingerprint": "bd6ff3ba5c4d8628c284bc7fb0c0107978678d84",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1780": {
+      "fingerprint": "21a04b5b93cacf8ceaaba1e04de91bafbb68e392",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3105": {
+      "fingerprint": "d4b37107d4373efdf184ba13a1ad71642d94c6b8",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2926": {
+      "fingerprint": "f0c1768d3c814f246261b68ddd615e1be6b218dd",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2726": {
+      "fingerprint": "d36dd67ec2efd10adba811d6553eb0557235175b",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2581": {
+      "fingerprint": "f37f238ade9c9b8bf425c41e0330dfbf84b52186",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3001": {
+      "fingerprint": "58a81a572b0ca019cedcb88fe2519e20b9ddbdff",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2647": {
+      "fingerprint": "551909f3629ad30338a455456d71c6fd228ec93e",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2622": {
+      "fingerprint": "b4f43bb3a4b9b8ce1ba80659fdcdbf6e2265cdd2",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2615": {
+      "fingerprint": "2a1bf677847d97c1c77a5488b71ac59fce40183e",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2889": {
+      "fingerprint": "5271aaf4970c756728710619e321ba9345358a01",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2242": {
+      "fingerprint": "3e26673ace48830adda0d5be86dcaece89ce99fd",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3202": {
+      "fingerprint": "b3a5fb242f6e9c49d823078b19a51f3d4f306cc9",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3026": {
+      "fingerprint": "edb09f97c96a6a3ff2e16d666fd5c272fb8e9aab",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2893": {
+      "fingerprint": "b66fd034efb0ab572f78add24c7d2e0f55486126",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2268": {
+      "fingerprint": "32772fe20505d07e757df2cd01498b85d3800fb3",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1707": {
+      "fingerprint": "ee77145321c40f6fea05a69d96829100012529cd",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2512": {
+      "fingerprint": "fecd720a565cb1d2e40973fa2953d425735ec3e7",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2508": {
+      "fingerprint": "48ace166cbc7e168d5f9b5c178c76a8d7473dee8",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3189": {
+      "fingerprint": "02d7644a7c8eaf077f1cbe1caf9a293856ea7648",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3020": {
+      "fingerprint": "d13cc079a6231caf8ab444712cac0d4e3fffa31f",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2727": {
+      "fingerprint": "970cacc7bef34bc873f405df784045237166e64c",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2510": {
+      "fingerprint": "6c89ee54f9b679962c8b317d0fbb5565a7f7e064",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1753": {
+      "fingerprint": "bf67d789683b765ecd7a875541b4e44ce048de79",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3021": {
+      "fingerprint": "f9ec352bcbe848ac297b88a04e5c6e528ca934f8",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3014": {
+      "fingerprint": "ff34d1d29fa6e3305aa0d325b67647887347f2ba",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2189": {
+      "fingerprint": "9ed66c4a49ba50039dcd8be99c67728b746b6278",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=760": {
+      "fingerprint": "f63e2bb8730228d5790600d38107d9a4460465dd",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3019": {
+      "fingerprint": "67fa189dc77da975afc5c650df3386467bd1d39e",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2616": {
+      "fingerprint": "e8e61c7234079f8018ecca027dd63b9aef0eafe4",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2582": {
+      "fingerprint": "990f66bed96848c1f049244a0e54e736827f35bf",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2506": {
+      "fingerprint": "49f0afaac0babc73a9fc527fef84bfdc37072133",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1838": {
+      "fingerprint": "49cad539b5d89d3ad162b65cdbb75d688b5aaa3f",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2963": {
+      "fingerprint": "5c9636ffea36eb72ab80a208f52f2f540331623b",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2659": {
+      "fingerprint": "09c64d20cc55829044b7629bf74e92df11b0b089",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2604": {
+      "fingerprint": "56a9116886fb48b019be36ef88c8fdf303f5071c",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2529": {
+      "fingerprint": "1a25e696ab0038d32be29c76a05b686364f9bc1d",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2395": {
+      "fingerprint": "90f28cef36f76a618df4df88ce8f64e965b8267b",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2228": {
+      "fingerprint": "b48f2081033ae2b15d1212ee5cbd7862e557a0cd",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2114": {
+      "fingerprint": "b5ebae1d1954e0e6416aadfff93881ca1d2a6ce6",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1706": {
+      "fingerprint": "914142c8b66b7c901afe44f7541832c609f23b38",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3004": {
+      "fingerprint": "b5ecf0292929323cbaccce8407caa1ae7910c9a0",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2442": {
+      "fingerprint": "7ba72ba38fe63fa9b962823b8ec5a27d61cf92b4",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1807": {
+      "fingerprint": "b72aa7557ec3c7e2c166f13c00bd0f32ea9ff62d",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3000": {
+      "fingerprint": "adf216b0b7799bcdfe66d3de581dcad7fc0fb926",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2783": {
+      "fingerprint": "eb5886482ad8b42c3d4f0e3c08a1c9bb8b6d0be1",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2621": {
+      "fingerprint": "c1a195a82bb7b5072589be25d8fada0373b3080e",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2461": {
+      "fingerprint": "4b26adc1a77f76ff6600adbd6c530099cbf62a1e",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2427": {
+      "fingerprint": "1a30892076290449087fb4005fbbbf977285e41e",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2424": {
+      "fingerprint": "491a0fb01b66926647d5d89c7843d718f584831b",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2397": {
+      "fingerprint": "ed00139a0b3912b02d5506e258d81718b2744c70",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1648": {
+      "fingerprint": "35190195d466ae1aac1c03cc72f8eb2f1fddf944",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1566": {
+      "fingerprint": "9ac6ec7e26e2a3829bb0b1c2b3b2003b17e34504",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=937": {
+      "fingerprint": "da50876e419409e772818464c86c4ab6f7abe850",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3282": {
+      "fingerprint": "f2cb27a7853d2aeffcaa11a40719688d5992bdaa",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2887": {
+      "fingerprint": "9d775f27ced857c25ad4dbbb63f84785b0d2da7f",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2866": {
+      "fingerprint": "6385006c3f2de92bd39f4b2301020adababaa97a",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2646": {
+      "fingerprint": "7cbecab7fe047d81934bc047c6ded96689985564",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2538": {
+      "fingerprint": "5e2f62a991783b59701ac06a4e86c2a7d6b3a63f",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2403": {
+      "fingerprint": "79bb79f7f572915d9ff5a88a7a36c98d69a73a39",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1828": {
+      "fingerprint": "a2a829861a14b5258e93ab54f653e8f9d58f72a7",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1752": {
+      "fingerprint": "178c0d4cd6d31c96c813e309b4e4257c4e6f8b02",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=964": {
+      "fingerprint": "f018279c5304e4b1ae8fafa942f678fae61a22e1",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3161": {
+      "fingerprint": "46b780adf20e33f02cd92453c691ed2642e3614b",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2996": {
+      "fingerprint": "48a168d98e32ba5b2177281fe207a14283830da7",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2983": {
+      "fingerprint": "70f15ae01a5bf8a74b5f1abbfd323bf1eb7e1b90",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2639": {
+      "fingerprint": "a3b4ecedcfdf84853cb849068984d4ee7957455e",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2537": {
+      "fingerprint": "7d538a3b7b3870c7eae07d05a77c57df21fffb89",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2188": {
+      "fingerprint": "278da4d9a47463ac671f488c6060c3656846564d",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2033": {
+      "fingerprint": "afaa2eed8594813231b994058df82869864d960d",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1786": {
+      "fingerprint": "bac108d395ec91dc42bdf2e5079b257f40712d09",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2886": {
+      "fingerprint": "e1bacd8dca77bd2983df19ee8ecf1206ea57bdbc",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2716": {
+      "fingerprint": "600fde3d0fa3a392fba07cb2d45594f9f7218a38",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2429": {
+      "fingerprint": "eeb08a57b0c0af7d0324968e068466e17a62a852",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2423": {
+      "fingerprint": "e010d0cc216eb0a3a733e93155fd704cb1cddf86",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2410": {
+      "fingerprint": "63e4aacf29c33f7726c06ab0dce47ea205192249",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=824": {
+      "fingerprint": "9bd50696930cf750b365df12ef21f653be544a15",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3002": {
+      "fingerprint": "fc9a9aeca946ee4bd58a90d62e6a0dbc8e8939e0",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2748": {
+      "fingerprint": "1828da7c87cd40549f13332b19b1abefdf6e5c96",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2724": {
+      "fingerprint": "f408ca8a6c799de69648ac559b89fd94890d8f2b",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1813": {
+      "fingerprint": "b5dfa5dea67b6cdc23cea817b37f0c7bd201fd1f",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1493": {
+      "fingerprint": "afaeec016bffb8cea4d89aa48800d795e27c131a",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1053": {
+      "fingerprint": "2b4c122e5fa9adc39f21fb07213f3a9bbfa12e7b",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3164": {
+      "fingerprint": "d68f04b199580d13777ec941227b0587e7db8ffd",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3121": {
+      "fingerprint": "fb8e7420e22ac7406db5e6ec7ca696eb0838d6d0",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3084": {
+      "fingerprint": "091e0b03f5a686d41547f85440e7632ab806313a",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2762": {
+      "fingerprint": "03910d1b044dc4aad99912af421522a9d4598435",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2644": {
+      "fingerprint": "557b92f2f035bb4711c0c34090b8b4547cf3bbdc",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2584": {
+      "fingerprint": "9c2f45d15d28c85733c563aad84a517dc29935ed",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2459": {
+      "fingerprint": "03ab19aa8673122de13cc75730746a339a3ce8c6",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2405": {
+      "fingerprint": "ebda337af988155d9868a535aede134785a5139c",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2181": {
+      "fingerprint": "0c2000d00cfceca807cfdc7985c256e396b10227",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3250": {
+      "fingerprint": "9ecadcf7d23fd4a2210afa09f5ea150032c35dbc",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3225": {
+      "fingerprint": "df3636eeedd739cce228e718d68ae9d717925651",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3224": {
+      "fingerprint": "6f4780e6b236b91bb96b3ed700416d1612da6707",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3024": {
+      "fingerprint": "e74abb8ed958d456521bdd20d0471d2102ab0df1",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2969": {
+      "fingerprint": "163ec96a13fd9106755a92e75ae8ec4f3f895d56",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2953": {
+      "fingerprint": "29450586759c024fa341f2ef29a11f4221654d3b",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2706": {
+      "fingerprint": "2826eb126432afb9105eea80029662e0da928909",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2614": {
+      "fingerprint": "05ae7d8a3b0f7688cf8875d3a267e85575a352e8",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1052": {
+      "fingerprint": "df73527403c9b76d672cee6dd6160889d42e3c8b",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3187": {
+      "fingerprint": "deb546f7c0ab5e9b8539b91caaad40ed9c1a5b1a",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3027": {
+      "fingerprint": "9262eef63674b3fbaf31fe82b03e7d64da89e1da",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2997": {
+      "fingerprint": "4d85aeec9b6c019f6454319ff816823469eb50b5",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2988": {
+      "fingerprint": "80cc95e4f767a9e02a1a406ba611c39a5641da18",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2546": {
+      "fingerprint": "517d301cade2b66f964fa4771712750321ef0c5c",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2452": {
+      "fingerprint": "bb4182aebb813db2e7f7170e579ab3bf7104ba85",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2443": {
+      "fingerprint": "37d9a4ac58752116a259a98be354c52c79c13973",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2225": {
+      "fingerprint": "175f64d05b92ee21a2f41bc9105b6842d32788df",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1839": {
+      "fingerprint": "3b95d49fc68ec5a023d5ca5db61e6a48c8890e02",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1784": {
+      "fingerprint": "ef358fd06973f04a32737fb957d9160b8fdebc38",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1744": {
+      "fingerprint": "eef3e08428935f00d2238c15e28d989f343a26c3",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1567": {
+      "fingerprint": "dc87e2880ee9840733865e36a7f6655c7919faea",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1440": {
+      "fingerprint": "e7700ce7b918b8be61a738b9b344973b1e8c74c7",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1049": {
+      "fingerprint": "747de4016a23de29afd112bd747abf51e58b82d6",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3297": {
+      "fingerprint": "a431a3d9cf9ebcb492b5738f14c196fd9e7879d6",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3185": {
+      "fingerprint": "0f844822447f002fb6564f08aa19d2f44f75eaca",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3096": {
+      "fingerprint": "a0b597486463a7c08784694da2c1e2f5f466cf3c",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3095": {
+      "fingerprint": "41647bebe8a28dc30a41a821e96250f25a10bff2",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3085": {
+      "fingerprint": "b550f8c01b1c8dd424d183518c3f8606cb891c63",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3056": {
+      "fingerprint": "c2f86cf775c94ab55f5a0a6582549db8b4f1e8ac",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2986": {
+      "fingerprint": "677dbf636039d17b70949e796de4450e040b0331",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2859": {
+      "fingerprint": "b58d7412cb725c442b2fc3d9834d4de69abef6c7",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2580": {
+      "fingerprint": "4de74b55a57c0861161a7e43563f27e717dbe79e",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2279": {
+      "fingerprint": "0c68813976b6986131c9062bdf775f26781a2435",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3051": {
+      "fingerprint": "9a77c5c66d139f05341e2775e45d9d50c020ab0b",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3025": {
+      "fingerprint": "7a90c90bb1fd027b0de8412c500a8ddac5cd82c5",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2617": {
+      "fingerprint": "e401c7d19f8b1aae6ca67bfa6b2816fb5123fa7d",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2579": {
+      "fingerprint": "6fee20c57ac6fb7a8d04c8e29625a79c96f14623",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2572": {
+      "fingerprint": "27e8b05aaf080ea3c47798b2602bed62f01be74a",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2541": {
+      "fingerprint": "e887fb0f9297892606e76e90121323de0993c4e4",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2267": {
+      "fingerprint": "ea61c430c64a7ac3dbcf6cf83a4f697ad78c8311",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2262": {
+      "fingerprint": "7c181e7a55aadfdcd77d5887290fcdd15b1478ee",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2241": {
+      "fingerprint": "c916f368ae5639a1ea5d011e66aaebdfcb2f8305",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1764": {
+      "fingerprint": "75808fab9d18fa7bbbd02edd653036d07a3a5a7c",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1394": {
+      "fingerprint": "080554e6b1a0d33cdf61429120fe736907c86ff9",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1045": {
+      "fingerprint": "09a3220f7f0fc4ae10e6908bc2061ecbce382cea",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3192": {
+      "fingerprint": "c584b8906fe6aa49a1e4888924bd81bfc65fb26b",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3108": {
+      "fingerprint": "e63300a9430b9623242e8fcd85a1cff0e19a0eb3",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2985": {
+      "fingerprint": "239ce7c68330ad3fc9ea4bf179cf287fdaae7564",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2725": {
+      "fingerprint": "c8da55e2b3ba97d04ec923d74d9e874b86f8477f",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2557": {
+      "fingerprint": "654f16d452fb0df588bb1df3acec3e813f6bc462",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1996": {
+      "fingerprint": "c52fefac4d4a5dff8b0d12a87c1b1cda3cb13b6c",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1721": {
+      "fingerprint": "8a5fb6c47a54d0ae004ec73cbc3023211ea33728",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1657": {
+      "fingerprint": "461bc85f18decac636b5b9c06670872f28affe79",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3295": {
+      "fingerprint": "2a2ee1cb4f36f24843fd6c1a5aa58c600351dffe",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3243": {
+      "fingerprint": "d7dfaf1d6aa2528b4eb6b128375496b0987aa560",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3114": {
+      "fingerprint": "5d12093d9274faee54a46e9a1dbdee8d15c24ef2",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3094": {
+      "fingerprint": "bff0e4efc6941d14c02f5a955539b250bb1fc318",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2967": {
+      "fingerprint": "e69ca9c875c8dfa4c76c194f69299b7e1e04f95d",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2713": {
+      "fingerprint": "96e245f1f02ade5a16c9681a28c98708fc4a281a",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2627": {
+      "fingerprint": "7c9d3ca91b16d0019ce6a858870ab322999d4979",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2496": {
+      "fingerprint": "ec542a24051a97c5f5f567dd6bcca09c6881afbe",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2261": {
+      "fingerprint": "35324255d750894e18cbc48c5a16b3c0aa595960",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1766": {
+      "fingerprint": "b561fa15eefdcf8294bdc7088eb48e034fa15484",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1765": {
+      "fingerprint": "79b575bfdb6be09128a1cc1e111be7f82d47a813",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1651": {
+      "fingerprint": "597bb327c3e6c3fb1bb856e1f4a58acee8b5b3e0",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=956": {
+      "fingerprint": "7a1cbf9498d67614408e8fb902be9785354de139",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3274": {
+      "fingerprint": "deb460d91df312b92fcf7d3ce854c7532c9f2284",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3207": {
+      "fingerprint": "dc5fdde188fc203289b4a8d3b47a2aa3f157be42",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3125": {
+      "fingerprint": "597c621e9a844b5286131de55cd750f26433e8d9",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3046": {
+      "fingerprint": "b38e32d10f50fe44611957229874522bd884d992",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3042": {
+      "fingerprint": "49ae19b2e727d25cccfe3b627c1f6d5e99f221d6",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3033": {
+      "fingerprint": "18711cd6db2936935779f9489c9d157fe2f27a5a",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2943": {
+      "fingerprint": "9f22ac5b641c101a524530f398711bb7bfc6feed",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2774": {
+      "fingerprint": "1a594ff6ea28dbaa1e0716bb26f77a75651330f0",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2761": {
+      "fingerprint": "e91ffe726f55e3ecc00afb2da5aa1acfb8085571",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2626": {
+      "fingerprint": "40a1b7f4044f08209fa05cff57dc67271250b7f7",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2590": {
+      "fingerprint": "457865e19a10745493726fe84ba1d29e45e87b19",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2504": {
+      "fingerprint": "6b6badd6e9ed54ba687d28abdf1566a6ced6c222",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2503": {
+      "fingerprint": "eb448445e965741e0c1a00268ddc930bf7cab316",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2396": {
+      "fingerprint": "fd0756b8457fd59bafb8e69e4de84ee625160364",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2280": {
+      "fingerprint": "4707fa6d64954ec04a5c3a07d3e594b275ae1646",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1785": {
+      "fingerprint": "ca631d96c17f477b08317977859ad40a5049e623",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1672": {
+      "fingerprint": "7ff2ad086ba96357f49b459e0b443dfbad87b4a4",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1262": {
+      "fingerprint": "dea024f86d03de900d4b63dc028beedb0e756b62",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3294": {
+      "fingerprint": "0189c9ab6b85af4c0e0af7bf921828d356cf779d",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3218": {
+      "fingerprint": "9559a7ca469105fd0c0bbe6b39b21eb6fca32cf1",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3188": {
+      "fingerprint": "4d3e32fbbac8ac7cb31bb0ea24401554d1cb9e13",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3137": {
+      "fingerprint": "1c4bebf7e44330ecf4eb16bdf4902c4287365463",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3117": {
+      "fingerprint": "d39814b01edb19a4e702b77a5c322e8e3f756b6c",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3050": {
+      "fingerprint": "25780957fc2d3ac29a8b9200972a5a5dfea5a1b9",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2944": {
+      "fingerprint": "bed3a31a57591f3a844411fbc1bc2a3a09ba9514",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2720": {
+      "fingerprint": "51cb7ece486914b40513022af06d1407e4b22839",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2571": {
+      "fingerprint": "531fb925e00f0d59ff7ce0f574b5b16065deab96",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2536": {
+      "fingerprint": "5c3a59d0e7a75150ef11f6d14700744a745c81c5",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1561": {
+      "fingerprint": "7afc3904151dbe97fd86509c2fcb564837ef2d41",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=757": {
+      "fingerprint": "d5b3a76b71b1949760cc4efc1570e4a17002e61c",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3291": {
+      "fingerprint": "0c138e5c7e1ed79f5c6fd47f2007086bc55389b3",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3248": {
+      "fingerprint": "0a400d5019c3d4ff0c8cc272d663fe2930a1a56e",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3246": {
+      "fingerprint": "8eed64be425f31355e770b51fce1d0fcbda7fcff",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3231": {
+      "fingerprint": "05442c1d257d580a789c528f74e1e58e6c0de1ea",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3165": {
+      "fingerprint": "1af312514fd6eb0561521fa52e1c7ce988c56025",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3159": {
+      "fingerprint": "3d40494bc58e8883980d940054fac82a2f7678b0",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3156": {
+      "fingerprint": "b10c2d6d2fcc763ebcd414c245123d40d3ec5ba5",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3127": {
+      "fingerprint": "e42f4fc0085ee0acab6556b0ef2cc19c0de49d66",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3075": {
+      "fingerprint": "7790c6f128f90f79af4b2558d351f0d1af8059df",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3057": {
+      "fingerprint": "c56de1102bd0815ba87ec913f847e969193f545c",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3054": {
+      "fingerprint": "6546271e2a55731fc2f7210dc827560e79a5c509",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3036": {
+      "fingerprint": "12fac7afdd7949ca116742246f1d5faef15ec32c",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2998": {
+      "fingerprint": "a1c6b60d6df3be55b5e6bf143eefe0bc2bfaef86",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2991": {
+      "fingerprint": "a8ca9e8aee8828fd7114858b56b79101543604c0",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2768": {
+      "fingerprint": "0f180f6750e4b67d2f906d349995b661a3f3612d",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2760": {
+      "fingerprint": "04eddcff0a081f34c04e7428a3aa228003b259fc",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2587": {
+      "fingerprint": "b469d4c8cba67fa6d2b8e6c7b4dd18eaf52cc96c",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2558": {
+      "fingerprint": "ec71cf37c9d88d301cd70e0ea8d47702a7a65e89",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2460": {
+      "fingerprint": "f9572642da21e93770a79d69174be6b1e49056d5",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1995": {
+      "fingerprint": "fab324807d01c9be5bc10e9bd320a679b772d54e",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3305": {
+      "fingerprint": "bbb21d62fcdb27650a2fef441a9bd9acf02fa85a",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3303": {
+      "fingerprint": "08c626ee4fb45538d060e28c7777ddc839f0695d",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3278": {
+      "fingerprint": "3c31e0f8dc016e533131629c53d7efbe28125f7e",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3269": {
+      "fingerprint": "f13da4ceeb0f607dca147b389cb799b4f2c84ee9",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3233": {
+      "fingerprint": "a149823005f0d58d35d2962acc79cd4203fdb0c9",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3229": {
+      "fingerprint": "f9a2560d93010c6088d31ac49d35ec39b31f577f",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3228": {
+      "fingerprint": "900fc6134340f901dc2c6aafcdf0861087c4d524",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3193": {
+      "fingerprint": "f413c18e51d8dca62c8557ef28c717f9291084ee",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3178": {
+      "fingerprint": "3d6db9dfd2cb655da2db8cf1fd23ca30c8f898f4",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2708": {
+      "fingerprint": "9354ee7fcde57c614760eb68c3b938e8f0933784",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2570": {
+      "fingerprint": "80ad9b715c47e58f1f47bac9a0e3b0ab761e19c1",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2540": {
+      "fingerprint": "71de998bec7a09621f4c1c61a640980dc2b41eb3",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2151": {
+      "fingerprint": "dddd237b177ba4f31c7ce7c2fa2130a7b8e134c1",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1469": {
+      "fingerprint": "57ef529f42d091e67e4236d512005dd28ed0cc0f",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1263": {
+      "fingerprint": "45ef63754f28e772bdd22f0523dc0b9f029a63a2",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3283": {
+      "fingerprint": "505300f605090dab8314ff9d3fecda5d3a042c28",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3281": {
+      "fingerprint": "dfaf0fa8f103d622d9da2da8f95b4902ca937feb",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3158": {
+      "fingerprint": "2803b66846209d80dd4c5eb0909f9bab29a71636",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3109": {
+      "fingerprint": "2f57f65fbe0497fd54bfd0dbb7be8612248da7d0",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3071": {
+      "fingerprint": "1895f4c3fe5d58cfc477d460039424953c6d69e7",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3058": {
+      "fingerprint": "c0e7f23031146d67417ce7c7694080f6261eacc6",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3055": {
+      "fingerprint": "83f8955c461856d5e2ddae2a9f7595e3ae7f3482",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2987": {
+      "fingerprint": "5d13bfd48f334d1743c427b8d143333cbe194524",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2550": {
+      "fingerprint": "208d801381307dd44926c3b0cedfded49eb5ce82",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2451": {
+      "fingerprint": "3ffd7f26a3d8f887d723b36a5809fb4ac419b69a",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2231": {
+      "fingerprint": "b5fb867dd022f2833d36f70ddc6e2769c1329cbc",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2145": {
+      "fingerprint": "599417306ca4d05206eb69dd2ba88eb93b38e1e4",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1645": {
+      "fingerprint": "cd8a74295a2d696787bb22666f04bfae97fc652c",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1560": {
+      "fingerprint": "18579525ba963f6a1669c4669ed38ac2a7e0841c",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3249": {
+      "fingerprint": "b265748fd718fcda1b3bcf244055258cbfe13ee9",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3244": {
+      "fingerprint": "7d2192bb8638258a3bd4a28c6257bd2a69ac1e02",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3184": {
+      "fingerprint": "57711e237007332e325213f59b318b8e686d904c",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3183": {
+      "fingerprint": "039013d03a101c50f6ab86df5e78213ee0356861",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3157": {
+      "fingerprint": "f4d840c81f4329c35fefb72f165e24e2155163ec",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3074": {
+      "fingerprint": "3c71ae93dc572ad6a4eda43822338ea291f6e270",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3069": {
+      "fingerprint": "058e183fd4eed8c910079d6c99b3679ef1e7ebf3",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3066": {
+      "fingerprint": "30cd97aeae03f1e7777fc3d0c4267bb3014481e5",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3064": {
+      "fingerprint": "857a48cd731f303785acdc104d340c692ebc97b8",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3037": {
+      "fingerprint": "64f8a099b2d96b30bbfd3c37e40cd338d657f1c6",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3017": {
+      "fingerprint": "137e4b94f9485ce4e81ea45f06fd194b366b7cbe",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2455": {
+      "fingerprint": "1120ac8b7eaa5df65a49ea4c09ec6d8fca72ed1b",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2135": {
+      "fingerprint": "89d3a1451caf2bfb53a1b2089e265f036cc76fbc",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3277": {
+      "fingerprint": "e17564097cde8c2edbbea3a42593adcb9f9cc3f1",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3268": {
+      "fingerprint": "5e8f67745f80ac1d9fbb6217f00d13396919e24e",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3247": {
+      "fingerprint": "fb68da51f2bd98b96257757cac7adb553c87320f",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3198": {
+      "fingerprint": "68f79fcfba56b987a3717b23c7733cb4b01a558b",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3190": {
+      "fingerprint": "b604f1c7f91d65f00ae8f0f80d193862ad07e627",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3168": {
+      "fingerprint": "458fdc2f7bbec125d8e176e3b3436718996db03a",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3166": {
+      "fingerprint": "e3939342d479f29339303a276ae076958853b523",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3128": {
+      "fingerprint": "f9294b78b192ad8144c4d454c6838983c9ef303d",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3106": {
+      "fingerprint": "e23238c41d2ae56bed0a9fd2d692e9be992568ea",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3091": {
+      "fingerprint": "9da1794d970c6a4053ef012853fbf1d280d770e8",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3088": {
+      "fingerprint": "cb5bdf9916d71d1a867a3ed6f50a05142c3c519c",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3078": {
+      "fingerprint": "8c708c71d3edf4e964939ab38cf903f83389934e",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3038": {
+      "fingerprint": "3b28e24b41e7d49ca0d4c1a9ee5a3e8f1989f4ae",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2980": {
+      "fingerprint": "189efdb2e3b36c177ce60c9d7c15171d3c54c59b",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2497": {
+      "fingerprint": "f837b2a7362398542ba69dcaa82221f87492213b",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3280": {
+      "fingerprint": "9ff7aef04486f7aedeb42dc39ad2fc853aa5c318",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3272": {
+      "fingerprint": "9c14df51885b7b65f5bd50cd44e96bc2091cbf0a",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3264": {
+      "fingerprint": "3c53980936085179dda6bc48ad54519431bca4f7",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3259": {
+      "fingerprint": "405a9707c24c7c200455e179ca9ed34c8c344f7d",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3232": {
+      "fingerprint": "dbd089a06df57c3683a34cc5bcca91b24288b39e",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3176": {
+      "fingerprint": "99fa82a9950cbd9e280914c779e5c4352cf905fe",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3124": {
+      "fingerprint": "c993f983d89d19bbb99cd11d1048d7359dad66b5",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3119": {
+      "fingerprint": "bed5847063c69793530401f4d1a96c5e0922a6fe",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3115": {
+      "fingerprint": "c1179c591f6ffdb5ea884149ae52248a8cd84f24",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3086": {
+      "fingerprint": "f1481fefa594e7dd5e04982d1cfe5ec54d096cdb",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3061": {
+      "fingerprint": "21a348f1fafd7a055fee287b61774fc3dcd5a66d",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3043": {
+      "fingerprint": "8d2f6f96cd4f39768f2f51d2bf282cc8bc742564",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3035": {
+      "fingerprint": "bf10059a6f147419d105b764d49292236f984f03",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3030": {
+      "fingerprint": "15dc27fa89ef49e3028e99c89e44f23acdb86010",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3018": {
+      "fingerprint": "c7e866134efc867b8a7280460aa13924c170d54a",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3016": {
+      "fingerprint": "094e9e7b96539cc1d0151bbe70cee7c7c67ac4ea",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3003": {
+      "fingerprint": "8da0dd028d5c7600c048d2ad275e08292a6e759d",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2999": {
+      "fingerprint": "f463eabdb031b989a100b86ba1699b231bc38ec6",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1644": {
+      "fingerprint": "9c64ffdb548dfff9d26064c97cb750c4cdf9dfe4",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3273": {
+      "fingerprint": "0450039457142ae33f909d0a7ea92e1b5a469cb9",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3239": {
+      "fingerprint": "1a3f0ffdb40097dba16107d2a7ea8f7874dab5cf",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3216": {
+      "fingerprint": "5ce488ac5838997e5b424b31649e6ab4ce542072",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3200": {
+      "fingerprint": "ca7c6283e615c2c5e475600b9c857369b320c0d7",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3170": {
+      "fingerprint": "37d7a79984230b217bd730b95abac0da41240cf2",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3136": {
+      "fingerprint": "e6609a92490bd7439cc8047b08b29d0d6caf0e2d",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3129": {
+      "fingerprint": "42b54126d1bcee5992a8359f9fc7281b99c269df",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3087": {
+      "fingerprint": "5000ddc2c42e0a8d5fc0f4c50f317d3646f64a4b",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3052": {
+      "fingerprint": "cbfcccce45b807f83d250b1e6ace3eff67cff40e",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3045": {
+      "fingerprint": "c8c87dd0da51eab2c38e084d9d921d7a8b14de73",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3028": {
+      "fingerprint": "7a1da11f52a24f716286fd59a31de8e041ad158d",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2925": {
+      "fingerprint": "c9ea9caae8be0790fdf1eeb80ee348b885d66151",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2400": {
+      "fingerprint": "466f921be20de460a13accc9834eafc661796a5a",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3288": {
+      "fingerprint": "a8cddd908d4043c749c3ebf105b028e55ab5b070",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3285": {
+      "fingerprint": "453465ae48a49160268797fa7c67b10273f21ea4",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3234": {
+      "fingerprint": "231b8d4c07a1dd1c808af69ac131cc887e58f951",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3217": {
+      "fingerprint": "0bfcd4827ce5aaf50d5b4d59dbe596e5d28e0c5e",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3208": {
+      "fingerprint": "600a0b0d965f088d589cb55d3dd80160dd752801",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3204": {
+      "fingerprint": "b03c8b6ce5620cd46dfa9d77c9e421458bbc07d9",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3194": {
+      "fingerprint": "46cf7d81e0ce4ad8161b77696d9791edabfe1477",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3179": {
+      "fingerprint": "f0801d67e0baedd86fa55ec58dc8294ba2bc02e2",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3172": {
+      "fingerprint": "24386166633fdf81ad6b944b149738092d446627",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3152": {
+      "fingerprint": "d79d6881ec7b7c58c203a97a5f6f8bdf9c453254",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3151": {
+      "fingerprint": "e072c937e99263a2d260d1c21842a0945051bea9",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2990": {
+      "fingerprint": "8549baf11431a002a2fe81e76d897168faaadd4e",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2989": {
+      "fingerprint": "b3dbd793009681da09748cab1726072ec127b833",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2239": {
+      "fingerprint": "5ffa700c30d8a26b0c735560efacdde208c2f4b0",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1100": {
+      "fingerprint": "99bd42577d7ef8407ae722e682fb26e41697d3a6",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1044": {
+      "fingerprint": "c63550b26e3cd3b11d9f62a4ef8f79832170098c",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3284": {
+      "fingerprint": "2bff05751f5f6b8b3e871326d87f5cc376156445",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3251": {
+      "fingerprint": "53f9da36704eeee0d4622345465d6acee3f766db",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3235": {
+      "fingerprint": "e81a0dc2924fd627f57586cd232479350e294005",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3223": {
+      "fingerprint": "63d30a288a2bbb4ff2047df48b830c61e88e2647",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3214": {
+      "fingerprint": "23f2df3b60ddee32e747314465ff14aa790d02c0",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3195": {
+      "fingerprint": "1225038b044fa4e2673ba1ee11eefb39e4dab714",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3160": {
+      "fingerprint": "92c7226eccb65f1625830abb8265042b8403880c",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3150": {
+      "fingerprint": "c29a42595158ae5d82fb9c90cf5641160c707c0b",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3135": {
+      "fingerprint": "4a9484945322fd659c2449ef3aab58b0783e9c3e",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3116": {
+      "fingerprint": "2be9f780f2f9fd4f8494f9b969d961471bc3c2e5",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3089": {
+      "fingerprint": "0ec53fd46be4a1c114f0bd9471d0fc3bc063bca8",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3076": {
+      "fingerprint": "fd6d9c42e2d8f83839beccf937968094710caf2d",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3065": {
+      "fingerprint": "e683b2cf8381cc63cd090c4eca56e0720cfff930",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2240": {
+      "fingerprint": "9147b4589ac9a6f492e0f8a540dc899153e1fb56",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1048": {
+      "fingerprint": "00e0596be6bbccd7d171d89b22717f7c1b41d3f2",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3296": {
+      "fingerprint": "04c61d9ba7a09331fb6eb067fc4f846cc24bf0d1",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3276": {
+      "fingerprint": "fd8d624a700087a6ffb0c99fc1853b996000b6a8",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3262": {
+      "fingerprint": "fb8cc26f14272062fd5d0a0825f7449d0847fd82",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3261": {
+      "fingerprint": "7a5d798dc5e139d519f596e35106bf89bcc372c8",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3252": {
+      "fingerprint": "9ddb54338b14d2454af12b339f52258683013b4a",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3240": {
+      "fingerprint": "8f998c39536864ea399ab0c620c1b0726427ae83",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3237": {
+      "fingerprint": "1d351912d1282cf3807c6cf50429c96cec758494",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3222": {
+      "fingerprint": "6a6eaf0367a592ddb40312a74af119771e8f7990",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3196": {
+      "fingerprint": "9a1c12d7b67d9ebdaa5ca076a2237d37365a9dec",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3167": {
+      "fingerprint": "afc35ef810798909de1f1f3004e6a0c433af8985",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3133": {
+      "fingerprint": "1196c52eeae5110aa4e356965f992945396edb6c",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3131": {
+      "fingerprint": "55c41c7f102d0d0fcfe5fcc0ac151fe14be5b887",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3130": {
+      "fingerprint": "0c6439fe83b121b5cbe2b672c2c5376e0a8cf26f",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3118": {
+      "fingerprint": "483e8dc8a7781f23b54a5b020fd5694db6b9bcb1",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3077": {
+      "fingerprint": "dc9e5e61c47621f98c46db21d169fcce359299d3",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3053": {
+      "fingerprint": "5349bb94521aabc584c43c8cf3e0a712e1e7877f",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1047": {
+      "fingerprint": "0d32f43cd7c865c9fc3f839e625edef3e3cee825",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3302": {
+      "fingerprint": "d402f58dc74fe43867ed5c3f325cfa39c1e633c2",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3258": {
+      "fingerprint": "0923531f1c6f01e6a55699a3c997fd1960bd802a",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3227": {
+      "fingerprint": "b5a1c0d0e227e6ef7c7fb31efd2e4768cd2a8063",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3220": {
+      "fingerprint": "11503f7d8ef89303e244cb17b42584328fcd3057",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3213": {
+      "fingerprint": "5576bf63cdb29b949f508186c1b946521c009e49",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3209": {
+      "fingerprint": "81e650b3c35421b803cf55bd72b6b2c0839f3c3d",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3205": {
+      "fingerprint": "708f6ab3a2b887010faecaefcfdb623ad09480cd",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3203": {
+      "fingerprint": "f5ee44d77a0287d3e6886b0c04a36ede82befb6b",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3199": {
+      "fingerprint": "35341a01280669b58ac79e2b338cc520446ea77a",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3107": {
+      "fingerprint": "85e1f01bf47af31d9d67d9a4e39aa9a272636849",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3090": {
+      "fingerprint": "35f6e57407f2138fca7e4ded124d3305bf9dcd19",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3073": {
+      "fingerprint": "56c5bdfb23d94227f38745524c6b01fb16ca9a27",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2549": {
+      "fingerprint": "c4f6d4746d8d7bce2c79d5a0e4accd6c94d4cdfb",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3286": {
+      "fingerprint": "50060dbf97db6a106bc3ac7b31b267cd1bddf582",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3253": {
+      "fingerprint": "13f96770e9f926a99c6d411b58bcbbff5bd4fa04",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3219": {
+      "fingerprint": "594cdd26392485370b569926a839f36178d17d37",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3206": {
+      "fingerprint": "7418465c787da3ad25695e5c09bbeee5f62a3125",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3169": {
+      "fingerprint": "1e4b9d6ffa0884b05583f881677a24d66fea7753",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3126": {
+      "fingerprint": "f22c709cee3576acf68cc3ef96dcf899524bc28e",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3113": {
+      "fingerprint": "3adf80702683bcb27683a625bc9c81405a0bdbe2",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3112": {
+      "fingerprint": "31919d1b7b2a0fbc83caecfcf102862a637d272d",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3079": {
+      "fingerprint": "6d29e6c39ac4699672ef98c4acc38a0510242fed",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3049": {
+      "fingerprint": "6ab44d2bfa09748a8c07cc2a30e465ea36d58d26",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3306": {
+      "fingerprint": "deccd19cd066075378909d12c864673d3a35677b",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2352": {
+      "fingerprint": "42732e9803850299da56a28eb10e64083dcb6262",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3142": {
+      "fingerprint": "36a77a9d2b7259f23ca0d600a6e5b26fb3beeb22",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3141": {
+      "fingerprint": "d97c06c13ec53b05344b07cb837f93b99f0f0abf",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2918": {
+      "fingerprint": "4a851bf6bc3e20e3a9865fdcce6769c390dd6575",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2532": {
+      "fingerprint": "533af39902de87ad6a5997779f1846cd12efe16e",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2857": {
+      "fingerprint": "668363e63bac8f1b71b7c358bbba707e9fd45061",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2662": {
+      "fingerprint": "43c248f451d7aea5c9ba19714da0b12952abdd21",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2922": {
+      "fingerprint": "4f8c18fbafab160b61a171cdc6aad3710fc8fc0e",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2930": {
+      "fingerprint": "f508ac75e7120f3e4ecb9604f863308f82434f85",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2778": {
+      "fingerprint": "28a1565ec0f65ad4c4fd51db68be87eadb277ca6",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3149": {
+      "fingerprint": "23ffe4a31753f5b86dd8296c69e7d3474957afd5",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=755": {
+      "fingerprint": "ded0172a5b0095ff3b3664e504ee632bb9cf93f4",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3301": {
+      "fingerprint": "bd80b4c6e9a932a52efb788bcc9894862bf2f4a6",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2873": {
+      "fingerprint": "b3b28f3e7f0fc7433fbb31cb5b0cfb297ef47ba0",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2661": {
+      "fingerprint": "0acc5058b36d25eab444f86a47b7fde8d8d0ff3c",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3120": {
+      "fingerprint": "9cbfec60d3638cf0d4c0679628f6179c94cd9c56",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3300": {
+      "fingerprint": "8b35439dd647a9dbffeb082aa834e6b2669d2b35",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1779": {
+      "fingerprint": "043bd7522e6e81ca622dcb62727c98bf1928f126",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1757": {
+      "fingerprint": "995b97c4a3625092104b7a642a9d0f85f0f80a7f",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2110": {
+      "fingerprint": "ddddc8cb806b0e57a4b5ab8f0fc69f8b0f88479a",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2780": {
+      "fingerprint": "ed0669d3e15459ebcf2252fe732e58020488ac6b",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2435": {
+      "fingerprint": "70f13dbbd6f05dd421a07d6b53884f56a3849e1a",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2865": {
+      "fingerprint": "e79cc9104e3aa424faaa8fc879218956bbfb412c",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2471": {
+      "fingerprint": "d01b3df9695f93fa81ad9285b3036db85b7a6a9e",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2458": {
+      "fingerprint": "47b0aa65083f65a36cd97c71926e11162fd070f2",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3298": {
+      "fingerprint": "01b23e3dc010bce4b31dca4edf143c630e4e1eb9",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1658": {
+      "fingerprint": "6cabcca5a2ef1af11ce3a5dd2658273a482883d1",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3230": {
+      "fingerprint": "de06c26e721d54e8a52030a36de6ab3ff8a76700",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3265": {
+      "fingerprint": "b864bf5a925bcc36aa9b9aa0fcaa9cbf66be6205",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1755": {
+      "fingerprint": "eedd1fd8ab3e737a5718fb3de357ff9e9dba493d",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2968": {
+      "fingerprint": "d10844678c9444e0f9f7e42dd15b531e80be57e1",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1751": {
+      "fingerprint": "c2479127b3ab66f31268d8607d53b2cf495aee14",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=735": {
+      "fingerprint": "7700b4ee4ff01187f04edb6874e59879d23fc118",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2535": {
+      "fingerprint": "a3737dde546e54d09e1b26a6199c89831ba2fc1d",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1265": {
+      "fingerprint": "076aa004ec046602173d568c8fc1c215bb4f15ca",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=924": {
+      "fingerprint": "b909ce281519049d48ecf565bc2b13365d4ada8e",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=719": {
+      "fingerprint": "a3312a990a12e7c2280680f291c30536786e8358",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2322": {
+      "fingerprint": "fceb9346d491848a0fa0cf005396f34f00285b56",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1674": {
+      "fingerprint": "602094cded781e11eb8ec52fc174827cf48af488",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3123": {
+      "fingerprint": "b326bde4b5f0dcd4ece79177797d330d23aef223",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2746": {
+      "fingerprint": "57a33b102c91c5cd9b6de94770d15348d507c263",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1519": {
+      "fingerprint": "af3b4251af6d2e7ae9ab14cdac64072280c8e922",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3082": {
+      "fingerprint": "cb96249646c8eabf32616d0500c336f0df63c980",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3092": {
+      "fingerprint": "f26f9c3278f40ae06b4a114f2efde81e92b95231",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3012": {
+      "fingerprint": "d325b66ebd0f8837477225197763fc7042a6432d",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3080": {
+      "fingerprint": "11270eb1322653c6c91a3d9bceb4546a2919b9f6",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2307": {
+      "fingerprint": "9da4deea0facfc2a0325e631d8f04c410b81b469",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2714": {
+      "fingerprint": "9cec98e2c261ee98aa227f847490212696348f99",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2238": {
+      "fingerprint": "264dadc77cea46475cd371af69cc7648eafa39a2",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1748": {
+      "fingerprint": "055a8cbe03b078fcfc4a1161e18e1aa4fcc91eff",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3197": {
+      "fingerprint": "a825a94d82d863858ac13cef3a5f886ab430d96e",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3191": {
+      "fingerprint": "30b955c5bc239f491efdb541d0542c20b9096037",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3072": {
+      "fingerprint": "8f5ead23e4af1217fd07dd1b8dca6b34a9bfe4be",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=1325": {
+      "fingerprint": "b8c37f2252f143fd3187c256129ef94aa80e9b7d",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=726": {
+      "fingerprint": "426e84fbb5a718a49832c6b4bf1e84009e56f094",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2437": {
+      "fingerprint": "0c36dd420eae20d248a64e1619547433c2488588",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=962": {
+      "fingerprint": "bbded46301390aa627fed8c5eb42ad51593b3598",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=725": {
+      "fingerprint": "4cfee3e36ae91e4cd8508375eab68fb1c9505b76",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3270": {
+      "fingerprint": "94784fd8cb41f3c706392ab2c3be6269ae6a9132",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3238": {
+      "fingerprint": "a38c074887203983a7337737e71cc5eecba5ad89",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3031": {
+      "fingerprint": "59009f83de89adf16be215b8f52436d9d32f8cba",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=2283": {
+      "fingerprint": "3126d8cbb074b475bd8b3d5dd3940e441d086bd8",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=727": {
+      "fingerprint": "c8c41eec019e3875837be46a10f765620ce5a433",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3093": {
+      "fingerprint": "8a6a4f4df7abe3be97c97cb9b0cfbd833187ab51",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3287": {
+      "fingerprint": "05998a0c45f3b77f7106455cf4498cc1a01428d6",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3263": {
+      "fingerprint": "e4f46500ef2ff95c325217efd71e4e9d2ae0aaad",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3236": {
+      "fingerprint": "99a83eef8ab188b4369ae8533baf9aa33517e829",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3083": {
+      "fingerprint": "39a8638176b61a8139f2176003d0d89e486a3b6f",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3070": {
+      "fingerprint": "cf1c28ad24e03fd0808227adb4dc21d1f2a693f6",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=728": {
+      "fingerprint": "5e022a693c8af730ba9693a85024ad39abcf5593",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3180": {
+      "fingerprint": "eb7ae10d3c977da8326d7bfae7d6cdb443d2080e",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3122": {
+      "fingerprint": "a82ac58183b73fc54c14beb61cd985120327176f",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3186": {
+      "fingerprint": "5607f34c6d72cd02151a2d572786809492e5d977",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3275": {
+      "fingerprint": "262606ebf056832ae884bd53b7b65599a0b4dbb6",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3267": {
+      "fingerprint": "95db075c93465ae795a323ecbbc806b63a75c16f",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3266": {
+      "fingerprint": "057a4e4369483add01246c0ccd910442afbe637a",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3081": {
+      "fingerprint": "755d7294dcda23b4e68ba00ac6337a7187d9f196",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3279": {
+      "fingerprint": "595d0135e313ca616c4434e9de1a6489ba4f33fa",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3163": {
+      "fingerprint": "285f6711c62bd75b6ae24e97bc3e22ceedae209b",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3173": {
+      "fingerprint": "e45b57eac58146db5b800c5ed488775b48e86f28",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    },
+    "https://instantfunk.kr/product/detail.html?product_no=3171": {
+      "fingerprint": "324028f46c24879919cd984cd298b56aeacd36aa",
+      "first_seen": "2026-06-26 16:42:49",
+      "last_seen": "2026-06-26 16:42:49",
+      "period": "2026H1"
+    }
+  }
+}

@@ -107,12 +107,32 @@ CATALOG_ENTRIES: list[tuple[str, str, str, str, str]] = [
     ("aftermonday-033-004", "디자이너브랜드", "애프터먼데이", "카테고리004", "https://aftermonday.com/shop/shopbrand.html?xcode=033&mcode=004&type=Y"),
     ("aftermonday-033-014", "디자이너브랜드", "애프터먼데이", "카테고리014", "https://aftermonday.com/shop/shopbrand.html?xcode=033&mcode=014&type=Y"),
     ("lowtide-45", "디자이너브랜드", "로우타이드", "카테고리", "https://lowtideofficial.com/product/list.html?cate_no=45"),
+    # 디자이너 - 2차 신규 요청
+    ("deinet-43", "디자이너브랜드", "다이닛", "전체", "https://deinet.co.kr/category/shop/43/"),
+    ("matinkim-26", "디자이너브랜드", "마뗑킴", "카테고리26", "https://matinkim.com/product/list.html?cate_no=26"),
+    ("matinkim-27", "디자이너브랜드", "마뗑킴", "카테고리27", "https://matinkim.com/product/list.html?cate_no=27"),
+    ("matinkim-28", "디자이너브랜드", "마뗑킴", "카테고리28", "https://matinkim.com/product/list.html?cate_no=28"),
+    ("matinkim-42", "디자이너브랜드", "마뗑킴", "카테고리42", "https://matinkim.com/product/list.html?cate_no=42"),
+    ("instantfunk-24", "디자이너브랜드", "인스턴트펑크", "전체", "https://instantfunk.kr/category/shop/24/"),
+    ("orr-clothing-all", "디자이너브랜드", "ORR", "의류 전체", "https://orr.store/collections/clothing-all"),
+    ("cerric-100", "디자이너브랜드", "세릭", "전체", "https://cerric.co/category/all/100/"),
+    ("thebarnnet-416", "디자이너브랜드", "더바넷", "전체", "https://the-barnnet.com/category/all/416/"),
+    ("mangomanyplease-50", "디자이너브랜드", "망고매니플리즈", "전체", "https://mangomanyplease.com/product/list.html?cate_no=50"),
+    ("brendabrenden-191", "디자이너브랜드", "브렌다브랜든", "전체", "https://brendabrenden.com/category/shop/191/"),
+    ("poev-26", "디자이너브랜드", "포에브", "전체", "https://poev.kr/product/list.html?cate_no=26"),
+    ("nicknicole-25", "디자이너브랜드", "닉앤니콜", "전체", "https://www.nicknicole.kr/product/list.html?cate_no=25"),
+    ("safarispot-288", "디자이너브랜드", "사파리스팟", "카테고리288", "https://safarispot.kr/product/list.html?cate_no=288"),
+    ("safarispot-98", "디자이너브랜드", "사파리스팟", "카테고리98", "https://safarispot.kr/product/list.html?cate_no=98"),
+    ("safarispot-290", "디자이너브랜드", "사파리스팟", "카테고리290", "https://safarispot.kr/product/list.html?cate_no=290"),
+    ("safarispot-289", "디자이너브랜드", "사파리스팟", "카테고리289", "https://safarispot.kr/product/list.html?cate_no=289"),
 ]
 
 
 def entry_to_brand(entry: tuple[str, str, str, str, str]) -> dict:
     brand_id, category, group, name, url = entry
     crawler_id = detect_crawler_id(url)
+    if brand_id == "thebarnnet-416":
+        crawler_id = "cafe24"
     if brand_id.startswith("barnet"):
         crawler_id = "barnet"
     return {
