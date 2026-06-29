@@ -57,34 +57,31 @@ def format_price(raw, currency: str = "KRW") -> str:
     except ValueError:
         return s
 
-# ── 표준 26컬럼 (출력 순서 고정) ────────────────────────────────────────────
+# ── SIMPLE 컬럼 (출력 순서 고정) ─────────────────────────────────────────────
+# 필수/플랫폼 필드를 앞에 배치하고, 값이 있는 부가 데이터 컬럼은 뒤에 유지한다.
 SIMPLE_COLUMNS = [
+    # [플랫폼]
     "platform",
     "is_ranking",
     "rank",
     "brand",
-    "brand_likes",
+    # [필수]
     "main_category",
     "category",
     "gender",
-    "product_detail_url",
     "product_name",
-    "color",
-    "color_chip",
+    "product_detail_url",
     "thumbnail",
-    "likes",
-    "views",
-    "details",
-    "material",
-    "current_price",
     "regular_price",
+    "current_price",
     "discount_rate",
+    "crawled_at",
+    # [부가 데이터]
+    "color",
+    "material",
+    "details",
     "rating",
     "reviews",
-    "sales",
-    "manufacture_date",
-    "crawled_at",
-    "reorder",
 ]
 
 # 한글 레이블 (UI 헤더)
@@ -93,28 +90,21 @@ SIMPLE_COLUMN_LABELS = {
     "is_ranking":         "랭킹여부",
     "rank":               "순위",
     "brand":              "브랜드",
-    "brand_likes":        "브랜드좋아요",
     "main_category":      "메인카테고리",
     "category":           "카테고리",
     "gender":             "성별",
-    "product_detail_url": "상품링크",
     "product_name":       "상품명",
-    "color":              "컬러",
-    "color_chip":         "컬러칩",
+    "product_detail_url": "상품링크",
     "thumbnail":          "이미지",
-    "likes":              "좋아요",
-    "views":              "조회수",
-    "details":            "상세설명",
-    "material":           "소재",
-    "current_price":      "판매가",
     "regular_price":      "정상가",
+    "current_price":      "판매가",
     "discount_rate":      "할인율",
+    "crawled_at":         "수집일",
+    "color":              "컬러",
+    "material":           "소재",
+    "details":            "상세설명",
     "rating":             "평점",
     "reviews":            "리뷰수",
-    "sales":              "판매량",
-    "manufacture_date":   "제조일",
-    "crawled_at":         "수집일",
-    "reorder":            "재입고차수",
 }
 
 # ── CSV 출력 컬럼 (파일 저장용) ──────────────────────────────────────────────
@@ -243,11 +233,150 @@ def today_str() -> str:
     return datetime.now().strftime("%Y%m%d")
 
 
+# ── 가격/할인율 정규화 ───────────────────────────────────────────────────────
+
+def _to_int_price(raw) -> int | None:
+    """가격 문자열(₩89,900 / 89900 / 89.90) → 정수. 실패 시 None."""
+    if raw is None:
+        return None
+    s = re.sub(r"[^\d.]", "", str(raw))
+    if not s:
+        return None
+    try:
+        return int(round(float(s))) if "." in s else int(s)
+    except ValueError:
+        return None
+
+
+def normalize_prices(regular, current, discount, currency: str = "KRW") -> tuple[str, str, str]:
+    """가격 3종을 일관 규칙으로 정규화해서 (regular, current, discount_rate) 반환.
+
+    규칙:
+    - regular_price: 항상 정가(원가). 가격이 하나라도 있으면 채운다.
+    - current_price: 할인 중일 때만 채운다 (할인 없으면 빈값).
+    - discount_rate: 할인 중일 때만 regular/current 비교로 계산한 정수(%).
+    - 정가가 없고 할인율만 있으면 current/할인율로 정가를 역산해 복원한다.
+    """
+    r = _to_int_price(regular)
+    c = _to_int_price(current)
+    d = _to_int_price(discount)  # 할인율(%) 정수
+
+    # 정가가 없거나 current 이하인데 할인율이 있으면 정가 역산
+    if c is not None and d and d > 0 and (r is None or r <= c):
+        try:
+            r = int(round(c / (1 - d / 100)))
+        except ZeroDivisionError:
+            r = None
+
+    if r is not None and c is not None and c < r:
+        # 진짜 할인
+        reg_out, cur_out = r, c
+        disc_out = round((r - c) / r * 100)
+    else:
+        # 할인 아님 → 정가만 채우고 current/할인율 비움
+        reg_out = r if r is not None else c
+        cur_out = None
+        disc_out = None
+
+    def _fmt(v):
+        return format_price(v, currency) if v is not None else ""
+
+    return _fmt(reg_out), _fmt(cur_out), (str(disc_out) if disc_out else "")
+
+
+# ── 성별/플랫폼 추론 ─────────────────────────────────────────────────────────
+
+# 멀티브랜드 플랫폼 크롤러 → 표기 플랫폼명. (그 외 단일 브랜드 사이트는 platform 비움)
+PLATFORM_DISPLAY = {
+    "29cm": "29CM",
+    "musinsa": "무신사",
+    "wconcept": "W컨셉",
+}
+
+
+def infer_gender(*texts: str) -> str:
+    """URL/그룹/카테고리 등 힌트 텍스트에서 성별 추론. 상품명은 오탐 우려로 제외."""
+    blob = " ".join(t for t in texts if t)
+    if "여성" in blob:
+        return "여성"
+    if "남성" in blob:
+        return "남성"
+    if "공용" in blob or "유니섹스" in blob:
+        return "공용"
+    low = blob.lower()
+    if re.search(r"wom[ae]n|female|ladies|girl|gf=f|womenswear|womanswear", low):
+        return "여성"
+    if re.search(r"(?:^|[^ow])men|/men|menswear|gf=m|\bmale\b", low):
+        return "남성"
+    if re.search(r"unisex|kids|baby", low):
+        return "공용"
+    return ""
+
+
+def normalize_platform(crawler_id: str | None, current: str = "") -> str:
+    """멀티브랜드 플랫폼이면 표기명, 단일 브랜드 사이트면 빈값."""
+    if crawler_id and crawler_id in PLATFORM_DISPLAY:
+        return PLATFORM_DISPLAY[crawler_id]
+    return ""
+
+
+_PLACEHOLDER_NAME = re.compile(r"^(카테고리\s*\d+|전체|기타)$")
+
+
+def finalize_row(
+    row: dict,
+    *,
+    crawler_id: str | None = None,
+    brand_id: str = "",
+    default_url: str = "",
+    group: str = "",
+    name: str = "",
+    currency: str = "KRW",
+) -> dict:
+    """필수 스키마를 강제하는 행 후처리 (저장/마이그레이션 공통).
+
+    - 가격/할인율 정규화
+    - gender 비었으면 URL/그룹/카테고리 힌트로 보강
+    - platform: 플랫폼 크롤러만 표기명, 단일 브랜드는 빈값
+    - is_ranking 기본 false, rank는 랭킹일 때만 유지
+    - main_category/category 둘 다 비면 브랜드명으로 보강
+    - crawled_at 비면 오늘 날짜
+    """
+    reg, cur, disc = normalize_prices(
+        row.get("regular_price"), row.get("current_price"), row.get("discount_rate"), currency
+    )
+    row["regular_price"], row["current_price"], row["discount_rate"] = reg, cur, disc
+
+    gender = normalize_gender(_clean(row.get("gender", "")))
+    if not gender:
+        gender = infer_gender(
+            brand_id, default_url, group, name,
+            _clean(row.get("main_category", "")), _clean(row.get("category", "")),
+        )
+    row["gender"] = gender
+
+    row["platform"] = normalize_platform(crawler_id, _clean(row.get("platform", "")))
+
+    is_ranking = _clean(row.get("is_ranking", "")).lower()
+    row["is_ranking"] = "true" if is_ranking == "true" else "false"
+    if row["is_ranking"] != "true":
+        row["rank"] = ""
+
+    if not _clean(row.get("main_category", "")) and not _clean(row.get("category", "")):
+        nm = _clean(name)
+        if nm and not _PLACEHOLDER_NAME.match(nm):
+            row["category"] = nm
+
+    if not _clean(row.get("crawled_at", "")):
+        row["crawled_at"] = today_yymmdd()
+
+    return row
+
+
 def make_product_row(currency: str = "KRW", **kwargs) -> dict:
-    """표준 26컬럼 행 생성.
+    """SIMPLE 컬럼 행 생성.
     - gender 한글 변환
-    - discount_rate 자동 계산 (current < regular 일 때)
-    - current_price / regular_price → 통화 기호 + 천단위 포맷 (예: ₩89,900)
+    - 가격/할인율 정규화 (normalize_prices: 정가 항상, 판매가/할인율은 할인 시만)
     """
     row = empty_row()
     row["is_ranking"] = "false"
@@ -257,20 +386,9 @@ def make_product_row(currency: str = "KRW", **kwargs) -> dict:
     if row["gender"]:
         row["gender"] = normalize_gender(row["gender"])
 
-    # discount_rate 자동 계산 (포맷 전 숫자 상태에서)
-    if not row["discount_rate"] and row["current_price"] and row["regular_price"]:
-        try:
-            c = int(re.sub(r"[^\d]", "", row["current_price"]))
-            r = int(re.sub(r"[^\d]", "", row["regular_price"]))
-            if r > 0 and c < r:
-                row["discount_rate"] = str(round((r - c) / r * 100))
-        except (ValueError, ZeroDivisionError):
-            pass
-
-    # 가격 통화 포맷 적용
-    for field in ("current_price", "regular_price"):
-        if row[field]:
-            row[field] = format_price(row[field], currency)
+    row["regular_price"], row["current_price"], row["discount_rate"] = normalize_prices(
+        row["regular_price"], row["current_price"], row["discount_rate"], currency
+    )
 
     return row
 

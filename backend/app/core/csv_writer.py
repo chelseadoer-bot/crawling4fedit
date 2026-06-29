@@ -78,22 +78,7 @@ def save_standard_csv(products: list[dict], output_path: Path) -> None:
 # ── 레거시 호환: simple CSV (기존 코드가 save_simple_csv를 호출) ──────────────
 
 def standard_to_simple(row: dict) -> dict:
-    """구 포맷 row → 표준 26컬럼 SIMPLE_COLUMNS row"""
-    current = _clean(
-        row.get("current_price") or row.get("판매가") or row.get("가격") or row.get("price_sale") or ""
-    )
-    regular = _clean(
-        row.get("regular_price") or row.get("정상가") or row.get("price_original") or current
-    )
-    discount = _clean(row.get("discount_rate") or row.get("할인율") or "")
-    if not discount and current and regular:
-        try:
-            c, r = int(current), int(regular)
-            if r > 0 and c < r:
-                discount = str(round((r - c) / r * 100))
-        except (ValueError, ZeroDivisionError):
-            pass
-
+    """구/표준 포맷 row → SIMPLE_COLUMNS row (컬럼 매핑만; 값 정규화는 finalize_row가 담당)"""
     gender_raw = _clean(row.get("gender") or row.get("성별") or "")
 
     return {
@@ -101,28 +86,21 @@ def standard_to_simple(row: dict) -> dict:
         "is_ranking":         _clean(row.get("is_ranking") or "false"),
         "rank":               _clean(row.get("rank") or ""),
         "brand":              _clean(row.get("brand") or row.get("브랜드") or ""),
-        "brand_likes":        _clean(row.get("brand_likes") or ""),
         "main_category":      _clean(row.get("main_category") or ""),
         "category":           _clean(row.get("category") or row.get("카테고리") or ""),
         "gender":             _normalize_gender(gender_raw),
-        "product_detail_url": _clean(row.get("product_detail_url") or row.get("상품링크") or ""),
         "product_name":       _clean(row.get("product_name") or row.get("상품명") or ""),
-        "color":              _clean(row.get("color") or row.get("color_text") or row.get("컬러") or ""),
-        "color_chip":         _clean(row.get("color_chip") or ""),
+        "product_detail_url": _clean(row.get("product_detail_url") or row.get("상품링크") or ""),
         "thumbnail":          _clean(row.get("thumbnail") or row.get("front_images_url") or row.get("이미지") or ""),
-        "likes":              _clean(row.get("likes") or ""),
-        "views":              _clean(row.get("views") or ""),
-        "details":            _clean(row.get("details") or row.get("상세설명") or ""),
+        "regular_price":      _clean(row.get("regular_price") or row.get("정상가") or row.get("price_original") or ""),
+        "current_price":      _clean(row.get("current_price") or row.get("판매가") or row.get("가격") or row.get("price_sale") or ""),
+        "discount_rate":      _clean(row.get("discount_rate") or row.get("할인율") or ""),
+        "crawled_at":         _clean(row.get("crawled_at") or row.get("수집일시") or ""),
+        "color":              _clean(row.get("color") or row.get("color_text") or row.get("컬러") or ""),
         "material":           _clean(row.get("material") or row.get("소재") or ""),
-        "current_price":      current,
-        "regular_price":      regular,
-        "discount_rate":      discount,
+        "details":            _clean(row.get("details") or row.get("상세설명") or ""),
         "rating":             _clean(row.get("rating") or row.get("평점") or ""),
         "reviews":            _clean(row.get("reviews") or row.get("리뷰수") or ""),
-        "sales":              _clean(row.get("sales") or ""),
-        "manufacture_date":   _clean(row.get("manufacture_date") or ""),
-        "crawled_at":         _clean(row.get("crawled_at") or row.get("수집일시") or ""),
-        "reorder":            _clean(row.get("reorder") or ""),
     }
 
 

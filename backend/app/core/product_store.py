@@ -11,8 +11,8 @@ from datetime import datetime
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 
-from app.brands.registry import PROJECT_ROOT
-from app.core.csv_schema import SIMPLE_COLUMNS, _clean, today_str
+from app.brands.registry import PROJECT_ROOT, get_brand_meta, resolve_crawler_id
+from app.core.csv_schema import SIMPLE_COLUMNS, _clean, finalize_row, today_str
 from app.core.csv_writer import _write_csv, col_exists_as_standard, standard_to_simple
 
 _TRACK_FIELDS = (
@@ -25,8 +25,26 @@ _TRACK_FIELDS = (
     "category",
     "rating",
     "reviews",
-    "sales",
 )
+
+
+def enforce_schema(brand_id: str, rows: list[dict]) -> list[dict]:
+    """브랜드 메타를 활용해 모든 행에 필수 스키마(가격/성별/플랫폼/카테고리)를 강제."""
+    meta = get_brand_meta(brand_id) or {}
+    crawler_id = resolve_crawler_id(meta) if meta else None
+    default_url = meta.get("default_url") or ""
+    group = meta.get("group") or ""
+    name = meta.get("name") or ""
+    for row in rows:
+        finalize_row(
+            row,
+            crawler_id=crawler_id,
+            brand_id=brand_id,
+            default_url=default_url,
+            group=group,
+            name=name,
+        )
+    return rows
 
 
 def period_key(dt: datetime | None = None) -> str:
@@ -213,6 +231,7 @@ class SaveResult:
 def save_products(brand_id: str, products: list[dict], output_path: Path) -> SaveResult:
     """전체 스냅샷(latest) + 증분(delta) + 6개월 catalog 저장."""
     rows = normalize_rows(products)
+    enforce_schema(brand_id, rows)
     now_dt = datetime.now()
     now = now_dt.strftime("%Y-%m-%d %H:%M:%S")
     current_period = period_key(now_dt)
