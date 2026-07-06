@@ -22,5 +22,6 @@ Thumbs.db
 .idea/
 *.log
 
-# Build output (keep CSV samples optional - uncomment to ignore all crawl data)
-# data/output/
+# Crawl output — 서버가 런타임에 생성/갱신하므로 추적하지 않음
+# (추적하면 배포 시 서버 크롤 결과와 pull 충돌이 발생)
+data/output/
