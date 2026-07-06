@@ -8,7 +8,7 @@ import re
 import time
 import urllib.error
 import urllib.request
-from urllib.parse import urlparse
+from urllib.parse import parse_qs, urlparse
 
 from playwright.sync_api import sync_playwright
 
@@ -22,6 +22,11 @@ DEFAULT_API_KEY = "VWmkUPgs6g2fviPZ5JQFQ3pERP4tIXv/J2jppLqSRBk="
 PAGE_SIZE = 60
 MAX_PAGES = int(os.environ.get("WCONCEPT_MAX_PAGES", "30"))
 PRODUCT_BASE = "https://www.wconcept.co.kr"
+
+# ── 베스트(랭킹) API ─────────────────────────────────────────────────────────
+BEST_API = "https://gw-front.wconcept.co.kr/display/api/best/v1/product"
+BEST_PAGE_SIZE = 200
+BEST_MAX_PAGES = int(os.environ.get("WCONCEPT_BEST_MAX_PAGES", "5"))
 
 _api_key_cache: str | None = None
 
@@ -134,6 +139,83 @@ def parse_item(item: dict, crawled_at: str) -> dict | None:
     )
 
 
+# ── 베스트(랭킹) 처리 ────────────────────────────────────────────────────────
+
+def is_best_url(url: str) -> bool:
+    p = urlparse(url)
+    return "/best" in p.path.lower() or "displaycategorytype" in p.query.lower()
+
+
+def parse_best_codes(url: str) -> tuple[str, str]:
+    """best URL → (depth1Code, depth2Code)."""
+    qs = parse_qs(urlparse(url).query)
+    depth1 = (qs.get("displayCategoryType") or ["10101"])[0]
+    depth2 = (qs.get("displaySubCategoryType") or ["ALL"])[0]
+    return depth1, depth2
+
+
+def fetch_best_page(depth1: str, depth2: str, page_no: int, api_key: str) -> dict:
+    body = json.dumps(
+        {
+            "custNo": "0",
+            "domain": "WOMEN",
+            "genderType": "all",
+            "dateType": "daily",
+            "ageGroup": "all",
+            "depth1Code": depth1,
+            "depth2Code": depth2,
+            "pageSize": BEST_PAGE_SIZE,
+            "pageNo": page_no,
+        }
+    ).encode()
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "https://display.wconcept.co.kr/",
+        "display-api-key": api_key,
+        "devicetype": "PC",
+        "gendertype": "ALL",
+        "Content-Type": "application/json; charset=UTF-8",
+    }
+    req = urllib.request.Request(BEST_API, data=body, headers=headers, method="POST")
+    with urllib.request.urlopen(req, timeout=60) as resp:
+        payload = json.loads(resp.read().decode())
+    if payload.get("result") != "SUCCESS":
+        raise RuntimeError(payload.get("message") or "W컨셉 베스트 API 오류")
+    return payload["data"]
+
+
+def parse_best_item(item: dict, crawled_at: str, rank: int) -> dict | None:
+    name = (item.get("itemName") or "").strip()
+    if not name:
+        return None
+    regular = item.get("customerPrice") or item.get("salePrice") or ""
+    current = item.get("finalPrice") or item.get("salePrice") or ""
+    itemcd = item.get("itemCd") or ""
+    url = f"{PRODUCT_BASE}/Product/{itemcd}" if itemcd else (item.get("landingUrl") or "")
+    cat = " ".join(
+        x for x in (item.get("categoryDepthName2"), item.get("categoryDepthName3")) if x
+    ).strip()
+    return make_product_row(
+        platform="W컨셉",
+        is_ranking="true",
+        rank=str(rank),
+        brand=item.get("brandNameKr") or item.get("brandNameEn") or "",
+        main_category=item.get("categoryDepthName1") or "",
+        category=cat,
+        gender="women",
+        product_name=name,
+        product_detail_url=url,
+        thumbnail=item.get("productImageUrl") or "",
+        regular_price=str(int(regular)) if regular else "",
+        current_price=str(int(current)) if current else "",
+        discount_rate=str(item.get("finalDiscountRate") or ""),
+        rating=str(item.get("reviewScore") or ""),
+        reviews=str(item.get("reviewCnt") or ""),
+        crawled_at=crawled_at,
+    )
+
+
 class WconceptCrawler(BaseBrandCrawler):
     brand_id = "wconcept"
     brand_name = "WCONCEPT"
@@ -148,6 +230,9 @@ class WconceptCrawler(BaseBrandCrawler):
     ) -> list[dict]:
         if not url:
             raise ValueError("URL이 필요합니다.")
+
+        if is_best_url(url):
+            return self._crawl_best(url, on_progress)
 
         _, api_path = parse_category(url)
         referer = url if url.startswith("http") else f"https://display.wconcept.co.kr/{url}"
@@ -194,4 +279,53 @@ class WconceptCrawler(BaseBrandCrawler):
 
         if not products:
             raise RuntimeError(f"W컨셉 상품을 수집하지 못했습니다: {url}")
+        return products
+
+    def _crawl_best(self, url: str, on_progress=None) -> list[dict]:
+        """베스트(랭킹) 페이지 수집: is_ranking=true, rank 부여."""
+        depth1, depth2 = parse_best_codes(url)
+        api_key = resolve_api_key()
+        crawled_at = today_yymmdd()
+        products: list[dict] = []
+        seen: set[str] = set()
+        page_no = 1
+        total_pages = BEST_MAX_PAGES
+
+        while page_no <= min(total_pages, BEST_MAX_PAGES):
+            try:
+                data = fetch_best_page(depth1, depth2, page_no, api_key)
+            except urllib.error.HTTPError as exc:
+                if exc.code in (401, 403) and api_key == DEFAULT_API_KEY:
+                    global _api_key_cache
+                    _api_key_cache = None
+                    api_key = resolve_api_key()
+                    data = fetch_best_page(depth1, depth2, page_no, api_key)
+                else:
+                    raise
+
+            total_pages = min(int(data.get("totalPages") or 1), BEST_MAX_PAGES)
+            batch = data.get("content") or []
+            if not batch:
+                break
+
+            for i, item in enumerate(batch):
+                rank = (page_no - 1) * BEST_PAGE_SIZE + i + 1
+                row = parse_best_item(item, crawled_at, rank)
+                if not row:
+                    continue
+                key = row.get("product_detail_url") or row.get("product_name")
+                if key in seen:
+                    continue
+                seen.add(key)
+                products.append(row)
+
+            if on_progress:
+                on_progress(len(products), page_no)
+            if page_no >= total_pages:
+                break
+            page_no += 1
+            time.sleep(0.15)
+
+        if not products:
+            raise RuntimeError(f"W컨셉 베스트 상품을 수집하지 못했습니다: {url}")
         return products

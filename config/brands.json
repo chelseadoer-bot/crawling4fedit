@@ -1051,6 +1051,21 @@
       "schedule_group": "manual"
     },
     {
+      "id": "wconcept-best-10101",
+      "category": "SPA",
+      "group": "W컨셉",
+      "name": "베스트 랭킹(여성)",
+      "enabled": true,
+      "source_site": "display.wconcept.co.kr",
+      "crawl_type": "dynamic",
+      "crawler_id": "wconcept",
+      "default_url": "https://display.wconcept.co.kr/rn/best?displayCategoryType=10101&displaySubCategoryType=ALL&gnbType=Y",
+      "output_dir": "data/output/wconcept-best-10101",
+      "last_crawled_at": null,
+      "last_status": null,
+      "schedule_group": "manual"
+    },
+    {
       "id": "cos-new",
       "category": "SPA",
       "group": "COS",
