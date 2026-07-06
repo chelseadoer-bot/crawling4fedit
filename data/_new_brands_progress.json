@@ -1,0 +1,599 @@
+{
+  "done": {
+    "아모멘토": {
+      "targets": 5,
+      "items": 175
+    },
+    "렉토": {
+      "targets": 1,
+      "items": 172
+    },
+    "마르디 메크르디": {
+      "targets": 1,
+      "items": 689
+    },
+    "앤더슨벨": {
+      "targets": 9,
+      "items": 291
+    },
+    "르917": {
+      "targets": 1,
+      "items": 200,
+      "note": "cate_no=94 (SHOP-WOMEN) 으로 재수집 성공. 기존 cate_no=105는 0건이었음"
+    },
+    "유즈": {
+      "targets": 1,
+      "items": 16,
+      "note": "yuse.cafe24.com VIEW-ALL(cate_no=221), 소규모 브랜드 전체 상품 16건"
+    },
+    "루에브르": {
+      "targets": 1,
+      "items": 161,
+      "note": "maisonloeuvre.com Ready To Wear(cate_no=23)"
+    },
+    "앤유": {
+      "targets": 3,
+      "items": 369,
+      "note": "andyou.style Tops(194)=166건 + Bottoms(157)=151건 + Dresses(164)=52건"
+    },
+    "시엔느": {
+      "targets": 2,
+      "items": 119,
+      "note": "sienneboutique.com Top(44)=41건 + All(182)=78건(가방포함 주의)"
+    },
+    "닐바이피": {
+      "targets": 1,
+      "items": 729,
+      "note": "nilbyp.com Shop Women(cate_no=43)"
+    },
+    "던스트": {
+      "targets": 1,
+      "items": 659,
+      "note": "dunststudio.com WOMEN(cate_no=24)"
+    },
+    "더티스": {
+      "targets": 3,
+      "items": 61,
+      "note": "thetisofficial.com Top(27)=28건 + Bottom(28)=18건 + Dress(42)=15건"
+    },
+    "아바몰리": {
+      "targets": 1,
+      "items": 683,
+      "note": "avamolli.com WOMEN(cate_no=62)"
+    },
+    "룩캐스트": {
+      "targets": 1,
+      "items": 795,
+      "note": "lookast.com ALL(cate_no=50)"
+    },
+    "문선": {
+      "targets": 1,
+      "items": 579,
+      "note": "moon-sun.co.kr 여성(cate_no=470), 의류만, cafe24"
+    },
+    "메종마레": {
+      "targets": 1,
+      "items": 464,
+      "note": "maisonmarais.com Shop All(cate_no=43 /category/shop-all/43/), 의류만, cafe24"
+    },
+    "오버듀후레어": {
+      "targets": 1,
+      "items": 87,
+      "note": "overdueflair.cafe24.com 2026 SUMMER(cate_no=175), 의류만 (SHOP cate_no=97은 가방 포함)"
+    },
+    "쟈니헤잇재즈": {
+      "targets": 1,
+      "items": 381,
+      "note": "johnnyhates.cafe24.com New Arrivals(cate_no=54). 개별 카테고리(56,150,57,58,59)는 0건"
+    },
+    "플로우움": {
+      "targets": 1,
+      "items": 502,
+      "note": "flowoom.com SHOP(cate_no=138), 의류만(ACC=헤어 잡화만), cafe24"
+    },
+    "뮤제": {
+      "targets": 3,
+      "items": 138,
+      "note": "musee-official.com: OUTERWEAR(184)=2건 + 신상(128)=85건 + ESSENTIEL(186)=51건. cafe24. 가방 카테고리 별도 존재"
+    },
+    "모한": {
+      "targets": 1,
+      "items": 723,
+      "note": "mohan.kr SHOP(cate_no=212), 의류만(OUTER/TOP/DRESS/BOTTOM/ACC), cafe24"
+    },
+    "보카바카": {
+      "targets": 5,
+      "items": 66,
+      "note": "vocavaca.com 의류 카테고리별: OUTER(132)=11 + TOP(71)=20 + KNIT(317)=3 + BOTTOM(124)=15 + DRESS(45)=17. 가방 별도"
+    },
+    "인사일런스 우먼": {
+      "targets": 1,
+      "items": 197,
+      "note": "insilence.co.kr /product/woman_list.html?cate_no=348, 의류만, cafe24"
+    },
+    "시에": {
+      "targets": 5,
+      "items": 368,
+      "note": "sie-official.kr: Outerwear(55)=54 + Tops(56)=206 + Dresses(57)=29 + Pants(58)=33 + Skirts(84)=46. cafe24"
+    },
+    "시티브리즈": {
+      "targets": 1,
+      "items": 19,
+      "note": "citybreeze.co.kr WOMEN(cate_no=772), 의류만, cafe24"
+    },
+    "유메르": {
+      "targets": 1,
+      "items": 69,
+      "note": "umer.co.kr VIEW ALL(cate_no=186), 의류만(가방/신발 cate_no=74 별도), cafe24"
+    },
+    "메이비베이비": {
+      "targets": 1,
+      "items": 364,
+      "note": "maybe-baby.co.kr cate_no=33 (전체 의류), 신발(cate_no=29) 별도, cafe24"
+    },
+    "시눈": {
+      "targets": 1,
+      "items": 37,
+      "note": "sinoon.co.kr ALL(cate_no=502), 의류 전체, cafe24"
+    },
+    "론론": {
+      "targets": 1,
+      "items": 2083,
+      "note": "ronron.co.kr SHOP(cate_no=23), 여성 의류 전체, cafe24"
+    },
+    "마가린핑거스": {
+      "targets": 1,
+      "items": 470,
+      "note": "margarinfingers.com SHOP(cate_no=241), 의류 전체, cafe24"
+    },
+    "키르시": {
+      "targets": 1,
+      "items": 1146,
+      "note": "kirsh.co.kr SHOP ALL(cate_no=217), 의류 전체(남녀공용 포함), cafe24"
+    },
+    "오아이오아이": {
+      "targets": 4,
+      "items": 706,
+      "note": "oioicollection.com TOP(42)=291 + DRESS(43)=28 + BOTTOM(44)=203 + OUTER(48)=184. acc(45) 제외. cafe24"
+    },
+    "아비에무아": {
+      "targets": 1,
+      "items": 342,
+      "note": "aviemuah.com 여성(cate_no=277), 의류+소량 가방 4건 포함, cafe24"
+    },
+    "오어": {
+      "targets": 6,
+      "items": 437,
+      "note": "ore-clothing.com: Top(138)=163 + Bottom(150)=134 + Dress(139)=20 + Knit(136)=51 + Outer(137)=49 + Denim(140)=20. 가방(145) 제외. cafe24"
+    },
+    "파사드패턴": {
+      "targets": 1,
+      "items": 829,
+      "note": "facadepattern.co.kr ALL(cate_no=62), 의류 전체, cafe24"
+    },
+    "틸아이다이": {
+      "targets": 1,
+      "items": 634,
+      "note": "tillidie.co.kr cate_no=281 (전체 의류), cafe24"
+    },
+    "르메메": {
+      "targets": 1,
+      "items": 416,
+      "note": "lememe.co.kr ALL(cate_no=48), 의류+에코백 소량(3건) 포함, cafe24"
+    },
+    "어랜": {
+      "targets": 1,
+      "items": 321,
+      "note": "aaran.co.kr 전체(cate_no=68), cafe24"
+    },
+    "노운베러": {
+      "targets": 1,
+      "items": 1112,
+      "note": "knownbetter.co.kr SHOP(cate_no=23), cafe24"
+    },
+    "포에토": {
+      "targets": 1,
+      "items": 545,
+      "note": "foeto.co.kr SHOP(cate_no=45 /category/shop/45/), cafe24"
+    },
+    "모멧": {
+      "targets": 1,
+      "items": 302,
+      "note": "momet.co.kr SEE-ALL(cate_no=327 /category/see-all/327/), 가방(acc=307) 제외, cafe24"
+    },
+    "공드린": {
+      "targets": 1,
+      "items": 195,
+      "note": "gongderine.co.kr VIEW ALL(cate_no=53 /category/view-all/53/), cafe24"
+    },
+    "아르토": {
+      "targets": 4,
+      "items": 80,
+      "note": "artto.co.kr: OUTER(71)=5 + TOP(73)=44 + SKIRT(103)=16 + PANTS(74)=15, cafe24"
+    },
+    "비터셀즈": {
+      "targets": 1,
+      "items": 422,
+      "note": "bittercells.com VIEW-ALL(cate_no=309 /category/view-all/309/), cafe24"
+    },
+    "쓰리타임즈": {
+      "targets": 2,
+      "items": 126,
+      "note": "threetimes333.com: tops(110) + dresses(16). bags/acc 제외. Shopify"
+    },
+    "미스치프": {
+      "targets": 3,
+      "items": 179,
+      "note": "mischief.co.kr: TOPS(cate_no=317)=120 + BOTTOM(320)=24 + DRESS(321)=35. SHOP(307)=0건(API 차단). cafe24"
+    },
+    "핫핑": {
+      "targets": 4,
+      "items": 1163,
+      "note": "hotping.co.kr: OUTER(229)=97 + TOP(227)=387 + DRESS(26)=227 + PANTS(31)=452. cafe24. 동대문"
+    },
+    "무아무아": {
+      "targets": 4,
+      "items": 172,
+      "note": "muahmuah.co.kr: TOP(27)=79+OUTER(44)=16+BOTTOM(184)=14+Level.5(43)=63. cafe24"
+    },
+    "오드원아웃": {
+      "targets": 3,
+      "items": 63,
+      "note": "oddoneout.co.kr: TOP(25)=41+DRESS(206)=10+BOTTOM(91)=12. cafe24"
+    },
+    "네스티팬시클럽": {
+      "targets": 1,
+      "items": 544,
+      "note": "nastyfancyclub.com: ALL(cate_no=23)=544건. cafe24"
+    },
+    "배드블러드": {
+      "targets": 1,
+      "items": 1269,
+      "note": "badblood.co.kr: WOMEN(cate_no=1771)=1269건. 유니섹스 스트리트. cafe24"
+    },
+    "코드그라피": {
+      "targets": 3,
+      "items": 404,
+      "note": "code-graphy.com: 상의(445)=283+하의(453)=59+아우터(444)=62. 유니섹스. cafe24"
+    },
+    "브라운야드": {
+      "targets": 3,
+      "items": 76,
+      "note": "brownyard.co.kr: 여성아우터(511)=14+여성상의(512)=40+여성하의(513)=22. cafe24"
+    },
+    "파르티멘토": {
+      "targets": 1,
+      "items": 1057,
+      "note": "partimento.com: WOMEN ALL(cate_no=379)=1057건. cafe24"
+    },
+    "노이어": {
+      "targets": 1,
+      "items": 481,
+      "note": "noirer.com: NOIRER FOR WOMEN(cate_no=180)=481건. cafe24"
+    },
+    "모디파이드": {
+      "targets": 1,
+      "items": 392,
+      "note": "modified.co.kr: 전체(cate_no=39)=392건. 가죽 재킷 중심 유니섹스. cafe24"
+    },
+    "모코블링": {
+      "targets": 1,
+      "items": 154,
+      "note": "mocobling.co.kr 신상/전체(cate_no=24)=154건. cafe24"
+    },
+    "고고싱": {
+      "targets": 4,
+      "items": 1082,
+      "note": "ggsing.com: 상의(31)=473+하의(47)=468+아우터(568)=40+제작(329)=101. cafe24"
+    },
+    "스토리나인": {
+      "targets": 4,
+      "items": 613,
+      "note": "storynine.co.kr: 상의(24)=232+원피스(25)=130+아우터(26)=43+바지(750)=208. cafe24"
+    },
+    "오들리워크샵": {
+      "targets": 1,
+      "items": 96,
+      "note": "odlyworkshop.com 전체(cate_no=27)=96건(스카프 2건 포함). cafe24"
+    },
+    "오프닝프로젝트": {
+      "targets": 1,
+      "items": 84,
+      "note": "opening-project.com WOMEN(cate_no=24)=84건. cafe24. 남녀공용 브랜드 여성전용 카테고리"
+    },
+    "토마스모어": {
+      "targets": 3,
+      "items": 137,
+      "note": "thomasmore.co.kr: T-shirts(25)=53+Shirts(26)=50+Pants(28)=34=137건. 남녀공용. cafe24"
+    },
+    "지용킴": {
+      "targets": 1,
+      "items": 280,
+      "note": "jiyongkim.net SHOP(cate_no=24)=280건. 남녀공용 디자이너. cafe24"
+    },
+    "그레일즈": {
+      "targets": 1,
+      "items": 428,
+      "note": "grailz.co.kr SHOP(cate_no=42)=428건. cafe24. WOMEN(cate_no=53) API 차단"
+    },
+    "혜인서": {
+      "targets": 1,
+      "items": 196,
+      "note": "hyeinseo.com collections/all=196건. Shopify"
+    },
+    "산산기어": {
+      "targets": 1,
+      "items": 217,
+      "note": "sansangear.com collections/all=217건. Shopify"
+    },
+    "언더마이카": {
+      "targets": 1,
+      "items": 95,
+      "note": "undermycar.co.kr /shop=95건. imweb"
+    },
+    "99%IS-": {
+      "targets": 1,
+      "items": 533,
+      "note": "99percentis.com SHOP(cate_no=83)=533건. cafe24. 바조우 나인티나인퍼센트이즈"
+    },
+    "본봄": {
+      "targets": 1,
+      "items": 548,
+      "note": "b-o-n-b-o-m.com SHOP(cate_no=42)=548건. 여성 디자이너. cafe24"
+    },
+    "조거쉬": {
+      "targets": 1,
+      "items": 849,
+      "note": "joegush.com SHOP(cate_no=53)=849건. 리메이크/빈티지 재구성. cafe24"
+    },
+    "더오픈프로덕트": {
+      "targets": 1,
+      "items": 604,
+      "note": "open-yy.com SHOP(cate_no=214)=604건. 여성. cafe24"
+    },
+    "구호": {
+      "targets": 1,
+      "items": 614,
+      "note": "ssfshop.com KUHO/WOMEN(dspCtgryNo=SFMA41)=614건. ssfshop 크롤러"
+    },
+    "르베이지": {
+      "targets": 1,
+      "items": 492,
+      "note": "ssfshop.com LEBEIGE/WOMEN(dspCtgryNo=SFMA41)=492건. ssfshop 크롤러"
+    },
+    "띠어리": {
+      "targets": 1,
+      "items": 562,
+      "note": "ssfshop.com Theory/WOMEN(dspCtgryNo=SFMA41)=562건. ssfshop 크롤러"
+    },
+    "스탠드얼론": {
+      "targets": 1,
+      "items": 35,
+      "note": "ssfshop.com STAND-ALONE/WOMEN(dspCtgryNo=SFMA41)=35건. ssfshop 크롤러. 독립몰(stand-alone.co.kr) SSL 인증서 오류 및 406 차단"
+    },
+    "안다르": {
+      "targets": 1,
+      "items": 610,
+      "note": "andar.co.kr 우먼즈(cate_no=2030)=610건. cafe24. K-애슬레저 1위"
+    },
+    "뮬라웨어": {
+      "targets": 1,
+      "items": 177,
+      "note": "mulawear.com 우먼즈(cate_no=905)=177건. cafe24. 애슬레저"
+    },
+    "스컬피그": {
+      "targets": 1,
+      "items": 799,
+      "note": "skullpig.com 우먼즈전체(cate_no=341)=799건. cafe24. 편안한레깅스 3년연속1위"
+    },
+    "에이치덱스": {
+      "targets": 1,
+      "items": 667,
+      "note": "hdex.co.kr WOMEN전체보기(cate_no=1170)=667건. cafe24. 애슬레저"
+    },
+    "원더플레이스": {
+      "targets": 1,
+      "items": 3068,
+      "note": "wonderplace.co.kr WOMEN(cate_no=27)=3068건. cafe24. SPA 멀티브랜드"
+    },
+    "트위": {
+      "targets": 1,
+      "items": 817,
+      "note": "twee.co.kr 전체의류(cate_no=190)=817건. cafe24. 여성 캐주얼"
+    }
+  },
+  "failed": {
+    "아더에러": "자체 개발 몰 — cafe24 API 엔드포인트가 HTML 반환 (봇 차단 또는 자체 플랫폼)",
+    "프론트로우": "자체 공식몰 없음, W컨셉 PB 전용 브랜드 (frontrow.co.kr → wconcept 리다이렉트), wconcept 크롤러 브랜드별 지원 안됨",
+    "유어네임히어": "cafe24 API Data:null 반환 — 해당 도메인에서 API 차단됨",
+    "가이트": "공식몰 URL 확인 불가 — 3회 웹검색에서도 공식 쇼핑몰 발견 안됨",
+    "아르하": "웨딩드레스 전문 브랜드 (arhabridal.co.kr) — 일반 여성 의류 브랜드 아님",
+    "엘바테게브": "가방/신발 전문 브랜드 (elbategev.com) — 의류 카테고리 없음, 크롤링 대상 아님",
+    "더일마": "theilma1001.cafe24.com — 쇼핑 카테고리 Women(0)건, 상품 미등록 상태",
+    "모이프": "moif.co.kr STORE(cate_no=256)에 가방 혼합 — 의류 전용 서브카테고리 URL 확인 불가 (동적 렌더링)",
+    "부에노": "bueno-dress.store 사이트 ECONNREFUSED 접속 불가",
+    "레이첼콕스": "rachelcox.co.kr — 신발 전문 브랜드 (부츠/샌들 등), 의류 카테고리 없음",
+    "랭앤루": "langnlu.com — 자체 플랫폼(cafe24/shopify/makeshop/imweb 아님), 공식몰 7월 15일부로 종료 예정",
+    "리에뜨": "3회 웹검색으로 공식 쇼핑몰 확인 불가 — LIETTE 한국 패션 브랜드 URL 미발견",
+    "5252 바이 오아이오아이": "오아이오아이(oioicollection.com)와 동일 회사/동일 몰 — 오아이오아이로 통합 수집",
+    "에스에스에스알(SSRL)": "ssrl.co.kr — ALL PRODUCT(cate_no=154) 34건 모두 가방/악세서리 브랜드. 의류 카테고리 없음",
+    "오노레": "onore.co.kr — 남성 언더웨어 전문 브랜드. 여성 의류 아님",
+    "임블리": "imvely.com — cafe24 기반이나 의류 카테고리 API 전체 차단(0건). 접근 불가",
+    "난닝구": "naning9.com — 자체 플랫폼(shop/list.php?cate=) 사용. cafe24/shopify/makeshop/imweb 아님",
+    "아뜨랑스": "attrangs.co.kr — 자체 플랫폼(shop/list.php?cate=) 사용. cafe24 서브도메인은 SSL 오류",
+    "로라로라": "rolarola.com — WISA(mywisa.com) 자체 플랫폼. cafe24/shopify/makeshop/imweb 아님",
+    "아웃엑스오": "outxo.com — 자체 플랫폼(New Relic 기반). cafe24 API 404 반환",
+    "칠스": "3회 웹검색으로 공식 쇼핑몰 URL 발견 불가 — CHILLS 한국 패션브랜드 공식몰 미확인",
+    "립인더랩": "3회 웹검색으로 공식 쇼핑몰 URL 발견 불가 — LIP IN THE LAB 공식몰 미확인",
+    "앨리스마샤": "alicemartha.com — cafe24 기반이나 의류 카테고리 없음. 가방(bag) 전문 브랜드",
+    "피스워커": "piece-worker.com — cafe24 기반이나 모든 cate_no에서 Data=null (API 차단)",
+    "소녀나라": "sonyunara.net(cafe24) API 빈 응답(200 but 0 bytes) - API 차단",
+    "육육걸즈": "66girls.co.kr(cafe24) API 빈 응답(200 but 0 bytes) - API 차단",
+    "립합": "liphop.co.kr(cafe24) API 빈 응답(200 but 0 bytes) - API 차단",
+    "다크빅토리": "darkvictory.co.kr - DNS getaddrinfo 실패(도메인 만료/소멸)",
+    "안나앤블루": "annanblue.com - makeshop 기반이나 shopbrand.html 302 리다이렉트로 상품 수집 불가",
+    "아워스코프": "ourscope.co.kr - DNS getaddrinfo 실패(도메인 접속 불가)",
+    "기준": "kijunofficial.cafe24.com - cafe24 API 빈 응답(200 but 0 bytes) - API 차단",
+    "디망쉬": "dimanchestore.com - cafe24 API 빈 응답(200 but 0 bytes) - API 차단",
+    "포허": "forher.co.kr - cafe24 API 빈 응답(200 but 0 bytes) - API 차단",
+    "페이탈리즘": "fatalism.co.kr - cafe24 API 빈 응답(200 but 0 bytes) - API 차단",
+    "레저렉션": "resurrection.co.kr - gnuboard 자체 플랫폼(/gshop/shop/list.php). cafe24/shopify/makeshop/imweb 아님",
+    "아르네": "ARNE 한국 패션 의류 브랜드 공식몰 URL 3회 웹검색 확인 불가 - arne.kr은 스킨케어 브랜드로 동명이인",
+    "시우믹": "siumic.com/siumic.kr 도메인 DNS 접속 불가 - 공식몰 URL 확인 불가",
+    "알투와이": "r2y.co.kr/r2y.kr 도메인 DNS 접속 불가 - 공식몰 URL 확인 불가 (R2W와 혼동)",
+    "보헤미안서울": "bohemseo.com/bohemianseoul.cafe24.com - cafe24 기반이나 모든 cate_no에서 0건(API 차단)",
+    "강혁": "영문몰(en.kanghyuk.net) USD 가격 — 원화 오표기로 비활성",
+    "패브릭컬러지": "fabricology.kr - cafe24 기반이나 API 차단(Result:false). 모든 cate_no에서 0건",
+    "키마": "kiima.co.kr - cafe24 기반이나 API 차단(Result:false). 모든 cate_no에서 0건",
+    "노드아키텍처": "NODE ARCHITECTURE 한국 패션 브랜드 공식몰 URL 3회 웹검색 확인 불가 - 건축사무소와 혼동, 패션브랜드 쇼핑몰 미발견",
+    "블라인드니스": "BLINDNESS - 공식 독립몰 없음, 무신사 스토어만 운영. cafe24/shopify/makeshop/imweb 아님",
+    "서페이서": "SURFACER 한국 패션 브랜드 공식몰 URL 3회 웹검색 확인 불가 - 프라모델 도료 검색결과만 반환",
+    "넛앤볼트": "NUTANDBOLT - 공식 독립몰 없음, 무신사 스토어만 운영. cafe24/shopify/makeshop/imweb 아님",
+    "페인터스": "paintersfromseoul.art - cafe24 기반이나 API 차단(Result:false). 모든 cate_no에서 0건",
+    "쿠시코크": "kusikohc.com - Shopify 기반이나 USD 가격(달러) 반환 — 원화 아님. 글로벌 몰만 운영",
+    "젝시믹스": "xexymix.com - makeshop 기반이나 JS 동적 렌더링(figure.product-image--holder 없음). parse_products 패턴 매칭 불가",
+    "STL": "beststl.com - makeshop 기반이나 JS 동적 렌더링. figure.product-image--holder 없음. 수집 불가",
+    "피지컬에듀케이션디파트먼트": "phyps-department.co.kr - cafe24 기반이나 API 차단(Data:null). 모든 cate_no에서 0건",
+    "엠플레이그라운드": "mplayground.kr - cafe24 기반이나 API 차단(Data:null). 모든 cate_no에서 0건",
+    "에이랜드": "a-land.co.kr - WordPress/WooCommerce 플랫폼. cafe24/shopify/makeshop/imweb 아님"
+  },
+  "skipped_luxury_sports": [],
+  "skipped": {
+    "가방/잡화 전문 (규칙상 제외)": [
+      "파인드카푸어",
+      "미닛뮤트",
+      "아카이브앱크",
+      "스탠드오일",
+      "마지셔우드",
+      "오소이",
+      "분크",
+      "사만사타바사",
+      "루이까또즈",
+      "메트로시티",
+      "닥스 레이디스"
+    ],
+    "럭셔리 하우스 (봇차단, 합의로 건너뜀)": [
+      "마르니",
+      "이사벨 마랑",
+      "토템",
+      "카이트",
+      "브루넬로 쿠치넬리",
+      "로로피아나",
+      "꾸레쥬",
+      "사카이",
+      "비비안 웨스트우드",
+      "MSGM",
+      "겐조",
+      "아미",
+      "메종 키츠네",
+      "디젤",
+      "장폴고티에",
+      "요지야마모토",
+      "꼼데가르송",
+      "릭오웬스",
+      "마틴로즈",
+      "피어오브갓",
+      "줄리어스",
+      "우영미 우먼",
+      "준지 우먼",
+      "랑방"
+    ],
+    "대형 글로벌 스포츠/아웃도어 (합의로 건너뜀)": [
+      "나이키 우먼",
+      "아디다스",
+      "뉴발란스 우먼",
+      "푸마",
+      "휠라",
+      "엄브로",
+      "데상트",
+      "르꼬끄",
+      "아레나",
+      "배럴",
+      "노스페이스",
+      "파타고니아",
+      "콜롬비아",
+      "내셔널지오그래픽",
+      "디스커버리",
+      "네파",
+      "아이더",
+      "블랙야크",
+      "K2",
+      "코오롱스포츠",
+      "살로몬",
+      "아크테릭스",
+      "룰루레몬",
+      "로나제인",
+      "캉골",
+      "챔피온",
+      "리",
+      "지프",
+      "레노마"
+    ],
+    "백화점 자체몰 (한섬/신세계/LF 등 — 전용 크롤러 필요)": [
+      "타임",
+      "마인",
+      "랑방컬렉션",
+      "더 캐시미어",
+      "래트",
+      "앤디앤뎁",
+      "오브제",
+      "오즈세컨",
+      "보브",
+      "지컷",
+      "톰보이",
+      "델라라나",
+      "일라일",
+      "미샤",
+      "모조에스핀",
+      "아이잗바바",
+      "지고트",
+      "린",
+      "케네스레이디",
+      "라인",
+      "시스템",
+      "SJSJ",
+      "쥬시쥬디",
+      "듀엘",
+      "주크",
+      "씨씨콜렉트",
+      "에고이스트",
+      "베네통",
+      "시슬리",
+      "플라스틱아일랜드",
+      "에스쏠레지아",
+      "온앤온",
+      "올리브데올리브",
+      "헬무트랭",
+      "빈스",
+      "이로",
+      "마쥬",
+      "산드로",
+      "클럽모나코",
+      "토리버치",
+      "마이클 코어스",
+      "코치",
+      "쟈딕앤볼테르",
+      "DKNY",
+      "캘빈클라인",
+      "바네사브루노",
+      "띠어리(자사몰)"
+    ],
+    "해외 사이트 (미국/유럽 — 차단·환율 이슈)": [
+      "앤아더스토리즈",
+      "아케트",
+      "세잔",
+      "레쥬메",
+      "네버풀리드레스드",
+      "몬키",
+      "탑숍",
+      "픽시마켓",
+      "스토리에잇",
+      "루즈",
+      "마린세르",
+      "오토링거",
+      "미우미우 빈티지",
+      "세드릭 샬리에",
+      "몬키"
+    ]
+  }
+}
