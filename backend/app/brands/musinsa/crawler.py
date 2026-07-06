@@ -33,6 +33,15 @@ def parse_gf(url: str) -> str:
     return parse_qs(urlparse(url).query).get("gf", ["F"])[0]
 
 
+# 판매량/인기 정렬 코드 → 목록 순서가 곧 랭킹
+_RANKING_SORT_PAT = re.compile(r"SALE|POP|RANK", re.I)
+
+
+def is_ranking_sort(url: str) -> bool:
+    sort_code = parse_qs(urlparse(url).query).get("sortCode", [""])[0]
+    return bool(sort_code and _RANKING_SORT_PAT.search(sort_code))
+
+
 def walk_products(node, out: list[dict]) -> None:
     if isinstance(node, dict):
         if {"goodsName", "goodsNo"} <= set(node.keys()) or {"productName", "goodsNo"} <= set(node.keys()):
@@ -63,7 +72,7 @@ def dict_to_row(prod: dict, crawled_at: str) -> dict | None:
     link = prod.get("goodsLinkUrl") or prod.get("linkUrl") or prod.get("goodsLink") or ""
     if not link and goods_no:
         link = f"https://www.musinsa.com/products/{goods_no}"
-    brand = prod.get("brandName") or prod.get("brand") or "MUSINSA"
+    brand = prod.get("brandName") or prod.get("brand") or ""
     return make_product_row(
         brand=str(brand),
         platform="musinsa.com",
@@ -178,10 +187,10 @@ class MusinsaCrawler(BaseBrandCrawler):
                 page.wait_for_timeout(900)
                 for prod in captured:
                     row = dict_to_row(prod, crawled_at)
-                    if row:
-                        row["brand"] = default_brand
                     if not row:
                         continue
+                    if not row["brand"]:
+                        row["brand"] = default_brand
                     key = row.get("product_detail_url") or row.get("product_name")
                     if key in seen:
                         continue
@@ -204,4 +213,11 @@ class MusinsaCrawler(BaseBrandCrawler):
 
         if not products:
             raise RuntimeError("무신사 상품을 수집하지 못했습니다.")
+
+        # 판매순/인기순 정렬이면 수집 순서 = 랭킹
+        if is_ranking_sort(target):
+            for i, row in enumerate(products):
+                row["is_ranking"] = "true"
+                row["rank"] = str(i + 1)
+
         return products
