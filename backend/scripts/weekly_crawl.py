@@ -59,7 +59,16 @@ def get_today_brand_ids(schedule: dict, weekday_override: str | None = None) -> 
     today_key = weekday_override or WEEKDAY_NAMES[datetime.now().weekday()]
     day_config = schedule.get("weekly", {}).get(today_key, {})
     label = day_config.get("label", today_key)
-    brand_ids = day_config.get("brand_ids", [])
+
+    # daily 그룹(플랫폼 랭킹 등)은 매일, 요일 그룹에 앞서 실행
+    daily_config = schedule.get("daily", {})
+    daily_ids = daily_config.get("brand_ids", [])
+    day_ids = day_config.get("brand_ids", [])
+    brand_ids = daily_ids + [b for b in day_ids if b not in daily_ids]
+
+    if daily_ids:
+        daily_label = daily_config.get("label", "daily")
+        label = f"{daily_label} + {label}" if day_ids else daily_label
     return label, brand_ids
 
 

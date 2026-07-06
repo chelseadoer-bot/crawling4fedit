@@ -1079,7 +1079,7 @@
       "output_dir": "data/output/wconcept-best-10101",
       "last_crawled_at": null,
       "last_status": null,
-      "schedule_group": "manual"
+      "schedule_group": "daily"
     },
     {
       "id": "cos-new",
@@ -4747,7 +4747,7 @@
       "output_dir": "data/output/musinsa-rank-top",
       "last_crawled_at": null,
       "last_status": null,
-      "schedule_group": "manual"
+      "schedule_group": "daily"
     },
     {
       "id": "musinsa-rank-pants",
@@ -4763,7 +4763,7 @@
       "output_dir": "data/output/musinsa-rank-pants",
       "last_crawled_at": null,
       "last_status": null,
-      "schedule_group": "manual"
+      "schedule_group": "daily"
     },
     {
       "id": "musinsa-rank-outer",
@@ -4779,7 +4779,7 @@
       "output_dir": "data/output/musinsa-rank-outer",
       "last_crawled_at": null,
       "last_status": null,
-      "schedule_group": "manual"
+      "schedule_group": "daily"
     },
     {
       "id": "musinsa-rank-dress-skirt",
@@ -4795,7 +4795,7 @@
       "output_dir": "data/output/musinsa-rank-dress-skirt",
       "last_crawled_at": null,
       "last_status": null,
-      "schedule_group": "manual"
+      "schedule_group": "daily"
     },
     {
       "id": "29cm-best-women-30",
@@ -4811,7 +4811,7 @@
       "output_dir": "data/output/29cm-best-women-30",
       "last_crawled_at": null,
       "last_status": null,
-      "schedule_group": "manual"
+      "schedule_group": "daily"
     }
   ]
 }

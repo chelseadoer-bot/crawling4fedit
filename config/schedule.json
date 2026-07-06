@@ -1,5 +1,16 @@
 {
-  "description": "주간 자동 크롤링 스케줄 — 매주 요일별 실행 (오전 9시)",
+  "description": "주간 자동 크롤링 스케줄 — 매주 요일별 실행 (오전 9시). daily는 매일 요일 그룹에 앞서 실행.",
+  "daily": {
+    "label": "플랫폼 랭킹",
+    "brand_ids": [
+      "musinsa-rank-top",
+      "musinsa-rank-pants",
+      "musinsa-rank-outer",
+      "musinsa-rank-dress-skirt",
+      "29cm-best-women-30",
+      "wconcept-best-10101"
+    ]
+  },
   "weekly": {
     "monday": {
       "label": "국내 SPA",
