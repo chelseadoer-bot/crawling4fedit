@@ -331,6 +331,7 @@ def finalize_row(
     default_url: str = "",
     group: str = "",
     name: str = "",
+    default_gender: str = "",
     currency: str = "KRW",
 ) -> dict:
     """필수 스키마를 강제하는 행 후처리 (저장/마이그레이션 공통).
@@ -353,6 +354,8 @@ def finalize_row(
             brand_id, default_url, group, name,
             _clean(row.get("main_category", "")), _clean(row.get("category", "")),
         )
+    if not gender and default_gender:
+        gender = normalize_gender(default_gender)
     row["gender"] = gender
 
     row["platform"] = normalize_platform(crawler_id, _clean(row.get("platform", "")))

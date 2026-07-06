@@ -35,6 +35,7 @@ def enforce_schema(brand_id: str, rows: list[dict]) -> list[dict]:
     default_url = meta.get("default_url") or ""
     group = meta.get("group") or ""
     name = meta.get("name") or ""
+    default_gender = meta.get("gender") or ""
     for row in rows:
         finalize_row(
             row,
@@ -43,6 +44,7 @@ def enforce_schema(brand_id: str, rows: list[dict]) -> list[dict]:
             default_url=default_url,
             group=group,
             name=name,
+            default_gender=default_gender,
         )
     return rows
 
