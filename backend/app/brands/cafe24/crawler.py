@@ -67,6 +67,48 @@ def list_page_url(base: str, cate_no: str) -> str:
     return f"{base}/product/list.html?cate_no={cate_no}"
 
 
+def _url_ok(url: str) -> bool:
+    try:
+        req = urllib.request.Request(url, headers=UA)
+        with urllib.request.urlopen(req, timeout=8) as resp:
+            return resp.status == 200
+    except Exception:
+        return False
+
+
+def resolve_image_cdn_prefix(detail_url: str) -> str | None:
+    """일부 몰은 자체 도메인 /web/product/ 이미지가 404 (cafe24img CDN으로 이전).
+    상품 페이지 og:image에서 CDN 프리픽스(…/web/product/ 앞부분)를 추출."""
+    try:
+        req = urllib.request.Request(detail_url, headers=UA)
+        html = urllib.request.urlopen(req, timeout=15).read().decode("utf-8", "ignore")
+    except Exception:
+        return None
+    m = re.search(r'og:image"\s+content="([^"]+)"', html) or re.search(r'content="([^"]+)"[^>]*og:image', html)
+    if not m:
+        return None
+    og = m.group(1)
+    idx = og.find("/web/product/")
+    return og[:idx] if idx > 0 else None
+
+
+def fix_broken_thumbnails(products: list[dict]) -> None:
+    """첫 썸네일이 404면 CDN 프리픽스로 전체 썸네일 경로 재작성."""
+    first = next((p for p in products if (p.get("thumbnail") or "").startswith("http")), None)
+    if not first or "/web/product/" not in first["thumbnail"]:
+        return
+    if _url_ok(first["thumbnail"]):
+        return
+    cdn = resolve_image_cdn_prefix(first.get("product_detail_url") or "")
+    if not cdn:
+        return
+    for p in products:
+        t = p.get("thumbnail") or ""
+        idx = t.find("/web/product/")
+        if t.startswith("http") and idx > 0:
+            p["thumbnail"] = cdn + t[idx:]
+
+
 def fetch_page(base: str, cate_no: str, page: int, referer: str | None = None) -> dict:
     query = urllib.parse.urlencode({"cate_no": cate_no, "page": page, "count": PAGE_SIZE})
     api_url = f"{base}/exec/front/Product/ApiProductList?{query}"
@@ -160,4 +202,5 @@ class Cafe24Crawler(BaseBrandCrawler):
             page_num += 1
             time.sleep(REQUEST_DELAY_SEC)
 
+        fix_broken_thumbnails(products)
         return products

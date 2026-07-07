@@ -320,7 +320,7 @@ def normalize_platform(crawler_id: str | None, current: str = "") -> str:
     return ""
 
 
-_PLACEHOLDER_NAME = re.compile(r"^(카테고리\s*\d+|전체|기타)$")
+_PLACEHOLDER_NAME = re.compile(r"^(카테고리\s*\d+|기타)$")
 
 
 def finalize_row(
