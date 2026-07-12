@@ -12,7 +12,7 @@ from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 
 from app.brands.registry import PROJECT_ROOT, get_brand_meta, resolve_crawler_id
-from app.core.csv_schema import SIMPLE_COLUMNS, _clean, finalize_row, today_str
+from app.core.csv_schema import SIMPLE_COLUMNS, _clean, finalize_row, is_accessory, today_str
 from app.core.csv_writer import _write_csv, col_exists_as_standard, standard_to_simple
 
 _TRACK_FIELDS = (
@@ -36,6 +36,7 @@ def enforce_schema(brand_id: str, rows: list[dict]) -> list[dict]:
     group = meta.get("group") or ""
     name = meta.get("name") or ""
     default_gender = meta.get("gender") or ""
+    kept: list[dict] = []
     for row in rows:
         finalize_row(
             row,
@@ -46,7 +47,11 @@ def enforce_schema(brand_id: str, rows: list[dict]) -> list[dict]:
             name=name,
             default_gender=default_gender,
         )
-    return rows
+        # 의류 외(가방/신발/잡화) 제외
+        if is_accessory(row.get("product_name", ""), row.get("category", "")):
+            continue
+        kept.append(row)
+    return kept
 
 
 def period_key(dt: datetime | None = None) -> str:
@@ -232,8 +237,7 @@ class SaveResult:
 
 def save_products(brand_id: str, products: list[dict], output_path: Path) -> SaveResult:
     """전체 스냅샷(latest) + 증분(delta) + 6개월 catalog 저장."""
-    rows = normalize_rows(products)
-    enforce_schema(brand_id, rows)
+    rows = enforce_schema(brand_id, normalize_rows(products))
     now_dt = datetime.now()
     now = now_dt.strftime("%Y-%m-%d %H:%M:%S")
     current_period = period_key(now_dt)

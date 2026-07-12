@@ -35,8 +35,7 @@ def migrate_file(path: Path, brand_id: str, dry_run: bool) -> int:
     raw = _read_rows(path)
     if not raw:
         return 0
-    rows = [standard_to_simple(r) for r in raw]
-    enforce_schema(brand_id, rows)
+    rows = enforce_schema(brand_id, [standard_to_simple(r) for r in raw])
     if not dry_run:
         _write_csv(rows, SIMPLE_COLUMNS, path)
     return len(rows)

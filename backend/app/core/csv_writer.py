@@ -101,6 +101,8 @@ def standard_to_simple(row: dict) -> dict:
         "details":            _clean(row.get("details") or row.get("상세설명") or ""),
         "rating":             _clean(row.get("rating") or row.get("평점") or ""),
         "reviews":            _clean(row.get("reviews") or row.get("리뷰수") or ""),
+        "manufacture_date":   _clean(row.get("manufacture_date") or row.get("제조일") or ""),
+        "reorder":            _clean(row.get("reorder") or row.get("재입고차수") or ""),
     }
 
 

@@ -82,6 +82,8 @@ SIMPLE_COLUMNS = [
     "details",
     "rating",
     "reviews",
+    "manufacture_date",
+    "reorder",
 ]
 
 # 한글 레이블 (UI 헤더)
@@ -105,6 +107,8 @@ SIMPLE_COLUMN_LABELS = {
     "details":            "상세설명",
     "rating":             "평점",
     "reviews":            "리뷰수",
+    "manufacture_date":   "제조일",
+    "reorder":            "재입고차수",
 }
 
 # ── CSV 출력 컬럼 (파일 저장용) ──────────────────────────────────────────────
@@ -322,6 +326,120 @@ def normalize_platform(crawler_id: str | None, current: str = "") -> str:
 
 _PLACEHOLDER_NAME = re.compile(r"^(카테고리\s*\d+|기타)$")
 
+# ── 상품명 정리 / 색상·리오더 추출 ──────────────────────────────────────────
+_COLOR_WORDS = [
+    "라이트그레이", "스카이블루", "라이트블루", "오프화이트", "다크그레이", "다크브라운", "라이트베이지",
+    "블랙", "화이트", "아이보리", "크림", "오트밀", "베이지", "샌드", "그레이", "챠콜", "차콜",
+    "네이비", "블루", "데님", "연청", "중청", "진청", "흑청", "인디고", "민트", "그린", "카키",
+    "올리브", "머스타드", "옐로우", "레몬", "오렌지", "코랄", "피치", "핑크", "로즈", "레드",
+    "버건디", "와인", "브라운", "카멜", "모카", "초코", "퍼플", "라벤더", "바이올렛", "실버",
+    "골드", "멀티", "소라",
+    "light grey", "light gray", "off white", "dark grey", "dark gray", "dark brown", "sky blue",
+    "black", "white", "ivory", "cream", "oatmeal", "beige", "sand", "gray", "grey", "charcoal",
+    "navy", "blue", "denim", "indigo", "mint", "green", "khaki", "olive", "mustard", "yellow",
+    "lemon", "orange", "coral", "peach", "pink", "rose", "red", "burgundy", "wine", "brown",
+    "camel", "mocha", "choco", "purple", "lavender", "violet", "silver", "gold", "multi", "ecru",
+]
+_COLOR_ALT = "|".join(sorted(map(re.escape, _COLOR_WORDS), key=len, reverse=True))
+_CMOD = r"(?:라이트|다크|딥|연|진|light|dark|deep|pale|d\.|l\.)?\s*"
+_COLOR_UNIT = r"(?:%s(?:%s))" % (_CMOD, _COLOR_ALT)
+_COLOR_ONLY = re.compile(r"^%s(?:\s*[&/,+]?\s*%s)*$" % (_COLOR_UNIT, _COLOR_UNIT), re.I)
+_TRAIL_COLOR = re.compile(r"[\s,\-_/]+(%s(?:\s*[&/,+]?\s*%s)?)\s*$" % (_COLOR_UNIT, _COLOR_UNIT), re.I)
+_BRACKET = re.compile(r"[\[【][^\]】]*[\]】]")
+_TRAIL_PAREN = re.compile(r"\s*\(([^()]*)\)\s*$")
+_NCOLORS = re.compile(r"^\d+\s*(?:colors?|색상?|컬러)$", re.I)
+_CODE_TOKEN = r"(?=[A-Z0-9\-]*\d)[A-Z][A-Z0-9\-]{4,}"
+_PROD_CODE = re.compile(r"[\s_\-/]+" + _CODE_TOKEN + r"\s*$")
+_CODE_ONLY = re.compile(r"^" + _CODE_TOKEN + r"$")
+_NCOLORS_SUFFIX = re.compile(r"[\s_\-/]*\d+\s*colors?\s*$", re.I)
+_HASHTAGS = re.compile(r"(?:\s*#[^\s#]+)+\s*$")
+_REORDER_N = re.compile(r"(\d+)\s*(?:차|th|nd|rd|st)?\s*(?:리오더|re-?order|재입고)", re.I)
+_REORDER_ANY = re.compile(r"리오더|re-?order", re.I)
+_REORDER_PHRASE = re.compile(r"\d*\s*차?\s*(?:리오더|re-?order)\s*[-_/]?\s*", re.I)
+
+
+def clean_product_name(name: str, color: str = "") -> tuple[str, str, str]:
+    """상품명에서 노이즈([기획전]/상품코드/색상 접미어) 제거.
+    반환: (정리된 상품명, 색상(기존 우선), 리오더 차수)"""
+    if not name:
+        return name, color, ""
+    orig = name
+    reorder = ""
+    m = _REORDER_N.search(name)
+    if m:
+        reorder = m.group(1)
+    elif _REORDER_ANY.search(name):
+        reorder = "1"
+
+    color_cand = ""
+    # 대괄호 그룹: 색상이면 회수, 그 외([단독]/[7/16 예약]/[코드]) 제거
+    for content in _BRACKET.findall(name):
+        inner = content[1:-1].strip()
+        if not color_cand and _COLOR_ONLY.match(inner):
+            color_cand = inner
+    name = _BRACKET.sub(" ", name)
+    name = _REORDER_PHRASE.sub(" ", name)
+    name = _HASHTAGS.sub("", name)
+    name = _NCOLORS_SUFFIX.sub("", name)
+    name = _PROD_CODE.sub("", name)
+
+    # 꼬리 괄호: 색상/N colors/상품코드면 제거 (최대 3회)
+    for _ in range(3):
+        m = _TRAIL_PAREN.search(name)
+        if not m:
+            break
+        inner = m.group(1).strip()
+        if _COLOR_ONLY.match(inner):
+            if not color_cand:
+                color_cand = inner
+            name = name[: m.start()].rstrip()
+        elif _NCOLORS.match(inner) or _CODE_ONLY.match(inner) or not inner:
+            name = name[: m.start()].rstrip()
+        else:
+            break
+
+    # 꼬리 색상 (- 블랙 / _IVORY 등, 최대 2회)
+    for _ in range(2):
+        m = _TRAIL_COLOR.search(name)
+        if not m:
+            break
+        if not color_cand:
+            color_cand = m.group(1).strip()
+        name = name[: m.start()].rstrip()
+
+    name = _PROD_CODE.sub("", name)
+    name = re.sub(r"\s{2,}", " ", name).strip(" -_/,.·")
+
+    if len(name) < 4:  # 과도 삭제 방지
+        name = re.sub(r"\s{2,}", " ", _BRACKET.sub(" ", orig)).strip(" -_/,.")
+        if len(name) < 2:
+            name = orig.strip()
+    return name, (color or color_cand), reorder
+
+
+# ── 악세서리(가방/신발/잡화) 판별 ───────────────────────────────────────────
+_ACC_STRONG = re.compile(
+    r"키링|키홀더|폰케이스|에코백|발라클라바|밸라클라바|귀걸이|목걸이|팔찌|카드지갑|지갑|"
+    r"헤어핀|헤어밴드|스크런치|볼캡|버킷햇|비니|선글라스|머리끈|양말|삭스|넥타이|보타이|"
+    r"keyring|phone ?case|balaclava|necklace|earring|bracelet|wallet|socks",
+    re.I,
+)
+_ACC_TAIL = re.compile(
+    r"(?:^|[\s\]\)/_\-#])(가방|백팩|숄더백|토트백|크로스백|클러치|파우치|벨트|모자|캡|햇|메리제인|"
+    r"슈즈|스니커즈|운동화|부츠|샌들|슬리퍼|뮬|로퍼|플랫|힐|스카프|머플러|장갑|"
+    r"bag|backpack|belt|cap|hat|shoes?|sneakers?|boots?|sandals?|slippers?|mule|loafers?|"
+    r"heels?|scarf|muffler|gloves?)\s*$",
+    re.I,
+)
+
+
+def is_accessory(name: str, category: str = "") -> bool:
+    text = f"{name}"
+    if _ACC_STRONG.search(text) or _ACC_TAIL.search(text):
+        return True
+    cat = category or ""
+    return bool(re.search(r"ACC|악세|액세|가방|신발|슈즈|주얼리|잡화", cat, re.I))
+
 
 def finalize_row(
     row: dict,
@@ -347,6 +465,23 @@ def finalize_row(
         row.get("regular_price"), row.get("current_price"), row.get("discount_rate"), currency
     )
     row["regular_price"], row["current_price"], row["discount_rate"] = reg, cur, disc
+
+    # 상품명 정리 + 색상/리오더 추출
+    nm, col, reorder = clean_product_name(_clean(row.get("product_name", "")), _clean(row.get("color", "")))
+    row["product_name"] = nm
+    row["color"] = col
+    if not _clean(row.get("reorder", "")) and reorder:
+        row["reorder"] = reorder
+
+    # 리뷰/평점 0 → 빈값
+    for f in ("reviews", "rating"):
+        if _clean(row.get(f, "")) in ("0", "0.0", "0.00"):
+            row[f] = ""
+
+    # 카테고리 '여성/우먼' 접두 제거
+    cat = _clean(row.get("category", ""))
+    if cat:
+        row["category"] = re.sub(r"^(여성|우먼|W)\s+", "", cat)
 
     gender = normalize_gender(_clean(row.get("gender", "")))
     if not gender:
