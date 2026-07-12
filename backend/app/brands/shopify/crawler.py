@@ -9,7 +9,9 @@ import urllib.request
 from urllib.parse import urlparse
 
 from app.brands.base import BaseBrandCrawler
-from app.core.csv_schema import make_product_row, today_yymmdd
+from app.core.csv_schema import _COLOR_WORDS, make_product_row, today_yymmdd
+
+_COLOR_SET = {w.lower().replace(" ", "") for w in _COLOR_WORDS}
 
 PAGE_LIMIT = 250
 REQUEST_DELAY_SEC = 0.2
@@ -70,11 +72,23 @@ def product_to_row(product: dict, base: str, brand_name: str, crawled_at: str, c
         thumb = "https:" + thumb
     handle = product.get("handle") or ""
     detail = f"{base}/products/{handle}" if handle else ""
-    colors = ", ".join(
-        v.get("title", "")
-        for v in variants
-        if v.get("title") and v.get("title") != "Default Title"
-    )
+    # 색상은 Color/색상 옵션에서만 추출 (variant title은 사이즈인 경우가 많음)
+    colors = ""
+    for opt in product.get("options") or []:
+        opt_name = (opt.get("name") or "").strip().lower()
+        if opt_name in ("color", "colour", "색상", "컬러", "colors"):
+            values = [v for v in (opt.get("values") or []) if v and v != "Default Title"]
+            colors = ", ".join(dict.fromkeys(values))
+            break
+    if not colors and handle:
+        # Color 옵션 없는 몰: URL handle 꼬리 토큰에서 색상 추출 (…-t-shirt-charcoal)
+        tokens = handle.split("-")
+        for k in (2, 1):
+            if len(tokens) >= k:
+                cand = "".join(tokens[-k:])
+                if cand in _COLOR_SET:
+                    colors = " ".join(tokens[-k:])
+                    break
     return make_product_row(
         brand=brand_name,
         platform="",
