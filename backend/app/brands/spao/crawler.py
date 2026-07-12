@@ -13,7 +13,7 @@ from app.brands.base import BaseBrandCrawler
 from app.core.csv_schema import make_product_row, today_yymmdd
 
 BASE = "https://www.spao.com"
-IMAGE_CDN = "https://static.elandrs.com/spao"
+IMAGE_CDN = "https://spao-item.elandrs.com"
 PAGE_SIZE = 100
 DEFAULT_VENDOR = "LV26000002"
 DETAIL_DELAY_SEC = 0.12

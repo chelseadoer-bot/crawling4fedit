@@ -16,6 +16,84 @@ PAGE_SIZE = 40
 REQUEST_DELAY_SEC = 0.25
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0 Safari/537.36"}
 
+# ── 목록 HTML 폴백(할인가 보강)용 패턴 ────────────────────────────────────────
+# 상품 블록: <li id="anchorBoxId_{product_no}" ...> ... (다음 anchorBoxId 직전까지)
+_PRODUCT_BLOCK_RE = re.compile(r'<li id="anchorBoxId_(\d+)"(.*?)(?=<li id="anchorBoxId_|\Z)', re.S)
+# "(1,590원 할인)" 같은 할인액 표기는 가격 후보에서 제외해야 오탐(min이 할인액이 되는 사고)이 없음
+_DISCOUNT_AMOUNT_RE = re.compile(r"\([\d,]+\s*원\s*할인\)")
+_PRICE_WON_RE = re.compile(r"([\d,]{3,})\s*원")
+_PRICE_KRW_SYM_RE = re.compile(r"₩\s*([\d,]{3,})")
+
+
+def extract_html_price_map(html: str) -> dict[str, tuple[str, str, str]]:
+    """목록 HTML에서 상품 블록별 (정가, 할인가, 할인율) 후보를 추출.
+
+    블록 안의 원화 가격을 모두 모아 서로 다른 값이 2개 이상이면
+    최대값=정가, 최소값=할인가로 간주한다. 할인율은 두 값으로 직접 계산한다
+    (블록 내 "NN%" 텍스트는 쿠폰/한정수량 등 무관한 값과 섞여 신뢰할 수 없음).
+    """
+    result: dict[str, tuple[str, str, str]] = {}
+    for product_no, block in _PRODUCT_BLOCK_RE.findall(html):
+        cleaned = _DISCOUNT_AMOUNT_RE.sub("", block)
+        nums: set[int] = set()
+        for m in _PRICE_WON_RE.findall(cleaned):
+            nums.add(int(m.replace(",", "")))
+        for m in _PRICE_KRW_SYM_RE.findall(cleaned):
+            nums.add(int(m.replace(",", "")))
+        if len(nums) < 2:
+            continue
+        hi, lo = max(nums), min(nums)
+        if hi <= lo or lo <= 0:
+            continue
+        discount_rate = str(round((hi - lo) / hi * 100))
+        result[product_no] = (str(hi), str(lo), discount_rate)
+    return result
+
+
+def fetch_list_html(base: str, cate_no: str, page: int, referer: str | None = None) -> str:
+    url = f"{list_page_url(base, cate_no)}&page={page}"
+    headers = {**UA, "Referer": referer or list_page_url(base, cate_no)}
+    req = urllib.request.Request(url, headers=headers)
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        return resp.read().decode("utf-8", "ignore")
+
+
+def enrich_discounts_from_html(
+    products: list[dict], base: str, cate_no: str, referer: str | None = None
+) -> int:
+    """목록 HTML을 다시 훑어 product_no 매칭으로 regular_price/current_price를 보강.
+    make_product_row는 재호출하지 않고 기존 행의 값만 교체한다."""
+    by_pid: dict[str, dict] = {}
+    for row in products:
+        m = re.search(r"product_no=(\d+)", row.get("product_detail_url") or "")
+        if m:
+            by_pid.setdefault(m.group(1), row)
+    if not by_pid:
+        return 0
+
+    remaining = set(by_pid.keys())
+    # 목록 HTML 페이지 크기가 API(PAGE_SIZE)와 다를 수 있어 넉넉히 상한만 둔다.
+    max_pages = min(60, max(5, (len(products) // 15) + 3))
+    matched = 0
+    page = 1
+    while remaining and page <= max_pages:
+        html = fetch_list_html(base, cate_no, page, referer=referer)
+        price_map = extract_html_price_map(html)
+        if not price_map:
+            break  # 더 이상 상품 블록이 없는 마지막 페이지
+        for product_no, (regular, sale, discount_rate) in price_map.items():
+            row = by_pid.get(product_no)
+            if not row or product_no not in remaining:
+                continue
+            row["regular_price"] = regular
+            row["current_price"] = sale
+            row["discount_rate"] = discount_rate
+            remaining.discard(product_no)
+            matched += 1
+        page += 1
+        time.sleep(REQUEST_DELAY_SEC)
+    return matched
+
 
 def strip_html(text: str) -> str:
     return re.sub(r"<[^>]+>", "", text or "").strip()
@@ -127,10 +205,12 @@ def item_to_row(item: dict, base: str, brand_name: str, crawled_at: str, categor
     regular, current = price_pair(item)
     product_no = str(item.get("product_no") or "")
     image = item.get("image_medium") or item.get("image_big") or item.get("image_small") or ""
-    if image.startswith("/"):
-        image = base + image
-    elif image.startswith("//"):
+    if image.startswith("//"):
         image = "https:" + image
+    elif image.startswith("/"):
+        image = base + image
+    if " " in image:
+        image = urllib.parse.quote(image, safe=":/?&=%")
 
     detail_url = f"{base}/product/detail.html?product_no={product_no}" if product_no else ""
 
@@ -203,4 +283,12 @@ class Cafe24Crawler(BaseBrandCrawler):
             time.sleep(REQUEST_DELAY_SEC)
 
         fix_broken_thumbnails(products)
+
+        # API가 sale_price를 안 내려주는 몰 대응: 할인 수집이 0건이면 목록 HTML을 다시 훑어 보강
+        if products and not any(p.get("current_price") for p in products):
+            try:
+                enrich_discounts_from_html(products, base, cate_no, referer=referer)
+            except Exception:
+                pass
+
         return products

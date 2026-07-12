@@ -65,7 +65,10 @@ def item_to_row(item: dict, origin: str, brand_name: str, crawled_at: str) -> di
     regular = str(item.get("CVR_PRC") or item.get("cvrPrc") or sale).split(".")[0]
     image = item.get("IMG_URL") or item.get("imgUrl") or ""
     if image and not str(image).startswith("http"):
-        image = origin + image if str(image).startswith("/") else image
+        # display 도메인 이미지는 404 — img CDN 사용
+        image = "https://img.goodwearmall.com" + image if str(image).startswith("/") else image
+    elif "display-topten10.goodwearmall.com" in str(image):
+        image = str(image).replace("display-topten10.goodwearmall.com", "img.goodwearmall.com")
     shop_host = origin.replace("display-", "").replace("display.", "")
     detail = f"{shop_host}/product/{god_no}/detail" if god_no else ""
     discount = str(item.get("GOD_DC_RT") or item.get("godDcRt") or "")

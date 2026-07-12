@@ -36,6 +36,7 @@ def enforce_schema(brand_id: str, rows: list[dict]) -> list[dict]:
     group = meta.get("group") or ""
     name = meta.get("name") or ""
     default_gender = meta.get("gender") or ""
+    currency = meta.get("currency") or "KRW"
     kept: list[dict] = []
     for row in rows:
         finalize_row(
@@ -46,6 +47,7 @@ def enforce_schema(brand_id: str, rows: list[dict]) -> list[dict]:
             group=group,
             name=name,
             default_gender=default_gender,
+            currency=currency,
         )
         # 의류 외(가방/신발/잡화) 제외
         if is_accessory(row.get("product_name", ""), row.get("category", "")):

@@ -49,19 +49,21 @@ def extract_products_from_payload(raw: str, crawled_at: str) -> list[dict]:
                 continue
             name = re.search(r'"gdasNm"\s*:\s*"([^"\\]+)"', chunk)
             price = re.search(r'"sellPrc"\s*:\s*(\d+)', chunk)
-            img = re.search(r'"(?:repImg|imgUrl|imageUrl)"\s*:\s*"([^"\\]+)"', chunk)
+            img = re.search(r'"(?:itemRepImg|listMainImg|repImg|imgUrl|imageUrl)"\s*:\s*"([^"\\]+)"', chunk)
             link = re.search(r'"(?:godDetailUrl|productUrl|linkUrl)"\s*:\s*"([^"\\]+)"', chunk)
             if not name:
                 continue
             seen.add(pid)
             img_url = img.group(1) if img else ""
-            if img_url.startswith("/"):
-                img_url = BASE + img_url
             prod_url = link.group(1) if link else f"{BASE}/ko-kr/product/{pid}"
             if prod_url.startswith("/"):
                 prod_url = BASE + prod_url
             if img_url and not img_url.startswith("http"):
-                img_url = "https:" + img_url if img_url.startswith("//") else ""
+                if img_url.startswith("//"):
+                    img_url = "https:" + img_url
+                else:
+                    # COS 한국몰 이미지는 현대백화점 CDN에서 서빙
+                    img_url = "https://image.thehyundai.com/" + img_url.lstrip("/")
             price_val = price.group(1) if price else ""
             products.append(make_product_row(
                 brand="COS",
@@ -99,15 +101,17 @@ def parse_products_from_list(items: list, crawled_at: str) -> list[dict]:
         seen.add(pid)
         price = str(item.get("sellPrc") or item.get("price") or "")
         img = (
-            item.get("imgPath")
+            item.get("itemRepImg")
+            or item.get("listMainImg")
+            or item.get("imgPath")
             or item.get("repImg")
             or item.get("imgUrl")
             or item.get("imageUrl")
             or item.get("itemImgUrl")
             or ""
         )
-        if isinstance(img, str) and img.startswith("/"):
-            img = BASE + img
+        if isinstance(img, list):
+            img = img[0] if img else ""
         url = (
             item.get("godDetailUrl")
             or item.get("productUrl")
@@ -118,7 +122,11 @@ def parse_products_from_list(items: list, crawled_at: str) -> list[dict]:
             url = BASE + url
         img_str = img if isinstance(img, str) else ""
         if img_str and not img_str.startswith("http"):
-            img_str = "https:" + img_str if img_str.startswith("//") else ""
+            if img_str.startswith("//"):
+                img_str = "https:" + img_str
+            else:
+                # COS 한국몰 이미지는 현대백화점 CDN에서 서빙
+                img_str = "https://image.thehyundai.com/" + img_str.lstrip("/")
         products.append(make_product_row(
             brand="COS",
             product_name=str(name),

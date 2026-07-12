@@ -1750,7 +1750,8 @@
       "last_crawled_at": null,
       "last_status": null,
       "schedule_group": "manual",
-      "gender": "여성"
+      "gender": "여성",
+      "currency": "EUR"
     },
     {
       "id": "ohne-viewall-26",
@@ -1789,7 +1790,7 @@
       "category": "디자이너브랜드",
       "group": "그로브",
       "name": "전체",
-      "enabled": true,
+      "enabled": false,
       "source_site": "en.grovestore.com",
       "crawl_type": "dynamic",
       "crawler_id": "cafe24",
@@ -1814,7 +1815,8 @@
       "last_crawled_at": null,
       "last_status": null,
       "schedule_group": "manual",
-      "gender": "여성"
+      "gender": "여성",
+      "currency": "USD"
     },
     {
       "id": "diagonal-71",
@@ -2486,7 +2488,8 @@
       "output_dir": "data/output/adsb-outer",
       "last_crawled_at": null,
       "last_status": null,
-      "schedule_group": "manual"
+      "schedule_group": "manual",
+      "currency": "USD"
     },
     {
       "id": "adsb-tops",
@@ -2502,7 +2505,8 @@
       "output_dir": "data/output/adsb-tops",
       "last_crawled_at": null,
       "last_status": null,
-      "schedule_group": "manual"
+      "schedule_group": "manual",
+      "currency": "USD"
     },
     {
       "id": "adsb-shirts",
@@ -2518,7 +2522,8 @@
       "output_dir": "data/output/adsb-shirts",
       "last_crawled_at": null,
       "last_status": null,
-      "schedule_group": "manual"
+      "schedule_group": "manual",
+      "currency": "USD"
     },
     {
       "id": "adsb-knit",
@@ -2534,7 +2539,8 @@
       "output_dir": "data/output/adsb-knit",
       "last_crawled_at": null,
       "last_status": null,
-      "schedule_group": "manual"
+      "schedule_group": "manual",
+      "currency": "USD"
     },
     {
       "id": "adsb-sleeveless",
@@ -2550,7 +2556,8 @@
       "output_dir": "data/output/adsb-sleeveless",
       "last_crawled_at": null,
       "last_status": null,
-      "schedule_group": "manual"
+      "schedule_group": "manual",
+      "currency": "USD"
     },
     {
       "id": "adsb-dress",
@@ -2566,7 +2573,8 @@
       "output_dir": "data/output/adsb-dress",
       "last_crawled_at": null,
       "last_status": null,
-      "schedule_group": "manual"
+      "schedule_group": "manual",
+      "currency": "USD"
     },
     {
       "id": "adsb-skirts",
@@ -2582,7 +2590,8 @@
       "output_dir": "data/output/adsb-skirts",
       "last_crawled_at": null,
       "last_status": null,
-      "schedule_group": "manual"
+      "schedule_group": "manual",
+      "currency": "USD"
     },
     {
       "id": "adsb-jeans",
@@ -2598,7 +2607,8 @@
       "output_dir": "data/output/adsb-jeans",
       "last_crawled_at": null,
       "last_status": null,
-      "schedule_group": "manual"
+      "schedule_group": "manual",
+      "currency": "USD"
     },
     {
       "id": "adsb-trousers",
@@ -2614,7 +2624,8 @@
       "output_dir": "data/output/adsb-trousers",
       "last_crawled_at": null,
       "last_status": null,
-      "schedule_group": "manual"
+      "schedule_group": "manual",
+      "currency": "USD"
     },
     {
       "id": "le17septembre-shop-women",
@@ -5076,6 +5087,22 @@
       "crawler_id": "cafe24",
       "default_url": "https://citybreeze.co.kr/product/list.html?cate_no=1677",
       "output_dir": "data/output/citybreeze-dresses",
+      "last_crawled_at": null,
+      "last_status": null,
+      "schedule_group": "manual"
+    },
+    {
+      "id": "grove-kr-shop",
+      "category": "디자이너브랜드",
+      "group": "그로브",
+      "name": "SHOP 전체",
+      "gender": "여성",
+      "enabled": true,
+      "source_site": "grovestore.com",
+      "crawl_type": "dynamic",
+      "crawler_id": "cafe24",
+      "default_url": "https://grovestore.com/product/list.html?cate_no=201",
+      "output_dir": "data/output/grove-kr-shop",
       "last_crawled_at": null,
       "last_status": null,
       "schedule_group": "manual"
