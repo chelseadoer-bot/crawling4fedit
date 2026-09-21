@@ -1,0 +1,731 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>fedit</title>
+<meta name="description" content="경쟁사 상품을 매일 엑셀로. 패션 MD를 위한 경쟁사 크롤링 서비스 fedit">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#F6F5F3; --surface:#FFFFFF; --surface2:#EFEDE9; --line:#E4E1DB; --ink:#18181B; --ink2:#3F3F46; --muted:#6F6E6A; --faint:#A8A6A0;
+  --accent:#4F46E5; --accent-soft:#EEF0FF; --excel:#1D6F42; --excel-soft:#E3F1E8; --sale:#C2410C; --sale-soft:#FDE8DC; --ok:#16A34A;
+  --dark:#18181B; --on-dark:#FFFFFF; --on-dark-muted:#A1A1AA;
+  --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace; --sans:'Noto Sans KR',-apple-system,system-ui,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+  --r:14px; --shadow:0 20px 48px rgba(24,24,27,.10);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#141416; --surface:#1E1E22; --surface2:#26262B; --line:#2F2F35; --ink:#F4F4F5; --ink2:#D4D4D8; --muted:#A1A1AA; --faint:#6B6B72;
+    --accent:#8B85F5; --accent-soft:#26264A; --excel:#4CBF7F; --excel-soft:#163224; --sale:#F97350; --sale-soft:#3B1E14; --ok:#4ADE80;
+    --dark:#F4F4F5; --on-dark:#18181B; --on-dark-muted:#52525B; --shadow:0 20px 48px rgba(0,0,0,.45);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#141416; --surface:#1E1E22; --surface2:#26262B; --line:#2F2F35; --ink:#F4F4F5; --ink2:#D4D4D8; --muted:#A1A1AA; --faint:#6B6B72;
+  --accent:#8B85F5; --accent-soft:#26264A; --excel:#4CBF7F; --excel-soft:#163224; --sale:#F97350; --sale-soft:#3B1E14; --ok:#4ADE80;
+  --dark:#F4F4F5; --on-dark:#18181B; --on-dark-muted:#52525B; --shadow:0 20px 48px rgba(0,0,0,.45);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px}
+h1,h2,h3{margin:0;text-wrap:balance;line-height:1.25;letter-spacing:-.015em}
+h2{font-size:clamp(26px,3.4vw,38px);font-weight:900}
+p{margin:0}
+a{color:inherit}
+.eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.1em;color:var(--accent);text-transform:uppercase}
+.sub{color:var(--muted);font-size:17px;max-width:62ch}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:0 24px;border-radius:12px;font:inherit;font-weight:700;font-size:15.5px;cursor:pointer;border:1.5px solid transparent;text-decoration:none;transition:transform .12s ease,background .15s ease}
+.btn:active{transform:translateY(1px)}
+.btn:focus-visible,.chip:focus-visible,.tab:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.btn-dark{background:var(--dark);color:var(--on-dark)}
+.btn-line{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-excel{background:var(--excel);color:#fff}
+.btn-sm{min-height:42px;padding:0 16px;font-size:14px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.section{padding-block:96px}
+.section-head{display:flex;flex-direction:column;gap:14px;max-width:760px;margin-bottom:40px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:900;font-size:22px;letter-spacing:-.03em}
+.logo span{color:var(--accent)}
+.nav-links{display:flex;gap:26px;align-items:center}
+.nav-links a{text-decoration:none;font-weight:600;font-size:14.5px;color:var(--ink2)}
+@media (max-width:760px){.nav-links a:not(.btn){display:none}}
+
+/* hero */
+.hero{padding-block:72px 40px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:48px;align-items:center}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr}}
+.hero h1{font-size:clamp(34px,5vw,58px);font-weight:900;line-height:1.18}
+.hero h1 .q{color:var(--faint)}
+.hero-copy{display:flex;flex-direction:column;gap:24px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.tiny{font-size:13px;color:var(--muted)}
+
+/* demo stage */
+.stage{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:16px;align-items:stretch}
+@media (max-width:560px){.stage{grid-template-columns:1fr}}
+.site{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:10px;min-height:340px}
+.site-bar{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted)}
+.site-bar i{width:9px;height:9px;border-radius:50%;background:var(--line);display:inline-block}
+.site-bar .url{margin-left:6px;font-family:var(--mono);font-size:11.5px}
+.prods{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.prod{border:1px solid var(--line);border-radius:10px;padding:8px;display:flex;flex-direction:column;gap:6px;background:var(--surface);transition:transform .55s cubic-bezier(.2,.7,.2,1),opacity .45s ease}
+.prod .img{aspect-ratio:4/5;border-radius:6px;background:linear-gradient(160deg,var(--surface2),var(--line))}
+.prod .nm{font-size:12px;font-weight:600;line-height:1.3}
+.prod .pr{font-family:var(--mono);font-size:12px;display:flex;gap:6px;align-items:baseline}
+.prod .pr s{color:var(--faint)}
+.prod .pr b{color:var(--sale)}
+.prod.fly{transform:translate(60%,-10%) scale(.6);opacity:0}
+.excel{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow)}
+.excel-bar{display:flex;align-items:center;gap:10px;padding:10px 12px;border-bottom:1px solid var(--line);background:var(--excel);color:#fff;font-size:12.5px;font-weight:600}
+.excel-bar .x{width:20px;height:20px;border-radius:4px;background:#fff;color:var(--excel);display:grid;place-items:center;font-weight:900;font-family:var(--mono);font-size:12px}
+.excel-bar .st{margin-left:auto;font-weight:500;opacity:.9}
+.grid{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:12px}
+.grid th{position:sticky;top:0;background:var(--surface2);color:var(--muted);font-weight:600;text-align:left;padding:7px 9px;border-bottom:1px solid var(--line);border-right:1px solid var(--line);white-space:nowrap;font-size:11px}
+.grid td{padding:7px 9px;border-bottom:1px solid var(--line);border-right:1px solid var(--line);white-space:nowrap;color:var(--ink2)}
+.grid td.sale{color:var(--sale);font-weight:600;background:var(--sale-soft)}
+.grid td.oos{color:var(--sale)}
+.grid td.new{color:var(--excel);font-weight:600}
+.grid tr.in td{animation:rowin .45s ease both}
+@keyframes rowin{from{opacity:0;transform:translateX(-8px);background:var(--excel-soft)}to{opacity:1;transform:none}}
+.grid-scroll{overflow:auto;max-height:290px}
+.excel-foot{padding:8px 12px;font-size:12px;color:var(--muted);display:flex;justify-content:space-between;border-top:1px solid var(--line)}
+.toast{position:absolute;right:12px;bottom:-14px;background:var(--dark);color:var(--on-dark);font-size:13px;font-weight:600;padding:10px 14px;border-radius:10px;display:flex;gap:8px;align-items:center;opacity:0;transform:translateY(8px);transition:.3s ease;pointer-events:none}
+.toast.show{opacity:1;transform:none}
+.replay{position:absolute;left:12px;bottom:-14px}
+@media (prefers-reduced-motion:reduce){.prod,.grid tr.in td{animation:none!important;transition:none!important}.prod.fly{opacity:1;transform:none}}
+
+/* stats band */
+.band{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding-block:26px;margin-top:56px}
+@media (max-width:640px){.band{grid-template-columns:1fr;gap:12px}}
+.band div{text-align:center}
+.band b{display:block;font-size:30px;font-weight:900;font-family:var(--mono)}
+.band span{font-size:14px;color:var(--muted)}
+
+/* playground */
+.play{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:24px;align-items:start}
+@media (max-width:900px){.play{grid-template-columns:1fr}}
+.steps{display:flex;flex-direction:column;gap:14px}
+.step{padding:20px;display:flex;flex-direction:column;gap:12px;border-left:3px solid var(--line);transition:border-color .2s}
+.step.active{border-left-color:var(--accent)}
+.step h3{font-size:17px;font-weight:800;display:flex;align-items:center;gap:10px}
+.step h3 .n{width:26px;height:26px;border-radius:50%;background:var(--dark);color:var(--on-dark);display:grid;place-items:center;font-size:13px;font-family:var(--mono);flex:none}
+.step p{font-size:14px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:inherit;font-size:13px;font-weight:700;padding:8px 14px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink2);cursor:pointer;transition:.15s}
+.chip[aria-pressed="true"]{background:var(--dark);color:var(--on-dark);border-color:var(--dark)}
+.progress{display:flex;flex-direction:column;gap:6px;font-size:12.5px;font-family:var(--mono)}
+.progress .row{display:flex;align-items:center;gap:10px}
+.progress .bar{flex:1;height:6px;border-radius:3px;background:var(--surface2);overflow:hidden}
+.progress .bar i{display:block;height:100%;width:0;background:var(--excel);transition:width .8s ease}
+.progress .ok{color:var(--ok);width:16px}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:12px}
+.kpi{padding:12px 14px;display:flex;flex-direction:column;gap:2px}
+.kpi b{font-family:var(--mono);font-size:22px;font-weight:600}
+.kpi span{font-size:12px;color:var(--muted)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.tab{font:inherit;font-size:13px;font-weight:700;padding:8px 14px;border-radius:999px;border:1.5px solid var(--line);background:transparent;color:var(--ink2);cursor:pointer}
+.tab[aria-selected="true"]{background:var(--accent-soft);color:var(--accent);border-color:transparent}
+.dl-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:12px}
+.file{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:10px;background:var(--excel-soft);color:var(--excel);font-weight:700;font-size:13.5px;font-family:var(--mono)}
+.empty{padding:40px;text-align:center;color:var(--muted);font-size:14px}
+
+/* features */
+.feat{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+@media (max-width:820px){.feat{grid-template-columns:1fr}}
+.fcard{padding:24px;display:flex;flex-direction:column;gap:14px}
+.fcard h3{font-size:19px;font-weight:800}
+.fcard p{font-size:14.5px;color:var(--muted)}
+.fcard .demo{background:var(--surface2);border-radius:12px;padding:14px;min-height:140px}
+.spark{width:100%;height:110px}
+.sizes{display:grid;grid-template-columns:repeat(6,1fr);gap:6px}
+.sz{border:1.5px solid var(--line);border-radius:8px;padding:8px 0;text-align:center;font-family:var(--mono);font-size:13px;font-weight:600;background:var(--surface);cursor:pointer;transition:.15s}
+.sz.oos{color:var(--sale);border-color:var(--sale);background:var(--sale-soft);text-decoration:line-through}
+.bars{display:flex;flex-direction:column;gap:8px}
+.bar-row{display:grid;grid-template-columns:70px 1fr 42px;gap:10px;align-items:center;font-size:13px}
+.bar-row .b{height:12px;border-radius:6px;background:var(--line);overflow:hidden}
+.bar-row .b i{display:block;height:100%;background:var(--ink);width:0;transition:width .7s ease}
+.bar-row .v{font-family:var(--mono);text-align:right;color:var(--muted);font-size:12px}
+.seg{display:inline-flex;background:var(--surface);border-radius:999px;padding:3px;gap:3px;border:1px solid var(--line);margin-bottom:12px}
+.seg button{font:inherit;font-size:12.5px;font-weight:700;padding:6px 12px;border-radius:999px;border:0;background:transparent;color:var(--muted);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--dark);color:var(--on-dark)}
+.chat{display:flex;flex-direction:column;gap:8px}
+.q{align-self:flex-end;background:var(--dark);color:var(--on-dark);font-size:13px;padding:8px 12px;border-radius:12px 12px 2px 12px;max-width:85%}
+.a{align-self:flex-start;background:var(--surface);border:1px solid var(--line);font-size:13px;padding:10px 12px;border-radius:12px 12px 12px 2px;max-width:92%;line-height:1.5}
+.a .mono{font-size:12px}
+.qs{display:flex;flex-wrap:wrap;gap:6px}
+.qs button{font:inherit;font-size:12px;font-weight:600;padding:6px 10px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink2);cursor:pointer}
+
+/* cost */
+.cost{display:grid;grid-template-columns:minmax(0,360px) minmax(0,1fr);gap:28px;align-items:start}
+@media (max-width:900px){.cost{grid-template-columns:1fr}}
+.ctl{padding:22px;display:flex;flex-direction:column;gap:18px}
+.ctl label{display:flex;justify-content:space-between;font-size:14px;font-weight:700}
+.ctl label output{font-family:var(--mono);font-weight:600;color:var(--accent)}
+input[type=range]{width:100%;accent-color:var(--accent)}
+.ctl .hint{font-size:12.5px;color:var(--muted)}
+.bills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media (max-width:560px){.bills{grid-template-columns:1fr}}
+.bill{padding:20px;display:flex;flex-direction:column;gap:6px}
+.bill .who{font-size:13.5px;font-weight:700;color:var(--muted)}
+.bill .rate{font-size:12px;color:var(--faint);font-family:var(--mono)}
+.bill .amt{font-size:clamp(22px,2.6vw,30px);font-weight:900;font-family:var(--mono);margin-top:6px}
+.bill .cmp{font-size:12.5px;color:var(--muted)}
+.bill.fedit{background:var(--dark);color:var(--on-dark);border-color:var(--dark)}
+.bill.fedit .who,.bill.fedit .rate,.bill.fedit .cmp{color:var(--on-dark-muted)}
+.bill.fedit .amt{color:var(--on-dark)}
+.bill .amt.gauge{position:relative}
+.gline{height:6px;border-radius:3px;background:var(--surface2);overflow:hidden;margin-top:8px}
+.gline i{display:block;height:100%;background:var(--sale);width:0;transition:width .5s ease}
+.bill.fedit .gline{background:rgba(127,127,127,.25)}
+.bill.fedit .gline i{background:var(--ok)}
+.note{font-size:12.5px;color:var(--muted);margin-top:14px;line-height:1.6}
+
+/* pricing */
+.toggle{display:inline-flex;background:var(--surface2);border-radius:999px;padding:4px;gap:4px;margin-top:6px}
+.toggle button{font:inherit;font-size:14px;font-weight:700;padding:9px 18px;border-radius:999px;border:0;background:transparent;color:var(--muted);cursor:pointer;display:inline-flex;gap:8px;align-items:center;min-height:44px}
+.toggle button[aria-pressed="true"]{background:var(--dark);color:var(--on-dark)}
+.toggle .pill{font-size:11px;font-weight:700;color:var(--accent);background:var(--accent-soft);border-radius:999px;padding:2px 8px}
+.plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:36px;align-items:stretch}
+@media (max-width:900px){.plans{grid-template-columns:1fr;max-width:460px;margin-inline:auto}}
+.plan{padding:32px 26px;display:flex;flex-direction:column;gap:20px;position:relative;border-radius:22px}
+.plan.hot{border:2px solid var(--accent);box-shadow:0 18px 40px rgba(79,70,229,.14)}
+.plan .badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;font-size:12px;font-weight:700;padding:5px 16px;border-radius:999px;white-space:nowrap}
+.plan .tier{font-size:12px;font-weight:700;letter-spacing:.06em;color:var(--muted)}
+.plan.hot .tier{color:var(--accent)}
+.plan .name{font-size:21px;font-weight:900}
+.plan .desc{font-size:13px;color:var(--muted)}
+.price{display:flex;flex-direction:column;gap:5px;min-height:92px}
+.price .was{display:flex;align-items:center;gap:8px;font-size:13.5px;color:var(--faint)}
+.price .was s{font-family:var(--mono)}
+.price .off{font-size:11.5px;font-weight:700;padding:3px 9px;border-radius:999px;background:var(--surface2);color:var(--muted)}
+.plan.hot .price .off{background:var(--accent);color:#fff}
+.price .now{display:flex;align-items:baseline;gap:6px}
+.price .now b{font-size:34px;font-weight:900;font-family:var(--mono);letter-spacing:-.02em}
+.plan.hot .price .now b{color:var(--accent)}
+.price .now span{font-size:14px;color:var(--muted)}
+.price .per{font-size:12.5px;color:var(--muted)}
+.plan.hot .price .per{color:var(--accent);font-weight:600}
+.plus{display:flex;flex-direction:column;align-items:center;gap:6px;border-top:1px solid var(--line);padding-top:14px;font-size:14px;font-weight:700}
+.plus svg{color:var(--accent)}
+.feats{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.feats li{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;color:var(--ink2)}
+.feats li svg{flex:none;margin-top:3px}
+.feats li.top{font-weight:700;color:var(--ink)}
+.feats li.no{color:var(--faint)}
+
+/* faq */
+.faq{max-width:760px}
+details{border-top:1px solid var(--line);padding-block:6px}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:14px;font-weight:700;font-size:17px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--mono);font-size:22px;color:var(--muted);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding-bottom:16px;color:var(--muted);font-size:15px;max-width:60ch}
+
+/* final */
+.final{background:var(--dark);color:var(--on-dark);border-radius:26px;padding:56px 48px;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
+.final h2{color:var(--on-dark)}
+.final .tiny{color:var(--on-dark-muted)}
+.final .btn{background:var(--on-dark);color:var(--dark)}
+footer{padding-block:40px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:var(--muted)}
+footer a{text-decoration:none;margin-right:16px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="주 메뉴">
+  <div class="wrap">
+    <div class="logo">fedit<span>.</span></div>
+    <div class="nav-links">
+      <a href="#play">직접 해보기</a>
+      <a href="#features">기능</a>
+      <a href="#cost">비용 비교</a>
+      <a href="#pricing">요금제</a>
+      <a href="#pricing" class="btn btn-dark btn-sm">3일 무료 체험</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow">패션 MD를 위한 경쟁사 상품 크롤링</div>
+      <h1>아직도 <span class="q">감으로</span> 기획하세요?<br>아직도 경쟁사 상품을<br>엑셀에 <span class="q">복사·붙여넣기</span> 하세요?</h1>
+      <p class="sub">fedit은 경쟁사 브랜드의 신상품·가격·할인·재고를 매일 아침 엑셀 한 장으로 가져다 놓습니다. 복붙은 끝, 기획만 하세요.</p>
+      <div class="hero-ctas">
+        <a href="#pricing" class="btn btn-dark">3일 무료 체험하기</a>
+        <a href="#play" class="btn btn-line">30초 만에 직접 해보기</a>
+      </div>
+      <p class="tiny">카드 등록 없이 시작 · 3일 후 자동 종료</p>
+    </div>
+
+    <div class="stage" id="stage" aria-label="경쟁사 상품 페이지가 엑셀로 바뀌는 데모">
+      <div class="site">
+        <div class="site-bar"><i></i><i></i><i></i><span class="url" id="siteUrl">zara.com/kr/new-in</span></div>
+        <div class="prods" id="prods"></div>
+      </div>
+      <div class="excel">
+        <div class="excel-bar"><span class="x">X</span>경쟁사_상품_<span class="mono" id="today"></span>.xlsx<span class="st" id="heroStatus">수집 중…</span></div>
+        <div class="grid-scroll">
+          <table class="grid" id="heroGrid">
+            <thead><tr><th>브랜드</th><th>상품명</th><th>정가</th><th>할인가</th><th>할인율</th><th>컬러</th><th>사이즈</th><th>재고</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="excel-foot"><span id="heroCount">0행</span><span>매일 06:00 갱신</span></div>
+      </div>
+      <button class="btn btn-line btn-sm replay" id="replay" type="button">다시 보기</button>
+      <div class="toast" id="toast">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12.5L9.5 17L19 7.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        저장됨 · 엑셀로 열기
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="band">
+      <div><b class="mono" data-count="184200">0</b><span>누적 수집 상품</span></div>
+      <div><b class="mono" data-count="62">0</b><span>분석 가능 브랜드</span></div>
+      <div><b>06:00</b><span>매일 자동 갱신</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- PLAYGROUND -->
+<section class="section" id="play">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">30초 체험</div>
+      <h2>브랜드를 고르고, 수집을 누르고, 엑셀로 받으세요.<br>실제로 하는 일은 이게 전부입니다.</h2>
+      <p class="sub">아래는 예시 데이터로 도는 데모입니다. 실제 서비스에서는 매일 06:00에 2번이 자동으로 돌아갑니다.</p>
+    </div>
+
+    <div class="play">
+      <div class="steps">
+        <div class="card step active" id="s1">
+          <h3><span class="n">1</span>브랜드를 고릅니다</h3>
+          <p>목록에 없는 브랜드는 신청하면 추가합니다. 베이직 월 1회, 스탠다드 월 3회.</p>
+          <div class="chips" id="brandChips" role="group" aria-label="브랜드 선택"></div>
+        </div>
+        <div class="card step" id="s2">
+          <h3><span class="n">2</span>오늘 수집을 누릅니다</h3>
+          <p>실제 서비스에서는 이 단계가 매일 자동입니다.</p>
+          <button class="btn btn-dark btn-sm" id="crawlBtn" type="button">오늘 수집 시작</button>
+          <div class="progress" id="progress" hidden></div>
+        </div>
+        <div class="card step" id="s3">
+          <h3><span class="n">3</span>엑셀로 받습니다</h3>
+          <p>필터로 보고 싶은 것만 남기고 내려받으세요.</p>
+          <button class="btn btn-excel btn-sm" id="dlBtn" type="button" disabled>엑셀 다운로드</button>
+          <div id="fileOut" hidden></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="kpis">
+          <div class="card kpi"><b class="mono" id="kTotal">0</b><span>수집 상품</span></div>
+          <div class="card kpi"><b class="mono" id="kNew" style="color:var(--excel)">0</b><span>오늘 신상품</span></div>
+          <div class="card kpi"><b class="mono" id="kSale" style="color:var(--sale)">0</b><span>가격 변동</span></div>
+        </div>
+        <div class="tabs" role="tablist" aria-label="필터">
+          <button class="tab" role="tab" aria-selected="true" data-f="all" type="button">전체</button>
+          <button class="tab" role="tab" aria-selected="false" data-f="new" type="button">신상품만</button>
+          <button class="tab" role="tab" aria-selected="false" data-f="sale" type="button">가격 변동만</button>
+          <button class="tab" role="tab" aria-selected="false" data-f="oos" type="button">품절 사이즈만</button>
+        </div>
+        <div class="excel">
+          <div class="excel-bar"><span class="x">X</span>경쟁사_상품_오늘.xlsx<span class="st" id="playStatus">브랜드를 고르세요</span></div>
+          <div class="grid-scroll" style="max-height:420px">
+            <table class="grid" id="playGrid">
+              <thead><tr><th>브랜드</th><th>상품코드</th><th>상품명</th><th>대분류</th><th>정가</th><th>할인가</th><th>할인율</th><th>컬러</th><th>가용 사이즈</th><th>재고</th><th>수집일시</th></tr></thead>
+              <tbody></tbody>
+            </table>
+            <div class="empty" id="playEmpty">1단계에서 브랜드를 고르면 여기에 상품이 쌓입니다.</div>
+          </div>
+          <div class="excel-foot"><span id="playCount">0행</span><span>예시 데이터</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section" id="features" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">엑셀 한 장 이상</div>
+      <h2>수집한 데이터로 바로 기획할 수 있게 만들어 둔 기능들</h2>
+      <p class="sub">전부 클릭해서 만져볼 수 있습니다.</p>
+    </div>
+    <div class="feat">
+      <div class="card fcard">
+        <h3>가격 추적</h3>
+        <p>할인이 언제 시작됐고 몇 %까지 갔는지 상품별로 90일 이력을 봅니다. 스탠다드부터.</p>
+        <div class="demo">
+          <div class="seg" role="group" aria-label="상품 선택">
+            <button type="button" aria-pressed="true" data-sp="0">ZARA 울 코트</button>
+            <button type="button" aria-pressed="false" data-sp="1">COS 캐시미어 니트</button>
+            <button type="button" aria-pressed="false" data-sp="2">ARKET 카디건</button>
+          </div>
+          <svg class="spark" id="spark" viewBox="0 0 400 110" preserveAspectRatio="none" role="img" aria-label="30일 가격 추이"></svg>
+          <div class="tiny mono" id="sparkNote"></div>
+        </div>
+      </div>
+
+      <div class="card fcard">
+        <h3>품절 사이즈 감지</h3>
+        <p>어떤 사이즈가 먼저 빠지는지 보이면 다음 시즌 사이즈 비율이 나옵니다. 칸을 눌러보세요.</p>
+        <div class="demo">
+          <div class="tiny" style="margin-bottom:10px">COS 릴렉스핏 캐시미어 니트 · 오늘 06:05</div>
+          <div class="sizes" id="sizes"></div>
+          <div class="tiny" id="sizeNote" style="margin-top:10px"></div>
+        </div>
+      </div>
+
+      <div class="card fcard">
+        <h3>유형·색상·패션쇼 분석</h3>
+        <p>경쟁사 신상품이 어느 유형과 색으로 몰리는지 한눈에. 스탠다드부터.</p>
+        <div class="demo">
+          <div class="seg" role="group" aria-label="분석 기준">
+            <button type="button" aria-pressed="true" data-an="type">유형</button>
+            <button type="button" aria-pressed="false" data-an="color">색상</button>
+            <button type="button" aria-pressed="false" data-an="show">패션쇼</button>
+          </div>
+          <div class="bars" id="bars"></div>
+        </div>
+      </div>
+
+      <div class="card fcard">
+        <h3>AI 에이전트</h3>
+        <p>수집한 표에 대고 그냥 물어보세요. 스탠다드 월 300회, 엔터프라이즈 무제한.</p>
+        <div class="demo">
+          <div class="chat" id="chat"></div>
+          <div class="qs" id="qs" style="margin-top:10px"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COST -->
+<section class="section" id="cost" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">AI로 직접 해보면 얼마가 들까요?</div>
+      <h2>슬라이더를 움직여 보세요. 경쟁사 100개를 매일 돌리면 가장 싼 모델로도 월 1,700만 원입니다.</h2>
+      <p class="sub">API 토큰 비용만 계산한 값입니다. 프록시 서버, 브라우저 인프라, 사이트가 바뀔 때마다 파서를 고치는 개발자 시간은 빠져 있습니다.</p>
+    </div>
+    <div class="cost">
+      <div class="card ctl">
+        <div>
+          <label for="rBrands">경쟁사 브랜드 수 <output id="oBrands">100개</output></label>
+          <input type="range" id="rBrands" min="5" max="100" step="5" value="100">
+        </div>
+        <div>
+          <label for="rProds">브랜드당 상품 수 <output id="oProds">300개</output></label>
+          <input type="range" id="rProds" min="50" max="500" step="50" value="300">
+        </div>
+        <div>
+          <label>수집 주기</label>
+          <div class="seg" role="group" aria-label="수집 주기" style="margin:8px 0 0">
+            <button type="button" aria-pressed="false" data-freq="4">주 1회</button>
+            <button type="button" aria-pressed="true" data-freq="30">매일</button>
+          </div>
+        </div>
+        <p class="hint">상품 페이지 1개 = 입력 6,000토큰 + 출력 150토큰 · 환율 1,400원/$ · 2026년 9월 공식 단가 기준</p>
+      </div>
+      <div>
+        <div class="bills" id="bills">
+          <div class="card bill" data-m="fable"><div class="who">Claude Fable 5.1</div><div class="rate">$10 / $50 per 1M tokens</div><div class="amt" id="cFable">—</div><div class="gline"><i></i></div><div class="cmp" id="xFable"></div></div>
+          <div class="card bill" data-m="gpt"><div class="who">GPT-5.6</div><div class="rate">$5 / $30 per 1M tokens</div><div class="amt" id="cGpt">—</div><div class="gline"><i></i></div><div class="cmp" id="xGpt"></div></div>
+          <div class="card bill" data-m="gem"><div class="who">Gemini 3 Pro</div><div class="rate">$2 / $12 per 1M tokens</div><div class="amt" id="cGem">—</div><div class="gline"><i></i></div><div class="cmp" id="xGem"></div></div>
+          <div class="card bill fedit"><div class="who" id="fPlan">fedit 스탠다드</div><div class="rate" id="fRate">브랜드 30개 · 매일 · 엑셀 무제한</div><div class="amt" id="cFedit">월 34,900원</div><div class="gline"><i></i></div><div class="cmp" id="xFedit">게다가 사이트가 바뀔 때마다 고치는 건 우리 몫입니다.</div></div>
+        </div>
+        <p class="note">단가 출처: Anthropic·Google·OpenAI 공식 가격 페이지 (2026-09). 값은 반올림.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section" id="pricing" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head" style="align-items:center;text-align:center;max-width:none;margin-inline:auto">
+      <div class="eyebrow">요금제</div>
+      <h2>경쟁사 상품을 가장 먼저, 가장 정확하게</h2>
+      <div class="toggle" role="group" aria-label="결제 주기">
+        <button type="button" id="tMonth" aria-pressed="false">월 결제</button>
+        <button type="button" id="tYear" aria-pressed="true">연 결제 <span class="pill">최대 24% 할인</span></button>
+      </div>
+    </div>
+
+    <div class="plans">
+      <div class="card plan">
+        <div><div class="tier">BASIC</div><div class="name">베이직</div><div class="desc">체험형 요금제 · 가장 빠르게 시작하는 방법</div></div>
+        <div class="price" data-plan="basic">
+          <div class="was"><s data-m="33,200원" data-y="358,800원"></s><span class="off" data-m="10% 할인" data-y="17% 할인"></span></div>
+          <div class="now"><b data-m="29,900원" data-y="299,000원"></b><span data-m="/ 월" data-y="/ 년"></span></div>
+          <div class="per" data-m="30일 주기 정기 구독" data-y="월 약 24,900원 · 월 결제 대비 59,800원 절약"></div>
+        </div>
+        <a href="#" class="btn btn-line">3일 무료 체험하기</a>
+        <ul class="feats">
+          <li class="top"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="7" fill="var(--accent)"/><path d="M7 12.5L10.2 15.5L17 8.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>경쟁사 실시간 상품 엑셀 다운로드 <span style="color:var(--muted);font-weight:500">월 3회</span></span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 12.5L9.6 16L18 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>관심 브랜드 최대 5개 모니터링</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 12.5L9.6 16L18 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>플랫폼별 키워드 분석 제공</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 12.5L9.6 16L18 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>신규 브랜드 분석 신청 월 1회</li>
+          <li class="no"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M7 7L17 17M17 7L7 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>유형/색상/패션쇼 분석 미지원</li>
+        </ul>
+      </div>
+
+      <div class="card plan hot">
+        <div class="badge">추천</div>
+        <div><div class="tier">STANDARD</div><div class="name">스탠다드</div><div class="desc">인기 요금제 · 매일 바뀌는 경쟁사 상품을 놓치지 않아요</div></div>
+        <div class="price" data-plan="std">
+          <div class="was"><s data-m="58,200원" data-y="418,800원"></s><span class="off" data-m="40% 할인" data-y="24% 할인 · 최대"></span></div>
+          <div class="now"><b data-m="34,900원" data-y="319,000원"></b><span data-m="/ 월" data-y="/ 년"></span></div>
+          <div class="per" data-m="30일 주기 정기 구독" data-y="월 약 26,600원 · 베이직 월 결제(29,900원)보다 저렴 · 99,800원 절약"></div>
+        </div>
+        <a href="#" class="btn btn-dark" style="background:var(--accent);color:#fff">이용하기</a>
+        <div class="plus">베이직의 모든 기능<svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="var(--accent-soft)"/><path d="M12 7V17M7 12H17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <ul class="feats">
+          <li class="top"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="7" fill="var(--accent)"/><path d="M7 12.5L10.2 15.5L17 8.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>경쟁사 실시간 상품 엑셀 다운로드 <span style="color:var(--accent)">무제한</span></span></li>
+          <li class="top"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="7" fill="var(--accent)"/><path d="M7 12.5L10.2 15.5L17 8.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>브랜드 최대 <span style="color:var(--accent)">30개</span> 모니터링</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 12.5L9.6 16L18 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>유형/색상/패션쇼 분석 지원</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 12.5L9.6 16L18 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>신규 브랜드 분석 신청 월 3회</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 12.5L9.6 16L18 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>AI 에이전트 제공 · 월 300회 질문</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 12.5L9.6 16L18 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>상품 수집 이력 90일 보관 · 기간별 가격 비교</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 12.5L9.6 16L18 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>플랫폼별 키워드 분석 무제한</li>
+        </ul>
+      </div>
+
+      <div class="card plan">
+        <div><div class="tier">ENTERPRISE</div><div class="name">엔터프라이즈</div><div class="desc">맞춤형 솔루션 · 팀 단위로 도입하는 조직</div></div>
+        <div class="price" style="justify-content:center">
+          <div class="now"><b style="font-size:26px">기업 문의</b></div>
+          <div class="per">팀 규모와 브랜드 수에 맞춰 견적을 드려요</div>
+        </div>
+        <a href="#" class="btn btn-line">문의하기</a>
+        <div class="plus">스탠다드의 모든 기능<svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="var(--surface2)"/><path d="M12 7V17M7 12H17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <ul class="feats">
+          <li class="top"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="7" fill="var(--dark)"/><path d="M7 12.5L10.2 15.5L17 8.5" stroke="var(--on-dark)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>경쟁사 실시간 상품 엑셀 다운로드 · 브랜드 무제한</li>
+          <li class="top"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="7" fill="var(--dark)"/><path d="M7 12.5L10.2 15.5L17 8.5" stroke="var(--on-dark)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>팀 공유 계정 <span style="color:var(--muted);font-weight:500">· 팀 시트 · 관리자 기능</span></span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 12.5L9.6 16L18 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>신규 브랜드 분석 맞춤 지원</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 12.5L9.6 16L18 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>AI 에이전트 질문 무제한</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 12.5L9.6 16L18 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>상품 수집 이력 무제한 보관</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">자주 묻는 질문</div><h2>궁금한 것</h2></div>
+    <div class="faq">
+      <details open><summary>경쟁사 사이트 구조가 바뀌면요?</summary><p>수집이 깨지면 우리가 고칩니다. 고객이 할 일은 없습니다.</p></details>
+      <details><summary>데이터가 정확한가요?</summary><p>상품 페이지에 표시된 값을 그대로 가져옵니다. 각 행에 수집 시각과 원본 URL이 들어 있어 바로 확인할 수 있습니다.</p></details>
+      <details><summary>원하는 브랜드가 없으면요?</summary><p>신규 브랜드 분석을 신청하면 추가합니다. 베이직 월 1회, 스탠다드 월 3회, 엔터프라이즈는 맞춤 지원.</p></details>
+      <details><summary>해지는 어떻게 하나요?</summary><p>설정에서 버튼 하나. 남은 기간까지 쓰고 자동 종료됩니다.</p></details>
+      <details><summary>법적으로 문제없나요?</summary><p>공개된 상품 정보만 수집하며 개인정보는 다루지 않습니다.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="final">
+      <div><h2>다음 월요일은 복붙 말고<br>기획만 하세요.</h2><p class="tiny" style="margin-top:10px">카드 등록 없음 · 3일 후 자동 종료</p></div>
+      <a href="#pricing" class="btn" style="min-height:58px;padding:0 32px;font-size:17px">3일 무료 체험하기</a>
+    </div>
+    <footer>
+      <div class="logo" style="font-size:18px">fedit<span>.</span></div>
+      <div><a href="#">이용약관</a><a href="#">개인정보처리방침</a><a href="#">문의</a></div>
+      <div>© 2026 fedit</div>
+    </footer>
+  </div>
+</section>
+
+<script>
+(function(){
+  const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const won=n=>n.toLocaleString('ko-KR');
+  const today=new Date(); const ymd=`${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`;
+  $('#today').textContent=ymd;
+
+  /* ---------- 예시 데이터 ---------- */
+  const DATA=[
+    {b:'ZARA',c:'04341285',n:'울 블렌드 오버사이즈 코트',cat:'아우터',p:159000,s:119000,col:'카멜',sz:['S','M','L'],oos:[],isNew:true,chg:true,t:'06:02'},
+    {b:'ZARA',c:'02753301',n:'크롭 트위드 재킷',cat:'아우터',p:89900,s:89900,col:'블랙',sz:['XS','S','M'],oos:[],isNew:true,chg:false,t:'06:02'},
+    {b:'ZARA',c:'07901220',n:'새틴 미디 스커트',cat:'하의',p:59900,s:39900,col:'버건디',sz:['S','M'],oos:['L'],isNew:false,chg:true,t:'06:03'},
+    {b:'COS',c:'1197402',n:'릴렉스핏 캐시미어 니트',cat:'상의',p:229000,s:160000,col:'그레이',sz:['M','L'],oos:['S'],isNew:false,chg:true,t:'06:05'},
+    {b:'COS',c:'1203311',n:'테일러드 울 트라우저',cat:'하의',p:189000,s:189000,col:'차콜',sz:['44','46','48'],oos:[],isNew:true,chg:false,t:'06:05'},
+    {b:'H&M',c:'1188930001',n:'와이드 데님 팬츠',cat:'하의',p:49900,s:49900,col:'라이트블루',sz:['25','27','29'],oos:[],isNew:false,chg:false,t:'06:07'},
+    {b:'H&M',c:'1201455002',n:'퍼 트리밍 파카',cat:'아우터',p:99900,s:69900,col:'블랙',sz:['S','M'],oos:['L','XL'],isNew:true,chg:true,t:'06:07'},
+    {b:'UNIQLO',c:'460823',n:'히트텍 터틀넥 티',cat:'상의',p:19900,s:14900,col:'화이트',sz:['S','M','L','XL'],oos:[],isNew:false,chg:true,t:'06:09'},
+    {b:'UNIQLO',c:'471002',n:'라이트 다운 베스트',cat:'아우터',p:59900,s:59900,col:'올리브',sz:['M','L','XL'],oos:['S'],isNew:true,chg:false,t:'06:09'},
+    {b:'ARKET',c:'1156882',n:'메리노 울 카디건',cat:'상의',p:149000,s:104000,col:'오트밀',sz:['XS','S'],oos:['M','L'],isNew:false,chg:true,t:'06:12'},
+    {b:'ARKET',c:'1160210',n:'코튼 포플린 셔츠',cat:'상의',p:99000,s:99000,col:'화이트',sz:['S','M','L'],oos:[],isNew:true,chg:false,t:'06:12'},
+    {b:'MUSINSA STANDARD',c:'3927710',n:'울 싱글 코트',cat:'아우터',p:139000,s:139000,col:'네이비',sz:['M','L'],oos:['M'],isNew:false,chg:false,t:'06:11'},
+    {b:'MUSINSA STANDARD',c:'3930188',n:'슬랙스 세미와이드',cat:'하의',p:49900,s:39900,col:'블랙',sz:['S','M','L','XL'],oos:[],isNew:true,chg:true,t:'06:11'},
+  ];
+  const pct=r=>r.p===r.s?'—':Math.round((1-r.s/r.p)*100)+'%';
+  const stockTxt=r=>r.oos.length?r.oos.join(' ')+' 품절':'판매중';
+
+  /* ---------- HERO 데모 ---------- */
+  const heroItems=DATA.filter(r=>r.b==='ZARA').concat(DATA.filter(r=>r.b==='COS').slice(0,1));
+  const prods=$('#prods'), heroBody=$('#heroGrid tbody'), toast=$('#toast'), heroStatus=$('#heroStatus');
+  let heroTimer=null;
+  function heroRow(r,cls){
+    const tr=document.createElement('tr'); if(cls)tr.className=cls;
+    tr.innerHTML=`<td>${r.b}</td><td>${r.n}</td><td>${won(r.p)}</td><td class="${r.chg?'sale':''}">${won(r.s)}</td><td class="${r.chg?'sale':''}">${pct(r)}</td><td>${r.col}</td><td>${r.sz.join(' ')}</td><td class="${r.oos.length?'oos':''}">${stockTxt(r)}</td>`;
+    return tr;
+  }
+  function heroReset(){
+    clearTimeout(heroTimer); heroBody.innerHTML=''; toast.classList.remove('show');
+    prods.innerHTML=heroItems.map(r=>`<div class="prod"><div class="img"></div><div class="nm">${r.n}</div><div class="pr">${r.p!==r.s?`<s>${won(r.p)}</s><b>${won(r.s)}</b>`:`<span>${won(r.p)}</span>`}</div></div>`).join('');
+    $('#heroCount').textContent='0행'; heroStatus.textContent='수집 중…';
+  }
+  function heroPlay(){
+    heroReset();
+    if(reduce){ heroItems.forEach(r=>heroBody.appendChild(heroRow(r))); $('#heroCount').textContent=heroItems.length+'행'; heroStatus.textContent='수집 완료'; toast.classList.add('show'); return; }
+    const cards=$$('.prod',prods); let i=0;
+    const step=()=>{
+      if(i>=heroItems.length){ heroStatus.textContent='수집 완료'; toast.classList.add('show'); heroTimer=setTimeout(heroPlay,4200); return; }
+      cards[i].classList.add('fly');
+      const r=heroItems[i]; i++;
+      heroTimer=setTimeout(()=>{ heroBody.appendChild(heroRow(r,'in')); $('#heroCount').textContent=i+'행'; heroTimer=setTimeout(step,520); },420);
+    };
+    heroTimer=setTimeout(step,700);
+  }
+  $('#replay').addEventListener('click',heroPlay);
+  heroPlay();
+
+  /* 숫자 띠 카운트업 */
+  $$('[data-count]').forEach(el=>{
+    const end=+el.dataset.count; if(reduce){el.textContent=won(end);return;}
+    const t0=performance.now(), dur=1400;
+    const tick=t=>{const k=Math.min(1,(t-t0)/dur); el.textContent=won(Math.round(end*(1-Math.pow(1-k,3)))); if(k<1)requestAnimationFrame(tick);};
+    requestAnimationFrame(tick);
+  });
+
+  /* ---------- PLAYGROUND ---------- */
+  const BRANDS=['ZARA','COS','H&M','UNIQLO','ARKET','MUSINSA STANDARD'];
+  const chips=$('#brandChips'); let picked=new Set(['ZARA','COS']); let crawled=new Set(); let filter='all';
+  chips.innerHTML=BRANDS.map(b=>`<button type="button" class="chip" aria-pressed="${picked.has(b)}" data-b="${b}">${b}</button>`).join('')+`<button type="button" class="chip" data-b="__req" style="border-style:dashed">+ 브랜드 신청</button>`;
+  chips.addEventListener('click',e=>{
+    const btn=e.target.closest('.chip'); if(!btn)return;
+    if(btn.dataset.b==='__req'){ btn.textContent='신청 접수됨 · 영업일 2일 내 추가'; btn.disabled=true; return; }
+    const b=btn.dataset.b; picked.has(b)?picked.delete(b):picked.add(b); btn.setAttribute('aria-pressed',picked.has(b));
+    crawled=new Set([...crawled].filter(x=>picked.has(x))); render(); setStep(picked.size?2:1);
+    $('#playStatus').textContent=picked.size?`${picked.size}개 브랜드 선택 · 수집을 누르세요`:'브랜드를 고르세요';
+  });
+  function setStep(n){ [1,2,3].forEach(i=>$('#s'+i).classList.toggle('active',i===n)); }
+  const body=$('#playGrid tbody'), empty=$('#playEmpty');
+  function rows(){ return DATA.filter(r=>crawled.has(r.b)).filter(r=>filter==='all'||(filter==='new'&&r.isNew)||(filter==='sale'&&r.chg)||(filter==='oos'&&r.oos.length)); }
+  function render(animate){
+    const rs=rows(); body.innerHTML='';
+    rs.forEach(r=>{ const tr=document.createElement('tr'); if(animate&&!reduce)tr.className='in';
+      tr.innerHTML=`<td>${r.b}</td><td>${r.c}</td><td>${r.n}${r.isNew?' <span class="new">NEW</span>':''}</td><td>${r.cat}</td><td>${won(r.p)}</td><td class="${r.chg?'sale':''}">${won(r.s)}</td><td class="${r.chg?'sale':''}">${pct(r)}</td><td>${r.col}</td><td>${r.sz.join(' ')}</td><td class="${r.oos.length?'oos':''}">${stockTxt(r)}</td><td>${ymd.slice(5)} ${r.t}</td>`;
+      body.appendChild(tr); });
+    empty.hidden=rs.length>0; if(!rs.length&&crawled.size)empty.textContent='이 필터에 해당하는 상품이 없습니다.'; else if(!crawled.size)empty.textContent='1단계에서 브랜드를 고르면 여기에 상품이 쌓입니다.';
+    const all=DATA.filter(r=>crawled.has(r.b));
+    $('#playCount').textContent=rs.length+'행'; $('#kTotal').textContent=all.length; $('#kNew').textContent=all.filter(r=>r.isNew).length; $('#kSale').textContent=all.filter(r=>r.chg).length;
+    $('#dlBtn').disabled=!all.length;
+  }
+  $('#crawlBtn').addEventListener('click',()=>{
+    if(!picked.size){ setStep(1); return; }
+    const prog=$('#progress'); prog.hidden=false; crawled=new Set(); render(); filter='all'; $$('.tab').forEach(t=>t.setAttribute('aria-selected',t.dataset.f==='all'));
+    const list=[...picked]; prog.innerHTML=list.map(b=>`<div class="row"><span style="width:130px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${b}</span><span class="bar"><i></i></span><span class="ok" data-ok="${b}"></span></div>`).join('');
+    $('#crawlBtn').disabled=true; $('#playStatus').textContent='수집 중…'; setStep(2);
+    list.forEach((b,i)=>{ setTimeout(()=>{ $$('.bar i',prog)[i].style.width='100%'; },80+i*120); setTimeout(()=>{ $(`[data-ok="${b}"]`,prog).textContent='✓'; crawled.add(b); render(true); if(i===list.length-1){ $('#crawlBtn').disabled=false; $('#crawlBtn').textContent='다시 수집'; $('#playStatus').textContent=`수집 완료 · ${DATA.filter(r=>crawled.has(r.b)).length}개 상품`; setStep(3);} },reduce?50:700+i*450); });
+  });
+  $$('.tab').forEach(t=>t.addEventListener('click',()=>{ filter=t.dataset.f; $$('.tab').forEach(x=>x.setAttribute('aria-selected',x===t)); render(true); }));
+  $('#dlBtn').addEventListener('click',()=>{
+    const n=rows().length; const out=$('#fileOut'); out.hidden=false;
+    out.innerHTML=`<div class="dl-row"><span class="file"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 4V15M12 15L8 11M12 15L16 11M5 19H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>경쟁사_상품_${ymd}.xlsx · ${n}행</span><span class="tiny">데모에서는 파일이 저장되지 않습니다</span></div>`;
+  });
+  render();
+
+  /* ---------- FEATURES ---------- */
+  // 가격 추적
+  const SP=[
+    {n:'ZARA 울 블렌드 오버사이즈 코트',p:159000,d:[159,159,159,159,159,159,159,159,159,159,159,159,139,139,139,139,139,139,139,139,139,119,119,119,119,119,119,119,119,119]},
+    {n:'COS 릴렉스핏 캐시미어 니트',p:229000,d:[229,229,229,229,229,229,229,229,229,229,229,229,229,229,229,229,229,229,229,229,229,229,229,229,229,229,229,160,160,160]},
+    {n:'ARKET 메리노 울 카디건',p:149000,d:[149,149,149,149,149,149,149,149,149,149,149,149,149,149,149,149,149,149,149,149,149,149,149,149,149,104,104,104,104,104]},
+  ];
+  function spark(i){
+    const s=SP[i], svg=$('#spark'), W=400,H=110, pad=8; const max=Math.max(...s.d)*1.05, min=Math.min(...s.d)*0.85;
+    const pts=s.d.map((v,k)=>[pad+k*(W-2*pad)/(s.d.length-1), H-pad-(v-min)/(max-min)*(H-2*pad)]);
+    const line=pts.map((p,k)=>(k?'L':'M')+p[0].toFixed(1)+' '+p[1].toFixed(1)).join(' ');
+    const area=line+` L${pts[pts.length-1][0].toFixed(1)} ${H-pad} L${pts[0][0].toFixed(1)} ${H-pad} Z`;
+    const drops=s.d.map((v,k)=>k&&v<s.d[k-1]?k:-1).filter(k=>k>=0);
+    svg.innerHTML=`<path d="${area}" fill="var(--sale-soft)"/><path d="${line}" fill="none" stroke="var(--sale)" stroke-width="2.2" stroke-linejoin="round"/>`+
+      drops.map(k=>`<circle cx="${pts[k][0].toFixed(1)}" cy="${pts[k][1].toFixed(1)}" r="4" fill="var(--sale)"/><text x="${(pts[k][0]-2).toFixed(1)}" y="${(pts[k][1]-9).toFixed(1)}" font-size="11" font-family="var(--mono)" fill="var(--ink)" text-anchor="middle">${Math.round((1-s.d[k]/s.d[0])*100)}%</text>`).join('')+
+      `<circle cx="${pts[pts.length-1][0].toFixed(1)}" cy="${pts[pts.length-1][1].toFixed(1)}" r="5" fill="var(--ink)"/>`;
+    const first=drops[0]; $('#sparkNote').textContent=`${s.n} · 정가 ${won(s.p)}원 → 오늘 ${won(s.d[s.d.length-1]*1000)}원 · ${first?`${30-first}일 전 첫 할인`:'할인 없음'}`;
+  }
+  $$('[data-sp]').forEach(b=>b.addEventListener('click',()=>{ $$('[data-sp]').forEach(x=>x.setAttribute('aria-pressed',x===b)); spark(+b.dataset.sp); }));
+  spark(0);
+
+  // 품절 사이즈
+  const SZ=['XS','S','M','L','XL','XXL']; let oos=new Set(['S','XL','XXL']);
+  function drawSizes(){ $('#sizes').innerHTML=SZ.map(s=>`<button type="button" class="sz ${oos.has(s)?'oos':''}" data-s="${s}" aria-pressed="${oos.has(s)}">${s}</button>`).join('');
+    $('#sizeNote').textContent=oos.size?`품절 ${[...oos].join(', ')} · 가용 ${SZ.filter(s=>!oos.has(s)).join(', ')} → 이번 시즌은 ${[...oos].filter(s=>['XS','S'].includes(s)).length?'작은':'큰'} 사이즈가 먼저 빠집니다`:'전 사이즈 판매중'; }
+  $('#sizes').addEventListener('click',e=>{ const b=e.target.closest('.sz'); if(!b)return; oos.has(b.dataset.s)?oos.delete(b.dataset.s):oos.add(b.dataset.s); drawSizes(); });
+  drawSizes();
+
+  // 유형/색상/패션쇼
+  const AN={type:[['코트',38],['니트',27],['재킷',18],['팬츠',12],['스커트',5]],color:[['블랙',34],['카멜',22],['그레이',19],['버건디',14],['네이비',11]],show:[['오버사이즈',41],['테일러드',25],['퍼 트리밍',17],['새틴',10],['크롭',7]]};
+  function bars(k){ $('#bars').innerHTML=AN[k].map(([n,v])=>`<div class="bar-row"><span>${n}</span><span class="b"><i data-w="${v}"></i></span><span class="v">${v}%</span></div>`).join(''); requestAnimationFrame(()=>$$('#bars i').forEach(i=>i.style.width=i.dataset.w+'%')); }
+  $$('[data-an]').forEach(b=>b.addEventListener('click',()=>{ $$('[data-an]').forEach(x=>x.setAttribute('aria-pressed',x===b)); bars(b.dataset.an); }));
+  bars('type');
+
+  // AI 에이전트
+  const QA=[
+    ['이번 주 코트 중 할인 폭 제일 큰 건?','ZARA 울 블렌드 오버사이즈 코트가 25%로 가장 큽니다 (159,000 → 119,000원). 21일 전 13% 할인으로 시작해 9일 전 25%까지 내려갔습니다.'],
+    ['COS 니트 품절 사이즈 알려줘','릴렉스핏 캐시미어 니트는 S가 품절, M·L만 남았습니다. 3일 연속 S 품절이라 재입고 없이 소진 중으로 보입니다.'],
+    ['경쟁사 신상품 중 카멜 컬러만 뽑아줘','오늘 신상품 7개 중 카멜은 1개입니다: ZARA 울 블렌드 오버사이즈 코트. 지난주까지 포함하면 3개로, 카멜 비중이 22%입니다.'],
+    ['ZARA vs H&M 아우터 평균가 비교','ZARA 아우터 평균 판매가 104,450원, H&M 69,900원. ZARA가 1.5배 높고 할인율은 H&M이 30%로 더 큽니다.'],
+  ];
+  const chat=$('#chat'), qs=$('#qs');
+  function ask(i){ const [q,a]=QA[i]; chat.innerHTML=`<div class="q">${q}</div><div class="a">${a}</div>`; }
+  qs.innerHTML=QA.map((x,i)=>`<button type="button" data-q="${i}">${x[0]}</button>`).join('');
+  qs.addEventListener('click',e=>{ const b=e.target.closest('[data-q]'); if(b)ask(+b.dataset.q); });
+  ask(0);
+
+  /* ---------- COST ---------- */
+  const RATE={fable:[10,50],gpt:[5,30],gem:[2,12]}; const FX=1400, IN=6000, OUT=150; let freq=30;
+  function man(v){ return v>=1e8?`${(v/1e8).toFixed(1)}억 원`:v>=1e4?`${won(Math.round(v/1e4))}만 원`:`${won(Math.round(v))}원`; }
+  function calc(){
+    const brands=+$('#rBrands').value, prods=+$('#rProds').value; $('#oBrands').value=brands+'개'; $('#oProds').value=prods+'개';
+    const pages=brands*prods; const cost=k=>(pages*IN/1e6*RATE[k][0]+pages*OUT/1e6*RATE[k][1])*FX*freq;
+    const c={fable:cost('fable'),gpt:cost('gpt'),gem:cost('gem')}; const max=c.fable;
+    let plan,rate,price; if(brands<=5){plan='fedit 베이직';rate='브랜드 5개 · 매일 · 엑셀 월 3회';price=29900;} else if(brands<=30){plan='fedit 스탠다드';rate='브랜드 30개 · 매일 · 엑셀 무제한';price=34900;} else {plan='fedit 엔터프라이즈';rate=`브랜드 ${brands}개 · 매일 · 팀 공유 계정`;price=null;}
+    $('#fPlan').textContent=plan; $('#fRate').textContent=rate; $('#cFedit').textContent=price?`월 ${won(price)}원`:'기업 문의';
+    [['fable','cFable','xFable'],['gpt','cGpt','xGpt'],['gem','cGem','xGem']].forEach(([k,id,x])=>{ $('#'+id).textContent='월 약 '+man(c[k]); $('#'+x).textContent=price?`fedit의 ${won(Math.round(c[k]/price))}배`:`연간 약 ${man(c[k]*12)}`; $(`[data-m="${k}"] .gline i`).style.width=(c[k]/max*100)+'%'; });
+    $('.bill.fedit .gline i').style.width=price?Math.max(1.5,price/max*100)+'%':'100%';
+    $('#xFedit').textContent=price?`위 ${freq===30?'매일':'주 1회'} 기준 가장 싼 모델 대비 ${won(Math.round(c.gem/price))}분의 1 · 사이트가 바뀔 때마다 고치는 건 우리 몫`:'견적에 프록시·인프라·유지보수가 모두 포함됩니다';
+  }
+  ['rBrands','rProds'].forEach(id=>$('#'+id).addEventListener('input',calc));
+  $$('[data-freq]').forEach(b=>b.addEventListener('click',()=>{ freq=+b.dataset.freq; $$('[data-freq]').forEach(x=>x.setAttribute('aria-pressed',x===b)); calc(); }));
+  calc();
+
+  /* ---------- PRICING TOGGLE ---------- */
+  function billing(y){ $('#tYear').setAttribute('aria-pressed',y); $('#tMonth').setAttribute('aria-pressed',!y); $$('.price [data-m]').forEach(el=>el.textContent=y?el.dataset.y:el.dataset.m); try{localStorage.setItem('fedit-billing',y?'y':'m')}catch(e){} }
+  $('#tYear').addEventListener('click',()=>billing(true)); $('#tMonth').addEventListener('click',()=>billing(false));
+  let saved='y'; try{saved=localStorage.getItem('fedit-billing')||'y'}catch(e){} billing(saved!=='m');
+})();
+</script>
+</body>
+</html>
