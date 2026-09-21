@@ -176,6 +176,10 @@ table.t td.k{color:var(--ink);font-weight:500}
 .srow .sb i{display:block;height:100%;border-radius:7px;background:var(--faint);width:var(--w);transition:width .9s cubic-bezier(.2,.7,.2,1)}
 .srow .sb em{position:absolute;left:12px;top:-3px;font-style:normal;font-size:12px;font-weight:600;color:var(--accent-ink);white-space:nowrap}
 .srow .sv{text-align:right;font-weight:600;color:var(--ink);white-space:nowrap}
+.srow .sl small{display:block;font-size:12px;color:var(--muted);font-weight:400;line-height:1.4}
+.srow.sum{padding-top:14px;border-top:1px dashed var(--line)}
+.srow.sum .sl,.srow.sum .sv{font-weight:700;color:var(--ink)}
+.srow.sum .sb i{background:var(--muted)}
 .srow.us .sl,.srow.us .sv{color:var(--accent-ink);font-weight:700}
 .srow.us .sb i{background:var(--accent);min-width:4px}
 .why{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:880px;margin:32px auto 0}
@@ -470,21 +474,21 @@ footer nav a{text-decoration:none;margin-left:18px}
   <div class="wrap">
     <div class="head center">
       <div class="eyebrow">직접 하면 얼마나 들까요</div>
-      <h2>Claude 구독 하나보다 쌉니다.</h2>
+      <h2>AI 툴 구독 하나보다 쌉니다.</h2>
       <p class="lead" style="margin-inline:auto">경쟁사 100개 브랜드의 신상품을 매주 직접 챙기려면 AI 챗 구독에 크롤링 툴 구독까지 두 개가 필요합니다. 그래도 사람이 매주 돌려야 합니다. fedit은 하나의 요금으로 매일 자동입니다.</p>
     </div>
     <div class="card scale">
-      <div class="srow"><div class="sl">ChatGPT Pro + 크롤링 툴</div><div class="sb"><i style="--w:100%"></i></div><div class="sv">월 약 26만 원</div></div>
-      <div class="srow"><div class="sl">Claude Max + 크롤링 툴</div><div class="sb"><i style="--w:100%"></i></div><div class="sv">월 약 26만 원</div></div>
-      <div class="srow"><div class="sl">Google AI Ultra + 크롤링 툴</div><div class="sb"><i style="--w:100%"></i></div><div class="sv">월 약 26만 원</div></div>
-      <div class="srow us"><div class="sl">fedit 스탠다드</div><div class="sb"><i style="--w:13.4%"></i><em style="left:calc(13.4% + 10px)">Claude Max 한 달 구독료의 1/4</em></div><div class="sv">월 34,900원</div></div>
+      <div class="srow"><div class="sl">AI 툴 구독 <small>Claude · ChatGPT · Gemini 상위 플랜</small></div><div class="sb"><i style="--w:54%"></i></div><div class="sv">월 약 14만 원</div></div>
+      <div class="srow"><div class="sl">크롤링 툴 구독 <small>리스틀리 · Octoparse 등</small></div><div class="sb"><i style="--w:46%"></i></div><div class="sv">월 약 12만 원</div></div>
+      <div class="srow sum"><div class="sl">직접 하면 합계</div><div class="sb"><i style="--w:100%"></i></div><div class="sv">월 약 26만 원</div></div>
+      <div class="srow us"><div class="sl">fedit 스탠다드</div><div class="sb"><i style="--w:13.4%"></i><em style="left:calc(13.4% + 10px)">AI 툴 구독 하나보다 쌉니다</em></div><div class="sv">월 34,900원</div></div>
     </div>
     <div class="why">
       <div><b>구독 두 개 → 하나</b><span>AI 상위 플랜(약 14만 원)과 크롤링 툴(약 12만 원)을 따로 결제할 필요가 없습니다.</span></div>
       <div><b>매주 손으로 → 매일 자동</b><span>브랜드 100개를 매주 직접 돌리는 대신, 매일 06:00에 정리된 화면과 엑셀을 받습니다.</span></div>
       <div><b>사이트가 바뀌어도</b><span>수집이 깨지면 fedit이 고칩니다. 툴 템플릿을 다시 잡을 일이 없습니다.</span></div>
     </div>
-    <p class="fine" style="text-align:center">기준: ChatGPT Pro $100 · Claude Max $100 · Google AI Ultra $99.99 (월 한도 때문에 $20 플랜으로는 브랜드 100개 분량을 처리하기 어렵습니다) + 노코드 크롤링 툴 유료 플랜 약 $83 · 환율 1,400원/$ · 2026년 9월 공식 요금 · 반올림.</p>
+    <p class="fine" style="text-align:center">기준: Claude Max · ChatGPT Pro · Google AI Ultra 약 $100 (월 한도 때문에 $20 플랜으로는 브랜드 100개 분량을 처리하기 어렵습니다) + 노코드 크롤링 툴 유료 플랜 약 $83 · 환율 1,400원/$ · 2026년 9월 공식 요금 · 반올림.</p>
   </div>
 </section>
 
