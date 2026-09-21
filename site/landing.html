@@ -183,44 +183,6 @@ table.t td.k{color:var(--ink);font-weight:500}
 .why div{display:flex;flex-direction:column;gap:4px;font-size:14px;color:var(--text)}
 .why b{color:var(--ink);font-size:15px}
 
-/* playground */
-.play{display:grid;grid-template-columns:320px 1fr;gap:24px;align-items:start}
-@media (max-width:900px){.play{grid-template-columns:1fr}}
-.pstep{padding:20px 22px;display:flex;flex-direction:column;gap:10px;border-left:3px solid transparent;transition:border-color .2s,background .2s}
-.pstep.on{border-left-color:var(--accent);background:var(--surface)}
-.pstep.done .pn{background:var(--good);color:#fff}
-.pstep h3{font-size:16px;display:flex;align-items:center;gap:10px}
-.pn{width:24px;height:24px;border-radius:50%;background:var(--accent-soft);color:var(--accent-ink);display:grid;place-items:center;font-size:12.5px;font-weight:700;flex:none}
-.pstep p{font-size:13.5px;color:var(--muted)}
-.bchips{display:flex;flex-wrap:wrap;gap:8px}
-.bchip{font:inherit;font-size:13px;font-weight:600;padding:7px 13px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--text);cursor:pointer;transition:.15s}
-.bchip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.bchip.req{border-style:dashed;color:var(--muted)}
-.prog{display:flex;flex-direction:column;gap:6px;font-size:12.5px;color:var(--text)}
-.prog .pr{display:grid;grid-template-columns:110px 1fr 16px;gap:8px;align-items:center}
-.prog .pb{height:5px;border-radius:3px;background:var(--line2);overflow:hidden}
-.prog .pb i{display:block;height:100%;width:0;background:var(--accent);transition:width .7s ease}
-.prog .ok{color:var(--good);font-weight:700}
-.sheet{border:1px solid var(--line);border-radius:12px;background:var(--surface);overflow:hidden;box-shadow:var(--shadow)}
-.sheet .sh{display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid var(--line);font-size:13px;font-weight:600;color:var(--ink);background:var(--bg2)}
-.sheet .sh .x{width:20px;height:20px;border-radius:5px;background:#1D6F42;color:#fff;display:grid;place-items:center;font-size:11px;font-weight:700}
-.sheet .sh .st{margin-left:auto;font-weight:500;color:var(--muted);font-size:12.5px}
-.sheet .sh .st.live{color:var(--good)}
-.ftabs{display:flex;gap:4px;padding:8px 10px;border-bottom:1px solid var(--line);flex-wrap:wrap}
-.ftab{font:inherit;font-size:12.5px;font-weight:600;padding:5px 11px;border-radius:7px;border:0;background:transparent;color:var(--muted);cursor:pointer}
-.ftab[aria-selected="true"]{background:var(--accent-soft);color:var(--accent-ink)}
-.sheet .scroll{overflow:auto;max-height:380px}
-.sheet .empty{padding:56px 20px;text-align:center;color:var(--muted);font-size:14px}
-tr.in td{animation:rowin .4s ease both}
-@keyframes rowin{from{opacity:0;transform:translateY(-4px);background:var(--accent-soft)}to{opacity:1;transform:none}}
-.sheet .sf{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;border-top:1px solid var(--line);flex-wrap:wrap}
-.sheet .sf .cnt{font-size:13px;color:var(--muted)}
-.dl{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:0 16px;border-radius:9px;background:#1D6F42;color:#fff;font:inherit;font-weight:600;font-size:14px;border:0;cursor:pointer;transition:.2s}
-.dl:disabled{background:var(--line);color:var(--faint);cursor:not-allowed}
-.dl.done{background:var(--good-soft);color:var(--good)}
-.fchip{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:9px;background:var(--good-soft);color:var(--good);font-size:13px;font-weight:600;animation:rowin .4s ease both}
-.kp{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:12px}
-.kp .kpi b{font-size:20px}
 .seg{display:inline-flex;background:var(--bg2);border:1px solid var(--line);border-radius:9px;padding:3px;gap:2px}
 .seg button{font:inherit;font-size:13px;font-weight:600;padding:6px 12px;border-radius:7px;border:0;background:transparent;color:var(--muted);cursor:pointer}
 .seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 2px rgba(17,24,39,.08)}
@@ -264,11 +226,26 @@ summary::after{content:"";width:9px;height:9px;border-right:1.5px solid var(--mu
 details[open] summary::after{transform:rotate(-135deg)}
 details p{padding-bottom:20px;font-size:15px;color:var(--text);max-width:60ch}
 
-/* final */
-.final{background:var(--dark);border-radius:18px;padding:64px 48px;text-align:center}
-.final h2{color:var(--on-dark)}
-.final p{color:var(--on-dark-muted);margin-top:12px}
-.final .btn{margin-top:28px;background:var(--on-dark);color:var(--dark)}
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:start}
+@media (max-width:900px){.contact{grid-template-columns:1fr;gap:32px}}
+.cpts{list-style:none;margin:24px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
+.cpts li{display:flex;gap:10px;align-items:flex-start;font-size:15px;color:var(--text)}
+.cpts li svg{flex:none;margin-top:5px;color:var(--accent)}
+.cform{padding:28px;display:flex;flex-direction:column;gap:16px;box-shadow:var(--shadow)}
+.frow2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:560px){.frow2{grid-template-columns:1fr}}
+.f{display:flex;flex-direction:column;gap:6px}
+.f label{font-size:13.5px;font-weight:600;color:var(--ink)}
+.f input,.f select,.f textarea{font:inherit;font-size:15px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:11px 12px;min-height:46px;width:100%}
+.f textarea{resize:vertical;min-height:84px}
+.f input:focus,.f select:focus,.f textarea:focus{outline:2px solid var(--accent);outline-offset:0;border-color:var(--accent)}
+.f input:user-invalid{border-color:var(--bad)}
+.agree{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--muted);cursor:pointer}
+.agree input{margin-top:4px;accent-color:var(--accent);width:16px;height:16px;flex:none}
+.ferr{font-size:13px;color:var(--bad)}
+.fdone{display:flex;flex-direction:column;gap:4px;padding:16px;border-radius:10px;background:var(--good-soft);color:var(--good);font-size:14px}
+.fdone b{font-size:15px}
 footer{padding-block:40px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:var(--muted);border-top:1px solid var(--line);margin-top:64px}
 footer nav a{text-decoration:none;margin-left:18px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
@@ -281,14 +258,13 @@ footer nav a{text-decoration:none;margin-left:18px}
     <a href="#" class="logo"><i></i>fedit</a>
     <div class="nav-links">
       <a href="#product">제품</a>
-      <a href="#try">30초 체험</a>
       <a href="#cost">직접 만들면?</a>
       <a href="#pricing">요금제</a>
       <a href="#faq">FAQ</a>
     </div>
     <div class="nav-cta">
       <a href="#" class="btn btn-ghost" style="min-height:40px;padding:0 14px;font-size:14px">로그인</a>
-      <a href="#pricing" class="btn btn-primary" style="min-height:40px;padding:0 16px;font-size:14px">무료로 시작</a>
+      <a href="#contact" class="btn btn-primary" style="min-height:40px;padding:0 16px;font-size:14px">문의하기</a>
     </div>
   </div>
 </nav>
@@ -300,10 +276,10 @@ footer nav a{text-decoration:none;margin-left:18px}
     <h1>아직도 감으로 기획하세요?<br>경쟁사 데이터로 기획하세요.</h1>
     <p class="lead">fedit은 패션 MD를 위한 경쟁사 브랜드 모니터링·트렌드 분석 플랫폼입니다. 경쟁사의 신상품, 가격 변동, 품절 사이즈, 색상·유형 트렌드를 매일 아침 한 화면에서 보고, 필요하면 엑셀로 내려받고, AI에게 바로 물어보세요.</p>
     <div class="hero-ctas">
-      <a href="#pricing" class="btn btn-primary" style="min-height:50px;padding:0 24px">3일 무료 체험</a>
-      <a href="#try" class="btn btn-ghost" style="min-height:50px;padding:0 24px">30초 만에 직접 해보기</a>
+      <a href="#contact" class="btn btn-primary" style="min-height:50px;padding:0 24px">문의하기</a>
+      <a href="#pricing" class="btn btn-ghost" style="min-height:50px;padding:0 24px">요금제 보기</a>
     </div>
-    <p class="note">카드 등록 없음 · 3일 후 자동 종료</p>
+    <p class="note">문의를 남기면 영업일 1일 안에 담당자가 연락드리고, 3일 무료 체험을 열어드립니다.</p>
 
     <div class="ptabs" role="tablist" aria-label="제품 화면" id="ptabs">
       <button class="tab" role="tab" aria-selected="true" data-v="mon" type="button">브랜드 모니터링</button>
@@ -392,7 +368,7 @@ footer nav a{text-decoration:none;margin-left:18px}
             <div class="r"><b>품절 사이즈 19건</b>품절 사이즈, 품절 지속일, 재입고 여부</div>
             <div class="r"><b>월간 트렌드 리포트</b>유형·색상·가격대 요약, 월말 자동 발송</div>
           </div>
-          <div style="padding:0 14px 14px;display:flex;gap:8px;flex-wrap:wrap"><a href="#try" class="btn btn-primary" style="min-height:38px;font-size:13.5px;padding:0 14px">엑셀 다운로드 체험하기</a><a href="#" class="btn btn-ghost" style="min-height:38px;font-size:13.5px;padding:0 14px">데일리 뉴스레터 설정</a></div>
+          <div style="padding:0 14px 14px;display:flex;gap:8px;flex-wrap:wrap"><a href="#contact" class="btn btn-primary" style="min-height:38px;font-size:13.5px;padding:0 14px">엑셀 다운로드</a><a href="#" class="btn btn-ghost" style="min-height:38px;font-size:13.5px;padding:0 14px">데일리 뉴스레터 설정</a></div>
         </div>
       </div>
     </div>
@@ -403,58 +379,6 @@ footer nav a{text-decoration:none;margin-left:18px}
     </div>
   </div>
 </header>
-
-<!-- PLAYGROUND -->
-<section class="section alt" id="try">
-  <div class="wrap">
-    <div class="head center">
-      <div class="eyebrow">30초 체험</div>
-      <h2>브랜드를 고르고, 수집하고, 엑셀로 받아보세요.<br>실제로 하는 일은 이게 전부입니다.</h2>
-      <p class="lead" style="margin-inline:auto">예시 데이터로 도는 데모입니다. 실제 서비스에서는 2단계가 매일 06:00에 자동으로 돌아갑니다.</p>
-    </div>
-    <div class="play">
-      <div style="display:flex;flex-direction:column;gap:10px">
-        <div class="card pstep on" id="p1">
-          <h3><span class="pn">1</span>관심 브랜드 고르기</h3>
-          <p>없는 브랜드는 신청하면 추가됩니다.</p>
-          <div class="bchips" id="bchips" role="group" aria-label="브랜드 선택"></div>
-        </div>
-        <div class="card pstep" id="p2">
-          <h3><span class="pn">2</span>수집하기</h3>
-          <p>실제 서비스에서는 자동입니다. 여기서는 직접 눌러보세요.</p>
-          <button class="btn btn-primary" id="crawl" type="button" style="align-self:flex-start;min-height:42px;font-size:14px">오늘 수집 시작</button>
-          <div class="prog" id="prog" hidden></div>
-        </div>
-        <div class="card pstep" id="p3">
-          <h3><span class="pn">3</span>엑셀로 받기</h3>
-          <p>필터로 보고 싶은 것만 남기고 내려받으세요. 표준 컬럼 15개.</p>
-          <div id="fileOut"></div>
-        </div>
-      </div>
-      <div>
-        <div class="kp">
-          <div class="kpi"><span>수집 상품</span><b class="num" id="kT">0</b></div>
-          <div class="kpi"><span>오늘 신상품</span><b class="num" id="kN" style="color:var(--accent)">0</b></div>
-          <div class="kpi"><span>가격 변동</span><b class="num" id="kS" style="color:var(--bad)">0</b></div>
-        </div>
-        <div class="sheet">
-          <div class="sh"><span class="x">X</span>경쟁사_상품_<span id="ymd"></span>.xlsx<span class="st" id="pst">브랜드를 고르세요</span></div>
-          <div class="ftabs" role="tablist" aria-label="필터">
-            <button class="ftab" role="tab" aria-selected="true" data-f="all" type="button">전체</button>
-            <button class="ftab" role="tab" aria-selected="false" data-f="new" type="button">신상품만</button>
-            <button class="ftab" role="tab" aria-selected="false" data-f="sale" type="button">가격 변동만</button>
-            <button class="ftab" role="tab" aria-selected="false" data-f="oos" type="button">품절 사이즈만</button>
-          </div>
-          <div class="scroll">
-            <table class="t" id="pg"><thead><tr><th>브랜드</th><th>상품코드</th><th>상품명</th><th>대분류</th><th>정가</th><th>판매가</th><th>할인율</th><th>컬러</th><th>가용 사이즈</th><th>재고</th><th>수집일시</th></tr></thead><tbody></tbody></table>
-            <div class="empty" id="pempty">1단계에서 브랜드를 고르면 여기에 상품이 쌓입니다.</div>
-          </div>
-          <div class="sf"><span class="cnt" id="pcnt">0행 · 15컬럼</span><button class="dl" id="dl" type="button" disabled><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M12 4V15M12 15L8 11M12 15L16 11M5 19H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>엑셀 다운로드</button></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- PILLARS -->
 <section class="section">
@@ -558,7 +482,7 @@ footer nav a{text-decoration:none;margin-left:18px}
     <div class="why">
       <div><b>모니터링 · 분석 · AI 포함</b><span>토큰 비용만이 아니라 대시보드, 트렌드 분석, AI 에이전트, 엑셀까지 한 요금에.</span></div>
       <div><b>유지보수는 우리 몫</b><span>경쟁사 사이트 구조가 바뀌면 fedit이 고칩니다. 개발자를 붙일 필요가 없습니다.</span></div>
-      <div><b>내일 아침부터</b><span>3일 무료 체험을 시작하면 다음 날 06:00에 첫 데이터가 도착합니다.</span></div>
+      <div><b>내일 아침부터</b><span>문의를 남기면 3일 무료 체험을 열어드리고, 다음 날 06:00에 첫 데이터가 도착합니다.</span></div>
     </div>
     <p class="fine" style="text-align:center">계산 기준: 경쟁사 100개 브랜드 × 상품 300개, 매일 1회 수집 · 상품 페이지 1개 = 입력 6,000토큰 + 출력 150토큰 · 환율 1,400원/$ · Anthropic·Google·OpenAI 공식 단가(2026년 9월) · 반올림. fedit 스탠다드는 브랜드 30개 기준이며 100개 이상은 엔터프라이즈 견적입니다.</p>
   </div>
@@ -583,7 +507,7 @@ footer nav a{text-decoration:none;margin-left:18px}
           <div class="was"><s data-m="33,200원" data-y="358,800원"></s><em data-m="10% 할인" data-y="17% 할인"></em></div>
           <div class="per" data-m="30일 주기 정기 구독" data-y="월 약 24,900원"></div>
         </div>
-        <a href="#" class="btn btn-ghost">3일 무료 체험</a>
+        <a href="#contact" class="btn btn-ghost">문의하기</a>
         <ul class="feats">
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12.5L9.5 17L19 7.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>경쟁사 실시간 상품 엑셀 다운로드</b> 월 3회</span></li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12.5L9.5 17L19 7.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>관심 브랜드 최대 5개 모니터링</li>
@@ -601,7 +525,7 @@ footer nav a{text-decoration:none;margin-left:18px}
           <div class="was"><s data-m="58,200원" data-y="418,800원"></s><em data-m="40% 할인" data-y="24% 할인"></em></div>
           <div class="per" data-m="30일 주기 정기 구독" data-y="월 약 26,600원 — 베이직 월 결제보다 저렴"></div>
         </div>
-        <a href="#" class="btn btn-primary">스탠다드 시작하기</a>
+        <a href="#contact" class="btn btn-primary">문의하기</a>
         <div class="incl">베이직의 모든 기능, 그리고</div>
         <ul class="feats">
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12.5L9.5 17L19 7.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>경쟁사 실시간 상품 엑셀 다운로드</b> 무제한</span></li>
@@ -620,7 +544,7 @@ footer nav a{text-decoration:none;margin-left:18px}
           <div class="now"><b style="font-size:24px">기업 문의</b></div>
           <div class="per">팀 규모와 브랜드 수에 맞춰 견적</div>
         </div>
-        <a href="#" class="btn btn-ghost">문의하기</a>
+        <a href="#contact" class="btn btn-ghost">문의하기</a>
         <div class="incl">스탠다드의 모든 기능, 그리고</div>
         <ul class="feats">
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12.5L9.5 17L19 7.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>브랜드 무제한</b> 엑셀 다운로드</span></li>
@@ -649,12 +573,42 @@ footer nav a{text-decoration:none;margin-left:18px}
   </div>
 </section>
 
-<section style="padding-block:0 40px">
+<!-- CONTACT -->
+<section class="section alt" id="contact" style="padding-bottom:0">
   <div class="wrap">
-    <div class="final">
-      <h2>다음 시즌 기획, 경쟁사 데이터로 시작하세요.</h2>
-      <p>카드 등록 없음 · 3일 후 자동 종료</p>
-      <a href="#pricing" class="btn" style="min-height:50px;padding:0 28px">3일 무료 체험</a>
+    <div class="contact">
+      <div class="ctxt">
+        <div class="eyebrow">문의하기</div>
+        <h2>다음 시즌 기획,<br>경쟁사 데이터로 시작하세요.</h2>
+        <p class="lead" style="margin-top:16px">브랜드 수와 팀 규모를 알려주시면 맞는 요금제를 안내하고 3일 무료 체험을 열어드립니다. 영업일 1일 안에 연락드립니다.</p>
+        <ul class="cpts">
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12.5L9.5 17L19 7.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>관심 브랜드 등록부터 첫 데이터까지 함께 세팅</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12.5L9.5 17L19 7.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>목록에 없는 경쟁사도 체험 기간에 추가</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12.5L9.5 17L19 7.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>카드 등록 없음 · 체험 후 부담 없이 결정</li>
+        </ul>
+      </div>
+      <form class="card cform" id="leadForm" novalidate>
+        <div class="frow2">
+          <div class="f"><label for="fName">이름</label><input id="fName" name="name" type="text" required autocomplete="name" placeholder="홍길동"></div>
+          <div class="f"><label for="fCo">회사 · 브랜드</label><input id="fCo" name="company" type="text" required autocomplete="organization" placeholder="에딧 어패럴"></div>
+        </div>
+        <div class="frow2">
+          <div class="f"><label for="fMail">이메일</label><input id="fMail" name="email" type="email" required autocomplete="email" placeholder="md@brand.com"></div>
+          <div class="f"><label for="fTel">연락처</label><input id="fTel" name="phone" type="tel" autocomplete="tel" placeholder="010-0000-0000"></div>
+        </div>
+        <div class="frow2">
+          <div class="f"><label for="fRole">역할</label><select id="fRole" name="role"><option>MD · 기획</option><option>브랜드 대표 · 임원</option><option>에이전시 · 컨설팅</option><option>기타</option></select></div>
+          <div class="f"><label for="fCnt">모니터링하고 싶은 브랜드 수</label><select id="fCnt" name="brands"><option>5개 이하</option><option selected>6 ~ 30개</option><option>31개 이상</option><option>아직 모르겠어요</option></select></div>
+        </div>
+        <div class="f"><label for="fMsg">궁금한 점 <span style="font-weight:400;color:var(--faint)">(선택)</span></label><textarea id="fMsg" name="message" rows="3" placeholder="예) 무신사 입점 브랜드 20개를 매일 보고 싶어요"></textarea></div>
+        <label class="agree"><input type="checkbox" id="fAgree" required> <span>개인정보 수집·이용에 동의합니다. 문의 응대 목적으로만 사용하며 응대 후 파기합니다.</span></label>
+        <button type="submit" class="btn btn-primary" id="leadBtn" style="min-height:50px;width:100%">문의하기</button>
+        <p class="ferr" id="leadErr" hidden>이름, 회사, 이메일과 동의 항목을 확인해 주세요.</p>
+        <div class="fdone" id="leadDone" hidden>
+          <b>문의가 접수되었습니다.</b>
+          <span>영업일 1일 안에 입력하신 이메일로 연락드리겠습니다.</span>
+        </div>
+      </form>
     </div>
     <footer>
       <div class="logo" style="font-size:16px"><i style="width:20px;height:20px"></i>fedit</div>
@@ -719,64 +673,19 @@ footer nav a{text-decoration:none;margin-left:18px}
     const go=()=>$$('.sb i',sc).forEach(i=>i.style.width=i.dataset.w);
     if('IntersectionObserver' in window){ const io=new IntersectionObserver(es=>{ if(es.some(e=>e.isIntersecting)){go();io.disconnect();} },{threshold:.3}); io.observe(sc); } else go(); })();
 
-  /* 30초 체험 */
-  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const today=new Date(), ymd=`${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`;
-  $('#ymd').textContent=ymd;
-  const DATA=[
-    {b:'ZARA',c:'04341285',n:'울 블렌드 오버사이즈 코트',cat:'아우터',p:159000,s:119000,col:'카멜',sz:'S M L',oos:'',isNew:true,chg:true,t:'06:02'},
-    {b:'ZARA',c:'02753301',n:'크롭 트위드 재킷',cat:'아우터',p:89900,s:89900,col:'블랙',sz:'XS S M',oos:'',isNew:true,chg:false,t:'06:02'},
-    {b:'ZARA',c:'07901220',n:'새틴 미디 스커트',cat:'하의',p:59900,s:39900,col:'버건디',sz:'S M',oos:'L',isNew:false,chg:true,t:'06:03'},
-    {b:'COS',c:'1197402',n:'릴렉스핏 캐시미어 니트',cat:'상의',p:229000,s:160000,col:'그레이',sz:'M L',oos:'S',isNew:false,chg:true,t:'06:05'},
-    {b:'COS',c:'1203311',n:'테일러드 울 트라우저',cat:'하의',p:189000,s:189000,col:'차콜',sz:'44 46 48',oos:'',isNew:true,chg:false,t:'06:05'},
-    {b:'H&M',c:'1188930001',n:'와이드 데님 팬츠',cat:'하의',p:49900,s:49900,col:'라이트블루',sz:'25 27 29',oos:'',isNew:false,chg:false,t:'06:07'},
-    {b:'H&M',c:'1201455002',n:'퍼 트리밍 파카',cat:'아우터',p:99900,s:69900,col:'블랙',sz:'S M',oos:'L XL',isNew:true,chg:true,t:'06:07'},
-    {b:'UNIQLO',c:'460823',n:'히트텍 터틀넥 티',cat:'상의',p:19900,s:14900,col:'화이트',sz:'S M L XL',oos:'',isNew:false,chg:true,t:'06:09'},
-    {b:'UNIQLO',c:'471002',n:'라이트 다운 베스트',cat:'아우터',p:59900,s:59900,col:'올리브',sz:'M L XL',oos:'S',isNew:true,chg:false,t:'06:09'},
-    {b:'ARKET',c:'1156882',n:'메리노 울 카디건',cat:'상의',p:149000,s:104000,col:'오트밀',sz:'XS S',oos:'M L',isNew:false,chg:true,t:'06:12'},
-    {b:'ARKET',c:'1160210',n:'코튼 포플린 셔츠',cat:'상의',p:99000,s:99000,col:'화이트',sz:'S M L',oos:'',isNew:true,chg:false,t:'06:12'},
-    {b:'MUSINSA STANDARD',c:'3927710',n:'울 싱글 코트',cat:'아우터',p:139000,s:139000,col:'네이비',sz:'M L',oos:'M',isNew:false,chg:false,t:'06:11'},
-    {b:'MUSINSA STANDARD',c:'3930188',n:'슬랙스 세미와이드',cat:'하의',p:49900,s:39900,col:'블랙',sz:'S M L XL',oos:'',isNew:true,chg:true,t:'06:11'},
-  ];
-  const BR=['ZARA','COS','H&M','UNIQLO','ARKET','MUSINSA STANDARD'];
-  let picked=new Set(['ZARA','COS']), crawled=new Set(), filter='all';
-  const esc=s=>s.replace(/&/g,'&amp;');
-  const chips=$('#bchips');
-  chips.innerHTML=BR.map(b=>`<button type="button" class="bchip" aria-pressed="${picked.has(b)}" data-b="${esc(b)}">${esc(b)}</button>`).join('')+`<button type="button" class="bchip req" data-b="__req">+ 브랜드 신청</button>`;
-  const step=n=>{ [1,2,3].forEach(i=>{ const el=$('#p'+i); el.classList.toggle('on',i===n); el.classList.toggle('done',i<n); }); };
-  chips.addEventListener('click',e=>{ const b=e.target.closest('.bchip'); if(!b)return;
-    if(b.dataset.b==='__req'){ b.textContent='신청됨 · 영업일 2일 내 추가'; b.disabled=true; return; }
-    const k=b.dataset.b; picked.has(k)?picked.delete(k):picked.add(k); b.setAttribute('aria-pressed',picked.has(k));
-    crawled=new Set([...crawled].filter(x=>picked.has(x))); render(); step(picked.size?2:1);
-    $('#pst').textContent=picked.size?`${picked.size}개 브랜드 선택됨`:'브랜드를 고르세요'; $('#pst').classList.remove('live'); });
-  const body=$('#pg tbody'), empty=$('#pempty');
-  const pct=r=>r.p===r.s?'—':'−'+Math.round((1-r.s/r.p)*100)+'%';
-  const rows=()=>DATA.filter(r=>crawled.has(r.b)).filter(r=>filter==='all'||(filter==='new'&&r.isNew)||(filter==='sale'&&r.chg)||(filter==='oos'&&r.oos));
-  function render(anim){
-    const rs=rows(); body.innerHTML='';
-    rs.forEach(r=>{ const tr=document.createElement('tr'); if(anim&&!reduce)tr.className='in';
-      tr.innerHTML=`<td class="k">${esc(r.b)}</td><td>${r.c}</td><td>${r.n}${r.isNew?' <span class="tag new">신상품</span>':''}</td><td>${r.cat}</td><td class="num">${won(r.p)}</td><td class="num">${won(r.s)}</td><td>${r.chg?`<span class="tag sale">${pct(r)}</span>`:'—'}</td><td>${r.col}</td><td>${r.sz}</td><td>${r.oos?`<span class="tag oos">${r.oos} 품절</span>`:'<span class="tag ok">판매중</span>'}</td><td>${ymd.slice(5)} ${r.t}</td>`;
-      body.appendChild(tr); });
-    empty.hidden=rs.length>0; empty.textContent=crawled.size?'이 필터에 해당하는 상품이 없습니다.':'1단계에서 브랜드를 고르면 여기에 상품이 쌓입니다.';
-    const all=DATA.filter(r=>crawled.has(r.b));
-    $('#pcnt').textContent=`${rs.length}행 · 15컬럼`; $('#kT').textContent=all.length; $('#kN').textContent=all.filter(r=>r.isNew).length; $('#kS').textContent=all.filter(r=>r.chg).length;
-    const dl=$('#dl'); dl.disabled=!all.length; dl.classList.remove('done'); dl.innerHTML=dl.dataset.html||dl.innerHTML; dl.dataset.html=dl.innerHTML;
-  }
-  $('#crawl').addEventListener('click',()=>{
-    if(!picked.size){ step(1); return; }
-    const prog=$('#prog'); prog.hidden=false; crawled=new Set(); filter='all'; $$('.ftab').forEach(t=>t.setAttribute('aria-selected',t.dataset.f==='all')); render();
-    const list=[...picked]; prog.innerHTML=list.map(b=>`<div class="pr"><span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(b)}</span><span class="pb"><i></i></span><span class="ok" data-ok="${esc(b)}"></span></div>`).join('');
-    const btn=$('#crawl'); btn.disabled=true; $('#pst').textContent='수집 중…'; $('#pst').classList.remove('live'); step(2); $('#fileOut').innerHTML='';
-    list.forEach((b,i)=>{ setTimeout(()=>{ $$('.pb i',prog)[i].style.width='100%'; },60+i*120);
-      setTimeout(()=>{ $$('[data-ok]',prog)[i].textContent='✓'; crawled.add(b); render(true);
-        if(i===list.length-1){ btn.disabled=false; btn.textContent='다시 수집'; const st=$('#pst'); st.textContent=`오늘 06:00 수집 완료 · ${DATA.filter(r=>crawled.has(r.b)).length}개 상품`; st.classList.add('live'); step(3); } },reduce?40:650+i*420); });
+
+  /* 문의 폼 — LEAD_ENDPOINT에 Formspree/Tally/자체 API 주소를 넣으면 실제 전송됩니다 */
+  const LEAD_ENDPOINT='';
+  const form=$('#leadForm');
+  form.addEventListener('submit',async e=>{
+    e.preventDefault(); const err=$('#leadErr'), done=$('#leadDone'), btn=$('#leadBtn');
+    if(!form.checkValidity()){ err.hidden=false; form.querySelector(':invalid')?.focus(); return; }
+    err.hidden=true; btn.disabled=true; btn.textContent='보내는 중…';
+    const data=Object.fromEntries(new FormData(form).entries()); data.page=location.href; data.at=new Date().toISOString();
+    try{ if(LEAD_ENDPOINT){ const r=await fetch(LEAD_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)}); if(!r.ok)throw new Error(r.status); } }
+    catch(x){ btn.disabled=false; btn.textContent='문의하기'; err.textContent='전송에 실패했습니다. 잠시 후 다시 시도해 주세요.'; err.hidden=false; return; }
+    done.hidden=false; btn.hidden=true; $$('input,select,textarea',form).forEach(i=>i.disabled=true);
   });
-  $$('.ftab').forEach(t=>t.addEventListener('click',()=>{ filter=t.dataset.f; $$('.ftab').forEach(x=>x.setAttribute('aria-selected',x===t)); render(true); }));
-  $('#dl').addEventListener('click',function(){
-    const n=rows().length; this.classList.add('done'); this.innerHTML='<svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12.5L9.5 17L19 7.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>다운로드 완료';
-    $('#fileOut').innerHTML=`<span class="fchip"><span style="width:18px;height:18px;border-radius:4px;background:#1D6F42;color:#fff;display:grid;place-items:center;font-size:10px;font-weight:700">X</span>경쟁사_상품_${ymd}.xlsx · ${n}행</span><p style="font-size:12px;color:var(--muted);margin-top:8px">데모에서는 파일이 실제로 저장되지 않습니다.</p>`;
-  });
-  render();
 
   /* 요금제 토글 */
   function billing(y){ $('#tYear').setAttribute('aria-pressed',y); $('#tMonth').setAttribute('aria-pressed',!y); $$('.price [data-m]').forEach(el=>el.textContent=y?el.dataset.y:el.dataset.m); try{localStorage.setItem('fedit-billing',y?'y':'m')}catch(e){} }
